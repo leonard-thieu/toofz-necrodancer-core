@@ -1,0 +1,28 @@
+version: 2.0.{build}
+image: Visual Studio 2017
+
+configuration:
+  - Release
+cache:
+  - packages -> **\packages.config
+notifications:
+  - provider: Slack
+    incoming_webhook:
+      secure: c7l1UmXHWpIDLL1awU4r0QYVPToYM/XjV8trFyD1oHArKxs/vBTYiKYScr1EhCUgmEX6sAFBTvkUHF/k5B+cGjzqRBR2XkAO+lzk8cHQ1FI=
+nuget:
+  disable_publish_on_pr: true
+
+before_build:
+  - appveyor-retry nuget restore -DisableParallelProcessing
+build:
+  project: toofz.NecroDancer.sln
+  publish_nuget: true
+  publish_nuget_symbols: true
+  verbosity: minimal
+
+deploy:
+  - provider: NuGet
+    symbol_server: https://ci.appveyor.com/nuget/leonard-thieu-h8hvbe0oe9o1/api/v2/package
+    api_key:
+      secure: NYFwcZ6c2123bMRxjnMflURWFm9/dgsS42R38FGa+8o=
+    artifact: /.*\.symbols\.nupkg/
