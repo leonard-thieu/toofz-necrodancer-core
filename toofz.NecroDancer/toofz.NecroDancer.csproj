@@ -125,6 +125,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="FodyWeavers.xml" />
+    <None Include="toofz.NecroDancer.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

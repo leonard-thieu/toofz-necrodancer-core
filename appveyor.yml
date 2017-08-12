@@ -3,6 +3,12 @@ image: Visual Studio 2017
 
 configuration:
   - Release
+environment:
+  PROJECT: toofz.NecroDancer
+  COVERALLS_REPO_TOKEN:
+    secure: nJ9Lf/DJNce25mFR7WgVcBT1FQWs/ORLw+TJy9wmaDuRR+PgjDrnCk07FT8kZabn
+  COVERALLS_SERVICE_NAME: appveyor
+  COVERALLS_SERVICE_JOB_ID: '%APPVEYOR_JOB_ID%'
 cache:
   - packages -> **\packages.config
 notifications:
@@ -15,10 +21,15 @@ nuget:
 before_build:
   - appveyor-retry nuget restore -DisableParallelProcessing
 build:
-  project: toofz.NecroDancer.sln
+  project: $(PROJECT).sln
   publish_nuget: true
   publish_nuget_symbols: true
   verbosity: minimal
+
+test_script:
+  - ps: .\Test-Project.ps1 -Assembly $env:PROJECT
+after_test:
+  - ps: .\Submit-CodeCoverageResults.ps1
 
 deploy:
   - provider: NuGet
