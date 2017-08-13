@@ -1,28 +1,31 @@
-version: 2.0.{build}
+version: 2.1.0.{build}
 image: Visual Studio 2017
 
 configuration:
   - Release
+environment:
+  PROJECT: toofz.NecroDancer
+  COVERALLS_REPO_TOKEN:
+    secure: nJ9Lf/DJNce25mFR7WgVcBT1FQWs/ORLw+TJy9wmaDuRR+PgjDrnCk07FT8kZabn
+  COVERALLS_SERVICE_NAME: appveyor
+  COVERALLS_SERVICE_JOB_ID: '%APPVEYOR_JOB_ID%'
 cache:
   - packages -> **\packages.config
 notifications:
   - provider: Slack
     incoming_webhook:
       secure: c7l1UmXHWpIDLL1awU4r0QYVPToYM/XjV8trFyD1oHArKxs/vBTYiKYScr1EhCUgmEX6sAFBTvkUHF/k5B+cGjzqRBR2XkAO+lzk8cHQ1FI=
-nuget:
-  disable_publish_on_pr: true
 
 before_build:
   - appveyor-retry nuget restore -DisableParallelProcessing
 build:
-  project: toofz.NecroDancer.sln
-  publish_nuget: true
-  publish_nuget_symbols: true
+  project: $(PROJECT).sln
   verbosity: minimal
 
-deploy:
-  - provider: NuGet
-    symbol_server: https://ci.appveyor.com/nuget/leonard-thieu-h8hvbe0oe9o1/api/v2/package
-    api_key:
-      secure: NYFwcZ6c2123bMRxjnMflURWFm9/dgsS42R38FGa+8o=
-    artifact: /.*\.symbols\.nupkg/
+test_script:
+  - ps: .\Test-Project.ps1 -Assembly $env:PROJECT
+after_test:
+  - ps: .\Submit-CodeCoverageResults.ps1
+
+deploy_script:
+  - ps: .\Deploy-NuGetPackage.ps1

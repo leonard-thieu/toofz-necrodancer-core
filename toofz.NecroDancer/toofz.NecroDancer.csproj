@@ -57,8 +57,8 @@
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.XML" />
-    <Reference Include="toofz, Version=2.0.0.21279, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\toofz.2.0.0\lib\net45\toofz.dll</HintPath>
+    <Reference Include="toofz, Version=2.4.0.16220, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\toofz.2.4.0\lib\net45\toofz.dll</HintPath>
     </Reference>
     <Reference Include="Validar, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Validar.Fody.1.5.1\lib\dotnet\Validar.dll</HintPath>
@@ -125,6 +125,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="FodyWeavers.xml" />
+    <None Include="toofz.NecroDancer.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

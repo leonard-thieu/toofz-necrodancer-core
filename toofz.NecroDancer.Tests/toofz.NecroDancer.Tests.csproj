@@ -38,6 +38,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.1.1.18\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
@@ -46,12 +49,14 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
-    <Reference Include="toofz, Version=2.0.0.21279, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\toofz.2.0.0\lib\net45\toofz.dll</HintPath>
+    <Reference Include="toofz, Version=2.4.0.16220, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\toofz.2.4.0\lib\net45\toofz.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Resources\1_8_2015_PROD_SCORE884_ZONE3_LEVEL3" />
     <None Include="Resources\75_necrodancer_replay_2015_07_24_15_01_59_6.dat" />
     <None Include="Resources\75_necrodancer_replay_2015_07_26_21_31_16_6.dat" />
