@@ -20,7 +20,7 @@ before_build:
   - appveyor-retry nuget restore -DisableParallelProcessing
 build:
   project: $(PROJECT).sln
-  verbosity: minimal
+  verbosity: detailed
 
 test_script:
   - ps: .\Test-Project.ps1 -Assembly $env:PROJECT
