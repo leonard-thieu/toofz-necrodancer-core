@@ -3,7 +3,7 @@ using System.Reflection;
 using System.Resources;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyVersion("2.1.0.*")]
+[assembly: AssemblyVersion("2.1.1.0")]
 [assembly: AssemblyTitle("toofz.NecroDancer")]
 [assembly: AssemblyProduct("toofz.NecroDancer")]
 [assembly: AssemblyCompany("toofz")]
