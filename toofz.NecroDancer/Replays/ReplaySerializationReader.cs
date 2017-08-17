@@ -5,16 +5,13 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Xml.Serialization;
 using toofz.NecroDancer.Saves;
-using toofz.Xml;
 
 namespace toofz.NecroDancer.Replays
 {
     sealed class ReplaySerializationReader : StreamReader
     {
         const string RemoteSignature = "%*#%*";
-        static readonly XmlSerializer SaveDataSerializer = new XmlSerializer(typeof(SaveData));
 
         static int ConvertToInt32(string line) => Convert.ToInt32(line, CultureInfo.InvariantCulture);
 
@@ -277,9 +274,7 @@ namespace toofz.NecroDancer.Replays
                 return null;
             }
 
-            var xpr = new XmlPreprocessingReader(BaseStream);
-
-            return SaveDataSerializer.Deserialize(xpr) as SaveData;
+            return SaveData.Parse(BaseStream);
         }
 
         #endregion
