@@ -130,6 +130,15 @@
   <data name="Remote_StorySpeed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\75_necrodancer_replay_2015_07_24_15_01_59_6.dat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
+  <data name="SaveData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_data.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SaveData76561197960481221" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_data76561197960481221.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SaveData76561198074553183" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_data76561198074553183.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="ZeroByteReplay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1_8_2015_PROD_SCORE884_ZONE3_LEVEL3;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
