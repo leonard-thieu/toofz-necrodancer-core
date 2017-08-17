@@ -2,13 +2,16 @@
 using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
+using log4net;
 
 namespace toofz.NecroDancer.Saves
 {
-    // Game version: 1.09
+    // Game version: 2.55
     [XmlRoot("necrodancer")]
     public sealed class SaveData
     {
+        static readonly ILog Log = LogManager.GetLogger(typeof(SaveData));
+
         const string InvalidXmlDeclaration = "<?xml?>";
 
         static readonly XmlSerializer SaveDataSerializer = new XmlSerializer(typeof(SaveData));
@@ -30,7 +33,25 @@ namespace toofz.NecroDancer.Saves
                 startPos + InvalidXmlDeclaration.Length :
                 startPos;
 
-            return (SaveData)SaveDataSerializer.Deserialize(stream);
+            SaveDataSerializer.UnknownElement += OnUnknownElement;
+            SaveDataSerializer.UnknownAttribute += OnUnknownAttribute;
+
+            var saveData = (SaveData)SaveDataSerializer.Deserialize(stream);
+
+            SaveDataSerializer.UnknownElement -= OnUnknownElement;
+            SaveDataSerializer.UnknownAttribute -= OnUnknownAttribute;
+
+            return saveData;
+
+            void OnUnknownElement(object sender, XmlElementEventArgs e)
+            {
+                Log.Debug($"[{e.LineNumber}:{e.LinePosition}] Unknown element: '{e.Element.Name}'.");
+            }
+
+            void OnUnknownAttribute(object sender, XmlAttributeEventArgs e)
+            {
+                Log.Debug($"[{e.LineNumber}:{e.LinePosition}] Unknown attribute: '{e.ObjectBeingDeserialized}.{e.Attr.Name}'.");
+            }
         }
 
         public static SaveData Load(string path)

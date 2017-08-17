@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -77,6 +78,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="TestsSetup.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -89,9 +91,9 @@
     <Content Include="necrodancer.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="save_data.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <None Include="Resources\save_data.xml" />
+    <None Include="Resources\save_data76561198074553183.xml" />
+    <None Include="Resources\save_data76561197960481221.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\toofz.NecroDancer\toofz.NecroDancer.csproj">

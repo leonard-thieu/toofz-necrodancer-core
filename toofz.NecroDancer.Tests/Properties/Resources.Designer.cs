@@ -97,6 +97,33 @@ namespace toofz.NecroDancer.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml?&gt;&lt;necrodancer cloudTimestamp=&quot;1437962524&quot;&gt;&lt;player addchest_blackUnlocked=&quot;true&quot; addchest_redUnlocked=&quot;true&quot; addchest_whiteUnlocked=&quot;true&quot; armor_chainmailUnlocked=&quot;true&quot; armor_giUnlocked=&quot;true&quot; armor_glassUnlocked=&quot;true&quot; armor_heavyplateUnlocked=&quot;true&quot; armor_obsidianUnlocked=&quot;true&quot; armor_platemailUnlocked=&quot;true&quot; bag_holdingUnlocked=&quot;true&quot; coins_x15Unlocked=&quot;false&quot; coins_x2Unlocked=&quot;false&quot; diamondDealerItems=&quot;&quot; diamondDealerSoldItem1=&quot;weapon_titanium_broadsword&quot; diamondDealerSoldItem2=&quot;food_2&quot; diamondDe [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SaveData {
+            get {
+                return ResourceManager.GetString("SaveData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml?&gt;&lt;necrodancer cloudTimestamp=&quot;1502975699&quot;&gt;&lt;player addchest_blackUnlocked=&quot;true&quot; addchest_redUnlocked=&quot;true&quot; addchest_whiteUnlocked=&quot;true&quot; armor_chainmailUnlocked=&quot;true&quot; armor_giUnlocked=&quot;true&quot; armor_glassUnlocked=&quot;true&quot; armor_heavyplateUnlocked=&quot;true&quot; armor_obsidianUnlocked=&quot;true&quot; armor_platemailUnlocked=&quot;true&quot; bag_holdingUnlocked=&quot;true&quot; coins_x15Unlocked=&quot;false&quot; coins_x2Unlocked=&quot;false&quot; diamondDealerItemsV2=&quot;&quot; diamondDealerSoldItemV2_1=&quot;weapon_blood_dagger&quot; diamondDealerSoldItemV2_2=&quot;food_2&quot; diamondD [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SaveData76561197960481221 {
+            get {
+                return ResourceManager.GetString("SaveData76561197960481221", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml?&gt;&lt;necrodancer cloudTimestamp=&quot;1502618325&quot;&gt;&lt;player addchest_blackUnlocked=&quot;true&quot; addchest_redUnlocked=&quot;true&quot; addchest_whiteUnlocked=&quot;true&quot; armor_chainmailUnlocked=&quot;true&quot; armor_giUnlocked=&quot;true&quot; armor_glassUnlocked=&quot;true&quot; armor_heavyglassUnlocked=&quot;true&quot; armor_heavyplateUnlocked=&quot;true&quot; armor_obsidianCleaned=&quot;true&quot; armor_obsidianUnlocked=&quot;true&quot; armor_platemailUnlocked=&quot;true&quot; armor_quartzUnlocked=&quot;true&quot; bag_holdingUnlocked=&quot;true&quot; blood_drumUnlocked=&quot;true&quot; coins_x15Unlocked=&quot;true&quot; coins_x2Unlocked=&quot;true&quot; di [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SaveData76561198074553183 {
+            get {
+                return ResourceManager.GetString("SaveData76561198074553183", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         internal static string ZeroByteReplay {
