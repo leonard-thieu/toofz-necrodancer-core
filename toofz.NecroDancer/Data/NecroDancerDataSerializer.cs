@@ -12,9 +12,16 @@ namespace toofz.NecroDancer.Data
     {
         static readonly ILog Log = LogManager.GetLogger(typeof(NecroDancerDataSerializer));
 
-        public static NecroDancerData Read(string uri)
+        public static NecroDancerData Load(string uri)
         {
             var doc = XDocument.Load(uri);
+
+            return Read(doc);
+        }
+
+        public static NecroDancerData Parse(string text)
+        {
+            var doc = XDocument.Parse(text);
 
             return Read(doc);
         }

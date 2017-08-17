@@ -88,9 +88,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="necrodancer.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <None Include="Resources\necrodancer.xml" />
     <None Include="Resources\save_data.xml" />
     <None Include="Resources\save_data76561198074553183.xml" />
     <None Include="Resources\save_data76561197960481221.xml" />
