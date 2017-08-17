@@ -14,5 +14,8 @@ namespace toofz.NecroDancer.Data
         public int OffsetZ { get; set; }
         public int HeartOffsetX { get; set; }
         public int HeartOffsetY { get; set; }
+        public int FlipXOff { get; set; }
+        public bool AutoFlip { get; set; }
+        public bool FlipX { get; set; }
     }
 }

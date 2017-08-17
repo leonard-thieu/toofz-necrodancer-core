@@ -296,6 +296,9 @@ namespace toofz.NecroDancer.Data
                                                         case "zOff": spriteSheet.OffsetZ = int.Parse(spritesheetAttr.Value); break;
                                                         case "heartXOff": spriteSheet.HeartOffsetX = int.Parse(spritesheetAttr.Value); break;
                                                         case "heartYOff": spriteSheet.HeartOffsetY = int.Parse(spritesheetAttr.Value); break;
+                                                        case "flipXOff": spriteSheet.FlipXOff = int.Parse(spritesheetAttr.Value); break;
+                                                        case "autoFlip": spriteSheet.AutoFlip = ReadContentAsStringAsBoolean(spritesheetAttr.Value); break;
+                                                        case "flipX": spriteSheet.FlipX = ReadContentAsStringAsBoolean(spritesheetAttr.Value); break;
                                                         default: Log.Debug($"Unknown spritesheet attribute: '{spritesheetAttrName}'."); break;
                                                     }
                                                 }
