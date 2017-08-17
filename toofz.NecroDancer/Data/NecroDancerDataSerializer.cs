@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
+using Humanizer;
 using log4net;
 
 namespace toofz.NecroDancer.Data
@@ -317,7 +318,7 @@ namespace toofz.NecroDancer.Data
                                     }
                                 }
 
-                                enemy.Name = (enemy.FriendlyName ?? enemy.ElementName).ToTitleCase();
+                                enemy.Name = (enemy.FriendlyName ?? enemy.ElementName).Transform(To.LowerCase, To.TitleCase);
 
                                 enemies.Add(enemy);
                             }
@@ -489,7 +490,7 @@ namespace toofz.NecroDancer.Data
         {
             var name = !flyaway.Equals(DisplayString.Empty) ? flyaway.Text : elementName;
 
-            return name.ToTitleCase();
+            return name.Transform(To.LowerCase, To.TitleCase);
         }
     }
 }
