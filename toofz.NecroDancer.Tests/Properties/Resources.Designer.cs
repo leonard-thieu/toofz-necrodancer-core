@@ -79,6 +79,20 @@ namespace toofz.NecroDancer.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;necrodancer&gt;
+        ///	&lt;items&gt;
+        ///		&lt;addchest_black levelEditor=&quot;False&quot; flyaway=&quot;|314|+1 BLACK CHEST PER RUN|&quot; hint=&quot;|314|+1 BLACK CHEST PER RUN|&quot; diamondCost=&quot;4&quot;&gt;addchest_black.png&lt;/addchest_black&gt;
+        ///		&lt;addchest_red levelEditor=&quot;False&quot; flyaway=&quot;|315|+1 RED CHEST PER RUN|&quot; hint=&quot;|315|+1 RED CHEST PER RUN|&quot; diamondCost=&quot;1&quot;&gt;addchest_red.png&lt;/addchest_red&gt;
+        ///		&lt;addchest_white levelEditor=&quot;False&quot; flyaway=&quot;|316|+1 PURPLE CHEST PER RUN|&quot; hint=&quot;|316|+1 PURPLE CHEST PER RUN|&quot; diamondCost=&quot;2&quot;&gt;addchest_white.png&lt;/addchest_white&gt;
+        ///		 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string NecroDancerData {
+            get {
+                return ResourceManager.GetString("NecroDancerData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PAWNBROKER%*#%*75\n1\n0\n0\n1\n0\n0\n0\n0\n13\n-591235273\n1\n720\n405\n484\n8|482|4:2,6:0,8:2,10:1,12:2,14:1,16:1,18:3,20:1,22:1,24:1,26:2,28:0,30:3,32:1,34:2,36:0,38:0,40:0,42:0,44:0,46:0,48:0,50:0,52:0,54:0,56:3,58:2,60:2,62:2,64:2,66:0,68:2,70:0,72:0,74:0,76:0,78:2,80:2,82:0,84:0,86:0,88:0,90:0,92:2,94:2,96:3,98:1,100:3,102:3,104:3,106:3,108:3,110:3,112:2,114:2,116:2,118:2,120:2,122:1,124:2,126:2,128:2,130:2,132:2,134:2,136:2,138:0,140:2,142:2,144:0,146:2,148:0,150:2,152:0,154:2,156:2,158:0,160:2,162:2, [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Remote_AllCharacterScore_KilledBy {
