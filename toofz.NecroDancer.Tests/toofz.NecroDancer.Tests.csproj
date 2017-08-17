@@ -69,7 +69,6 @@
     <Compile Include="Data\ReplaySerializerTests.cs" />
     <Compile Include="Data\ReplayWriterTests.cs" />
     <Compile Include="Data\SaveDataTests.cs" />
-    <Compile Include="Dungeons\QuadtreeTests.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
