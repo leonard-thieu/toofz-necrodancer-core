@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <package>
-    <metadata>
-        <id>toofz.NecroDancer</id>
-        <version>2.1.1</version>
-        <title>toofz.NecroDancer</title>
-        <authors>Leonard Thieu</authors>
-        <owners>Leonard Thieu</owners>
-        <licenseUrl>https://github.com/leonard-thieu/toofz-necrodancer-core/blob/1919096d50cffd350d7c5e67905b9605f0bb6a2f/LICENSE</licenseUrl>
-        <projectUrl>https://github.com/leonard-thieu/toofz-necrodancer-core</projectUrl>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Provides types for working with Crypt of the NecroDancer game data.</description>
-        <copyright>Copyright 2017</copyright>
-        <tags>toofz necrodancer</tags>
-    </metadata>
+  <metadata>
+    <id>toofz.NecroDancer</id>
+    <version>2.1.1</version>
+    <title>toofz.NecroDancer</title>
+    <authors>Leonard Thieu</authors>
+    <owners>Leonard Thieu</owners>
+    <licenseUrl>https://github.com/leonard-thieu/toofz-necrodancer-core/blob/1919096d50cffd350d7c5e67905b9605f0bb6a2f/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/leonard-thieu/toofz-necrodancer-core</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides types for working with Crypt of the NecroDancer game data.</description>
+    <copyright>Copyright 2017</copyright>
+    <tags>toofz necrodancer</tags>
+  </metadata>
 </package>
