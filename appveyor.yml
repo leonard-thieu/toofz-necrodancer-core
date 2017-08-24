@@ -5,6 +5,8 @@ configuration:
   - Release
 environment:
   PROJECT: toofz.NecroDancer
+  MYGET_API_KEY:
+    secure: XZmbJDCK5oiqhbLt1y7UXM6aCYPpF2tm/bJMUJzBsCe1fd2TuwXyaz99RN+bDpHw
 cache:
   - packages -> **\packages.config
 notifications:
