@@ -339,7 +339,7 @@ namespace toofz.NecroDancer.Replays
 
         #endregion
 
-        class RemoteInfo
+        sealed class RemoteInfo
         {
             public string KilledBy { get; set; }
             public int Version { get; set; }
