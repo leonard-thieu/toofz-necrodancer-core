@@ -6,12 +6,11 @@ namespace toofz.NecroDancer.Data
     /// <summary>
     /// Represents information parsed from necrodancer.xml.
     /// </summary>
-    /// <see cref="NecroDancerDataSerializer"/>
     public sealed class NecroDancerData
     {
         public List<Item> Items { get; } = new List<Item>();
         public List<Enemy> Enemies { get; } = new List<Enemy>();
         public List<Character> Characters { get; } = new List<Character>();
-        public List<Mode> Modes { get; } = new List<Mode>();
+        public List<IMode> Modes { get; } = new List<IMode>();
     }
 }

@@ -1,23 +1,90 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System.Collections.Generic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Data;
-using toofz.NecroDancer.Tests.Properties;
 
 namespace toofz.NecroDancer.Tests.Data
 {
     class NecroDancerDataTests
     {
         [TestClass]
-        public class Parse
+        public class Constructor
         {
             [TestMethod]
-            public void NecroDancerData_LoadsCorrectly()
+            public void ReturnsInstance()
             {
-                var data = NecroDancerDataSerializer.Parse(Resources.NecroDancerData);
+                // Arrange -> Act
+                var necroDancerData = new NecroDancerData();
 
-                Assert.AreEqual(291, data.Items.Count);
-                Assert.AreEqual(216, data.Enemies.Count);
-                Assert.AreEqual(15, data.Characters.Count);
-                Assert.AreEqual(1, data.Modes.Count);
+                // Assert
+                Assert.IsInstanceOfType(necroDancerData, typeof(NecroDancerData));
+            }
+        }
+
+        [TestClass]
+        public class ItemsProperty
+        {
+            [TestMethod]
+            public void ReturnsItems()
+            {
+                // Arrange
+                var necroDancerData = new NecroDancerData();
+
+                // Act
+                var items = necroDancerData.Items;
+
+                // Assert
+                Assert.IsInstanceOfType(items, typeof(List<Item>));
+            }
+        }
+
+        [TestClass]
+        public class EnemiesProperty
+        {
+            [TestMethod]
+            public void ReturnsEnemies()
+            {
+                // Arrange
+                var necroDancerData = new NecroDancerData();
+
+                // Act
+                var enemies = necroDancerData.Enemies;
+
+                // Assert
+                Assert.IsInstanceOfType(enemies, typeof(List<Enemy>));
+            }
+        }
+
+        [TestClass]
+        public class CharactersProperty
+        {
+            [TestMethod]
+            public void ReturnsCharacters()
+            {
+                // Arrange
+                var necroDancerData = new NecroDancerData();
+
+                // Act
+                var characters = necroDancerData.Characters;
+
+                // Assert
+                Assert.IsInstanceOfType(characters, typeof(List<Character>));
+            }
+        }
+
+        [TestClass]
+        public class ModesProperty
+        {
+            [TestMethod]
+            public void ReturnsModes()
+            {
+                // Arrange
+                var necroDancerData = new NecroDancerData();
+
+                // Act
+                var modes = necroDancerData.Modes;
+
+                // Assert
+                Assert.IsInstanceOfType(modes, typeof(List<IMode>));
             }
         }
     }

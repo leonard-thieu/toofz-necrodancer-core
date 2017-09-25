@@ -1,21 +1,40 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 
 namespace toofz.NecroDancer.Data
 {
     [DebuggerDisplay("{Path}")]
     public sealed class SpriteSheet
     {
-        public string Path { get; set; }
+        public SpriteSheet(string path)
+        {
+            if (path == null)
+                throw new ArgumentNullException(nameof(path));
+
+            Path = path;
+        }
+
+        public string Path { get; }
+        // Positive
         public int FrameCount { get; set; }
+        // Positive
         public int FrameWidth { get; set; }
+        // Positive
         public int FrameHeight { get; set; }
-        public int OffsetX { get; set; }
-        public int OffsetY { get; set; }
-        public int OffsetZ { get; set; }
+        // Integer
+        public int? OffsetX { get; set; }
+        // Integer
+        public int? OffsetY { get; set; }
+        // Integer
+        public int? OffsetZ { get; set; }
+        // Integer
         public int HeartOffsetX { get; set; }
+        // Integer
         public int HeartOffsetY { get; set; }
-        public int FlipXOff { get; set; }
-        public bool AutoFlip { get; set; }
+        // Integer
+        public int FlipOffsetX { get; set; }
         public bool FlipX { get; set; }
+        // TODO: This may be dependent on another property.
+        public bool AutoFlip { get; set; } = true;
     }
 }
