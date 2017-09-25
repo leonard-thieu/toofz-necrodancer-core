@@ -2,7 +2,7 @@
 using toofz.NecroDancer.Saves;
 using toofz.NecroDancer.Tests.Properties;
 
-namespace toofz.NecroDancer.Tests.Data
+namespace toofz.NecroDancer.Tests.Saves
 {
     class SaveDataTests
     {

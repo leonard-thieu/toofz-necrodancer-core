@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Replays;
 
-namespace toofz.NecroDancer.Tests.Data
+namespace toofz.NecroDancer.Tests.Replays
 {
     class ReplayDataTests
     {

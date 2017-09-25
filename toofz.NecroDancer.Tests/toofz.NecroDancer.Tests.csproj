@@ -123,14 +123,14 @@
     <Compile Include="Data\NecroDancerDataTests.cs" />
     <Compile Include="Data\NecroDancerDataWriterTests.cs" />
     <Compile Include="Data\ParticleTests.cs" />
-    <Compile Include="Data\ReplayDataTests.cs" />
-    <Compile Include="Data\ReplaySerializerTests.cs" />
-    <Compile Include="Data\ReplayWriterTests.cs" />
-    <Compile Include="Data\SaveDataTests.cs" />
     <Compile Include="Data\ShadowTests.cs" />
     <Compile Include="Data\SpriteSheetTests.cs" />
     <Compile Include="Data\StatsTests.cs" />
     <Compile Include="Data\TweensTests.cs" />
+    <Compile Include="Replays\ReplayDataTests.cs" />
+    <Compile Include="Replays\ReplaySerializerTests.cs" />
+    <Compile Include="Replays\ReplayWriterTests.cs" />
+    <Compile Include="Saves\SaveDataTests.cs" />
     <Compile Include="TestsSetup.cs" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
