@@ -19,7 +19,7 @@ namespace toofz.NecroDancer.Tests.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -80,15 +80,27 @@ namespace toofz.NecroDancer.Tests.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;necrodancer&gt;
-        ///	&lt;items&gt;
-        ///		&lt;addchest_black levelEditor=&quot;False&quot; flyaway=&quot;|314|+1 BLACK CHEST PER RUN|&quot; hint=&quot;|314|+1 BLACK CHEST PER RUN|&quot; diamondCost=&quot;4&quot;&gt;addchest_black.png&lt;/addchest_black&gt;
-        ///		&lt;addchest_red levelEditor=&quot;False&quot; flyaway=&quot;|315|+1 RED CHEST PER RUN|&quot; hint=&quot;|315|+1 RED CHEST PER RUN|&quot; diamondCost=&quot;1&quot;&gt;addchest_red.png&lt;/addchest_red&gt;
-        ///		&lt;addchest_white levelEditor=&quot;False&quot; flyaway=&quot;|316|+1 PURPLE CHEST PER RUN|&quot; hint=&quot;|316|+1 PURPLE CHEST PER RUN|&quot; diamondCost=&quot;2&quot;&gt;addchest_white.png&lt;/addchest_white&gt;
-        ///		 [rest of string was truncated]&quot;;.
+        ///  &lt;items&gt;
+        ///    &lt;addchest_black levelEditor=&quot;False&quot; flyaway=&quot;|314|+1 BLACK CHEST PER RUN|&quot; hint=&quot;|314|+1 BLACK CHEST PER RUN|&quot; diamondCost=&quot;4&quot;&gt;addchest_black.png&lt;/addchest_black&gt;
+        ///    &lt;addchest_red levelEditor=&quot;False&quot; flyaway=&quot;|315|+1 RED CHEST PER RUN|&quot; hint=&quot;|315|+1 RED CHEST PER RUN|&quot; diamondCost=&quot;1&quot;&gt;addchest_red.png&lt;/addchest_red&gt;
+        ///    &lt;addchest_white levelEditor=&quot;False&quot; flyaway=&quot;|316|+1 PURPLE CHEST PER RUN|&quot; hint=&quot;|316|+1 PURPLE CHEST PER RUN|&quot; diamondCost=&quot;2&quot;&gt;addchest_white.png&lt;/addches [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string NecroDancerData {
             get {
                 return ResourceManager.GetString("NecroDancerData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;necrodancer&gt;
+        ///  &lt;items&gt;
+        ///    &lt;addchest_black levelEditor=&quot;False&quot; flyaway=&quot;|314|+1 BLACK CHEST PER RUN|&quot; hint=&quot;|314|+1 BLACK CHEST PER RUN|&quot; diamondCost=&quot;4&quot;&gt;addchest_black.png&lt;/addchest_black&gt;
+        ///    &lt;addchest_red levelEditor=&quot;False&quot; flyaway=&quot;|315|+1 RED CHEST PER RUN|&quot; hint=&quot;|315|+1 RED CHEST PER RUN|&quot; diamondCost=&quot;1&quot;&gt;addchest_red.png&lt;/addchest_red&gt;
+        ///    &lt;addchest_white levelEditor=&quot;False&quot; flyaway=&quot;|316|+1 PURPLE CHEST PER RUN|&quot; hint=&quot;|316|+1 PURPLE CHEST PER RUN|&quot; diamondCost=&quot;2&quot;&gt;addchest_white.png&lt;/addches [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string NecroDancerDataBaseline {
+            get {
+                return ResourceManager.GetString("NecroDancerDataBaseline", resourceCulture);
             }
         }
         

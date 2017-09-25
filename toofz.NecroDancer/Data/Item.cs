@@ -1,26 +1,58 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using Humanizer;
 
 namespace toofz.NecroDancer.Data
 {
-    [DebuggerDisplay("{Name}")]
+    [DebuggerDisplay("{DisplayName}")]
     public sealed class Item
     {
-        public string ElementName { get; set; }
+        // Required for Entity Framework
+        Item() { }
 
-        public bool Bouncer { get; set; }
-        public string ChestChance { get; set; }
+        public Item(string name, string imagePath)
+        {
+            if (name == null)
+                throw new ArgumentNullException(nameof(name));
+            if (imagePath == null)
+                throw new ArgumentNullException(nameof(imagePath));
+
+            Name = name;
+            ImagePath = imagePath;
+        }
+
+        public string Name { get; }
+        public string ImagePath { get; }
+
+        // Default = true (?)
+        // TODO: This might be nullable.
+        public bool Bouncer { get; set; } = true;
+        public IList<int> ChestChance { get; set; }
+        // Nonnegative
         public int? CoinCost { get; set; }
         public bool Consumable { get; set; }
-        public int Cooldown { get; set; }
-        public int Data { get; set; }
+        // Nonnegative
+        public int? Cooldown { get; set; }
+        // Nonnegative
+        public int? Data { get; set; }
+        // Positive
         public int? DiamondCost { get; set; }
-        public int DiamondDealable { get; set; }
-        public DisplayString Flyaway { get; set; } = DisplayString.Empty;
+        // Positive
+        public int? DiamondDealable { get; set; }
+        public DisplayString Flyaway { get; set; }
+        // Positive
         public int FrameCount { get; set; } = 1;
-        public bool FromTransmute { get; set; }
+        // Only appears on Scroll of Riches
+        // TODO: This may be dependent on another property.
+        public bool? FromTransmute { get; set; }
         public bool HideQuantity { get; set; }
-        public DisplayString Hint { get; set; } = DisplayString.Empty;
+        public DisplayString Hint { get; set; }
+        // Positive
+        // TODO: What is default?
         public int ImageHeight { get; set; }
+        // Positive
+        // TODO: What is default?
         public int ImageWidth { get; set; }
         public bool IsArmor { get; set; }
         public bool IsAxe { get; set; }
@@ -61,26 +93,57 @@ namespace toofz.NecroDancer.Data
         public bool IsWeapon { get; set; }
         public bool IsWhip { get; set; }
         public bool LevelEditor { get; set; } = true;
-        public string LockedChestChance { get; set; }
-        public string LockedShopChance { get; set; }
+        // Nonnegative
+        public IList<int> LockedChestChance { get; set; }
+        // Positive
+        public int LockedShopChance { get; set; }
+        // Negative
         public int OffsetY { get; set; }
         public bool PlayerKnockback { get; set; }
-        public int Quantity { get; set; }
-        public int QuantityYOff { get; set; }
+        // Positive
+        public int Quantity { get; set; } = 1;
+        // Positive
+        public int QuantityOffsetY { get; set; }
         public bool ScreenFlash { get; set; }
         public bool ScreenShake { get; set; }
+        // dlc
         public string Set { get; set; }
-        public string ShopChance { get; set; }
+        // Nonnegative
+        public IList<int> ShopChance { get; set; }
+        // body
+        // action
+        // feet
+        // bomb
+        // head
+        // hud
+        // misc
+        // ring
+        // shovel
+        // spell
+        // torch
+        // weapon
         public string Slot { get; set; }
-        public int SlotPriority { get; set; }
+        // Nonnegative
+        public int? SlotPriority { get; set; }
         public string Sound { get; set; }
         public string Spell { get; set; }
         public bool TemporaryMapSight { get; set; }
+        // TODO: It may make sense to make this nullable. Are all items unlockable?
         public bool Unlocked { get; set; }
-        public string UrnChance { get; set; }
-        public bool UseGreater { get; set; }
+        public int UrnChance { get; set; }
+        // Only appears on Tomes (Tomes are Scrolls with a quantity)
+        public bool? UseGreater { get; set; }
 
-        public string ImagePath { get; set; }
-        public string Name { get; set; }
+        public string DisplayName
+        {
+            get
+            {
+                if (Flyaway != null)
+                {
+                    return Flyaway.Text.Transform(To.LowerCase, To.TitleCase);
+                }
+                return Name.Titleize();
+            }
+        }
     }
 }

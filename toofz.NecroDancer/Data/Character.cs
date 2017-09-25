@@ -1,11 +1,17 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace toofz.NecroDancer.Data
 {
     public sealed class Character
     {
-        public int Id { get; set; }
-        public List<Item> InitialEquipment { get; } = new List<Item>();
-        public List<CursedSlot> CursedSlots { get; } = new List<CursedSlot>();
+        public Character(int id)
+        {
+            Id = id;
+        }
+
+        public int Id { get; }
+        public ICollection<Item> InitialEquipment { get; } = new Collection<Item>();
+        public ICollection<CursedSlot> CursedSlots { get; } = new Collection<CursedSlot>();
     }
 }

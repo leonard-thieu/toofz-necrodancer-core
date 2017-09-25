@@ -127,6 +127,9 @@
   <data name="NecroDancerData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\necrodancer.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
+  <data name="NecroDancerDataBaseline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\necrodancer-baseline.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="Remote_AllCharacterScore_KilledBy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\75_necrodancer_replay_2015_07_26_21_31_16_7.dat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
