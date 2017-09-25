@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using Humanizer;
 
 namespace toofz.NecroDancer.Data
@@ -9,6 +10,7 @@ namespace toofz.NecroDancer.Data
     public sealed class Enemy
     {
         // Required for Entity Framework
+        [ExcludeFromCodeCoverage]
         Enemy() { }
 
         public Enemy(string name, int type)

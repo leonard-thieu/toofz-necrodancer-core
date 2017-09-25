@@ -39,7 +39,7 @@ namespace toofz.NecroDancer.Data
                 case 0:
                 case 1: return new DisplayString(content);
                 case 2: return new DisplayString(int.Parse(tokens[0]), tokens[1]);
-                default: throw new InvalidOperationException();
+                default: throw new FormatException();
             }
         }
 
