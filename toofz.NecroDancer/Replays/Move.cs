@@ -1,39 +1,25 @@
-﻿using System.Diagnostics;
-
-namespace toofz.NecroDancer.Replays
+﻿namespace toofz.NecroDancer.Replays
 {
-    [DebuggerDisplay("{Name}")]
     public sealed class Move
     {
         public int Beat { get; set; }
+        //  0 - up
+        //  1 - right
+        //  2 - down
+        //  3 - left
+        //  4 - left + right
+        //  5 - up + down
+        //  6 - up + left
+        //  7 - up + right
+        //  8 - down + left
+        //  9 - down + right
+        // 20 - unknown
+        // 21 - unknown
+        // 22 - unknown
+        // 23 - unknown
+        // 25 - unknown
+        // 27 - unknown
+        // 28 - unknown
         public int Id { get; set; }
-
-        public string Name
-        {
-            get
-            {
-                switch (Id)
-                {
-                    case 0: return "Up";
-                    case 1: return "Right";
-                    case 2: return "Down";
-                    case 3: return "Left";
-                    case 4: return "LeftRight";
-                    case 5: return "UpDown";
-                    case 6: return "UpLeft";
-                    case 7: return "UpRight";
-                    case 8: return "DownLeft";
-                    case 9: return "DownRight";
-                    case 20:
-                    case 21:
-                    case 22:
-                    case 23:
-                    case 25:
-                    case 27:
-                    case 28:
-                    default: return "Unknown";
-                }
-            }
-        }
     }
 }

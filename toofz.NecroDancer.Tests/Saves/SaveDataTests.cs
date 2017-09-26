@@ -15,8 +15,8 @@ namespace toofz.NecroDancer.Tests.Saves
                 var sources = new[]
                 {
                     Resources.SaveData,
-                    Resources.SaveData76561197960481221,
-                    Resources.SaveData76561198074553183,
+                    Resources.SaveData_76561197960481221,
+                    Resources.SaveData_76561198074553183,
                 };
 
                 foreach (var source in sources)

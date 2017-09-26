@@ -43,9 +43,6 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="Humanizer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=979442b78dfc278e, processorArchitecture=MSIL">
       <HintPath>..\packages\Humanizer.Core.2.2.0\lib\netstandard1.0\Humanizer.dll</HintPath>
     </Reference>
@@ -53,6 +50,7 @@
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.XML" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="toofz, Version=7.1.0.180, Culture=neutral, processorArchitecture=MSIL">
@@ -85,14 +83,14 @@
     <Compile Include="Data\SpriteSheet.cs" />
     <Compile Include="Data\Stats.cs" />
     <Compile Include="Data\Tweens.cs" />
-    <Compile Include="Replays\Header.cs" />
-    <Compile Include="Replays\LevelData.cs" />
     <Compile Include="Replays\Move.cs" />
     <Compile Include="Replays\Player.cs" />
     <Compile Include="Replays\ReplayData.cs" />
-    <Compile Include="Replays\ReplaySerializationReader.cs" />
-    <Compile Include="Replays\ReplaySerializationWriter.cs" />
-    <Compile Include="Replays\ReplaySerializer.cs" />
+    <Compile Include="Replays\ReplayDataReader.cs" />
+    <Compile Include="Replays\ReplayDataStreamReader.cs" />
+    <Compile Include="Replays\ReplayDataStreamWriter.cs" />
+    <Compile Include="Replays\ReplayDataWriter.cs" />
+    <Compile Include="Replays\Song.cs" />
     <Compile Include="Saves\Game.cs" />
     <Compile Include="Saves\Npc.cs" />
     <Compile Include="Saves\Player.cs" />

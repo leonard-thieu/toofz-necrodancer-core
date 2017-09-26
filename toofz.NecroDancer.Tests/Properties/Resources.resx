@@ -118,34 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="KnownSeed_123" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\75_necrodancer_replay_2016_01_27_14_24_50_8.dat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Local_CadenceWin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\75_necrodancer_replay_2015_07_26_21_31_16_6.dat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="LocalCadenceWin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LocalCadenceWin.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="NecroDancerData" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\necrodancer.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+    <value>..\Resources\NecroDancerData.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="NecroDancerDataBaseline" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\necrodancer-baseline.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Remote_AllCharacterScore_KilledBy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\75_necrodancer_replay_2015_07_26_21_31_16_7.dat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Remote_StorySpeed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\75_necrodancer_replay_2015_07_24_15_01_59_6.dat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+    <value>..\Resources\NecroDancerDataBaseline.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="SaveData" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_data.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+    <value>..\Resources\SaveData.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="SaveData76561197960481221" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_data76561197960481221.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="SaveData_76561197960481221" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaveData_76561197960481221.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="SaveData76561198074553183" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_data76561198074553183.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="ZeroByteReplay" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1_8_2015_PROD_SCORE884_ZONE3_LEVEL3;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="SaveData_76561198074553183" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaveData_76561198074553183.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>
