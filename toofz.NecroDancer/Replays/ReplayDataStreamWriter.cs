@@ -9,6 +9,8 @@ namespace toofz.NecroDancer.Replays
 {
     sealed class ReplayDataStreamWriter : StreamWriter
     {
+        const string RemoteHeaderSignature = "%*#%*";
+
         static readonly XmlSerializer SaveDataSerializer = new XmlSerializer(typeof(SaveData));
 
         public ReplayDataStreamWriter(Stream stream) :
@@ -21,6 +23,15 @@ namespace toofz.NecroDancer.Replays
         {
             if (replayData == null)
                 throw new ArgumentNullException(nameof(replayData));
+
+            if (replayData.IsRemote)
+            {
+                if (replayData.KilledBy != null)
+                {
+                    Write(replayData.KilledBy);
+                }
+                Write(RemoteHeaderSignature);
+            }
 
             WriteLine(replayData.Version);
             if (replayData.Version <= 84)

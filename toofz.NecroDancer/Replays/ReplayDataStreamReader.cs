@@ -10,6 +10,8 @@ namespace toofz.NecroDancer.Replays
 {
     sealed class ReplayDataStreamReader : StreamReader
     {
+        const string RemoteHeaderSignature = "%*#%*";
+
         static IEnumerable<int> ParseArrayOfInt32(string line, int count)
         {
             var values = new List<int>();
@@ -38,8 +40,9 @@ namespace toofz.NecroDancer.Replays
         {
             var replay = new ReplayData();
 
-            var remoteHeader = ReadLineAsRemoteHeader();
+            var remoteHeader = ReadLineAsRemoteHeaderAndVersion();
             replay.KilledBy = remoteHeader.KilledBy;
+            replay.IsRemote = remoteHeader.IsRemote;
 
             replay.Version = remoteHeader.Version;
             if (replay.Version <= 84)
@@ -79,16 +82,18 @@ namespace toofz.NecroDancer.Replays
             return replay;
         }
 
-        RemoteHeader ReadLineAsRemoteHeader()
+        RemoteHeader ReadLineAsRemoteHeaderAndVersion()
         {
-            const string RemoteHeaderSignature = "%*#%*";
-
             var remoteHeader = new RemoteHeader();
 
             var line = ReadLine();
             if (line != null)
             {
                 var index = line.IndexOf(RemoteHeaderSignature);
+                if (index >= 0)
+                {
+                    remoteHeader.IsRemote = true;
+                }
                 if (index > 1)
                 {
                     remoteHeader.KilledBy = line.Substring(0, index);
@@ -261,6 +266,7 @@ namespace toofz.NecroDancer.Replays
         sealed class RemoteHeader
         {
             public string KilledBy { get; set; }
+            public bool IsRemote { get; set; }
             public int Version { get; set; }
         }
     }

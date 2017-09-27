@@ -43,10 +43,10 @@ namespace toofz.NecroDancer.Tests.Replays
         public class ReadReplayDataMethod
         {
             [TestMethod]
-            public void ClassicReplay_ReturnsReplayData()
+            public void ClassicReplayData_ReturnsReplayData()
             {
                 // Arrange
-                var stream = new MemoryStream(Resources.LocalCadenceWin);
+                var stream = new MemoryStream(Resources.ClassicReplayData);
                 var reader = new ReplayDataStreamReader(stream);
 
                 // Act
@@ -54,10 +54,65 @@ namespace toofz.NecroDancer.Tests.Replays
 
                 // Assert
                 var expectedStream = new MemoryStream();
-                var writer = new ReplayDataWriter(expectedStream);
+                var writer = new ReplayDataStreamWriter(expectedStream);
                 writer.Write(replayData);
                 var expected = expectedStream.ToArray();
-                CollectionAssert.AreEqual(expected, Resources.LocalCadenceWin);
+                CollectionAssert.AreEqual(expected, Resources.ClassicReplayData);
+            }
+
+            [TestMethod]
+            public void AmplifiedReplayData_ReturnsReplayData()
+            {
+                // Arrange
+                var stream = new MemoryStream(Resources.AmplifiedReplayData);
+                var reader = new ReplayDataStreamReader(stream);
+
+                // Act
+                var replayData = reader.ReadReplayData();
+
+                // Assert
+                var expectedStream = new MemoryStream();
+                var writer = new ReplayDataStreamWriter(expectedStream);
+                writer.Write(replayData);
+                var expected = expectedStream.ToArray();
+                CollectionAssert.AreEqual(expected, Resources.AmplifiedReplayData);
+            }
+
+            [TestMethod]
+            public void RemoteReplayData_ReturnsReplayData()
+            {
+                // Arrange
+                var stream = new MemoryStream(Resources.RemoteReplayData);
+                var reader = new ReplayDataStreamReader(stream);
+
+                // Act
+                var replayData = reader.ReadReplayData();
+
+                // Assert
+                var expectedStream = new MemoryStream();
+                var writer = new ReplayDataStreamWriter(expectedStream);
+                writer.Write(replayData);
+                var expected = expectedStream.ToArray();
+                CollectionAssert.AreEqual(expected, Resources.RemoteReplayData);
+            }
+
+            [TestMethod]
+            [Ignore]
+            public void EmptyReplayData_ReturnsReplayData()
+            {
+                // Arrange
+                var stream = new MemoryStream(Resources.EmptyReplayData);
+                var reader = new ReplayDataStreamReader(stream);
+
+                // Act
+                var replayData = reader.ReadReplayData();
+
+                // Assert
+                var expectedStream = new MemoryStream();
+                var writer = new ReplayDataStreamWriter(expectedStream);
+                writer.Write(replayData);
+                var expected = expectedStream.ToArray();
+                CollectionAssert.AreEqual(expected, Resources.EmptyReplayData);
             }
         }
 

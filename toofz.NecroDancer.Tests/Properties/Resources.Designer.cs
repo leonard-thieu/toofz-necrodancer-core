@@ -63,9 +63,39 @@ namespace toofz.NecroDancer.Tests.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] LocalCadenceWin {
+        internal static byte[] AmplifiedReplayData {
             get {
-                object obj = ResourceManager.GetObject("LocalCadenceWin", resourceCulture);
+                object obj = ResourceManager.GetObject("AmplifiedReplayData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ClassicReplayData {
+            get {
+                object obj = ResourceManager.GetObject("ClassicReplayData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ClassicReplayData1 {
+            get {
+                object obj = ResourceManager.GetObject("ClassicReplayData1", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] EmptyReplayData {
+            get {
+                object obj = ResourceManager.GetObject("EmptyReplayData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -93,6 +123,16 @@ namespace toofz.NecroDancer.Tests.Properties {
         internal static string NecroDancerDataBaseline {
             get {
                 return ResourceManager.GetString("NecroDancerDataBaseline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] RemoteReplayData {
+            get {
+                object obj = ResourceManager.GetObject("RemoteReplayData", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

@@ -86,10 +86,9 @@
     <Compile Include="Replays\Move.cs" />
     <Compile Include="Replays\Player.cs" />
     <Compile Include="Replays\ReplayData.cs" />
-    <Compile Include="Replays\ReplayDataReader.cs" />
+    <Compile Include="Replays\ReplayDataSerializer.cs" />
     <Compile Include="Replays\ReplayDataStreamReader.cs" />
     <Compile Include="Replays\ReplayDataStreamWriter.cs" />
-    <Compile Include="Replays\ReplayDataWriter.cs" />
     <Compile Include="Replays\Song.cs" />
     <Compile Include="Saves\Game.cs" />
     <Compile Include="Saves\Npc.cs" />
