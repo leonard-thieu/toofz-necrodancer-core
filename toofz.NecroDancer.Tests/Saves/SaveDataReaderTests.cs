@@ -68,6 +68,7 @@ namespace toofz.NecroDancer.Tests.Saves
                     Resources.SaveData,
                     Resources.SaveData_76561197960481221,
                     Resources.SaveData_76561198074553183,
+                    Resources.SaveData_76561198252120446,
                 };
 
                 foreach (var saveDataFile in saveDataFiles)

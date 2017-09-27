@@ -110,6 +110,7 @@
     <None Include="Resources\SaveData.xml" />
     <None Include="Resources\SaveData_76561197960481221.xml" />
     <None Include="Resources\SaveData_76561198074553183.xml" />
+    <None Include="Resources\SaveData_76561198252120446.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\BouncerTests.cs" />
