@@ -99,16 +99,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Resources\1_8_2015_PROD_SCORE884_ZONE3_LEVEL3" />
-    <None Include="Resources\75_necrodancer_replay_2015_07_24_15_01_59_6.dat" />
-    <None Include="Resources\75_necrodancer_replay_2015_07_26_21_31_16_6.dat" />
-    <None Include="Resources\75_necrodancer_replay_2015_07_26_21_31_16_7.dat" />
-    <None Include="Resources\75_necrodancer_replay_2016_01_27_14_24_50_8.dat" />
-    <None Include="Resources\necrodancer.xml" />
-    <None Include="Resources\necrodancer-baseline.xml" />
-    <None Include="Resources\save_data.xml" />
-    <None Include="Resources\save_data76561198074553183.xml" />
-    <None Include="Resources\save_data76561197960481221.xml" />
+    <None Include="Resources\AmplifiedReplayData.dat" />
+    <None Include="Resources\ClassicReplayData.dat" />
+    <None Include="Resources\EmptyReplayData.dat" />
+    <None Include="Resources\NecroDancerData.xml" />
+    <None Include="Resources\NecroDancerDataBaseline.xml" />
+    <None Include="Resources\RemoteReplayData.dat" />
+    <None Include="Resources\SaveData.xml" />
+    <None Include="Resources\SaveData_76561197960481221.xml" />
+    <None Include="Resources\SaveData_76561198074553183.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\BouncerTests.cs" />
@@ -127,9 +126,13 @@
     <Compile Include="Data\SpriteSheetTests.cs" />
     <Compile Include="Data\StatsTests.cs" />
     <Compile Include="Data\TweensTests.cs" />
+    <Compile Include="Replays\MoveTests.cs" />
+    <Compile Include="Replays\PlayerTests.cs" />
+    <Compile Include="Replays\ReplayDataSerializerTests.cs" />
+    <Compile Include="Replays\ReplayDataStreamReaderTests.cs" />
+    <Compile Include="Replays\ReplayDataStreamWriterTests.cs" />
     <Compile Include="Replays\ReplayDataTests.cs" />
-    <Compile Include="Replays\ReplaySerializerTests.cs" />
-    <Compile Include="Replays\ReplayWriterTests.cs" />
+    <Compile Include="Replays\SongTests.cs" />
     <Compile Include="Saves\SaveDataTests.cs" />
     <Compile Include="TestsSetup.cs" />
   </ItemGroup>

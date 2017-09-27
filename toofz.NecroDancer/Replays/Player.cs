@@ -20,6 +20,6 @@ namespace toofz.NecroDancer.Replays
         // 13 - Tempo
         public int Character { get; set; }
         public List<Move> Moves { get; } = new List<Move>();
-        public List<int> WrongMoveBeats { get; } = new List<int>();
+        public List<int> MissedBeats { get; } = new List<int>();
     }
 }

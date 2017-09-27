@@ -61,20 +61,42 @@ namespace toofz.NecroDancer.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 75\n1\n0\n0\n1\n0\n0\n1\n13865\n1\n2950407\n1\n480\n270\n27\n0|19|6:2,8:1,12:1,14:2,16:1,18:1,20:1,22:2,24:2,26:1,28:1,30:1,32:1,34:1,36:2,38:1,40:1,42:1,44:1,\n6|9,13,19,23,27,33,\n0\n\n0\n\n\n.
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static string KnownSeed_123 {
+        internal static byte[] AmplifiedReplayData {
             get {
-                return ResourceManager.GetString("KnownSeed_123", resourceCulture);
+                object obj = ResourceManager.GetObject("AmplifiedReplayData", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 75\n1\n0\n0\n1\n0\n0\n0\n875460\n18\n-1389222068\n1\n640\n342\n80\n0|80|0:2,2:2,4:0,6:0,8:3,10:3,12:3,14:3,16:0,18:1,20:0,22:0,24:0,26:0,28:0,30:0,32:1,34:2,36:0,38:2,40:2,42:3,44:2,46:2,48:3,50:2,52:2,54:2,56:1,58:2,60:2,62:2,64:2,66:2,68:2,70:2,72:3,74:2,76:1,78:1,80:1,82:1,84:1,86:2,88:3,90:2,92:1,94:1,96:1,98:1,100:1,102:1,104:1,106:1,108:1,110:1,112:1,114:1,116:1,118:1,120:1,122:0,124:1,126:1,128:0,130:0,132:3,134:2,136:0,138:0,140:0,142:0,144:0,146:3,148:3,150:3,152:0,154:3,156:0,158:0,\n0|\n47\n1,1,1 [rest of string was truncated]&quot;;.
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static string Local_CadenceWin {
+        internal static byte[] ClassicReplayData {
             get {
-                return ResourceManager.GetString("Local_CadenceWin", resourceCulture);
+                object obj = ResourceManager.GetObject("ClassicReplayData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ClassicReplayData1 {
+            get {
+                object obj = ResourceManager.GetObject("ClassicReplayData1", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] EmptyReplayData {
+            get {
+                object obj = ResourceManager.GetObject("EmptyReplayData", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
@@ -105,20 +127,12 @@ namespace toofz.NecroDancer.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PAWNBROKER%*#%*75\n1\n0\n0\n1\n0\n0\n0\n0\n13\n-591235273\n1\n720\n405\n484\n8|482|4:2,6:0,8:2,10:1,12:2,14:1,16:1,18:3,20:1,22:1,24:1,26:2,28:0,30:3,32:1,34:2,36:0,38:0,40:0,42:0,44:0,46:0,48:0,50:0,52:0,54:0,56:3,58:2,60:2,62:2,64:2,66:0,68:2,70:0,72:0,74:0,76:0,78:2,80:2,82:0,84:0,86:0,88:0,90:0,92:2,94:2,96:3,98:1,100:3,102:3,104:3,106:3,108:3,110:3,112:2,114:2,116:2,118:2,120:2,122:1,124:2,126:2,128:2,130:2,132:2,134:2,136:2,138:0,140:2,142:2,144:0,146:2,148:0,150:2,152:0,154:2,156:2,158:0,160:2,162:2, [rest of string was truncated]&quot;;.
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static string Remote_AllCharacterScore_KilledBy {
+        internal static byte[] RemoteReplayData {
             get {
-                return ResourceManager.GetString("Remote_AllCharacterScore_KilledBy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to BOMB%*#%*75\n4\n0\n0\n1\n0\n0\n0\n1288777\n16\n70644788\n1\n480\n270\n107\n2|106|2:1,4:1,6:2,8:1,10:1,12:1,14:0,16:0,18:2,20:1,22:1,24:1,26:2,28:1,30:1,32:3,34:1,36:3,38:1,40:3,42:3,44:0,46:1,48:1,50:1,52:1,54:1,56:1,58:2,60:2,62:1,64:1,66:1,68:1,70:1,72:8,74:3,76:3,78:0,80:1,82:1,84:2,86:2,88:1,90:0,92:0,94:2,96:2,98:2,100:2,102:2,104:2,106:1,108:2,110:1,112:3,114:3,116:1,118:3,120:3,122:2,124:2,126:2,128:2,130:2,132:2,134:3,136:0,138:3,140:2,142:2,144:2,146:2,148:1,150:2,152:1,154:1,156:0,158:3,160:2,162: [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string Remote_StorySpeed {
-            get {
-                return ResourceManager.GetString("Remote_StorySpeed", resourceCulture);
+                object obj = ResourceManager.GetObject("RemoteReplayData", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
@@ -134,27 +148,18 @@ namespace toofz.NecroDancer.Tests.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml?&gt;&lt;necrodancer cloudTimestamp=&quot;1502975699&quot;&gt;&lt;player addchest_blackUnlocked=&quot;true&quot; addchest_redUnlocked=&quot;true&quot; addchest_whiteUnlocked=&quot;true&quot; armor_chainmailUnlocked=&quot;true&quot; armor_giUnlocked=&quot;true&quot; armor_glassUnlocked=&quot;true&quot; armor_heavyplateUnlocked=&quot;true&quot; armor_obsidianUnlocked=&quot;true&quot; armor_platemailUnlocked=&quot;true&quot; bag_holdingUnlocked=&quot;true&quot; coins_x15Unlocked=&quot;false&quot; coins_x2Unlocked=&quot;false&quot; diamondDealerItemsV2=&quot;&quot; diamondDealerSoldItemV2_1=&quot;weapon_blood_dagger&quot; diamondDealerSoldItemV2_2=&quot;food_2&quot; diamondD [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string SaveData76561197960481221 {
+        internal static string SaveData_76561197960481221 {
             get {
-                return ResourceManager.GetString("SaveData76561197960481221", resourceCulture);
+                return ResourceManager.GetString("SaveData_76561197960481221", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml?&gt;&lt;necrodancer cloudTimestamp=&quot;1502618325&quot;&gt;&lt;player addchest_blackUnlocked=&quot;true&quot; addchest_redUnlocked=&quot;true&quot; addchest_whiteUnlocked=&quot;true&quot; armor_chainmailUnlocked=&quot;true&quot; armor_giUnlocked=&quot;true&quot; armor_glassUnlocked=&quot;true&quot; armor_heavyglassUnlocked=&quot;true&quot; armor_heavyplateUnlocked=&quot;true&quot; armor_obsidianCleaned=&quot;true&quot; armor_obsidianUnlocked=&quot;true&quot; armor_platemailUnlocked=&quot;true&quot; armor_quartzUnlocked=&quot;true&quot; bag_holdingUnlocked=&quot;true&quot; blood_drumUnlocked=&quot;true&quot; coins_x15Unlocked=&quot;true&quot; coins_x2Unlocked=&quot;true&quot; di [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string SaveData76561198074553183 {
+        internal static string SaveData_76561198074553183 {
             get {
-                return ResourceManager.GetString("SaveData76561198074553183", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string ZeroByteReplay {
-            get {
-                return ResourceManager.GetString("ZeroByteReplay", resourceCulture);
+                return ResourceManager.GetString("SaveData_76561198074553183", resourceCulture);
             }
         }
     }
