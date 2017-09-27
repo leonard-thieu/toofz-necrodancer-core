@@ -130,6 +130,7 @@
     <Compile Include="Replays\PlayerTests.cs" />
     <Compile Include="Replays\ReplayDataSerializerTests.cs" />
     <Compile Include="Replays\ReplayDataStreamReaderTests.cs" />
+    <Compile Include="Replays\ReplayDataStreamWriterTests.cs" />
     <Compile Include="Replays\ReplayDataTests.cs" />
     <Compile Include="Replays\SongTests.cs" />
     <Compile Include="Saves\SaveDataTests.cs" />
