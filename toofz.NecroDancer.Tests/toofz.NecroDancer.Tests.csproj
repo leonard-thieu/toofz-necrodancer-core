@@ -110,6 +110,7 @@
     <None Include="Resources\SaveData.xml" />
     <None Include="Resources\SaveData_76561197960481221.xml" />
     <None Include="Resources\SaveData_76561198074553183.xml" />
+    <None Include="Resources\SaveData_76561198252120446.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\BouncerTests.cs" />
@@ -136,7 +137,9 @@
     <Compile Include="Replays\ReplayDataStreamWriterTests.cs" />
     <Compile Include="Replays\ReplayDataTests.cs" />
     <Compile Include="Replays\SongTests.cs" />
-    <Compile Include="Saves\SaveDataTests.cs" />
+    <Compile Include="Saves\SaveDataReaderTests.cs" />
+    <Compile Include="Saves\SaveDataSerializerTests.cs" />
+    <Compile Include="Saves\SaveDataWriterTests.cs" />
     <Compile Include="TestsSetup.cs" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

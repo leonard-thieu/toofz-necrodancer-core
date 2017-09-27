@@ -95,6 +95,9 @@
     <Compile Include="Saves\Npc.cs" />
     <Compile Include="Saves\Player.cs" />
     <Compile Include="Saves\SaveData.cs" />
+    <Compile Include="Saves\SaveDataReader.cs" />
+    <Compile Include="Saves\SaveDataSerializer.cs" />
+    <Compile Include="Saves\SaveDataWriter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

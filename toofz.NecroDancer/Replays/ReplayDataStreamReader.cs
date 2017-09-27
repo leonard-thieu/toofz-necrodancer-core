@@ -74,7 +74,8 @@ namespace toofz.NecroDancer.Replays
 
             if (!EndOfStream)
             {
-                replay.SaveData = SaveData.Parse(BaseStream);
+                var saveDataSerializer = new SaveDataSerializer();
+                replay.SaveData = saveDataSerializer.Deserialize(BaseStream);
             }
 
             Debug.Assert(EndOfStream);

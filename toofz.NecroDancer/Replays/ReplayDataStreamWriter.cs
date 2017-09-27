@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using System.Xml.Serialization;
 using toofz.NecroDancer.Saves;
 
 namespace toofz.NecroDancer.Replays
@@ -10,8 +9,6 @@ namespace toofz.NecroDancer.Replays
     sealed class ReplayDataStreamWriter : StreamWriter
     {
         const string RemoteHeaderSignature = "%*#%*";
-
-        static readonly XmlSerializer SaveDataSerializer = new XmlSerializer(typeof(SaveData));
 
         public ReplayDataStreamWriter(Stream stream) :
             base(stream, new UTF8Encoding(false, true), 1024, true)
@@ -60,7 +57,8 @@ namespace toofz.NecroDancer.Replays
 
             if (replayData.SaveData != null)
             {
-                SaveDataSerializer.Serialize(this, replayData.SaveData);
+                var saveDataSerializer = new SaveDataSerializer();
+                saveDataSerializer.Serialize(BaseStream, replayData.SaveData);
             }
         }
 

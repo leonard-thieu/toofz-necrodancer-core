@@ -152,5 +152,14 @@ namespace toofz.NecroDancer.Tests.Properties {
                 return ResourceManager.GetString("SaveData_76561198074553183", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml?&gt;&lt;necrodancer cloudTimestamp=&quot;1506551567&quot;&gt;&lt;player v=&quot;2&quot;&gt;&lt;/player&gt;&lt;game audioLatency=&quot;0&quot; latencyCalibrated=&quot;true&quot; shownSeizureWarning=&quot;1&quot; videoLatency=&quot;0&quot;&gt;&lt;/game&gt;&lt;npc&gt;&lt;/npc&gt;&lt;/necrodancer&gt;.
+        /// </summary>
+        internal static string SaveData_76561198252120446 {
+            get {
+                return ResourceManager.GetString("SaveData_76561198252120446", resourceCulture);
+            }
+        }
     }
 }
