@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 using System.Xml.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Data;
@@ -52,10 +53,26 @@ namespace toofz.NecroDancer.Tests.Data
         public class Constructor
         {
             [TestMethod]
+            public void StreamIsNull_ThrowsArgumentNullException()
+            {
+                // Arrange
+                Stream stream = null;
+
+                // Act -> Assert
+                Assert.ThrowsException<ArgumentNullException>(() =>
+                {
+                    new NecroDancerDataWriter(stream);
+                });
+            }
+
+            [TestMethod]
             public void ReturnsInstance()
             {
-                // Arrange -> Act
-                var writer = new NecroDancerDataWriter();
+                // Arrange
+                var stream = Stream.Null;
+
+                // Act
+                var writer = new NecroDancerDataWriter(stream);
 
                 // Assert
                 Assert.IsInstanceOfType(writer, typeof(NecroDancerDataWriter));
@@ -66,32 +83,17 @@ namespace toofz.NecroDancer.Tests.Data
         public class WriteMethod
         {
             [TestMethod]
-            public void TextWriterIsNull_ThrowsArgumentNullException()
-            {
-                // Arrange
-                var writer = new NecroDancerDataWriter();
-                TextWriter textWriter = null;
-                var necroDancerData = new NecroDancerData();
-
-                // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
-                {
-                    writer.Write(textWriter, necroDancerData);
-                });
-            }
-
-            [TestMethod]
             public void NecroDancerDataIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
-                var writer = new NecroDancerDataWriter();
-                var textWriter = new StringWriter();
+                var stream = Stream.Null;
+                var writer = new NecroDancerDataWriter(stream);
                 NecroDancerData necroDancerData = null;
 
                 // Act -> Assert
                 Assert.ThrowsException<ArgumentNullException>(() =>
                 {
-                    writer.Write(textWriter, necroDancerData);
+                    writer.Write(necroDancerData);
                 });
             }
 
@@ -100,17 +102,20 @@ namespace toofz.NecroDancer.Tests.Data
             public void MatchesBaseline()
             {
                 // Arrange
-                var writer = new NecroDancerDataWriter();
-                var textWriter = new StringWriter();
-                var reader = new NecroDancerDataReader();
-                var textReader = new StringReader(Resources.NecroDancerData);
-                var necroDancerData = reader.Read(textReader);
+                var writeStream = new MemoryStream();
+                var writer = new NecroDancerDataWriter(writeStream);
+                var readStream = new MemoryStream(Encoding.UTF8.GetBytes(Resources.NecroDancerData));
+                var reader = new NecroDancerDataReader(readStream);
+                var necroDancerData = reader.Read();
 
                 // Act
-                writer.Write(textWriter, necroDancerData);
+                writer.Write(necroDancerData);
 
                 // Assert
-                Assert.That.NormalizedAreEqual(Resources.NecroDancerDataBaseline, textWriter.ToString());
+                var sr = new StreamReader(writeStream);
+                writeStream.Position = 0;
+                var actual = sr.ReadToEnd();
+                Assert.That.NormalizedAreEqual(Resources.NecroDancerDataBaseline, actual);
             }
         }
     }

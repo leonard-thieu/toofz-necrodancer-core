@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Data;
 using toofz.NecroDancer.Tests.Properties;
@@ -135,10 +136,26 @@ namespace toofz.NecroDancer.Tests.Data
         public class Constructor
         {
             [TestMethod]
+            public void StreamIsNull_ThrowsArgumentNullException()
+            {
+                // Arrange
+                Stream stream = null;
+
+                // Act -> Assert
+                Assert.ThrowsException<ArgumentNullException>(() =>
+                {
+                    new NecroDancerDataReader(stream);
+                });
+            }
+
+            [TestMethod]
             public void ReturnsInstance()
             {
-                // Arrange -> Act
-                var reader = new NecroDancerDataReader();
+                // Arrange 
+                var stream = Stream.Null;
+
+                // Act
+                var reader = new NecroDancerDataReader(stream);
 
                 // Assert
                 Assert.IsInstanceOfType(reader, typeof(NecroDancerDataReader));
@@ -149,36 +166,21 @@ namespace toofz.NecroDancer.Tests.Data
         public class ReadMethod
         {
             [TestMethod]
-            public void TextReaderIsNull_ThrowsArgumentNullException()
-            {
-                // Arrange
-                var reader = new NecroDancerDataReader();
-                TextReader textReader = null;
-
-                // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
-                {
-                    reader.Read(textReader);
-                });
-            }
-
-            [TestMethod]
             public void ReadsNecroDancerData()
             {
                 // Arrange
-                var reader = new NecroDancerDataReader();
-                using (var sr = new StringReader(Resources.NecroDancerData))
-                {
-                    // Act
-                    var necroDancerData = reader.Read(sr);
+                var stream = new MemoryStream(Encoding.UTF8.GetBytes(Resources.NecroDancerData));
+                var reader = new NecroDancerDataReader(stream);
 
-                    // Assert
-                    Assert.IsInstanceOfType(necroDancerData, typeof(NecroDancerData));
-                    Assert.AreEqual(291, necroDancerData.Items.Count);
-                    Assert.AreEqual(216, necroDancerData.Enemies.Count);
-                    Assert.AreEqual(15, necroDancerData.Characters.Count);
-                    Assert.AreEqual(1, necroDancerData.Modes.Count);
-                }
+                // Act
+                var necroDancerData = reader.Read();
+
+                // Assert
+                Assert.IsInstanceOfType(necroDancerData, typeof(NecroDancerData));
+                Assert.AreEqual(291, necroDancerData.Items.Count);
+                Assert.AreEqual(216, necroDancerData.Enemies.Count);
+                Assert.AreEqual(15, necroDancerData.Characters.Count);
+                Assert.AreEqual(1, necroDancerData.Modes.Count);
             }
         }
     }

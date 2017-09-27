@@ -28,6 +28,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,6 +37,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Core, Version=4.1.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
@@ -119,6 +121,7 @@
     <Compile Include="Data\HardModeTests.cs" />
     <Compile Include="Data\ItemTests.cs" />
     <Compile Include="Data\NecroDancerDataReaderTests.cs" />
+    <Compile Include="Data\NecroDancerDataSerializerTests.cs" />
     <Compile Include="Data\NecroDancerDataTests.cs" />
     <Compile Include="Data\NecroDancerDataWriterTests.cs" />
     <Compile Include="Data\ParticleTests.cs" />

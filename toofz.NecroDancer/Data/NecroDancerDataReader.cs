@@ -8,7 +8,7 @@ using log4net;
 
 namespace toofz.NecroDancer.Data
 {
-    public sealed class NecroDancerDataReader
+    sealed class NecroDancerDataReader
     {
         #region Static Members
 
@@ -45,22 +45,27 @@ namespace toofz.NecroDancer.Data
 
         #endregion
 
-        public NecroDancerDataReader() : this(Log) { }
+        public NecroDancerDataReader(Stream stream) : this(stream, Log) { }
 
-        internal NecroDancerDataReader(ILog log)
+        internal NecroDancerDataReader(Stream stream, ILog log)
         {
+            this.stream = stream ?? throw new ArgumentNullException(nameof(stream));
             this.log = log;
         }
 
+        readonly Stream stream;
         readonly ILog log;
 
-        public NecroDancerData Read(TextReader textReader)
+        public NecroDancerData Read()
         {
-            if (textReader == null)
-                throw new ArgumentNullException(nameof(textReader));
-
-            var doc = XDocument.Load(textReader);
+            var doc = XDocument.Load(stream);
             var necrodancerEl = doc.Element("necrodancer") ?? throw new XmlException("Unable to find the root element 'necrodancer'.");
+
+            return ReadNecroDancerData(necrodancerEl);
+        }
+
+        NecroDancerData ReadNecroDancerData(XElement necrodancerEl)
+        {
             var necroDancerData = new NecroDancerData();
 
             foreach (var necrodancerElChild in necrodancerEl.Elements())
@@ -84,9 +89,7 @@ namespace toofz.NecroDancer.Data
                         var modes = ReadModes(necrodancerElChild);
                         necroDancerData.Modes.AddRange(modes);
                         break;
-                    default:
-                        log.Debug($"Unknown necrodancer element: '{necrodancerElChildName}'.");
-                        break;
+                    default: log.Debug($"Unknown necrodancer element: '{necrodancerElChildName}'."); break;
                 }
             }
 

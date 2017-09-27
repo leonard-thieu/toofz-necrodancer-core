@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace toofz.NecroDancer.Data
 {
-    public sealed class NecroDancerDataWriter
+    sealed class NecroDancerDataWriter
     {
         internal static XAttribute CreateAttribute(string name, DisplayString value)
         {
@@ -16,10 +16,15 @@ namespace toofz.NecroDancer.Data
                 new XAttribute(name, $"|{value.Id}|{value.Text}|");
         }
 
-        public void Write(TextWriter textWriter, NecroDancerData necroDancerData)
+        public NecroDancerDataWriter(Stream stream)
         {
-            if (textWriter == null)
-                throw new ArgumentNullException(nameof(textWriter));
+            this.stream = stream ?? throw new ArgumentNullException(nameof(stream));
+        }
+
+        readonly Stream stream;
+
+        public void Write(NecroDancerData necroDancerData)
+        {
             if (necroDancerData == null)
                 throw new ArgumentNullException(nameof(necroDancerData));
 
@@ -53,7 +58,7 @@ namespace toofz.NecroDancer.Data
                 Indent = true,
                 OmitXmlDeclaration = true,
             };
-            using (var xw = XmlWriter.Create(textWriter, settings))
+            using (var xw = XmlWriter.Create(stream, settings))
             {
                 doc.Save(xw);
             }

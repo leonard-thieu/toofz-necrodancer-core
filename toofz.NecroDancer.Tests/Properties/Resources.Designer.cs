@@ -83,16 +83,6 @@ namespace toofz.NecroDancer.Tests.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] ClassicReplayData1 {
-            get {
-                object obj = ResourceManager.GetObject("ClassicReplayData1", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
         internal static byte[] EmptyReplayData {
             get {
                 object obj = ResourceManager.GetObject("EmptyReplayData", resourceCulture);

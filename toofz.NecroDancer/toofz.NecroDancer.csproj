@@ -76,6 +76,7 @@
     <Compile Include="Data\Item.cs" />
     <Compile Include="Data\NecroDancerData.cs" />
     <Compile Include="Data\NecroDancerDataReader.cs" />
+    <Compile Include="Data\NecroDancerDataSerializer.cs" />
     <Compile Include="Data\NecroDancerDataWriter.cs" />
     <Compile Include="Data\OptionalStats.cs" />
     <Compile Include="Data\Particle.cs" />
