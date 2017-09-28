@@ -24,8 +24,8 @@ namespace toofz.NecroDancer.Data
             ImagePath = imagePath;
         }
 
-        public string Name { get; }
-        public string ImagePath { get; }
+        public string Name { get; private set; }
+        public string ImagePath { get; private set; }
 
         // Default = true (?)
         // TODO: This might be nullable.
@@ -144,6 +144,7 @@ namespace toofz.NecroDancer.Data
                 {
                     return Flyaway.Text.Transform(To.LowerCase, To.TitleCase);
                 }
+
                 return Name.Titleize();
             }
         }

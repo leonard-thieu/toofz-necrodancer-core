@@ -24,8 +24,8 @@ namespace toofz.NecroDancer.Data
             Type = type;
         }
 
-        public string Name { get; }
-        public int Type { get; }
+        public string Name { get; private set; }
+        public int Type { get; private set; }
 
         // Nonnegative
         public int? Id { get; set; }
