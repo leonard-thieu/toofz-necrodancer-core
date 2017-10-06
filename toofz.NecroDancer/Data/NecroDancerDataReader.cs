@@ -198,11 +198,37 @@ namespace toofz.NecroDancer.Data
                 }
             }
 
-            item.DisplayName = item.Flyaway != null ?
-                item.Flyaway.Text.Transform(To.LowerCase, To.TitleCase) :
-                item.Name.Titleize();
+            item.DisplayName = GetDisplayName();
 
             return item;
+
+            string GetDisplayName()
+            {
+                switch (item.Name)
+                {
+                    case "resource_coin0": return "Coin";
+                    case "resource_coin1": return "1 Coin";
+                    case "resource_coin2": return "2 Coins";
+                    case "resource_coin3": return "3 Coins";
+                    case "resource_coin4": return "4 Coins";
+                    case "resource_coin5": return "5 Coins";
+                    case "resource_coin6": return "6 Coins";
+                    case "resource_coin7": return "7 Coins";
+                    case "resource_coin8": return "8 Coins";
+                    case "resource_coin9": return "9 Coins";
+                    case "resource_coin10": return "10 Coins";
+                    case "weapon_cat": return "Cat o' Nine Tails";
+                    default: break;
+                }
+
+                var displayName = item.Flyaway != null ?
+                    item.Flyaway.Text.Transform(To.LowerCase, To.TitleCase) :
+                    item.Name.Titleize();
+
+                return displayName
+                    .Replace("Per", "per")
+                    .Replace("Of", "of");
+            }
         }
 
         IEnumerable<Enemy> ReadEnemies(XElement enemiesEl)
@@ -238,7 +264,7 @@ namespace toofz.NecroDancer.Data
                 }
             }
 
-            enemy.DisplayName = (enemy.FriendlyName ?? enemy.Name).Titleize();
+            enemy.DisplayName = GetDisplayName();
 
             foreach (var enemyElChild in enemyEl.Elements())
             {
@@ -282,6 +308,30 @@ namespace toofz.NecroDancer.Data
             }
 
             return enemy;
+
+            string GetDisplayName()
+            {
+                switch (enemy.Name)
+                {
+                    case "cauldron":
+                        switch (enemy.Type)
+                        {
+                            case 1: return "Fire Cauldron";
+                            case 2: return "Ice Cauldron";
+                        }
+                        break;
+                    case "diamonddealer": return "Diamond Dealer";
+                    case "skeletonspearman": return "Skeleton Spearman";
+                    case "swarmsarcophagus": return "Swarm Sarcophagus";
+                    case "tinyslime": return "Tiny Slime";
+                    case "toughsarcophagus": return "Tough Sarcophagus";
+                    case "trainingsarcophagus": return "Training Sarcophagus";
+                }
+
+                if (enemy.FriendlyName != null) { return enemy.FriendlyName; }
+
+                return enemy.Name.Titleize();
+            }
         }
 
         SpriteSheet ReadSpriteSheet(XElement spritesheetEl)
