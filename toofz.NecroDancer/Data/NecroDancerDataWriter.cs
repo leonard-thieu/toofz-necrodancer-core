@@ -207,13 +207,13 @@ namespace toofz.NecroDancer.Data
                 enemyEl.Add(shadowEl);
             }
 
-            if (enemy.Stats != null)
+            if (enemy._Stats != null)
             {
                 var statsEl = WriteStats(enemy.Stats);
                 enemyEl.Add(statsEl);
             }
 
-            if (enemy.OptionalStats != null)
+            if (enemy._OptionalStats != null)
             {
                 var optionalStatsEl = WriteOptionalStats(enemy.OptionalStats);
                 enemyEl.Add(optionalStatsEl);

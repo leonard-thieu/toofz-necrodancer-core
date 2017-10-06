@@ -34,8 +34,29 @@ namespace toofz.NecroDancer.Data
         public SpriteSheet SpriteSheet { get; set; }
         public ICollection<Frame> Frames { get; } = new List<Frame>();
         public Shadow Shadow { get; set; }
-        public Stats Stats { get; set; }
-        public OptionalStats OptionalStats { get; set; }
+
+        public Stats Stats
+        {
+            get
+            {
+                if (_Stats == null) { _Stats = new Stats(); }
+                return _Stats;
+            }
+            set { _Stats = value; }
+        }
+        internal Stats _Stats;
+
+        public OptionalStats OptionalStats
+        {
+            get
+            {
+                if (_OptionalStats == null) { _OptionalStats = new OptionalStats(); }
+                return _OptionalStats;
+            }
+            set { _OptionalStats = value; }
+        }
+        internal OptionalStats _OptionalStats;
+
         public Bouncer Bouncer { get; set; }
         public Tweens Tweens { get; set; }
         public Particle Particle { get; set; }
