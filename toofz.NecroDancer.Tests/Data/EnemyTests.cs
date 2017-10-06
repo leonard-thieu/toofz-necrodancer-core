@@ -289,34 +289,20 @@ namespace toofz.NecroDancer.Tests.Data
         public class DisplayNameProperty
         {
             [TestMethod]
-            public void FriendlyNameIsNotNull_ReturnsFriendlyNameAsTitleCase()
+            public void GetSetBehavior()
             {
                 // Arrange
                 var name = "myName";
                 var type = 1;
                 var enemy = new Enemy(name, type);
-                enemy.FriendlyName = "White Armadillo";
+                var displayName = "White Armadillo";
 
                 // Act
-                var displayName = enemy.DisplayName;
+                enemy.DisplayName = displayName;
+                var displayName2 = enemy.DisplayName;
 
                 // Assert
-                Assert.AreEqual("White Armadillo", displayName);
-            }
-
-            [TestMethod]
-            public void ReturnsNameAsTitleCase()
-            {
-                // Arrange
-                var name = "conductor_battery";
-                var type = 1;
-                var enemy = new Enemy(name, type);
-
-                // Act
-                var displayName = enemy.DisplayName;
-
-                // Assert
-                Assert.AreEqual("Conductor Battery", displayName);
+                Assert.AreEqual(displayName, displayName2);
             }
         }
     }

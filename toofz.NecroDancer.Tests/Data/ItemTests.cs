@@ -119,38 +119,95 @@ namespace toofz.NecroDancer.Tests.Data
         }
 
         [TestClass]
-        public class DisplayNameProperty
+        public class ImageHeightProperty
         {
             [TestMethod]
-            public void FlyawayIsNotNull_ReturnsFlyawayTextAsTitleCase()
+            public void Default_Returns24()
             {
                 // Arrange
                 var name = "myName";
                 var imagePath = "myImagePath";
                 var item = new Item(name, imagePath);
-                var flyaway = new DisplayString(314, "+1 BLACK CHEST PER RUN");
-                item.Flyaway = flyaway;
 
                 // Act
-                var displayName = item.DisplayName;
+                var imageHeight = item.ImageHeight;
 
                 // Assert
-                Assert.AreEqual("+1 Black Chest Per Run", displayName);
+                Assert.AreEqual(24, imageHeight);
             }
 
             [TestMethod]
-            public void ReturnsNameAsTitleCase()
+            public void GetSetBehavior()
             {
                 // Arrange
-                var name = "resource_coin0";
+                var name = "myName";
+                var imagePath = "myImagePath";
+                var item = new Item(name, imagePath);
+                var imageHeight = 26;
+
+                // Act
+                item.ImageHeight = imageHeight;
+                var imageHeight2 = item.ImageHeight;
+
+                // Assert
+                Assert.AreEqual(imageHeight, imageHeight2);
+            }
+        }
+
+        [TestClass]
+        public class ImageWidthProperty
+        {
+            [TestMethod]
+            public void Default_Returns24()
+            {
+                // Arrange
+                var name = "myName";
                 var imagePath = "myImagePath";
                 var item = new Item(name, imagePath);
 
                 // Act
-                var displayName = item.DisplayName;
+                var imageWidth = item.ImageWidth;
 
                 // Assert
-                Assert.AreEqual("Resource Coin0", displayName);
+                Assert.AreEqual(24, imageWidth);
+            }
+
+            [TestMethod]
+            public void GetSetBehavior()
+            {
+                // Arrange
+                var name = "myName";
+                var imagePath = "myImagePath";
+                var item = new Item(name, imagePath);
+                var imageWidth = 26;
+
+                // Act
+                item.ImageWidth = imageWidth;
+                var imageWidth2 = item.ImageWidth;
+
+                // Assert
+                Assert.AreEqual(imageWidth, imageWidth2);
+            }
+        }
+
+        [TestClass]
+        public class DisplayNameProperty
+        {
+            [TestMethod]
+            public void GetSetBehavior()
+            {
+                // Arrange
+                var name = "myName";
+                var imagePath = "myImagePath";
+                var item = new Item(name, imagePath);
+                var displayName = "+1 Black Chest Per Run";
+
+                // Act
+                item.DisplayName = displayName;
+                var displayName2 = item.DisplayName;
+
+                // Assert
+                Assert.AreEqual(displayName, displayName2);
             }
         }
     }

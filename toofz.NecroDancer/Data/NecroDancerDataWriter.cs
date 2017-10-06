@@ -93,8 +93,8 @@ namespace toofz.NecroDancer.Data
             if (item.DiamondCost != default) { itemEl.Add(new XAttribute("diamondCost", item.DiamondCost)); }
             if (item.FrameCount != 1) { itemEl.Add(new XAttribute("numFrames", item.FrameCount)); }
             if (item.Set != default) { itemEl.Add(new XAttribute("set", item.Set)); }
-            if (item.ImageWidth != default) { itemEl.Add(new XAttribute("imageW", item.ImageWidth)); }
-            if (item.ImageHeight != default) { itemEl.Add(new XAttribute("imageH", item.ImageHeight)); }
+            if (item._ImageWidth != null) { itemEl.Add(new XAttribute("imageW", item.ImageWidth)); }
+            if (item._ImageHeight != null) { itemEl.Add(new XAttribute("imageH", item.ImageHeight)); }
             if (item.TemporaryMapSight) { itemEl.Add(new XAttribute("temporaryMapSight", "True")); }
             if (item.Consumable) { itemEl.Add(new XAttribute("consumable", "True")); }
             if (item.OffsetY != default) { itemEl.Add(new XAttribute("yOff", item.OffsetY)); }

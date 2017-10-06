@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
+using Humanizer;
 using log4net;
 
 namespace toofz.NecroDancer.Data
@@ -197,6 +198,10 @@ namespace toofz.NecroDancer.Data
                 }
             }
 
+            item.DisplayName = item.Flyaway != null ?
+                item.Flyaway.Text.Transform(To.LowerCase, To.TitleCase) :
+                item.Name.Titleize();
+
             return item;
         }
 
@@ -232,6 +237,8 @@ namespace toofz.NecroDancer.Data
                     default: log.Debug($"Unknown enemy attribute: '{enemyAttrName}'."); break;
                 }
             }
+
+            enemy.DisplayName = (enemy.FriendlyName ?? enemy.Name).Titleize();
 
             foreach (var enemyElChild in enemyEl.Elements())
             {

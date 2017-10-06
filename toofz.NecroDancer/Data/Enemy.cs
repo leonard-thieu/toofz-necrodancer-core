@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
-using Humanizer;
 
 namespace toofz.NecroDancer.Data
 {
@@ -41,9 +40,6 @@ namespace toofz.NecroDancer.Data
         public Tweens Tweens { get; set; }
         public Particle Particle { get; set; }
 
-        public string DisplayName
-        {
-            get => (FriendlyName ?? Name).Titleize();
-        }
+        public string DisplayName { get; set; }
     }
 }

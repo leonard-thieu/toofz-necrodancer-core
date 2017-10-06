@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
-using Humanizer;
 
 namespace toofz.NecroDancer.Data
 {
@@ -51,11 +50,19 @@ namespace toofz.NecroDancer.Data
         public bool HideQuantity { get; set; }
         public DisplayString Hint { get; set; }
         // Positive
-        // TODO: What is default?
-        public int ImageHeight { get; set; }
+        public int ImageHeight
+        {
+            get { return _ImageHeight ?? 24; }
+            set { _ImageHeight = value; }
+        }
+        internal int? _ImageHeight;
         // Positive
-        // TODO: What is default?
-        public int ImageWidth { get; set; }
+        public int ImageWidth
+        {
+            get { return _ImageWidth ?? 24; }
+            set { _ImageWidth = value; }
+        }
+        internal int? _ImageWidth;
         public bool IsArmor { get; set; }
         public bool IsAxe { get; set; }
         public bool IsBlood { get; set; }
@@ -136,17 +143,6 @@ namespace toofz.NecroDancer.Data
         // Only appears on Tomes (Tomes are Scrolls with a quantity)
         public bool? UseGreater { get; set; }
 
-        public string DisplayName
-        {
-            get
-            {
-                if (Flyaway != null)
-                {
-                    return Flyaway.Text.Transform(To.LowerCase, To.TitleCase);
-                }
-
-                return Name.Titleize();
-            }
-        }
+        public string DisplayName { get; set; }
     }
 }
