@@ -226,8 +226,8 @@ namespace toofz.NecroDancer.Data
                     item.Name.Titleize();
 
                 return displayName
-                    .Replace("Per", "per")
-                    .Replace("Of", "of");
+                    .Replace(" Per ", " per ")
+                    .Replace(" Of ", " of ");
             }
         }
 
