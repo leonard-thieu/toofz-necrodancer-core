@@ -2,102 +2,228 @@
 {
     public sealed class Npc
     {
+        #region Beastmaster
+
         public bool Beastmaster
         {
-            get { return _Beastmaster ?? default; }
-            set { _Beastmaster = value; }
+            get { return beastmaster; }
+            set
+            {
+                beastmaster = value;
+                BeastmasterConfigured = true;
+            }
         }
-        internal bool? _Beastmaster;
+        bool beastmaster;
+        internal bool BeastmasterConfigured { get; private set; }
+
+        #endregion
+
+        #region BeastmasterVisited
 
         public bool BeastmasterVisited
         {
-            get { return _BeastmasterVisited ?? default; }
-            set { _BeastmasterVisited = value; }
+            get { return beastmasterVisited; }
+            set
+            {
+                beastmasterVisited = value;
+                BeastmasterVisitedConfigured = true;
+            }
         }
-        internal bool? _BeastmasterVisited;
+        bool beastmasterVisited;
+        internal bool BeastmasterVisitedConfigured { get; private set; }
+
+        #endregion
+
+        #region Bossmaster
 
         public bool Bossmaster
         {
-            get { return _Bossmaster ?? default; }
-            set { _Bossmaster = value; }
+            get { return bossmaster; }
+            set
+            {
+                bossmaster = value;
+                BossmasterConfigured = true;
+            }
         }
-        internal bool? _Bossmaster;
+        bool bossmaster;
+        internal bool BossmasterConfigured { get; private set; }
+
+        #endregion
+
+        #region BossmasterVisited
 
         public bool BossmasterVisited
         {
-            get { return _BossmasterVisited ?? default; }
-            set { _BossmasterVisited = value; }
+            get { return bossmasterVisited; }
+            set
+            {
+                bossmasterVisited = value;
+                BossmasterVisitedConfigured = true;
+            }
         }
-        internal bool? _BossmasterVisited;
+        bool bossmasterVisited;
+        internal bool BossmasterVisitedConfigured { get; private set; }
+
+        #endregion
+
+        #region DiamondDealer
 
         public bool DiamondDealer
         {
-            get { return _DiamondDealer ?? default; }
-            set { _DiamondDealer = value; }
+            get { return diamondDealer; }
+            set
+            {
+                diamondDealer = value;
+                DiamondDealerConfigured = true;
+            }
         }
-        internal bool? _DiamondDealer;
+        bool diamondDealer;
+        internal bool DiamondDealerConfigured { get; private set; }
+
+        #endregion
+
+        #region DiamondDealerVisited
 
         public bool DiamondDealerVisited
         {
-            get { return _DiamondDealerVisited ?? default; }
-            set { _DiamondDealerVisited = value; }
+            get { return diamondDealerVisited; }
+            set
+            {
+                diamondDealerVisited = value;
+                DiamondDealerVisitedConfigured = true;
+            }
         }
-        internal bool? _DiamondDealerVisited;
+        bool diamondDealerVisited;
+        internal bool DiamondDealerVisitedConfigured { get; private set; }
+
+        #endregion
+
+        #region HephaestusVisited
 
         public bool HephaestusVisited
         {
-            get { return _HephaestusVisited ?? default; }
-            set { _HephaestusVisited = value; }
+            get { return hephaestusVisited; }
+            set
+            {
+                hephaestusVisited = value;
+                HephaestusVisitedConfigured = true;
+            }
         }
-        internal bool? _HephaestusVisited;
+        bool hephaestusVisited;
+        internal bool HephaestusVisitedConfigured { get; private set; }
+
+        #endregion
+
+        #region JanitorVisited
 
         public bool JanitorVisited
         {
-            get { return _JanitorVisited ?? default; }
-            set { _JanitorVisited = value; }
+            get { return janitorVisited; }
+            set
+            {
+                janitorVisited = value;
+                JanitorVisitedConfigured = true;
+            }
         }
-        internal bool? _JanitorVisited;
+        bool janitorVisited;
+        internal bool JanitorVisitedConfigured { get; private set; }
+
+        #endregion
+
+        #region MedicVisited
 
         public bool MedicVisited
         {
-            get { return _MedicVisited ?? default; }
-            set { _MedicVisited = value; }
+            get { return medicVisited; }
+            set
+            {
+                medicVisited = value;
+                MedicVisitedConfigured = true;
+            }
         }
-        internal bool? _MedicVisited;
+        bool medicVisited;
+        internal bool MedicVisitedConfigured { get; private set; }
+
+        #endregion
+
+        #region Merlin
 
         public bool Merlin
         {
-            get { return _Merlin ?? default; }
-            set { _Merlin = value; }
+            get { return merlin; }
+            set
+            {
+                merlin = value;
+                MerlinConfigured = true;
+            }
         }
-        internal bool? _Merlin;
+        bool merlin;
+        internal bool MerlinConfigured { get; private set; }
+
+        #endregion
+
+        #region MerlinVisited
 
         public bool MerlinVisited
         {
-            get { return _MerlinVisited ?? default; }
-            set { _MerlinVisited = value; }
+            get { return merlinVisited; }
+            set
+            {
+                merlinVisited = value;
+                MerlinVisitedConfigured = true;
+            }
         }
-        internal bool? _MerlinVisited;
+        bool merlinVisited;
+        internal bool MerlinVisitedConfigured { get; private set; }
+
+        #endregion
+
+        #region TrainerVisited
 
         public bool TrainerVisited
         {
-            get { return _TrainerVisited ?? default; }
-            set { _TrainerVisited = value; }
+            get { return trainerVisited; }
+            set
+            {
+                trainerVisited = value;
+                TrainerVisitedConfigured = true;
+            }
         }
-        internal bool? _TrainerVisited;
+        bool trainerVisited;
+        internal bool TrainerVisitedConfigured { get; private set; }
+
+        #endregion
+
+        #region Weaponmaster
 
         public bool Weaponmaster
         {
-            get { return _Weaponmaster ?? default; }
-            set { _Weaponmaster = value; }
+            get { return weaponmaster; }
+            set
+            {
+                weaponmaster = value;
+                WeaponmasterConfigured = true;
+            }
         }
-        internal bool? _Weaponmaster;
+        bool weaponmaster;
+        internal bool WeaponmasterConfigured { get; private set; }
+
+        #endregion
+
+        #region WeaponmasterVisited
 
         public bool WeaponmasterVisited
         {
-            get { return _WeaponmasterVisited ?? default; }
-            set { _WeaponmasterVisited = value; }
+            get { return weaponmasterVisited; }
+            set
+            {
+                weaponmasterVisited = value;
+                WeaponmasterVisitedConfigured = true;
+            }
         }
-        internal bool? _WeaponmasterVisited;
+        bool weaponmasterVisited;
+        internal bool WeaponmasterVisitedConfigured { get; private set; }
+
+        #endregion
     }
 }

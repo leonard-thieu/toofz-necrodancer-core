@@ -3,15 +3,65 @@
     // Game version: 2.55
     public sealed class SaveData
     {
+        #region CloudTimestamp
+
         public int CloudTimestamp
         {
-            get { return _CloudTimestamp ?? default; }
-            set { _CloudTimestamp = value; }
+            get { return cloudTimestamp; }
+            set
+            {
+                cloudTimestamp = value;
+                CloudTimestampConfigured = true;
+            }
         }
-        internal int? _CloudTimestamp;
+        int cloudTimestamp;
+        internal bool CloudTimestampConfigured { get; private set; }
 
-        public Player Player { get; set; }
-        public Game Game { get; set; }
-        public Npc Npc { get; set; }
+        #endregion
+
+        #region Player
+
+        public Player Player
+        {
+            get
+            {
+                if (player == null) { player = new Player(); }
+                return player;
+            }
+            set { player = value; }
+        }
+        Player player;
+
+        #endregion
+
+        #region Game
+
+        public Game Game
+        {
+            get
+            {
+                if (game == null) { game = new Game(); }
+                return game;
+            }
+            set { game = value; }
+        }
+        Game game;
+
+        #endregion
+
+        #region Npc
+
+        public Npc Npc
+        {
+            get
+            {
+                if (npc == null) { npc = new Npc(); }
+                return npc;
+            }
+            set { npc = value; }
+        }
+        Npc npc;
+
+        #endregion
     }
 }

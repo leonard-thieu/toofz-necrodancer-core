@@ -2,993 +2,2372 @@
 {
     public sealed class Player
     {
+        #region IsAddBlackChestUnlocked
+
         public bool IsAddBlackChestUnlocked
         {
-            get { return _IsAddBlackChestUnlocked ?? default; }
-            set { _IsAddBlackChestUnlocked = value; }
+            get { return isAddBlackChestUnlocked; }
+            set
+            {
+                isAddBlackChestUnlocked = value;
+                IsAddBlackChestUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsAddBlackChestUnlocked;
+        bool isAddBlackChestUnlocked;
+        internal bool IsAddBlackChestUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsAddRedChestUnlocked
 
         public bool IsAddRedChestUnlocked
         {
-            get { return _IsAddRedChestUnlocked ?? default; }
-            set { _IsAddRedChestUnlocked = value; }
+            get { return isAddRedChestUnlocked; }
+            set
+            {
+                isAddRedChestUnlocked = value;
+                IsAddRedChestUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsAddRedChestUnlocked;
+        bool isAddRedChestUnlocked;
+        internal bool IsAddRedChestUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsAddWhiteChestUnlocked
 
         public bool IsAddWhiteChestUnlocked
         {
-            get { return _IsAddWhiteChestUnlocked ?? default; }
-            set { _IsAddWhiteChestUnlocked = value; }
+            get { return isAddWhiteChestUnlocked; }
+            set
+            {
+                isAddWhiteChestUnlocked = value;
+                IsAddWhiteChestUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsAddWhiteChestUnlocked;
+        bool isAddWhiteChestUnlocked;
+        internal bool IsAddWhiteChestUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsChainmailUnlocked
 
         public bool IsChainmailUnlocked
         {
-            get { return _IsChainmailUnlocked ?? default; }
-            set { _IsChainmailUnlocked = value; }
+            get { return isChainmailUnlocked; }
+            set
+            {
+                isChainmailUnlocked = value;
+                IsChainmailUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsChainmailUnlocked;
+        bool isChainmailUnlocked;
+        internal bool IsChainmailUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGiUnlocked
 
         public bool IsGiUnlocked
         {
-            get { return _IsGiUnlocked ?? default; }
-            set { _IsGiUnlocked = value; }
+            get { return isGiUnlocked; }
+            set
+            {
+                isGiUnlocked = value;
+                IsGiUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsGiUnlocked;
+        bool isGiUnlocked;
+        internal bool IsGiUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGlassArmorUnlocked
 
         public bool IsGlassArmorUnlocked
         {
-            get { return _IsGlassArmorUnlocked ?? default; }
-            set { _IsGlassArmorUnlocked = value; }
+            get { return isGlassArmorUnlocked; }
+            set
+            {
+                isGlassArmorUnlocked = value;
+                IsGlassArmorUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsGlassArmorUnlocked;
+        bool isGlassArmorUnlocked;
+        internal bool IsGlassArmorUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsHeavyGlassArmorUnlocked
 
         public bool IsHeavyGlassArmorUnlocked
         {
-            get { return _IsHeavyGlassArmorUnlocked ?? default; }
-            set { _IsHeavyGlassArmorUnlocked = value; }
+            get { return isHeavyGlassArmorUnlocked; }
+            set
+            {
+                isHeavyGlassArmorUnlocked = value;
+                IsHeavyGlassArmorUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsHeavyGlassArmorUnlocked;
+        bool isHeavyGlassArmorUnlocked;
+        internal bool IsHeavyGlassArmorUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsHeavyPlateUnlocked
 
         public bool IsHeavyPlateUnlocked
         {
-            get { return _IsHeavyPlateUnlocked ?? default; }
-            set { _IsHeavyPlateUnlocked = value; }
+            get { return isHeavyPlateUnlocked; }
+            set
+            {
+                isHeavyPlateUnlocked = value;
+                IsHeavyPlateUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsHeavyPlateUnlocked;
+        bool isHeavyPlateUnlocked;
+        internal bool IsHeavyPlateUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsObsidianArmorCleaned
 
         public bool IsObsidianArmorCleaned
         {
-            get { return _IsObsidianArmorCleaned ?? default; }
-            set { _IsObsidianArmorCleaned = value; }
+            get { return isObsidianArmorCleaned; }
+            set
+            {
+                isObsidianArmorCleaned = value;
+                IsObsidianArmorCleanedConfigured = true;
+            }
         }
-        internal bool? _IsObsidianArmorCleaned;
+        bool isObsidianArmorCleaned;
+        internal bool IsObsidianArmorCleanedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsObsidianArmorUnlocked
 
         public bool IsObsidianArmorUnlocked
         {
-            get { return _IsObsidianArmorUnlocked ?? default; }
-            set { _IsObsidianArmorUnlocked = value; }
+            get { return isObsidianArmorUnlocked; }
+            set
+            {
+                isObsidianArmorUnlocked = value;
+                IsObsidianArmorUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsObsidianArmorUnlocked;
+        bool isObsidianArmorUnlocked;
+        internal bool IsObsidianArmorUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsPlatemailUnlocked
 
         public bool IsPlatemailUnlocked
         {
-            get { return _IsPlatemailUnlocked ?? default; }
-            set { _IsPlatemailUnlocked = value; }
+            get { return isPlatemailUnlocked; }
+            set
+            {
+                isPlatemailUnlocked = value;
+                IsPlatemailUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsPlatemailUnlocked;
+        bool isPlatemailUnlocked;
+        internal bool IsPlatemailUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsQuartzArmorUnlocked
 
         public bool IsQuartzArmorUnlocked
         {
-            get { return _IsQuartzArmorUnlocked ?? default; }
-            set { _IsQuartzArmorUnlocked = value; }
+            get { return isQuartzArmorUnlocked; }
+            set
+            {
+                isQuartzArmorUnlocked = value;
+                IsQuartzArmorUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsQuartzArmorUnlocked;
+        bool isQuartzArmorUnlocked;
+        internal bool IsQuartzArmorUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsBagOfHoldingUnlocked
 
         public bool IsBagOfHoldingUnlocked
         {
-            get { return _IsBagOfHoldingUnlocked ?? default; }
-            set { _IsBagOfHoldingUnlocked = value; }
+            get { return isBagOfHoldingUnlocked; }
+            set
+            {
+                isBagOfHoldingUnlocked = value;
+                IsBagOfHoldingUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsBagOfHoldingUnlocked;
+        bool isBagOfHoldingUnlocked;
+        internal bool IsBagOfHoldingUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsBloodDrumUnlocked
 
         public bool IsBloodDrumUnlocked
         {
-            get { return _IsBloodDrumUnlocked ?? default; }
-            set { _IsBloodDrumUnlocked = value; }
+            get { return isBloodDrumUnlocked; }
+            set
+            {
+                isBloodDrumUnlocked = value;
+                IsBloodDrumUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsBloodDrumUnlocked;
+        bool isBloodDrumUnlocked;
+        internal bool IsBloodDrumUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsCoin15MultiplierUnlocked
 
         public bool IsCoin15MultiplierUnlocked
         {
-            get { return _IsCoin15MultiplierUnlocked ?? default; }
-            set { _IsCoin15MultiplierUnlocked = value; }
+            get { return isCoin15MultiplierUnlocked; }
+            set
+            {
+                isCoin15MultiplierUnlocked = value;
+                IsCoin15MultiplierUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsCoin15MultiplierUnlocked;
+        bool isCoin15MultiplierUnlocked;
+        internal bool IsCoin15MultiplierUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsCoin20MultiplierUnlocked
 
         public bool IsCoin20MultiplierUnlocked
         {
-            get { return _IsCoin20MultiplierUnlocked ?? default; }
-            set { _IsCoin20MultiplierUnlocked = value; }
+            get { return isCoin20MultiplierUnlocked; }
+            set
+            {
+                isCoin20MultiplierUnlocked = value;
+                IsCoin20MultiplierUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsCoin20MultiplierUnlocked;
+        bool isCoin20MultiplierUnlocked;
+        internal bool IsCoin20MultiplierUnlockedConfigured { get; private set; }
 
-        public string DiamondDealerItems { get; set; }
-        public string DiamondDealerItemsV2 { get; set; }
-        public string DiamondDealerItemsV2_1 { get; set; }
-        public string DiamondDealerItemsV2_2 { get; set; }
-        public string DiamondDealerItemsV2_3 { get; set; }
-        public string DiamondDealerSoldItem1 { get; set; }
-        public string DiamondDealerSoldItem2 { get; set; }
-        public string DiamondDealerSoldItem3 { get; set; }
+        #endregion
+
+        #region DiamondDealerItems
+
+        public string DiamondDealerItems
+        {
+            get { return diamondDealerItems; }
+            set
+            {
+                diamondDealerItems = value;
+                DiamondDealerItemsConfigured = true;
+            }
+        }
+        string diamondDealerItems;
+        internal bool DiamondDealerItemsConfigured { get; private set; }
+
+        #endregion
+
+        #region DiamondDealerItemsV2
+
+        public string DiamondDealerItemsV2
+        {
+            get { return diamondDealerItemsV2; }
+            set
+            {
+                diamondDealerItemsV2 = value;
+                DiamondDealerItemsV2Configured = true;
+            }
+        }
+        string diamondDealerItemsV2;
+        internal bool DiamondDealerItemsV2Configured { get; private set; }
+
+        #endregion
+
+        #region DiamondDealerItemsV2_1
+
+        public string DiamondDealerItemsV2_1
+        {
+            get { return diamondDealerItemsV2_1; }
+            set
+            {
+                diamondDealerItemsV2_1 = value;
+                DiamondDealerItemsV2_1Configured = true;
+            }
+        }
+        string diamondDealerItemsV2_1;
+        internal bool DiamondDealerItemsV2_1Configured { get; private set; }
+
+        #endregion
+
+        #region DiamondDealerItemsV2_2
+
+        public string DiamondDealerItemsV2_2
+        {
+            get { return diamondDealerItemsV2_2; }
+            set
+            {
+                diamondDealerItemsV2_2 = value;
+                DiamondDealerItemsV2_2Configured = true;
+            }
+        }
+        string diamondDealerItemsV2_2;
+        internal bool DiamondDealerItemsV2_2Configured { get; private set; }
+
+        #endregion
+
+        #region DiamondDealerItemsV2_3
+
+        public string DiamondDealerItemsV2_3
+        {
+            get { return diamondDealerItemsV2_3; }
+            set
+            {
+                diamondDealerItemsV2_3 = value;
+                DiamondDealerItemsV2_3Configured = true;
+            }
+        }
+        string diamondDealerItemsV2_3;
+        internal bool DiamondDealerItemsV2_3Configured { get; private set; }
+
+        #endregion
+
+        #region DiamondDealerSoldItem1
+
+        public string DiamondDealerSoldItem1
+        {
+            get { return diamondDealerSoldItem1; }
+            set
+            {
+                diamondDealerSoldItem1 = value;
+                DiamondDealerSoldItem1Configured = true;
+            }
+        }
+        string diamondDealerSoldItem1;
+        internal bool DiamondDealerSoldItem1Configured { get; private set; }
+
+        #endregion
+
+        #region DiamondDealerSoldItem2
+
+        public string DiamondDealerSoldItem2
+        {
+            get { return diamondDealerSoldItem2; }
+            set
+            {
+                diamondDealerSoldItem2 = value;
+                DiamondDealerSoldItem2Configured = true;
+            }
+        }
+        string diamondDealerSoldItem2;
+        internal bool DiamondDealerSoldItem2Configured { get; private set; }
+
+        #endregion
+
+        #region DiamondDealerSoldItem3
+
+        public string DiamondDealerSoldItem3
+        {
+            get { return diamondDealerSoldItem3; }
+            set
+            {
+                diamondDealerSoldItem3 = value;
+                DiamondDealerSoldItem3Configured = true;
+            }
+        }
+        string diamondDealerSoldItem3;
+        internal bool DiamondDealerSoldItem3Configured { get; private set; }
+
+        #endregion
+
+        #region IsBootsOfPainUnlocked
 
         public bool IsBootsOfPainUnlocked
         {
-            get { return _IsBootsOfPainUnlocked ?? default; }
-            set { _IsBootsOfPainUnlocked = value; }
+            get { return isBootsOfPainUnlocked; }
+            set
+            {
+                isBootsOfPainUnlocked = value;
+                IsBootsOfPainUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsBootsOfPainUnlocked;
+        bool isBootsOfPainUnlocked;
+        internal bool IsBootsOfPainUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGreavesUnlocked
 
         public bool IsGreavesUnlocked
         {
-            get { return _IsGreavesUnlocked ?? default; }
-            set { _IsGreavesUnlocked = value; }
+            get { return isGreavesUnlocked; }
+            set
+            {
+                isGreavesUnlocked = value;
+                IsGreavesUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsGreavesUnlocked;
+        bool isGreavesUnlocked;
+        internal bool IsGreavesUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsFood2Unlocked
 
         public bool IsFood2Unlocked
         {
-            get { return _IsFood2Unlocked ?? default; }
-            set { _IsFood2Unlocked = value; }
+            get { return isFood2Unlocked; }
+            set
+            {
+                isFood2Unlocked = value;
+                IsFood2UnlockedConfigured = true;
+            }
         }
-        internal bool? _IsFood2Unlocked;
+        bool isFood2Unlocked;
+        internal bool IsFood2UnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsDrumstickCleaned
 
         public bool IsDrumstickCleaned
         {
-            get { return _IsDrumstickCleaned ?? default; }
-            set { _IsDrumstickCleaned = value; }
+            get { return isDrumstickCleaned; }
+            set
+            {
+                isDrumstickCleaned = value;
+                IsDrumstickCleanedConfigured = true;
+            }
         }
-        internal bool? _IsDrumstickCleaned;
+        bool isDrumstickCleaned;
+        internal bool IsDrumstickCleanedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsFood3Unlocked
 
         public bool IsFood3Unlocked
         {
-            get { return _IsFood3Unlocked ?? default; }
-            set { _IsFood3Unlocked = value; }
+            get { return isFood3Unlocked; }
+            set
+            {
+                isFood3Unlocked = value;
+                IsFood3UnlockedConfigured = true;
+            }
         }
-        internal bool? _IsFood3Unlocked;
+        bool isFood3Unlocked;
+        internal bool IsFood3UnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsFood4Unlocked
 
         public bool IsFood4Unlocked
         {
-            get { return _IsFood4Unlocked ?? default; }
-            set { _IsFood4Unlocked = value; }
+            get { return isFood4Unlocked; }
+            set
+            {
+                isFood4Unlocked = value;
+                IsFood4UnlockedConfigured = true;
+            }
         }
-        internal bool? _IsFood4Unlocked;
+        bool isFood4Unlocked;
+        internal bool IsFood4UnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsCarrotUnlocked
 
         public bool IsCarrotUnlocked
         {
-            get { return _IsCarrotUnlocked ?? default; }
-            set { _IsCarrotUnlocked = value; }
+            get { return isCarrotUnlocked; }
+            set
+            {
+                isCarrotUnlocked = value;
+                IsCarrotUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsCarrotUnlocked;
+        bool isCarrotUnlocked;
+        internal bool IsCarrotUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsCookiesUnlocked
 
         public bool IsCookiesUnlocked
         {
-            get { return _IsCookiesUnlocked ?? default; }
-            set { _IsCookiesUnlocked = value; }
+            get { return isCookiesUnlocked; }
+            set
+            {
+                isCookiesUnlocked = value;
+                IsCookiesUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsCookiesUnlocked;
+        bool isCookiesUnlocked;
+        internal bool IsCookiesUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsBlastHelmUnlocked
 
         public bool IsBlastHelmUnlocked
         {
-            get { return _IsBlastHelmUnlocked ?? default; }
-            set { _IsBlastHelmUnlocked = value; }
+            get { return isBlastHelmUnlocked; }
+            set
+            {
+                isBlastHelmUnlocked = value;
+                IsBlastHelmUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsBlastHelmUnlocked;
+        bool isBlastHelmUnlocked;
+        internal bool IsBlastHelmUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsCrownOfThornsCleaned
 
         public bool IsCrownOfThornsCleaned
         {
-            get { return _IsCrownOfThornsCleaned ?? default; }
-            set { _IsCrownOfThornsCleaned = value; }
+            get { return isCrownOfThornsCleaned; }
+            set
+            {
+                isCrownOfThornsCleaned = value;
+                IsCrownOfThornsCleanedConfigured = true;
+            }
         }
-        internal bool? _IsCrownOfThornsCleaned;
+        bool isCrownOfThornsCleaned;
+        internal bool IsCrownOfThornsCleanedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsCrownOfThornsUnlocked
 
         public bool IsCrownOfThornsUnlocked
         {
-            get { return _IsCrownOfThornsUnlocked ?? default; }
-            set { _IsCrownOfThornsUnlocked = value; }
+            get { return isCrownOfThornsUnlocked; }
+            set
+            {
+                isCrownOfThornsUnlocked = value;
+                IsCrownOfThornsUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsCrownOfThornsUnlocked;
+        bool isCrownOfThornsUnlocked;
+        internal bool IsCrownOfThornsUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGlassJawUnlocked
 
         public bool IsGlassJawUnlocked
         {
-            get { return _IsGlassJawUnlocked ?? default; }
-            set { _IsGlassJawUnlocked = value; }
+            get { return isGlassJawUnlocked; }
+            set
+            {
+                isGlassJawUnlocked = value;
+                IsGlassJawUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsGlassJawUnlocked;
+        bool isGlassJawUnlocked;
+        internal bool IsGlassJawUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsHelmUnlocked
 
         public bool IsHelmUnlocked
         {
-            get { return _IsHelmUnlocked ?? default; }
-            set { _IsHelmUnlocked = value; }
+            get { return isHelmUnlocked; }
+            set
+            {
+                isHelmUnlocked = value;
+                IsHelmUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsHelmUnlocked;
+        bool isHelmUnlocked;
+        internal bool IsHelmUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsSpikedEarsUnlocked
 
         public bool IsSpikedEarsUnlocked
         {
-            get { return _IsSpikedEarsUnlocked ?? default; }
-            set { _IsSpikedEarsUnlocked = value; }
+            get { return isSpikedEarsUnlocked; }
+            set
+            {
+                isSpikedEarsUnlocked = value;
+                IsSpikedEarsUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsSpikedEarsUnlocked;
+        bool isSpikedEarsUnlocked;
+        internal bool IsSpikedEarsUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsSunglassesUnlocked
 
         public bool IsSunglassesUnlocked
         {
-            get { return _IsSunglassesUnlocked ?? default; }
-            set { _IsSunglassesUnlocked = value; }
+            get { return isSunglassesUnlocked; }
+            set
+            {
+                isSunglassesUnlocked = value;
+                IsSunglassesUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsSunglassesUnlocked;
+        bool isSunglassesUnlocked;
+        internal bool IsSunglassesUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsHeartTransplantUnlocked
 
         public bool IsHeartTransplantUnlocked
         {
-            get { return _IsHeartTransplantUnlocked ?? default; }
-            set { _IsHeartTransplantUnlocked = value; }
+            get { return isHeartTransplantUnlocked; }
+            set
+            {
+                isHeartTransplantUnlocked = value;
+                IsHeartTransplantUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsHeartTransplantUnlocked;
+        bool isHeartTransplantUnlocked;
+        internal bool IsHeartTransplantUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsHolsterUnlocked
 
         public bool IsHolsterUnlocked
         {
-            get { return _IsHolsterUnlocked ?? default; }
-            set { _IsHolsterUnlocked = value; }
+            get { return isHolsterUnlocked; }
+            set
+            {
+                isHolsterUnlocked = value;
+                IsHolsterUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsHolsterUnlocked;
+        bool isHolsterUnlocked;
+        internal bool IsHolsterUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsHolyWaterUnlocked
 
         public bool IsHolyWaterUnlocked
         {
-            get { return _IsHolyWaterUnlocked ?? default; }
-            set { _IsHolyWaterUnlocked = value; }
+            get { return isHolyWaterUnlocked; }
+            set
+            {
+                isHolyWaterUnlocked = value;
+                IsHolyWaterUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsHolyWaterUnlocked;
+        bool isHolyWaterUnlocked;
+        internal bool IsHolyWaterUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region MaxHealth
 
         public int MaxHealth
         {
-            get { return _MaxHealth ?? default; }
-            set { _MaxHealth = value; }
+            get { return maxHealth; }
+            set
+            {
+                maxHealth = value;
+                MaxHealthConfigured = true;
+            }
         }
-        internal int? _MaxHealth;
+        int maxHealth;
+        internal bool MaxHealthConfigured { get; private set; }
+
+        #endregion
+
+        #region CoinCount
 
         public int CoinCount
         {
-            get { return _CoinCount ?? default; }
-            set { _CoinCount = value; }
+            get { return coinCount; }
+            set
+            {
+                coinCount = value;
+                CoinCountConfigured = true;
+            }
         }
-        internal int? _CoinCount;
+        int coinCount;
+        internal bool CoinCountConfigured { get; private set; }
+
+        #endregion
+
+        #region DiamondCount
 
         public int DiamondCount
         {
-            get { return _DiamondCount ?? default; }
-            set { _DiamondCount = value; }
+            get { return diamondCount; }
+            set
+            {
+                diamondCount = value;
+                DiamondCountConfigured = true;
+            }
         }
-        internal int? _DiamondCount;
+        int diamondCount;
+        internal bool DiamondCountConfigured { get; private set; }
+
+        #endregion
+
+        #region IsPickaxeCleaned
 
         public bool IsPickaxeCleaned
         {
-            get { return _IsPickaxeCleaned ?? default; }
-            set { _IsPickaxeCleaned = value; }
+            get { return isPickaxeCleaned; }
+            set
+            {
+                isPickaxeCleaned = value;
+                IsPickaxeCleanedConfigured = true;
+            }
         }
-        internal bool? _IsPickaxeCleaned;
+        bool isPickaxeCleaned;
+        internal bool IsPickaxeCleanedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsPickaxeUnlocked
 
         public bool IsPickaxeUnlocked
         {
-            get { return _IsPickaxeUnlocked ?? default; }
-            set { _IsPickaxeUnlocked = value; }
+            get { return isPickaxeUnlocked; }
+            set
+            {
+                isPickaxeUnlocked = value;
+                IsPickaxeUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsPickaxeUnlocked;
+        bool isPickaxeUnlocked;
+        internal bool IsPickaxeUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfCourageUnlocked
 
         public bool IsRingOfCourageUnlocked
         {
-            get { return _IsRingOfCourageUnlocked ?? default; }
-            set { _IsRingOfCourageUnlocked = value; }
+            get { return isRingOfCourageUnlocked; }
+            set
+            {
+                isRingOfCourageUnlocked = value;
+                IsRingOfCourageUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfCourageUnlocked;
+        bool isRingOfCourageUnlocked;
+        internal bool IsRingOfCourageUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfFrostUnlocked
 
         public bool IsRingOfFrostUnlocked
         {
-            get { return _IsRingOfFrostUnlocked ?? default; }
-            set { _IsRingOfFrostUnlocked = value; }
+            get { return isRingOfFrostUnlocked; }
+            set
+            {
+                isRingOfFrostUnlocked = value;
+                IsRingOfFrostUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfFrostUnlocked;
+        bool isRingOfFrostUnlocked;
+        internal bool IsRingOfFrostUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfGoldUnlocked
 
         public bool IsRingOfGoldUnlocked
         {
-            get { return _IsRingOfGoldUnlocked ?? default; }
-            set { _IsRingOfGoldUnlocked = value; }
+            get { return isRingOfGoldUnlocked; }
+            set
+            {
+                isRingOfGoldUnlocked = value;
+                IsRingOfGoldUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfGoldUnlocked;
+        bool isRingOfGoldUnlocked;
+        internal bool IsRingOfGoldUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfLuckUnlocked
 
         public bool IsRingOfLuckUnlocked
         {
-            get { return _IsRingOfLuckUnlocked ?? default; }
-            set { _IsRingOfLuckUnlocked = value; }
+            get { return isRingOfLuckUnlocked; }
+            set
+            {
+                isRingOfLuckUnlocked = value;
+                IsRingOfLuckUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfLuckUnlocked;
+        bool isRingOfLuckUnlocked;
+        internal bool IsRingOfLuckUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfManaUnlocked
 
         public bool IsRingOfManaUnlocked
         {
-            get { return _IsRingOfManaUnlocked ?? default; }
-            set { _IsRingOfManaUnlocked = value; }
+            get { return isRingOfManaUnlocked; }
+            set
+            {
+                isRingOfManaUnlocked = value;
+                IsRingOfManaUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfManaUnlocked;
+        bool isRingOfManaUnlocked;
+        internal bool IsRingOfManaUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfMightCleaned
 
         public bool IsRingOfMightCleaned
         {
-            get { return _IsRingOfMightCleaned ?? default; }
-            set { _IsRingOfMightCleaned = value; }
+            get { return isRingOfMightCleaned; }
+            set
+            {
+                isRingOfMightCleaned = value;
+                IsRingOfMightCleanedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfMightCleaned;
+        bool isRingOfMightCleaned;
+        internal bool IsRingOfMightCleanedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfMightUnlocked
 
         public bool IsRingOfMightUnlocked
         {
-            get { return _IsRingOfMightUnlocked ?? default; }
-            set { _IsRingOfMightUnlocked = value; }
+            get { return isRingOfMightUnlocked; }
+            set
+            {
+                isRingOfMightUnlocked = value;
+                IsRingOfMightUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfMightUnlocked;
+        bool isRingOfMightUnlocked;
+        internal bool IsRingOfMightUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfPainUnlocked
 
         public bool IsRingOfPainUnlocked
         {
-            get { return _IsRingOfPainUnlocked ?? default; }
-            set { _IsRingOfPainUnlocked = value; }
+            get { return isRingOfPainUnlocked; }
+            set
+            {
+                isRingOfPainUnlocked = value;
+                IsRingOfPainUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfPainUnlocked;
+        bool isRingOfPainUnlocked;
+        internal bool IsRingOfPainUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfPeaceUnlocked
 
         public bool IsRingOfPeaceUnlocked
         {
-            get { return _IsRingOfPeaceUnlocked ?? default; }
-            set { _IsRingOfPeaceUnlocked = value; }
+            get { return isRingOfPeaceUnlocked; }
+            set
+            {
+                isRingOfPeaceUnlocked = value;
+                IsRingOfPeaceUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfPeaceUnlocked;
+        bool isRingOfPeaceUnlocked;
+        internal bool IsRingOfPeaceUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfPhasingUnlocked
 
         public bool IsRingOfPhasingUnlocked
         {
-            get { return _IsRingOfPhasingUnlocked ?? default; }
-            set { _IsRingOfPhasingUnlocked = value; }
+            get { return isRingOfPhasingUnlocked; }
+            set
+            {
+                isRingOfPhasingUnlocked = value;
+                IsRingOfPhasingUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfPhasingUnlocked;
+        bool isRingOfPhasingUnlocked;
+        internal bool IsRingOfPhasingUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfPiercingUnlocked
 
         public bool IsRingOfPiercingUnlocked
         {
-            get { return _IsRingOfPiercingUnlocked ?? default; }
-            set { _IsRingOfPiercingUnlocked = value; }
+            get { return isRingOfPiercingUnlocked; }
+            set
+            {
+                isRingOfPiercingUnlocked = value;
+                IsRingOfPiercingUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfPiercingUnlocked;
+        bool isRingOfPiercingUnlocked;
+        internal bool IsRingOfPiercingUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfProtectionUnlocked
 
         public bool IsRingOfProtectionUnlocked
         {
-            get { return _IsRingOfProtectionUnlocked ?? default; }
-            set { _IsRingOfProtectionUnlocked = value; }
+            get { return isRingOfProtectionUnlocked; }
+            set
+            {
+                isRingOfProtectionUnlocked = value;
+                IsRingOfProtectionUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfProtectionUnlocked;
+        bool isRingOfProtectionUnlocked;
+        internal bool IsRingOfProtectionUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfRegenerationUnlocked
 
         public bool IsRingOfRegenerationUnlocked
         {
-            get { return _IsRingOfRegenerationUnlocked ?? default; }
-            set { _IsRingOfRegenerationUnlocked = value; }
+            get { return isRingOfRegenerationUnlocked; }
+            set
+            {
+                isRingOfRegenerationUnlocked = value;
+                IsRingOfRegenerationUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfRegenerationUnlocked;
+        bool isRingOfRegenerationUnlocked;
+        internal bool IsRingOfRegenerationUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfShadowsUnlocked
 
         public bool IsRingOfShadowsUnlocked
         {
-            get { return _IsRingOfShadowsUnlocked ?? default; }
-            set { _IsRingOfShadowsUnlocked = value; }
+            get { return isRingOfShadowsUnlocked; }
+            set
+            {
+                isRingOfShadowsUnlocked = value;
+                IsRingOfShadowsUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfShadowsUnlocked;
+        bool isRingOfShadowsUnlocked;
+        internal bool IsRingOfShadowsUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfShieldingUnlocked
 
         public bool IsRingOfShieldingUnlocked
         {
-            get { return _IsRingOfShieldingUnlocked ?? default; }
-            set { _IsRingOfShieldingUnlocked = value; }
+            get { return isRingOfShieldingUnlocked; }
+            set
+            {
+                isRingOfShieldingUnlocked = value;
+                IsRingOfShieldingUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfShieldingUnlocked;
+        bool isRingOfShieldingUnlocked;
+        internal bool IsRingOfShieldingUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfWarCleaned
 
         public bool IsRingOfWarCleaned
         {
-            get { return _IsRingOfWarCleaned ?? default; }
-            set { _IsRingOfWarCleaned = value; }
+            get { return isRingOfWarCleaned; }
+            set
+            {
+                isRingOfWarCleaned = value;
+                IsRingOfWarCleanedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfWarCleaned;
+        bool isRingOfWarCleaned;
+        internal bool IsRingOfWarCleanedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRingOfWarUnlocked
 
         public bool IsRingOfWarUnlocked
         {
-            get { return _IsRingOfWarUnlocked ?? default; }
-            set { _IsRingOfWarUnlocked = value; }
+            get { return isRingOfWarUnlocked; }
+            set
+            {
+                isRingOfWarUnlocked = value;
+                IsRingOfWarUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRingOfWarUnlocked;
+        bool isRingOfWarUnlocked;
+        internal bool IsRingOfWarUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsScrollOfDescendUnlocked
 
         public bool IsScrollOfDescendUnlocked
         {
-            get { return _IsScrollOfDescendUnlocked ?? default; }
-            set { _IsScrollOfDescendUnlocked = value; }
+            get { return isScrollOfDescendUnlocked; }
+            set
+            {
+                isScrollOfDescendUnlocked = value;
+                IsScrollOfDescendUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsScrollOfDescendUnlocked;
+        bool isScrollOfDescendUnlocked;
+        internal bool IsScrollOfDescendUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsScrollOfEarthquakeUnlocked
 
         public bool IsScrollOfEarthquakeUnlocked
         {
-            get { return _IsScrollOfEarthquakeUnlocked ?? default; }
-            set { _IsScrollOfEarthquakeUnlocked = value; }
+            get { return isScrollOfEarthquakeUnlocked; }
+            set
+            {
+                isScrollOfEarthquakeUnlocked = value;
+                IsScrollOfEarthquakeUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsScrollOfEarthquakeUnlocked;
+        bool isScrollOfEarthquakeUnlocked;
+        internal bool IsScrollOfEarthquakeUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsEnchantWeaponScrollCleaned
 
         public bool IsEnchantWeaponScrollCleaned
         {
-            get { return _IsEnchantWeaponScrollCleaned ?? default; }
-            set { _IsEnchantWeaponScrollCleaned = value; }
+            get { return isEnchantWeaponScrollCleaned; }
+            set
+            {
+                isEnchantWeaponScrollCleaned = value;
+                IsEnchantWeaponScrollCleanedConfigured = true;
+            }
         }
-        internal bool? _IsEnchantWeaponScrollCleaned;
+        bool isEnchantWeaponScrollCleaned;
+        internal bool IsEnchantWeaponScrollCleanedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsScrollOfEnchantWeaponUnlocked
 
         public bool IsScrollOfEnchantWeaponUnlocked
         {
-            get { return _IsScrollOfEnchantWeaponUnlocked ?? default; }
-            set { _IsScrollOfEnchantWeaponUnlocked = value; }
+            get { return isScrollOfEnchantWeaponUnlocked; }
+            set
+            {
+                isScrollOfEnchantWeaponUnlocked = value;
+                IsScrollOfEnchantWeaponUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsScrollOfEnchantWeaponUnlocked;
+        bool isScrollOfEnchantWeaponUnlocked;
+        internal bool IsScrollOfEnchantWeaponUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsScrollOfFearUnlocked
 
         public bool IsScrollOfFearUnlocked
         {
-            get { return _IsScrollOfFearUnlocked ?? default; }
-            set { _IsScrollOfFearUnlocked = value; }
+            get { return isScrollOfFearUnlocked; }
+            set
+            {
+                isScrollOfFearUnlocked = value;
+                IsScrollOfFearUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsScrollOfFearUnlocked;
+        bool isScrollOfFearUnlocked;
+        internal bool IsScrollOfFearUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsScrollOfNeedUnlocked
 
         public bool IsScrollOfNeedUnlocked
         {
-            get { return _IsScrollOfNeedUnlocked ?? default; }
-            set { _IsScrollOfNeedUnlocked = value; }
+            get { return isScrollOfNeedUnlocked; }
+            set
+            {
+                isScrollOfNeedUnlocked = value;
+                IsScrollOfNeedUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsScrollOfNeedUnlocked;
+        bool isScrollOfNeedUnlocked;
+        internal bool IsScrollOfNeedUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsScrollOfRichesUnlocked
 
         public bool IsScrollOfRichesUnlocked
         {
-            get { return _IsScrollOfRichesUnlocked ?? default; }
-            set { _IsScrollOfRichesUnlocked = value; }
+            get { return isScrollOfRichesUnlocked; }
+            set
+            {
+                isScrollOfRichesUnlocked = value;
+                IsScrollOfRichesUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsScrollOfRichesUnlocked;
+        bool isScrollOfRichesUnlocked;
+        internal bool IsScrollOfRichesUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsTransmuteScrollUnlocked
 
         public bool IsTransmuteScrollUnlocked
         {
-            get { return _IsTransmuteScrollUnlocked ?? default; }
-            set { _IsTransmuteScrollUnlocked = value; }
+            get { return isTransmuteScrollUnlocked; }
+            set
+            {
+                isTransmuteScrollUnlocked = value;
+                IsTransmuteScrollUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsTransmuteScrollUnlocked;
+        bool isTransmuteScrollUnlocked;
+        internal bool IsTransmuteScrollUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsBloodShovelUnlocked
 
         public bool IsBloodShovelUnlocked
         {
-            get { return _IsBloodShovelUnlocked ?? default; }
-            set { _IsBloodShovelUnlocked = value; }
+            get { return isBloodShovelUnlocked; }
+            set
+            {
+                isBloodShovelUnlocked = value;
+                IsBloodShovelUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsBloodShovelUnlocked;
+        bool isBloodShovelUnlocked;
+        internal bool IsBloodShovelUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsShoveOfCourageUnlocked
 
         public bool IsShoveOfCourageUnlocked
         {
-            get { return _IsShoveOfCourageUnlocked ?? default; }
-            set { _IsShoveOfCourageUnlocked = value; }
+            get { return isShoveOfCourageUnlocked; }
+            set
+            {
+                isShoveOfCourageUnlocked = value;
+                IsShoveOfCourageUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsShoveOfCourageUnlocked;
+        bool isShoveOfCourageUnlocked;
+        internal bool IsShoveOfCourageUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGlassShovelCleaned
 
         public bool IsGlassShovelCleaned
         {
-            get { return _IsGlassShovelCleaned ?? default; }
-            set { _IsGlassShovelCleaned = value; }
+            get { return isGlassShovelCleaned; }
+            set
+            {
+                isGlassShovelCleaned = value;
+                IsGlassShovelCleanedConfigured = true;
+            }
         }
-        internal bool? _IsGlassShovelCleaned;
+        bool isGlassShovelCleaned;
+        internal bool IsGlassShovelCleanedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGlassShovelUnlocked
 
         public bool IsGlassShovelUnlocked
         {
-            get { return _IsGlassShovelUnlocked ?? default; }
-            set { _IsGlassShovelUnlocked = value; }
+            get { return isGlassShovelUnlocked; }
+            set
+            {
+                isGlassShovelUnlocked = value;
+                IsGlassShovelUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsGlassShovelUnlocked;
+        bool isGlassShovelUnlocked;
+        internal bool IsGlassShovelUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsObsidianShovelUnlocked
 
         public bool IsObsidianShovelUnlocked
         {
-            get { return _IsObsidianShovelUnlocked ?? default; }
-            set { _IsObsidianShovelUnlocked = value; }
+            get { return isObsidianShovelUnlocked; }
+            set
+            {
+                isObsidianShovelUnlocked = value;
+                IsObsidianShovelUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsObsidianShovelUnlocked;
+        bool isObsidianShovelUnlocked;
+        internal bool IsObsidianShovelUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsShovelOfStrengthUnlocked
 
         public bool IsShovelOfStrengthUnlocked
         {
-            get { return _IsShovelOfStrengthUnlocked ?? default; }
-            set { _IsShovelOfStrengthUnlocked = value; }
+            get { return isShovelOfStrengthUnlocked; }
+            set
+            {
+                isShovelOfStrengthUnlocked = value;
+                IsShovelOfStrengthUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsShovelOfStrengthUnlocked;
+        bool isShovelOfStrengthUnlocked;
+        internal bool IsShovelOfStrengthUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsBombSpellUnlocked
 
         public bool IsBombSpellUnlocked
         {
-            get { return _IsBombSpellUnlocked ?? default; }
-            set { _IsBombSpellUnlocked = value; }
+            get { return isBombSpellUnlocked; }
+            set
+            {
+                isBombSpellUnlocked = value;
+                IsBombSpellUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsBombSpellUnlocked;
+        bool isBombSpellUnlocked;
+        internal bool IsBombSpellUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsFreezeSpellUnlocked
 
         public bool IsFreezeSpellUnlocked
         {
-            get { return _IsFreezeSpellUnlocked ?? default; }
-            set { _IsFreezeSpellUnlocked = value; }
+            get { return isFreezeSpellUnlocked; }
+            set
+            {
+                isFreezeSpellUnlocked = value;
+                IsFreezeSpellUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsFreezeSpellUnlocked;
+        bool isFreezeSpellUnlocked;
+        internal bool IsFreezeSpellUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsHealSpellUnlocked
 
         public bool IsHealSpellUnlocked
         {
-            get { return _IsHealSpellUnlocked ?? default; }
-            set { _IsHealSpellUnlocked = value; }
+            get { return isHealSpellUnlocked; }
+            set
+            {
+                isHealSpellUnlocked = value;
+                IsHealSpellUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsHealSpellUnlocked;
+        bool isHealSpellUnlocked;
+        internal bool IsHealSpellUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsShieldSpellCleaned
 
         public bool IsShieldSpellCleaned
         {
-            get { return _IsShieldSpellCleaned ?? default; }
-            set { _IsShieldSpellCleaned = value; }
+            get { return isShieldSpellCleaned; }
+            set
+            {
+                isShieldSpellCleaned = value;
+                IsShieldSpellCleanedConfigured = true;
+            }
         }
-        internal bool? _IsShieldSpellCleaned;
+        bool isShieldSpellCleaned;
+        internal bool IsShieldSpellCleanedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsShieldSpellUnlocked
 
         public bool IsShieldSpellUnlocked
         {
-            get { return _IsShieldSpellUnlocked ?? default; }
-            set { _IsShieldSpellUnlocked = value; }
+            get { return isShieldSpellUnlocked; }
+            set
+            {
+                isShieldSpellUnlocked = value;
+                IsShieldSpellUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsShieldSpellUnlocked;
+        bool isShieldSpellUnlocked;
+        internal bool IsShieldSpellUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsTransmuteSpellUnlocked
 
         public bool IsTransmuteSpellUnlocked
         {
-            get { return _IsTransmuteSpellUnlocked ?? default; }
-            set { _IsTransmuteSpellUnlocked = value; }
+            get { return isTransmuteSpellUnlocked; }
+            set
+            {
+                isTransmuteSpellUnlocked = value;
+                IsTransmuteSpellUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsTransmuteSpellUnlocked;
+        bool isTransmuteSpellUnlocked;
+        internal bool IsTransmuteSpellUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsTorch2Unlocked
 
         public bool IsTorch2Unlocked
         {
-            get { return _IsTorch2Unlocked ?? default; }
-            set { _IsTorch2Unlocked = value; }
+            get { return isTorch2Unlocked; }
+            set
+            {
+                isTorch2Unlocked = value;
+                IsTorch2UnlockedConfigured = true;
+            }
         }
-        internal bool? _IsTorch2Unlocked;
+        bool isTorch2Unlocked;
+        internal bool IsTorch2UnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsTorch3Unlocked
 
         public bool IsTorch3Unlocked
         {
-            get { return _IsTorch3Unlocked ?? default; }
-            set { _IsTorch3Unlocked = value; }
+            get { return isTorch3Unlocked; }
+            set
+            {
+                isTorch3Unlocked = value;
+                IsTorch3UnlockedConfigured = true;
+            }
         }
-        internal bool? _IsTorch3Unlocked;
+        bool isTorch3Unlocked;
+        internal bool IsTorch3UnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsTorchOfForesightUnlocked
 
         public bool IsTorchOfForesightUnlocked
         {
-            get { return _IsTorchOfForesightUnlocked ?? default; }
-            set { _IsTorchOfForesightUnlocked = value; }
+            get { return isTorchOfForesightUnlocked; }
+            set
+            {
+                isTorchOfForesightUnlocked = value;
+                IsTorchOfForesightUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsTorchOfForesightUnlocked;
+        bool isTorchOfForesightUnlocked;
+        internal bool IsTorchOfForesightUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGlassTorchCleaned
 
         public bool IsGlassTorchCleaned
         {
-            get { return _IsGlassTorchCleaned ?? default; }
-            set { _IsGlassTorchCleaned = value; }
+            get { return isGlassTorchCleaned; }
+            set
+            {
+                isGlassTorchCleaned = value;
+                IsGlassTorchCleanedConfigured = true;
+            }
         }
-        internal bool? _IsGlassTorchCleaned;
+        bool isGlassTorchCleaned;
+        internal bool IsGlassTorchCleanedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGlassTorchUnlocked
 
         public bool IsGlassTorchUnlocked
         {
-            get { return _IsGlassTorchUnlocked ?? default; }
-            set { _IsGlassTorchUnlocked = value; }
+            get { return isGlassTorchUnlocked; }
+            set
+            {
+                isGlassTorchUnlocked = value;
+                IsGlassTorchUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsGlassTorchUnlocked;
+        bool isGlassTorchUnlocked;
+        internal bool IsGlassTorchUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsInfernalTorchUnlocked
 
         public bool IsInfernalTorchUnlocked
         {
-            get { return _IsInfernalTorchUnlocked ?? default; }
-            set { _IsInfernalTorchUnlocked = value; }
+            get { return isInfernalTorchUnlocked; }
+            set
+            {
+                isInfernalTorchUnlocked = value;
+                IsInfernalTorchUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsInfernalTorchUnlocked;
+        bool isInfernalTorchUnlocked;
+        internal bool IsInfernalTorchUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsObsidianTorchUnlocked
 
         public bool IsObsidianTorchUnlocked
         {
-            get { return _IsObsidianTorchUnlocked ?? default; }
-            set { _IsObsidianTorchUnlocked = value; }
+            get { return isObsidianTorchUnlocked; }
+            set
+            {
+                isObsidianTorchUnlocked = value;
+                IsObsidianTorchUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsObsidianTorchUnlocked;
+        bool isObsidianTorchUnlocked;
+        internal bool IsObsidianTorchUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsTorchOfStrengthUnlocked
 
         public bool IsTorchOfStrengthUnlocked
         {
-            get { return _IsTorchOfStrengthUnlocked ?? default; }
-            set { _IsTorchOfStrengthUnlocked = value; }
+            get { return isTorchOfStrengthUnlocked; }
+            set
+            {
+                isTorchOfStrengthUnlocked = value;
+                IsTorchOfStrengthUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsTorchOfStrengthUnlocked;
+        bool isTorchOfStrengthUnlocked;
+        internal bool IsTorchOfStrengthUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region V
 
         public int V
         {
-            get { return _V ?? default; }
-            set { _V = value; }
+            get { return v; }
+            set
+            {
+                v = value;
+                VConfigured = true;
+            }
         }
-        internal int? _V;
+        int v;
+        internal bool VConfigured { get; private set; }
+
+        #endregion
+
+        #region IsWarDrumUnlocked
 
         public bool IsWarDrumUnlocked
         {
-            get { return _IsWarDrumUnlocked ?? default; }
-            set { _IsWarDrumUnlocked = value; }
+            get { return isWarDrumUnlocked; }
+            set
+            {
+                isWarDrumUnlocked = value;
+                IsWarDrumUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsWarDrumUnlocked;
+        bool isWarDrumUnlocked;
+        internal bool IsWarDrumUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsAxeUnlocked
 
         public bool IsAxeUnlocked
         {
-            get { return _IsAxeUnlocked ?? default; }
-            set { _IsAxeUnlocked = value; }
+            get { return isAxeUnlocked; }
+            set
+            {
+                isAxeUnlocked = value;
+                IsAxeUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsAxeUnlocked;
+        bool isAxeUnlocked;
+        internal bool IsAxeUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsAxeUsed
 
         public bool IsAxeUsed
         {
-            get { return _IsAxeUsed ?? default; }
-            set { _IsAxeUsed = value; }
+            get { return isAxeUsed; }
+            set
+            {
+                isAxeUsed = value;
+                IsAxeUsedConfigured = true;
+            }
         }
-        internal bool? _IsAxeUsed;
+        bool isAxeUsed;
+        internal bool IsAxeUsedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsBloodLongswordUnlocked
 
         public bool IsBloodLongswordUnlocked
         {
-            get { return _IsBloodLongswordUnlocked ?? default; }
-            set { _IsBloodLongswordUnlocked = value; }
+            get { return isBloodLongswordUnlocked; }
+            set
+            {
+                isBloodLongswordUnlocked = value;
+                IsBloodLongswordUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsBloodLongswordUnlocked;
+        bool isBloodLongswordUnlocked;
+        internal bool IsBloodLongswordUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsBloodRapierUnlocked
 
         public bool IsBloodRapierUnlocked
         {
-            get { return _IsBloodRapierUnlocked ?? default; }
-            set { _IsBloodRapierUnlocked = value; }
+            get { return isBloodRapierUnlocked; }
+            set
+            {
+                isBloodRapierUnlocked = value;
+                IsBloodRapierUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsBloodRapierUnlocked;
+        bool isBloodRapierUnlocked;
+        internal bool IsBloodRapierUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsBloodSpearUnlocked
 
         public bool IsBloodSpearUnlocked
         {
-            get { return _IsBloodSpearUnlocked ?? default; }
-            set { _IsBloodSpearUnlocked = value; }
+            get { return isBloodSpearUnlocked; }
+            set
+            {
+                isBloodSpearUnlocked = value;
+                IsBloodSpearUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsBloodSpearUnlocked;
+        bool isBloodSpearUnlocked;
+        internal bool IsBloodSpearUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsBloodWhipUnlocked
 
         public bool IsBloodWhipUnlocked
         {
-            get { return _IsBloodWhipUnlocked ?? default; }
-            set { _IsBloodWhipUnlocked = value; }
+            get { return isBloodWhipUnlocked; }
+            set
+            {
+                isBloodWhipUnlocked = value;
+                IsBloodWhipUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsBloodWhipUnlocked;
+        bool isBloodWhipUnlocked;
+        internal bool IsBloodWhipUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsBlunderbussUnlocked
 
         public bool IsBlunderbussUnlocked
         {
-            get { return _IsBlunderbussUnlocked ?? default; }
-            set { _IsBlunderbussUnlocked = value; }
+            get { return isBlunderbussUnlocked; }
+            set
+            {
+                isBlunderbussUnlocked = value;
+                IsBlunderbussUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsBlunderbussUnlocked;
+        bool isBlunderbussUnlocked;
+        internal bool IsBlunderbussUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsBowUnlocked
 
         public bool IsBowUnlocked
         {
-            get { return _IsBowUnlocked ?? default; }
-            set { _IsBowUnlocked = value; }
+            get { return isBowUnlocked; }
+            set
+            {
+                isBowUnlocked = value;
+                IsBowUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsBowUnlocked;
+        bool isBowUnlocked;
+        internal bool IsBowUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsBroadswordUnlocked
 
         public bool IsBroadswordUnlocked
         {
-            get { return _IsBroadswordUnlocked ?? default; }
-            set { _IsBroadswordUnlocked = value; }
+            get { return isBroadswordUnlocked; }
+            set
+            {
+                isBroadswordUnlocked = value;
+                IsBroadswordUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsBroadswordUnlocked;
+        bool isBroadswordUnlocked;
+        internal bool IsBroadswordUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsCatUnlocked
 
         public bool IsCatUnlocked
         {
-            get { return _IsCatUnlocked ?? default; }
-            set { _IsCatUnlocked = value; }
+            get { return isCatUnlocked; }
+            set
+            {
+                isCatUnlocked = value;
+                IsCatUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsCatUnlocked;
+        bool isCatUnlocked;
+        internal bool IsCatUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsCatUsed
 
         public bool IsCatUsed
         {
-            get { return _IsCatUsed ?? default; }
-            set { _IsCatUsed = value; }
+            get { return isCatUsed; }
+            set
+            {
+                isCatUsed = value;
+                IsCatUsedConfigured = true;
+            }
         }
-        internal bool? _IsCatUsed;
+        bool isCatUsed;
+        internal bool IsCatUsedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsCrossbowUnlocked
 
         public bool IsCrossbowUnlocked
         {
-            get { return _IsCrossbowUnlocked ?? default; }
-            set { _IsCrossbowUnlocked = value; }
+            get { return isCrossbowUnlocked; }
+            set
+            {
+                isCrossbowUnlocked = value;
+                IsCrossbowUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsCrossbowUnlocked;
+        bool isCrossbowUnlocked;
+        internal bool IsCrossbowUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsCutlassUnlocked
 
         public bool IsCutlassUnlocked
         {
-            get { return _IsCutlassUnlocked ?? default; }
-            set { _IsCutlassUnlocked = value; }
+            get { return isCutlassUnlocked; }
+            set
+            {
+                isCutlassUnlocked = value;
+                IsCutlassUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsCutlassUnlocked;
+        bool isCutlassUnlocked;
+        internal bool IsCutlassUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsCutlassUsed
 
         public bool IsCutlassUsed
         {
-            get { return _IsCutlassUsed ?? default; }
-            set { _IsCutlassUsed = value; }
+            get { return isCutlassUsed; }
+            set
+            {
+                isCutlassUsed = value;
+                IsCutlassUsedConfigured = true;
+            }
         }
-        internal bool? _IsCutlassUsed;
+        bool isCutlassUsed;
+        internal bool IsCutlassUsedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsDaggerUnlocked
 
         public bool IsDaggerUnlocked
         {
-            get { return _IsDaggerUnlocked ?? default; }
-            set { _IsDaggerUnlocked = value; }
+            get { return isDaggerUnlocked; }
+            set
+            {
+                isDaggerUnlocked = value;
+                IsDaggerUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsDaggerUnlocked;
+        bool isDaggerUnlocked;
+        internal bool IsDaggerUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsElectricDaggerUsed
 
         public bool IsElectricDaggerUsed
         {
-            get { return _IsElectricDaggerUsed ?? default; }
-            set { _IsElectricDaggerUsed = value; }
+            get { return isElectricDaggerUsed; }
+            set
+            {
+                isElectricDaggerUsed = value;
+                IsElectricDaggerUsedConfigured = true;
+            }
         }
-        internal bool? _IsElectricDaggerUsed;
+        bool isElectricDaggerUsed;
+        internal bool IsElectricDaggerUsedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsDaggerOfFrostUnlocked
 
         public bool IsDaggerOfFrostUnlocked
         {
-            get { return _IsDaggerOfFrostUnlocked ?? default; }
-            set { _IsDaggerOfFrostUnlocked = value; }
+            get { return isDaggerOfFrostUnlocked; }
+            set
+            {
+                isDaggerOfFrostUnlocked = value;
+                IsDaggerOfFrostUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsDaggerOfFrostUnlocked;
+        bool isDaggerOfFrostUnlocked;
+        internal bool IsDaggerOfFrostUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsJeweledDaggerUsed
 
         public bool IsJeweledDaggerUsed
         {
-            get { return _IsJeweledDaggerUsed ?? default; }
-            set { _IsJeweledDaggerUsed = value; }
+            get { return isJeweledDaggerUsed; }
+            set
+            {
+                isJeweledDaggerUsed = value;
+                IsJeweledDaggerUsedConfigured = true;
+            }
         }
-        internal bool? _IsJeweledDaggerUsed;
+        bool isJeweledDaggerUsed;
+        internal bool IsJeweledDaggerUsedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsDaggerOfPhasingUnlocked
 
         public bool IsDaggerOfPhasingUnlocked
         {
-            get { return _IsDaggerOfPhasingUnlocked ?? default; }
-            set { _IsDaggerOfPhasingUnlocked = value; }
+            get { return isDaggerOfPhasingUnlocked; }
+            set
+            {
+                isDaggerOfPhasingUnlocked = value;
+                IsDaggerOfPhasingUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsDaggerOfPhasingUnlocked;
+        bool isDaggerOfPhasingUnlocked;
+        internal bool IsDaggerOfPhasingUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsFlailUnlocked
 
         public bool IsFlailUnlocked
         {
-            get { return _IsFlailUnlocked ?? default; }
-            set { _IsFlailUnlocked = value; }
+            get { return isFlailUnlocked; }
+            set
+            {
+                isFlailUnlocked = value;
+                IsFlailUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsFlailUnlocked;
+        bool isFlailUnlocked;
+        internal bool IsFlailUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsFlailUsed
 
         public bool IsFlailUsed
         {
-            get { return _IsFlailUsed ?? default; }
-            set { _IsFlailUsed = value; }
+            get { return isFlailUsed; }
+            set
+            {
+                isFlailUsed = value;
+                IsFlailUsedConfigured = true;
+            }
         }
-        internal bool? _IsFlailUsed;
+        bool isFlailUsed;
+        internal bool IsFlailUsedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGlassLongswordUnlocked
 
         public bool IsGlassLongswordUnlocked
         {
-            get { return _IsGlassLongswordUnlocked ?? default; }
-            set { _IsGlassLongswordUnlocked = value; }
+            get { return isGlassLongswordUnlocked; }
+            set
+            {
+                isGlassLongswordUnlocked = value;
+                IsGlassLongswordUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsGlassLongswordUnlocked;
+        bool isGlassLongswordUnlocked;
+        internal bool IsGlassLongswordUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGlassRapierUnlocked
 
         public bool IsGlassRapierUnlocked
         {
-            get { return _IsGlassRapierUnlocked ?? default; }
-            set { _IsGlassRapierUnlocked = value; }
+            get { return isGlassRapierUnlocked; }
+            set
+            {
+                isGlassRapierUnlocked = value;
+                IsGlassRapierUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsGlassRapierUnlocked;
+        bool isGlassRapierUnlocked;
+        internal bool IsGlassRapierUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGlassSpearUnlocked
 
         public bool IsGlassSpearUnlocked
         {
-            get { return _IsGlassSpearUnlocked ?? default; }
-            set { _IsGlassSpearUnlocked = value; }
+            get { return isGlassSpearUnlocked; }
+            set
+            {
+                isGlassSpearUnlocked = value;
+                IsGlassSpearUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsGlassSpearUnlocked;
+        bool isGlassSpearUnlocked;
+        internal bool IsGlassSpearUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGlassWhipUnlocked
 
         public bool IsGlassWhipUnlocked
         {
-            get { return _IsGlassWhipUnlocked ?? default; }
-            set { _IsGlassWhipUnlocked = value; }
+            get { return isGlassWhipUnlocked; }
+            set
+            {
+                isGlassWhipUnlocked = value;
+                IsGlassWhipUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsGlassWhipUnlocked;
+        bool isGlassWhipUnlocked;
+        internal bool IsGlassWhipUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGoldenLongswordUnlocked
 
         public bool IsGoldenLongswordUnlocked
         {
-            get { return _IsGoldenLongswordUnlocked ?? default; }
-            set { _IsGoldenLongswordUnlocked = value; }
+            get { return isGoldenLongswordUnlocked; }
+            set
+            {
+                isGoldenLongswordUnlocked = value;
+                IsGoldenLongswordUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsGoldenLongswordUnlocked;
+        bool isGoldenLongswordUnlocked;
+        internal bool IsGoldenLongswordUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGoldenRapierUnlocked
 
         public bool IsGoldenRapierUnlocked
         {
-            get { return _IsGoldenRapierUnlocked ?? default; }
-            set { _IsGoldenRapierUnlocked = value; }
+            get { return isGoldenRapierUnlocked; }
+            set
+            {
+                isGoldenRapierUnlocked = value;
+                IsGoldenRapierUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsGoldenRapierUnlocked;
+        bool isGoldenRapierUnlocked;
+        internal bool IsGoldenRapierUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGoldenSpearUnlocked
 
         public bool IsGoldenSpearUnlocked
         {
-            get { return _IsGoldenSpearUnlocked ?? default; }
-            set { _IsGoldenSpearUnlocked = value; }
+            get { return isGoldenSpearUnlocked; }
+            set
+            {
+                isGoldenSpearUnlocked = value;
+                IsGoldenSpearUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsGoldenSpearUnlocked;
+        bool isGoldenSpearUnlocked;
+        internal bool IsGoldenSpearUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsGoldenWhipUnlocked
 
         public bool IsGoldenWhipUnlocked
         {
-            get { return _IsGoldenWhipUnlocked ?? default; }
-            set { _IsGoldenWhipUnlocked = value; }
+            get { return isGoldenWhipUnlocked; }
+            set
+            {
+                isGoldenWhipUnlocked = value;
+                IsGoldenWhipUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsGoldenWhipUnlocked;
+        bool isGoldenWhipUnlocked;
+        internal bool IsGoldenWhipUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsHarpUnlocked
 
         public bool IsHarpUnlocked
         {
-            get { return _IsHarpUnlocked ?? default; }
-            set { _IsHarpUnlocked = value; }
+            get { return isHarpUnlocked; }
+            set
+            {
+                isHarpUnlocked = value;
+                IsHarpUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsHarpUnlocked;
+        bool isHarpUnlocked;
+        internal bool IsHarpUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsHarpUsed
 
         public bool IsHarpUsed
         {
-            get { return _IsHarpUsed ?? default; }
-            set { _IsHarpUsed = value; }
+            get { return isHarpUsed; }
+            set
+            {
+                isHarpUsed = value;
+                IsHarpUsedConfigured = true;
+            }
         }
-        internal bool? _IsHarpUsed;
+        bool isHarpUsed;
+        internal bool IsHarpUsedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsLongswordUnlocked
 
         public bool IsLongswordUnlocked
         {
-            get { return _IsLongswordUnlocked ?? default; }
-            set { _IsLongswordUnlocked = value; }
+            get { return isLongswordUnlocked; }
+            set
+            {
+                isLongswordUnlocked = value;
+                IsLongswordUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsLongswordUnlocked;
+        bool isLongswordUnlocked;
+        internal bool IsLongswordUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsLongswordUsed
 
         public bool IsLongswordUsed
         {
-            get { return _IsLongswordUsed ?? default; }
-            set { _IsLongswordUsed = value; }
+            get { return isLongswordUsed; }
+            set
+            {
+                isLongswordUsed = value;
+                IsLongswordUsedConfigured = true;
+            }
         }
-        internal bool? _IsLongswordUsed;
+        bool isLongswordUsed;
+        internal bool IsLongswordUsedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsObsidianLongswordUnlocked
 
         public bool IsObsidianLongswordUnlocked
         {
-            get { return _IsObsidianLongswordUnlocked ?? default; }
-            set { _IsObsidianLongswordUnlocked = value; }
+            get { return isObsidianLongswordUnlocked; }
+            set
+            {
+                isObsidianLongswordUnlocked = value;
+                IsObsidianLongswordUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsObsidianLongswordUnlocked;
+        bool isObsidianLongswordUnlocked;
+        internal bool IsObsidianLongswordUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsObsidianRapierUnlocked
 
         public bool IsObsidianRapierUnlocked
         {
-            get { return _IsObsidianRapierUnlocked ?? default; }
-            set { _IsObsidianRapierUnlocked = value; }
+            get { return isObsidianRapierUnlocked; }
+            set
+            {
+                isObsidianRapierUnlocked = value;
+                IsObsidianRapierUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsObsidianRapierUnlocked;
+        bool isObsidianRapierUnlocked;
+        internal bool IsObsidianRapierUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsObsidianSpearUnlocked
 
         public bool IsObsidianSpearUnlocked
         {
-            get { return _IsObsidianSpearUnlocked ?? default; }
-            set { _IsObsidianSpearUnlocked = value; }
+            get { return isObsidianSpearUnlocked; }
+            set
+            {
+                isObsidianSpearUnlocked = value;
+                IsObsidianSpearUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsObsidianSpearUnlocked;
+        bool isObsidianSpearUnlocked;
+        internal bool IsObsidianSpearUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsObsidianWhipUnlocked
 
         public bool IsObsidianWhipUnlocked
         {
-            get { return _IsObsidianWhipUnlocked ?? default; }
-            set { _IsObsidianWhipUnlocked = value; }
+            get { return isObsidianWhipUnlocked; }
+            set
+            {
+                isObsidianWhipUnlocked = value;
+                IsObsidianWhipUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsObsidianWhipUnlocked;
+        bool isObsidianWhipUnlocked;
+        internal bool IsObsidianWhipUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRapierUnlocked
 
         public bool IsRapierUnlocked
         {
-            get { return _IsRapierUnlocked ?? default; }
-            set { _IsRapierUnlocked = value; }
+            get { return isRapierUnlocked; }
+            set
+            {
+                isRapierUnlocked = value;
+                IsRapierUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRapierUnlocked;
+        bool isRapierUnlocked;
+        internal bool IsRapierUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRapierUsed
 
         public bool IsRapierUsed
         {
-            get { return _IsRapierUsed ?? default; }
-            set { _IsRapierUsed = value; }
+            get { return isRapierUsed; }
+            set
+            {
+                isRapierUsed = value;
+                IsRapierUsedConfigured = true;
+            }
         }
-        internal bool? _IsRapierUsed;
+        bool isRapierUsed;
+        internal bool IsRapierUsedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRifleUnlocked
 
         public bool IsRifleUnlocked
         {
-            get { return _IsRifleUnlocked ?? default; }
-            set { _IsRifleUnlocked = value; }
+            get { return isRifleUnlocked; }
+            set
+            {
+                isRifleUnlocked = value;
+                IsRifleUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsRifleUnlocked;
+        bool isRifleUnlocked;
+        internal bool IsRifleUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsRifleUsed
 
         public bool IsRifleUsed
         {
-            get { return _IsRifleUsed ?? default; }
-            set { _IsRifleUsed = value; }
+            get { return isRifleUsed; }
+            set
+            {
+                isRifleUsed = value;
+                IsRifleUsedConfigured = true;
+            }
         }
-        internal bool? _IsRifleUsed;
+        bool isRifleUsed;
+        internal bool IsRifleUsedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsSpearUnlocked
 
         public bool IsSpearUnlocked
         {
-            get { return _IsSpearUnlocked ?? default; }
-            set { _IsSpearUnlocked = value; }
+            get { return isSpearUnlocked; }
+            set
+            {
+                isSpearUnlocked = value;
+                IsSpearUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsSpearUnlocked;
+        bool isSpearUnlocked;
+        internal bool IsSpearUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsSpearUsed
 
         public bool IsSpearUsed
         {
-            get { return _IsSpearUsed ?? default; }
-            set { _IsSpearUsed = value; }
+            get { return isSpearUsed; }
+            set
+            {
+                isSpearUsed = value;
+                IsSpearUsedConfigured = true;
+            }
         }
-        internal bool? _IsSpearUsed;
+        bool isSpearUsed;
+        internal bool IsSpearUsedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsSatffUnlocked
 
         public bool IsSatffUnlocked
         {
-            get { return _IsSatffUnlocked ?? default; }
-            set { _IsSatffUnlocked = value; }
+            get { return isSatffUnlocked; }
+            set
+            {
+                isSatffUnlocked = value;
+                IsSatffUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsSatffUnlocked;
+        bool isSatffUnlocked;
+        internal bool IsSatffUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsStaffUsed
 
         public bool IsStaffUsed
         {
-            get { return _IsStaffUsed ?? default; }
-            set { _IsStaffUsed = value; }
+            get { return isStaffUsed; }
+            set
+            {
+                isStaffUsed = value;
+                IsStaffUsedConfigured = true;
+            }
         }
-        internal bool? _IsStaffUsed;
+        bool isStaffUsed;
+        internal bool IsStaffUsedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsTitaniumLongswordUnlocked
 
         public bool IsTitaniumLongswordUnlocked
         {
-            get { return _IsTitaniumLongswordUnlocked ?? default; }
-            set { _IsTitaniumLongswordUnlocked = value; }
+            get { return isTitaniumLongswordUnlocked; }
+            set
+            {
+                isTitaniumLongswordUnlocked = value;
+                IsTitaniumLongswordUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsTitaniumLongswordUnlocked;
+        bool isTitaniumLongswordUnlocked;
+        internal bool IsTitaniumLongswordUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsTitaniumRapierUnlocked
 
         public bool IsTitaniumRapierUnlocked
         {
-            get { return _IsTitaniumRapierUnlocked ?? default; }
-            set { _IsTitaniumRapierUnlocked = value; }
+            get { return isTitaniumRapierUnlocked; }
+            set
+            {
+                isTitaniumRapierUnlocked = value;
+                IsTitaniumRapierUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsTitaniumRapierUnlocked;
+        bool isTitaniumRapierUnlocked;
+        internal bool IsTitaniumRapierUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsTitaniumSpearUnlocked
 
         public bool IsTitaniumSpearUnlocked
         {
-            get { return _IsTitaniumSpearUnlocked ?? default; }
-            set { _IsTitaniumSpearUnlocked = value; }
+            get { return isTitaniumSpearUnlocked; }
+            set
+            {
+                isTitaniumSpearUnlocked = value;
+                IsTitaniumSpearUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsTitaniumSpearUnlocked;
+        bool isTitaniumSpearUnlocked;
+        internal bool IsTitaniumSpearUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsTitaniumWhipUnlocked
 
         public bool IsTitaniumWhipUnlocked
         {
-            get { return _IsTitaniumWhipUnlocked ?? default; }
-            set { _IsTitaniumWhipUnlocked = value; }
+            get { return isTitaniumWhipUnlocked; }
+            set
+            {
+                isTitaniumWhipUnlocked = value;
+                IsTitaniumWhipUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsTitaniumWhipUnlocked;
+        bool isTitaniumWhipUnlocked;
+        internal bool IsTitaniumWhipUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsWarhammerUnlocked
 
         public bool IsWarhammerUnlocked
         {
-            get { return _IsWarhammerUnlocked ?? default; }
-            set { _IsWarhammerUnlocked = value; }
+            get { return isWarhammerUnlocked; }
+            set
+            {
+                isWarhammerUnlocked = value;
+                IsWarhammerUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsWarhammerUnlocked;
+        bool isWarhammerUnlocked;
+        internal bool IsWarhammerUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsWarhammerUsed
 
         public bool IsWarhammerUsed
         {
-            get { return _IsWarhammerUsed ?? default; }
-            set { _IsWarhammerUsed = value; }
+            get { return isWarhammerUsed; }
+            set
+            {
+                isWarhammerUsed = value;
+                IsWarhammerUsedConfigured = true;
+            }
         }
-        internal bool? _IsWarhammerUsed;
+        bool isWarhammerUsed;
+        internal bool IsWarhammerUsedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsWhipCleaned
 
         public bool IsWhipCleaned
         {
-            get { return _IsWhipCleaned ?? default; }
-            set { _IsWhipCleaned = value; }
+            get { return isWhipCleaned; }
+            set
+            {
+                isWhipCleaned = value;
+                IsWhipCleanedConfigured = true;
+            }
         }
-        internal bool? _IsWhipCleaned;
+        bool isWhipCleaned;
+        internal bool IsWhipCleanedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsWhipUnlocked
 
         public bool IsWhipUnlocked
         {
-            get { return _IsWhipUnlocked ?? default; }
-            set { _IsWhipUnlocked = value; }
+            get { return isWhipUnlocked; }
+            set
+            {
+                isWhipUnlocked = value;
+                IsWhipUnlockedConfigured = true;
+            }
         }
-        internal bool? _IsWhipUnlocked;
+        bool isWhipUnlocked;
+        internal bool IsWhipUnlockedConfigured { get; private set; }
+
+        #endregion
+
+        #region IsWhipUsed
 
         public bool IsWhipUsed
         {
-            get { return _IsWhipUsed ?? default; }
-            set { _IsWhipUsed = value; }
+            get { return isWhipUsed; }
+            set
+            {
+                isWhipUsed = value;
+                IsWhipUsedConfigured = true;
+            }
         }
-        internal bool? _IsWhipUsed;
+        bool isWhipUsed;
+        internal bool IsWhipUsedConfigured { get; private set; }
+
+        #endregion
     }
 }

@@ -78,18 +78,9 @@ namespace toofz.NecroDancer.Saves
                 var necrodancerElChildName = necrodancerElChild.Name.ToString();
                 switch (necrodancerElChildName)
                 {
-                    case "player":
-                        var player = ReadPlayer(necrodancerElChild);
-                        saveData.Player = player;
-                        break;
-                    case "game":
-                        var game = ReadGame(necrodancerElChild);
-                        saveData.Game = game;
-                        break;
-                    case "npc":
-                        var npc = ReadNpc(necrodancerElChild);
-                        saveData.Npc = npc;
-                        break;
+                    case "player": saveData.Player = ReadPlayer(necrodancerElChild); break;
+                    case "game": saveData.Game = ReadGame(necrodancerElChild); break;
+                    case "npc": saveData.Npc = ReadNpc(necrodancerElChild); break;
                     default: log.Debug($"Unknown necrodancer element: '{necrodancerElChildName}'."); break;
                 }
             }
