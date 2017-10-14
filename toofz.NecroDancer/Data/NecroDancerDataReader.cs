@@ -321,8 +321,16 @@ namespace toofz.NecroDancer.Data
                         }
                         break;
                     case "diamonddealer": return "Diamond Dealer";
+                    case "shovemonster":
+                        switch (enemy.Type)
+                        {
+                            case 1: return "Shove Monster";
+                            case 2: return "Gray Shove Monster";
+                        }
+                        break;
                     case "skeletonspearman": return "Skeleton Spearman";
                     case "swarmsarcophagus": return "Swarm Sarcophagus";
+                    case "tarmonster": return "Tar Monster";
                     case "tinyslime": return "Tiny Slime";
                     case "toughsarcophagus": return "Tough Sarcophagus";
                     case "trainingsarcophagus": return "Training Sarcophagus";
