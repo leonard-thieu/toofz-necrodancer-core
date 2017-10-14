@@ -271,38 +271,17 @@ namespace toofz.NecroDancer.Data
                 var enemyElChildName = enemyElChild.Name.ToString();
                 switch (enemyElChildName)
                 {
-                    case "spritesheet":
-                        var spriteSheet = ReadSpriteSheet(enemyElChild);
-                        enemy.SpriteSheet = spriteSheet;
-                        break;
+                    case "spritesheet": enemy.SpriteSheet = ReadSpriteSheet(enemyElChild); break;
                     case "frame":
                         var frame = ReadFrame(enemyElChild);
                         enemy.Frames.Add(frame);
                         break;
-                    case "shadow":
-                        var shadow = ReadShadow(enemyElChild);
-                        enemy.Shadow = shadow;
-                        break;
-                    case "stats":
-                        var stats = ReadStats(enemyElChild);
-                        enemy.Stats = stats;
-                        break;
-                    case "optionalStats":
-                        var optionalStats = ReadOptionalStats(enemyElChild);
-                        enemy.OptionalStats = optionalStats;
-                        break;
-                    case "bouncer":
-                        var bouncer = ReadBouncer(enemyElChild);
-                        enemy.Bouncer = bouncer;
-                        break;
-                    case "tweens":
-                        var tweens = ReadTweens(enemyElChild);
-                        enemy.Tweens = tweens;
-                        break;
-                    case "particle":
-                        var particle = ReadParticle(enemyElChild);
-                        enemy.Particle = particle;
-                        break;
+                    case "shadow": enemy.Shadow = ReadShadow(enemyElChild); break;
+                    case "stats": enemy.Stats = ReadStats(enemyElChild); break;
+                    case "optionalStats": enemy.OptionalStats = ReadOptionalStats(enemyElChild); break;
+                    case "bouncer": enemy.Bouncer = ReadBouncer(enemyElChild); break;
+                    case "tweens": enemy.Tweens = ReadTweens(enemyElChild); break;
+                    case "particle": enemy.Particle = ReadParticle(enemyElChild); break;
                     default: log.Debug($"Unknown enemy element: '{enemyElChildName}'."); break;
                 }
             }
