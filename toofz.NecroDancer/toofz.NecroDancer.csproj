@@ -1,100 +1,34 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2763F3E5-298D-4D7A-9066-A8CDA5551F76}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>toofz.NecroDancer</RootNamespace>
-    <AssemblyName>toofz.NecroDancer</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
-    <FileAlignment>512</FileAlignment>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-    <StartupObject />
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <Version>4.1.0</Version>
+    <Authors>Leonard Thieu</Authors>
+    <Company />
+    <Product>toofz NecroDancer Core</Product>
+    <Copyright>Copyright © Leonard Thieu 2017</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseUrl>https://github.com/leonard-thieu/toofz-necrodancer-core/blob/1919096d50cffd350d7c5e67905b9605f0bb6a2f/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/leonard-thieu/toofz-necrodancer-core</PackageProjectUrl>
+    <PackageIconUrl>https://user-images.githubusercontent.com/5265970/29717713-27e1a95c-897e-11e7-9d28-dae64be705b5.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/leonard-thieu/toofz-necrodancer-core</RepositoryUrl>
+    <PackageTags>toofz necrodancer</PackageTags>
+    <Description>Provides types for working with Crypt of the NecroDancer game data.</Description>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <Prefer32Bit>false</Prefer32Bit>
-    <RunCodeAnalysis>false</RunCodeAnalysis>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+    <DocumentationFile>bin\Release\netstandard1.0\toofz.NecroDancer.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <DocumentationFile>bin\Release\toofz.NecroDancer.xml</DocumentationFile>
-    <NoWarn>1591</NoWarn>
-    <LangVersion>latest</LangVersion>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="Humanizer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=979442b78dfc278e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Humanizer.Core.2.2.0\lib\netstandard1.0\Humanizer.dll</HintPath>
-    </Reference>
-    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Numerics" />
-    <Reference Include="System.XML" />
-    <Reference Include="System.Xml.Linq" />
+    <PackageReference Include="Humanizer.Core" Version="2.2.0" />
+    <PackageReference Include="log4net" Version="2.0.8" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="toofz.NecroDancer.nuspec" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Data\Bouncer.cs" />
-    <Compile Include="Data\Character.cs" />
-    <Compile Include="Data\CursedSlot.cs" />
-    <Compile Include="Data\DisplayString.cs" />
-    <Compile Include="Data\Enemy.cs" />
-    <Compile Include="Data\Frame.cs" />
-    <Compile Include="Data\HardMode.cs" />
-    <Compile Include="Data\IMode.cs" />
-    <Compile Include="Data\Item.cs" />
-    <Compile Include="Data\NecroDancerData.cs" />
-    <Compile Include="Data\NecroDancerDataReader.cs" />
-    <Compile Include="Data\NecroDancerDataSerializer.cs" />
-    <Compile Include="Data\NecroDancerDataWriter.cs" />
-    <Compile Include="Data\OptionalStats.cs" />
-    <Compile Include="Data\Particle.cs" />
-    <Compile Include="Data\Shadow.cs" />
-    <Compile Include="Data\SpriteSheet.cs" />
-    <Compile Include="Data\Stats.cs" />
-    <Compile Include="Data\Tweens.cs" />
-    <Compile Include="Replays\Move.cs" />
-    <Compile Include="Replays\Player.cs" />
-    <Compile Include="Replays\ReplayData.cs" />
-    <Compile Include="Replays\ReplayDataSerializer.cs" />
-    <Compile Include="Replays\ReplayDataStreamReader.cs" />
-    <Compile Include="Replays\ReplayDataStreamWriter.cs" />
-    <Compile Include="Replays\Song.cs" />
-    <Compile Include="Saves\Game.cs" />
-    <Compile Include="Saves\Npc.cs" />
-    <Compile Include="Saves\Player.cs" />
-    <Compile Include="Saves\SaveData.cs" />
-    <Compile Include="Saves\SaveDataReader.cs" />
-    <Compile Include="Saves\SaveDataSerializer.cs" />
-    <Compile Include="Saves\SaveDataWriter.cs" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>
