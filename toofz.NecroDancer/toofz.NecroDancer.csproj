@@ -53,9 +53,6 @@
     <Reference Include="System.Numerics" />
     <Reference Include="System.XML" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="toofz, Version=7.1.0.180, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\toofz.7.1.0\lib\net45\toofz.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
