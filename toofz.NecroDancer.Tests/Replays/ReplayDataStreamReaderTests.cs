@@ -46,7 +46,7 @@ namespace toofz.NecroDancer.Tests.Replays
             public void ClassicReplayData_ReturnsReplayData()
             {
                 // Arrange
-                var stream = new MemoryStream(Resources.ClassicReplayData);
+                var stream = new MemoryStream(Encoding.UTF8.GetBytes(Resources.ClassicReplayData));
                 var reader = new ReplayDataStreamReader(stream);
 
                 // Act
@@ -57,14 +57,14 @@ namespace toofz.NecroDancer.Tests.Replays
                 var writer = new ReplayDataStreamWriter(expectedStream);
                 writer.Write(replayData);
                 var expected = expectedStream.ToArray();
-                CollectionAssert.AreEqual(expected, Resources.ClassicReplayData);
+                CollectionAssert.AreEqual(expected, Encoding.UTF8.GetBytes(Resources.ClassicReplayData));
             }
 
             [TestMethod]
             public void AmplifiedReplayData_ReturnsReplayData()
             {
                 // Arrange
-                var stream = new MemoryStream(Resources.AmplifiedReplayData);
+                var stream = new MemoryStream(Encoding.UTF8.GetBytes(Resources.AmplifiedReplayData));
                 var reader = new ReplayDataStreamReader(stream);
 
                 // Act
@@ -75,14 +75,14 @@ namespace toofz.NecroDancer.Tests.Replays
                 var writer = new ReplayDataStreamWriter(expectedStream);
                 writer.Write(replayData);
                 var expected = expectedStream.ToArray();
-                CollectionAssert.AreEqual(expected, Resources.AmplifiedReplayData);
+                CollectionAssert.AreEqual(expected, Encoding.UTF8.GetBytes(Resources.AmplifiedReplayData));
             }
 
             [TestMethod]
             public void RemoteReplayData_ReturnsReplayData()
             {
                 // Arrange
-                var stream = new MemoryStream(Resources.RemoteReplayData);
+                var stream = new MemoryStream(Encoding.UTF8.GetBytes(Resources.RemoteReplayData));
                 var reader = new ReplayDataStreamReader(stream);
 
                 // Act
@@ -93,7 +93,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 var writer = new ReplayDataStreamWriter(expectedStream);
                 writer.Write(replayData);
                 var expected = expectedStream.ToArray();
-                CollectionAssert.AreEqual(expected, Resources.RemoteReplayData);
+                CollectionAssert.AreEqual(expected, Encoding.UTF8.GetBytes(Resources.RemoteReplayData));
             }
 
             [TestMethod]
@@ -101,7 +101,7 @@ namespace toofz.NecroDancer.Tests.Replays
             public void EmptyReplayData_ReturnsReplayData()
             {
                 // Arrange
-                var stream = new MemoryStream(Resources.EmptyReplayData);
+                var stream = new MemoryStream(Encoding.UTF8.GetBytes(Resources.EmptyReplayData));
                 var reader = new ReplayDataStreamReader(stream);
 
                 // Act
@@ -112,7 +112,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 var writer = new ReplayDataStreamWriter(expectedStream);
                 writer.Write(replayData);
                 var expected = expectedStream.ToArray();
-                CollectionAssert.AreEqual(expected, Resources.EmptyReplayData);
+                CollectionAssert.AreEqual(expected, Encoding.UTF8.GetBytes(Resources.EmptyReplayData));
             }
         }
 

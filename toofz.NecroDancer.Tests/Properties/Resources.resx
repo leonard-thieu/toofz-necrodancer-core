@@ -119,13 +119,13 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="AmplifiedReplayData" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AmplifiedReplayData.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\AmplifiedReplayData.dat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="ClassicReplayData" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ClassicReplayData.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\ClassicReplayData.dat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="EmptyReplayData" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EmptyReplayData.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\EmptyReplayData.dat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="NecroDancerData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NecroDancerData.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
@@ -134,7 +134,7 @@
     <value>..\Resources\NecroDancerDataBaseline.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="RemoteReplayData" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RemoteReplayData.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\RemoteReplayData.dat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="SaveData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SaveData.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
