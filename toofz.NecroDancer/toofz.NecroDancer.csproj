@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <Version>4.1.0</Version>
+    <Version>5.0.1</Version>
     <Authors>Leonard Thieu</Authors>
     <Product>toofz NecroDancer Core</Product>
     <Copyright>Copyright © Leonard Thieu 2017</Copyright>
