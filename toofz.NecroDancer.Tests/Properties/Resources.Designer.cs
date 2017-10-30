@@ -61,32 +61,29 @@ namespace toofz.NecroDancer.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized string similar to 94\n-7\n1\n0\n0\n576613\n22\n1076550658\n1\n640\n360\n86\n0|86|0:2,2:2,4:2,6:2,8:2,10:8,12:2,14:2,16:1,18:0,20:5,22:0,24:3,26:0,28:0,30:1,32:0,34:0,36:6,38:0,40:0,42:2,44:2,46:2,48:2,50:1,52:3,54:2,56:2,58:2,60:1,62:1,64:2,66:2,68:3,70:3,72:2,74:2,76:2,78:2,80:2,82:2,84:1,86:1,88:1,90:1,92:0,94:0,96:0,98:1,100:0,102:1,104:1,106:2,108:1,110:2,112:1,114:1,116:1,118:1,120:1,122:2,124:2,126:1,128:2,130:0,132:0,134:3,136:3,138:1,140:1,142:1,144:1,146:3,148:2,150:1,152:1,154:1,156:2,158:2,160:2,162:1,164:2,166:0, [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static byte[] AmplifiedReplayData {
+        internal static string AmplifiedReplayData {
             get {
-                object obj = ResourceManager.GetObject("AmplifiedReplayData", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("AmplifiedReplayData", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized string similar to 75\n1\n0\n0\n1\n0\n0\n0\n875460\n18\n-1389222068\n1\n640\n342\n80\n0|80|0:2,2:2,4:0,6:0,8:3,10:3,12:3,14:3,16:0,18:1,20:0,22:0,24:0,26:0,28:0,30:0,32:1,34:2,36:0,38:2,40:2,42:3,44:2,46:2,48:3,50:2,52:2,54:2,56:1,58:2,60:2,62:2,64:2,66:2,68:2,70:2,72:3,74:2,76:1,78:1,80:1,82:1,84:1,86:2,88:3,90:2,92:1,94:1,96:1,98:1,100:1,102:1,104:1,106:1,108:1,110:1,112:1,114:1,116:1,118:1,120:1,122:0,124:1,126:1,128:0,130:0,132:3,134:2,136:0,138:0,140:0,142:0,144:0,146:3,148:3,150:3,152:0,154:3,156:0,158:0,\n0|\n47\n1,1,1 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static byte[] ClassicReplayData {
+        internal static string ClassicReplayData {
             get {
-                object obj = ResourceManager.GetObject("ClassicReplayData", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("ClassicReplayData", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized string similar to .
         /// </summary>
-        internal static byte[] EmptyReplayData {
+        internal static string EmptyReplayData {
             get {
-                object obj = ResourceManager.GetObject("EmptyReplayData", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("EmptyReplayData", resourceCulture);
             }
         }
         
@@ -117,12 +114,11 @@ namespace toofz.NecroDancer.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized string similar to PAWNBROKER%*#%*75\n1\n0\n0\n1\n0\n0\n0\n0\n13\n-591235273\n1\n720\n405\n484\n8|482|4:2,6:0,8:2,10:1,12:2,14:1,16:1,18:3,20:1,22:1,24:1,26:2,28:0,30:3,32:1,34:2,36:0,38:0,40:0,42:0,44:0,46:0,48:0,50:0,52:0,54:0,56:3,58:2,60:2,62:2,64:2,66:0,68:2,70:0,72:0,74:0,76:0,78:2,80:2,82:0,84:0,86:0,88:0,90:0,92:2,94:2,96:3,98:1,100:3,102:3,104:3,106:3,108:3,110:3,112:2,114:2,116:2,118:2,120:2,122:1,124:2,126:2,128:2,130:2,132:2,134:2,136:2,138:0,140:2,142:2,144:0,146:2,148:0,150:2,152:0,154:2,156:2,158:0,160:2,162:2, [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static byte[] RemoteReplayData {
+        internal static string RemoteReplayData {
             get {
-                object obj = ResourceManager.GetObject("RemoteReplayData", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("RemoteReplayData", resourceCulture);
             }
         }
         

@@ -2,7 +2,6 @@
 using System.IO;
 using System.Xml;
 using System.Xml.Linq;
-using System.Xml.Serialization;
 
 namespace toofz.NecroDancer.Saves
 {
@@ -41,8 +40,6 @@ namespace toofz.NecroDancer.Saves
             };
             using (var xw = XmlWriter.Create(stream, settings))
             {
-                var namespaces = new XmlSerializerNamespaces();
-                namespaces.Add("", "");
                 doc.Save(new SaveDataXmlWriter(xw));
             }
         }

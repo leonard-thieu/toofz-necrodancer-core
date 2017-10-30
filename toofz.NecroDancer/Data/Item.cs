@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
 
 namespace toofz.NecroDancer.Data
 {
@@ -9,10 +8,9 @@ namespace toofz.NecroDancer.Data
     public sealed class Item
     {
         // Required for Entity Framework
-        [ExcludeFromCodeCoverage]
         Item() { }
 
-        public Item(string name, string imagePath)
+        public Item(string name, string imagePath) : this()
         {
             if (name == null)
                 throw new ArgumentNullException(nameof(name));

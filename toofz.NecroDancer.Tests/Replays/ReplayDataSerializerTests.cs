@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Replays;
 using toofz.NecroDancer.Tests.Properties;
@@ -29,7 +30,7 @@ namespace toofz.NecroDancer.Tests.Replays
             {
                 // Arrange
                 var serializer = new ReplayDataSerializer();
-                var stream = new MemoryStream(Resources.ClassicReplayData);
+                var stream = new MemoryStream(Encoding.UTF8.GetBytes(Resources.ClassicReplayData));
 
                 // Act
                 var replayData = serializer.Deserialize(stream);
