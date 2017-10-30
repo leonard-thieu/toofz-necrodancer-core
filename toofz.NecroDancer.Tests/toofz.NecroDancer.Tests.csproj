@@ -70,8 +70,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="toofz.TestsShared, Version=4.0.0.81, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\toofz.TestsShared.4.0.0\lib\net45\toofz.TestsShared.dll</HintPath>
+    <Reference Include="toofz.TestsShared, Version=4.1.0.83, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\toofz.TestsShared.4.1.0\lib\net45\toofz.TestsShared.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
