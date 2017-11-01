@@ -1,33 +1,30 @@
 ﻿using System;
 using System.IO;
 using System.Text;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Data;
 using toofz.NecroDancer.Tests.Properties;
-using toofz.TestsShared;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class NecroDancerDataSerializerTests
+    public class NecroDancerDataSerializerTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange -> Act
                 var serializer = new NecroDancerDataSerializer();
 
                 // Assert
-                Assert.IsInstanceOfType(serializer, typeof(NecroDancerDataSerializer));
+                Assert.IsAssignableFrom<NecroDancerDataSerializer>(serializer);
             }
         }
 
-        [TestClass]
         public class DeserializeMethod
         {
-            [TestMethod]
+            [Fact]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -35,13 +32,13 @@ namespace toofz.NecroDancer.Tests.Data
                 Stream stream = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     serializer.Deserialize(stream);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void ReturnsNecroDancerData()
             {
                 // Arrange
@@ -52,14 +49,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var necroDancerData = serializer.Deserialize(stream);
 
                 // Assert
-                Assert.IsInstanceOfType(necroDancerData, typeof(NecroDancerData));
+                Assert.IsAssignableFrom<NecroDancerData>(necroDancerData);
             }
         }
 
-        [TestClass]
         public class SerializeMethod
         {
-            [TestMethod]
+            [Fact]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -68,13 +64,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var necroDancerData = new NecroDancerData();
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     serializer.Serialize(stream, necroDancerData);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void NecroDancerDataIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -83,13 +79,13 @@ namespace toofz.NecroDancer.Tests.Data
                 NecroDancerData necroDancerData = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     serializer.Serialize(stream, necroDancerData);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void SerializesNecroDancerData()
             {
                 // Arrange
@@ -105,7 +101,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var sr = new StreamReader(writeStream);
                 writeStream.Position = 0;
                 var actual = sr.ReadToEnd();
-                Assert.That.NormalizedAreEqual(Resources.NecroDancerDataBaseline, actual);
+                Assert.Equal(Resources.NecroDancerDataBaseline, actual, ignoreLineEndingDifferences: true);
             }
         }
     }

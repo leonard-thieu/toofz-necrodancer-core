@@ -1,29 +1,27 @@
 ﻿using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Replays;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Replays
 {
-    class PlayerTests
+    public class PlayerTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange -> Act
                 var player = new Player();
 
                 // Assert
-                Assert.IsInstanceOfType(player, typeof(Player));
+                Assert.IsAssignableFrom<Player>(player);
             }
         }
 
-        [TestClass]
         public class CharacterProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -35,14 +33,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var character2 = player.Character;
 
                 // Assert
-                Assert.AreEqual(character, character2);
+                Assert.Equal(character, character2);
             }
         }
 
-        [TestClass]
         public class MovesProperty
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsMoves()
             {
                 // Arrange
@@ -52,14 +49,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var moves = player.Moves;
 
                 // Assert
-                Assert.IsInstanceOfType(moves, typeof(List<Move>));
+                Assert.IsAssignableFrom<List<Move>>(moves);
             }
         }
 
-        [TestClass]
         public class MissedBeatsProperty
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsMissedBeats()
             {
                 // Arrange
@@ -69,7 +65,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 var missedBeats = player.MissedBeats;
 
                 // Assert
-                Assert.IsInstanceOfType(missedBeats, typeof(List<int>));
+                Assert.IsAssignableFrom<List<int>>(missedBeats);
             }
         }
     }

@@ -1,28 +1,27 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Data;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class DisplayStringTests
+    public class DisplayStringTests
     {
-        [TestClass]
         public class Constructor_String
         {
-            [TestMethod]
+            [Fact]
             public void TextIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
                 string text = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     new DisplayString(text);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange
@@ -32,10 +31,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var displayString = new DisplayString(text);
 
                 // Assert
-                Assert.IsInstanceOfType(displayString, typeof(DisplayString));
+                Assert.IsAssignableFrom<DisplayString>(displayString);
             }
 
-            [TestMethod]
+            [Fact]
             public void SetsText()
             {
                 // Arrange
@@ -46,14 +45,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var text2 = displayString.Text;
 
                 // Assert
-                Assert.AreEqual(text, text2);
+                Assert.Equal(text, text2);
             }
         }
 
-        [TestClass]
         public class Constructor_Int_String
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange
@@ -64,10 +62,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var displayString = new DisplayString(id, text);
 
                 // Assert
-                Assert.IsInstanceOfType(displayString, typeof(DisplayString));
+                Assert.IsAssignableFrom<DisplayString>(displayString);
             }
 
-            [TestMethod]
+            [Fact]
             public void SetsId()
             {
                 // Arrange
@@ -79,7 +77,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var id2 = displayString.Id;
 
                 // Assert
-                Assert.AreEqual(id, id2);
+                Assert.Equal(id, id2);
             }
         }
     }

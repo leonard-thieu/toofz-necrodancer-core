@@ -1,28 +1,26 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using toofz.NecroDancer.Data;
+﻿using toofz.NecroDancer.Data;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class TweensTests
+    public class TweensTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange -> Act
                 var tweens = new Tweens();
 
                 // Assert
-                Assert.IsInstanceOfType(tweens, typeof(Tweens));
+                Assert.IsAssignableFrom<Tweens>(tweens);
             }
         }
 
-        [TestClass]
         public class MoveProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -34,14 +32,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var move2 = tweens.Move;
 
                 // Assert
-                Assert.AreEqual(move, move2);
+                Assert.Equal(move, move2);
             }
         }
 
-        [TestClass]
         public class MoveShadowProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -53,14 +50,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var moveShadow2 = tweens.MoveShadow;
 
                 // Assert
-                Assert.AreEqual(moveShadow, moveShadow2);
+                Assert.Equal(moveShadow, moveShadow2);
             }
         }
 
-        [TestClass]
         public class HitProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -72,14 +68,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var hit2 = tweens.Hit;
 
                 // Assert
-                Assert.AreEqual(hit, hit2);
+                Assert.Equal(hit, hit2);
             }
         }
 
-        [TestClass]
         public class HitShadowProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -91,7 +86,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var hitShadow2 = tweens.HitShadow;
 
                 // Assert
-                Assert.AreEqual(hitShadow, hitShadow2);
+                Assert.Equal(hitShadow, hitShadow2);
             }
         }
     }

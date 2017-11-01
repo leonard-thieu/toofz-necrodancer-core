@@ -1,31 +1,29 @@
 ﻿using System.IO;
 using System.Text;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Replays;
 using toofz.NecroDancer.Tests.Properties;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Replays
 {
-    class ReplayDataSerializerTests
+    public class ReplayDataSerializerTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange -> Act
                 var serializer = new ReplayDataSerializer();
 
                 // Assert
-                Assert.IsInstanceOfType(serializer, typeof(ReplayDataSerializer));
+                Assert.IsAssignableFrom<ReplayDataSerializer>(serializer);
             }
         }
 
-        [TestClass]
         public class DeserializeMethod
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsReplayData()
             {
                 // Arrange
@@ -36,14 +34,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var replayData = serializer.Deserialize(stream);
 
                 // Assert
-                Assert.IsInstanceOfType(replayData, typeof(ReplayData));
+                Assert.IsAssignableFrom<ReplayData>(replayData);
             }
         }
 
-        [TestClass]
         public class SerializeMethod
         {
-            [TestMethod]
+            [Fact]
             public void WritesReplayData()
             {
                 // Arrange
@@ -57,7 +54,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 // Assert
                 stream.Position = 0;
                 var sr = new StreamReader(stream);
-                Assert.AreEqual(@"0\n1\n0\n0\n0\n0\n0\n0\n0\n0\n\n", sr.ReadToEnd());
+                Assert.Equal(@"0\n1\n0\n0\n0\n0\n0\n0\n0\n0\n\n", sr.ReadToEnd());
             }
         }
     }

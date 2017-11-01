@@ -1,28 +1,26 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using toofz.NecroDancer.Data;
+﻿using toofz.NecroDancer.Data;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class BouncerTests
+    public class BouncerTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange -> Act
                 var bouncer = new Bouncer();
 
                 // Assert
-                Assert.IsInstanceOfType(bouncer, typeof(Bouncer));
+                Assert.IsAssignableFrom<Bouncer>(bouncer);
             }
         }
 
-        [TestClass]
         public class MinProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -34,14 +32,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var min2 = bouncer.Min;
 
                 // Assert
-                Assert.AreEqual(min, min2);
+                Assert.Equal(min, min2);
             }
         }
 
-        [TestClass]
         public class MaxProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -53,14 +50,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var max2 = bouncer.Max;
 
                 // Assert
-                Assert.AreEqual(max, max2);
+                Assert.Equal(max, max2);
             }
         }
 
-        [TestClass]
         public class PowerProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -72,14 +68,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var power2 = bouncer.Power;
 
                 // Assert
-                Assert.AreEqual(power, power2);
+                Assert.Equal(power, power2);
             }
         }
 
-        [TestClass]
         public class StepsProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -91,7 +86,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var steps2 = bouncer.Steps;
 
                 // Assert
-                Assert.AreEqual(steps, steps2);
+                Assert.Equal(steps, steps2);
             }
         }
     }

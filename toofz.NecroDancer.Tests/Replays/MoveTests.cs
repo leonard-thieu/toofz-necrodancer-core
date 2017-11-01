@@ -1,28 +1,26 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using toofz.NecroDancer.Replays;
+﻿using toofz.NecroDancer.Replays;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Replays
 {
-    class MoveTests
+    public class MoveTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange -> Act
                 var move = new Move();
 
                 // Assert
-                Assert.IsInstanceOfType(move, typeof(Move));
+                Assert.IsAssignableFrom<Move>(move);
             }
         }
 
-        [TestClass]
         public class BeatProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -34,14 +32,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var beat2 = move.Beat;
 
                 // Assert
-                Assert.AreEqual(beat, beat2);
+                Assert.Equal(beat, beat2);
             }
         }
 
-        [TestClass]
         public class IdProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -53,7 +50,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 var id2 = move.Id;
 
                 // Assert
-                Assert.AreEqual(id, id2);
+                Assert.Equal(id, id2);
             }
         }
     }

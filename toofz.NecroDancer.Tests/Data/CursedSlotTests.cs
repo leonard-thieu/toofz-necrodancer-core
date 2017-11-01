@@ -1,28 +1,27 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Data;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class CursedSlotTests
+    public class CursedSlotTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void SlotIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
                 string slot = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     new CursedSlot(slot);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange
@@ -32,10 +31,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var cursedSlot = new CursedSlot(slot);
 
                 // Assert
-                Assert.IsInstanceOfType(cursedSlot, typeof(CursedSlot));
+                Assert.IsAssignableFrom<CursedSlot>(cursedSlot);
             }
 
-            [TestMethod]
+            [Fact]
             public void SetsSlot()
             {
                 // Arrange
@@ -46,7 +45,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var slot2 = cursedSlot.Slot;
 
                 // Assert
-                Assert.AreEqual(slot, slot2);
+                Assert.Equal(slot, slot2);
             }
         }
     }

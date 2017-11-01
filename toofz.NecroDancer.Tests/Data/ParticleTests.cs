@@ -1,28 +1,26 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using toofz.NecroDancer.Data;
+﻿using toofz.NecroDancer.Data;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class ParticleTests
+    public class ParticleTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange -> Act
                 var particle = new Particle();
 
                 // Assert
-                Assert.IsInstanceOfType(particle, typeof(Particle));
+                Assert.IsAssignableFrom<Particle>(particle);
             }
         }
 
-        [TestClass]
         public class HitPathProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -34,7 +32,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var hitPath2 = particle.HitPath;
 
                 // Assert
-                Assert.AreEqual(hitPath, hitPath2);
+                Assert.Equal(hitPath, hitPath2);
             }
         }
     }

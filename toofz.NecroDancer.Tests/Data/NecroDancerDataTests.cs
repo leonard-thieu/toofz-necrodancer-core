@@ -1,29 +1,27 @@
 ﻿using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Data;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class NecroDancerDataTests
+    public class NecroDancerDataTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange -> Act
                 var necroDancerData = new NecroDancerData();
 
                 // Assert
-                Assert.IsInstanceOfType(necroDancerData, typeof(NecroDancerData));
+                Assert.IsAssignableFrom<NecroDancerData>(necroDancerData);
             }
         }
 
-        [TestClass]
         public class ItemsProperty
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsItems()
             {
                 // Arrange
@@ -33,14 +31,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var items = necroDancerData.Items;
 
                 // Assert
-                Assert.IsInstanceOfType(items, typeof(List<Item>));
+                Assert.IsAssignableFrom<List<Item>>(items);
             }
         }
 
-        [TestClass]
         public class EnemiesProperty
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsEnemies()
             {
                 // Arrange
@@ -50,14 +47,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var enemies = necroDancerData.Enemies;
 
                 // Assert
-                Assert.IsInstanceOfType(enemies, typeof(List<Enemy>));
+                Assert.IsAssignableFrom<List<Enemy>>(enemies);
             }
         }
 
-        [TestClass]
         public class CharactersProperty
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsCharacters()
             {
                 // Arrange
@@ -67,14 +63,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var characters = necroDancerData.Characters;
 
                 // Assert
-                Assert.IsInstanceOfType(characters, typeof(List<Character>));
+                Assert.IsAssignableFrom<List<Character>>(characters);
             }
         }
 
-        [TestClass]
         public class ModesProperty
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsModes()
             {
                 // Arrange
@@ -84,7 +79,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var modes = necroDancerData.Modes;
 
                 // Assert
-                Assert.IsInstanceOfType(modes, typeof(List<IMode>));
+                Assert.IsAssignableFrom<List<IMode>>(modes);
             }
         }
     }

@@ -1,32 +1,30 @@
 ﻿using System;
 using System.IO;
 using System.Text;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Saves;
 using toofz.NecroDancer.Tests.Properties;
-using toofz.TestsShared;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Saves
 {
-    class SaveDataWriterTests
+    public class SaveDataWriterTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
                 Stream stream = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     new SaveDataWriter(stream);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange
@@ -36,14 +34,13 @@ namespace toofz.NecroDancer.Tests.Saves
                 var writer = new SaveDataWriter(stream);
 
                 // Assert
-                Assert.IsInstanceOfType(writer, typeof(SaveDataWriter));
+                Assert.IsAssignableFrom<SaveDataWriter>(writer);
             }
         }
 
-        [TestClass]
         public class WriteMethod
         {
-            [TestMethod]
+            [Fact]
             public void SaveDataIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -52,13 +49,13 @@ namespace toofz.NecroDancer.Tests.Saves
                 SaveData saveData = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     writer.Write(saveData);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void WritesSaveData()
             {
                 // Arrange
@@ -85,7 +82,7 @@ namespace toofz.NecroDancer.Tests.Saves
                     writeStream.Position = 0;
                     var sr = new StreamReader(writeStream);
                     var actual = sr.ReadToEnd();
-                    Assert.That.NormalizedAreEqual(saveDataFile, actual);
+                    Assert.Equal(saveDataFile, actual, ignoreLineEndingDifferences: true);
                 }
             }
         }

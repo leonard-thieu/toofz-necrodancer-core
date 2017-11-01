@@ -1,28 +1,27 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Data;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class ShadowTests
+    public class ShadowTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void PathIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
                 string path = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     new Shadow(path);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange
@@ -32,10 +31,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var shadow = new Shadow(path);
 
                 // Assert
-                Assert.IsInstanceOfType(shadow, typeof(Shadow));
+                Assert.IsAssignableFrom<Shadow>(shadow);
             }
 
-            [TestMethod]
+            [Fact]
             public void SetsPath()
             {
                 // Arrange
@@ -46,14 +45,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var path2 = shadow.Path;
 
                 // Assert
-                Assert.AreEqual(path, path2);
+                Assert.Equal(path, path2);
             }
         }
 
-        [TestClass]
         public class OffsetXProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -66,14 +64,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var offsetX2 = shadow.OffsetX;
 
                 // Assert
-                Assert.AreEqual(offsetX, offsetX2);
+                Assert.Equal(offsetX, offsetX2);
             }
         }
 
-        [TestClass]
         public class OffsetYProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -86,7 +83,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var offsetY2 = shadow.OffsetY;
 
                 // Assert
-                Assert.AreEqual(offsetY, offsetY2);
+                Assert.Equal(offsetY, offsetY2);
             }
         }
     }

@@ -2,19 +2,17 @@
 using System.IO;
 using System.Text;
 using System.Xml.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Data;
 using toofz.NecroDancer.Tests.Properties;
-using toofz.TestsShared;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class NecroDancerDataWriterTests
+    public class NecroDancerDataWriterTests
     {
-        [TestClass]
         public class CreateAttributeMethod
         {
-            [TestMethod]
+            [Fact]
             public void IdIsNull_ReturnsXAttributeWithValueSetToText()
             {
                 // Arrange
@@ -26,12 +24,12 @@ namespace toofz.NecroDancer.Tests.Data
                 var attr = NecroDancerDataWriter.CreateAttribute(name, value);
 
                 // Assert
-                Assert.IsInstanceOfType(attr, typeof(XAttribute));
-                Assert.AreEqual(name, attr.Name.ToString());
-                Assert.AreEqual(text, attr.Value);
+                Assert.IsAssignableFrom<XAttribute>(attr);
+                Assert.Equal(name, attr.Name.ToString());
+                Assert.Equal(text, attr.Value);
             }
 
-            [TestMethod]
+            [Fact]
             public void IdIsNotNull_ReturnsXAttributeWithValueSetToText()
             {
                 // Arrange
@@ -43,29 +41,28 @@ namespace toofz.NecroDancer.Tests.Data
                 var attr = NecroDancerDataWriter.CreateAttribute(name, value);
 
                 // Assert
-                Assert.IsInstanceOfType(attr, typeof(XAttribute));
-                Assert.AreEqual(name, attr.Name.ToString());
-                Assert.AreEqual(text, attr.Value);
+                Assert.IsAssignableFrom<XAttribute>(attr);
+                Assert.Equal(name, attr.Name.ToString());
+                Assert.Equal(text, attr.Value);
             }
         }
 
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
                 Stream stream = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     new NecroDancerDataWriter(stream);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange
@@ -75,14 +72,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var writer = new NecroDancerDataWriter(stream);
 
                 // Assert
-                Assert.IsInstanceOfType(writer, typeof(NecroDancerDataWriter));
+                Assert.IsAssignableFrom<NecroDancerDataWriter>(writer);
             }
         }
 
-        [TestClass]
         public class WriteMethod
         {
-            [TestMethod]
+            [Fact]
             public void NecroDancerDataIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -91,14 +87,14 @@ namespace toofz.NecroDancer.Tests.Data
                 NecroDancerData necroDancerData = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     writer.Write(necroDancerData);
                 });
             }
 
-            [TestMethod]
-            [TestCategory("Compares against baseline")]
+            [Fact]
+            [Trait("Category", "Compares against baseline")]
             public void MatchesBaseline()
             {
                 // Arrange
@@ -115,7 +111,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var sr = new StreamReader(writeStream);
                 writeStream.Position = 0;
                 var actual = sr.ReadToEnd();
-                Assert.That.NormalizedAreEqual(Resources.NecroDancerDataBaseline, actual);
+                Assert.Equal(Resources.NecroDancerDataBaseline, actual, ignoreLineEndingDifferences: true);
             }
         }
     }

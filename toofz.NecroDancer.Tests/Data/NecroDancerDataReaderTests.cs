@@ -2,18 +2,17 @@
 using System.IO;
 using System.Linq;
 using System.Text;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Data;
 using toofz.NecroDancer.Tests.Properties;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class NecroDancerDataReaderTests
+    public class NecroDancerDataReaderTests
     {
-        [TestClass]
         public class ReadBooleanLikeMethod
         {
-            [TestMethod]
+            [Fact]
             public void ContentIsTrue_ReturnsTrue()
             {
                 // Arrange
@@ -23,10 +22,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var booleanLike = NecroDancerDataReader.ReadBooleanLike(content);
 
                 // Assert
-                Assert.IsTrue(booleanLike);
+                Assert.True(booleanLike);
             }
 
-            [TestMethod]
+            [Fact]
             public void ContentIsFalse_ReturnsFalse()
             {
                 // Arrange
@@ -36,27 +35,26 @@ namespace toofz.NecroDancer.Tests.Data
                 var booleanLike = NecroDancerDataReader.ReadBooleanLike(content);
 
                 // Assert
-                Assert.IsFalse(booleanLike);
+                Assert.False(booleanLike);
             }
 
-            [TestMethod]
+            [Fact]
             public void ContentIsNotBooleanLike_ThrowsInvalidCastException()
             {
                 // Arrange
                 var content = "";
 
                 // Act -> Assert
-                Assert.ThrowsException<InvalidCastException>(() =>
+                Assert.Throws<InvalidCastException>(() =>
                 {
                     NecroDancerDataReader.ReadBooleanLike(content);
                 });
             }
         }
 
-        [TestClass]
         public class ReadListOfInt32Method
         {
-            [TestMethod]
+            [Fact]
             public void ContentHasMultipleValues_ReturnsListOfInt32()
             {
                 // Arrange
@@ -66,10 +64,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var listOfInt32 = NecroDancerDataReader.ReadListOfInt32(content);
 
                 // Assert
-                CollectionAssert.AreEqual(new[] { 0, 30, 40 }, listOfInt32.ToList());
+                Assert.Equal(new[] { 0, 30, 40 }, listOfInt32.ToList());
             }
 
-            [TestMethod]
+            [Fact]
             public void ContentHasSingleValue_ReturnsListOfInt32()
             {
                 // Arrange
@@ -79,14 +77,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var listOfInt32 = NecroDancerDataReader.ReadListOfInt32(content);
 
                 // Assert
-                CollectionAssert.AreEqual(new[] { 30 }, listOfInt32.ToList());
+                Assert.Equal(new[] { 30 }, listOfInt32.ToList());
             }
         }
 
-        [TestClass]
         public class ReadDisplayString
         {
-            [TestMethod]
+            [Fact]
             public void ContentIsEmptyString_ReturnsDisplayStringWithTextSetToContent()
             {
                 // Arrange
@@ -96,12 +93,12 @@ namespace toofz.NecroDancer.Tests.Data
                 var displayString = NecroDancerDataReader.ReadDisplayString(content);
 
                 // Assert
-                Assert.IsInstanceOfType(displayString, typeof(DisplayString));
-                Assert.IsNull(displayString.Id);
-                Assert.AreEqual("", displayString.Text);
+                Assert.IsAssignableFrom<DisplayString>(displayString);
+                Assert.Null(displayString.Id);
+                Assert.Equal("", displayString.Text);
             }
 
-            [TestMethod]
+            [Fact]
             public void ContentIsText_ReturnsDisplayStringWithTextSetToContent()
             {
                 // Arrange
@@ -111,12 +108,12 @@ namespace toofz.NecroDancer.Tests.Data
                 var displayString = NecroDancerDataReader.ReadDisplayString(content);
 
                 // Assert
-                Assert.IsInstanceOfType(displayString, typeof(DisplayString));
-                Assert.IsNull(displayString.Id);
-                Assert.AreEqual("ELI", displayString.Text);
+                Assert.IsAssignableFrom<DisplayString>(displayString);
+                Assert.Null(displayString.Id);
+                Assert.Equal("ELI", displayString.Text);
             }
 
-            [TestMethod]
+            [Fact]
             public void ContentIsIdAndText_ReturnsDisplayStringWithIdAndTextSet()
             {
                 // Arrange
@@ -126,29 +123,28 @@ namespace toofz.NecroDancer.Tests.Data
                 var displayString = NecroDancerDataReader.ReadDisplayString(content);
 
                 // Assert
-                Assert.IsInstanceOfType(displayString, typeof(DisplayString));
-                Assert.AreEqual(314, displayString.Id);
-                Assert.AreEqual("+1 BLACK CHEST PER RUN", displayString.Text);
+                Assert.IsAssignableFrom<DisplayString>(displayString);
+                Assert.Equal(314, displayString.Id);
+                Assert.Equal("+1 BLACK CHEST PER RUN", displayString.Text);
             }
         }
 
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
                 Stream stream = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     new NecroDancerDataReader(stream);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange 
@@ -158,14 +154,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var reader = new NecroDancerDataReader(stream);
 
                 // Assert
-                Assert.IsInstanceOfType(reader, typeof(NecroDancerDataReader));
+                Assert.IsAssignableFrom<NecroDancerDataReader>(reader);
             }
         }
 
-        [TestClass]
         public class ReadMethod
         {
-            [TestMethod]
+            [Fact]
             public void ReadsNecroDancerData()
             {
                 // Arrange
@@ -176,11 +171,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var necroDancerData = reader.Read();
 
                 // Assert
-                Assert.IsInstanceOfType(necroDancerData, typeof(NecroDancerData));
-                Assert.AreEqual(291, necroDancerData.Items.Count);
-                Assert.AreEqual(216, necroDancerData.Enemies.Count);
-                Assert.AreEqual(15, necroDancerData.Characters.Count);
-                Assert.AreEqual(1, necroDancerData.Modes.Count);
+                Assert.IsAssignableFrom<NecroDancerData>(necroDancerData);
+                Assert.Equal(291, necroDancerData.Items.Count);
+                Assert.Equal(216, necroDancerData.Enemies.Count);
+                Assert.Equal(15, necroDancerData.Characters.Count);
+#pragma warning disable xUnit2013
+                Assert.Equal(1, necroDancerData.Modes.Count);
+#pragma warning restore xUnit2013
             }
         }
     }

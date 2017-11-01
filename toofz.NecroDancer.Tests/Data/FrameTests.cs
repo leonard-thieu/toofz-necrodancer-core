@@ -1,28 +1,26 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using toofz.NecroDancer.Data;
+﻿using toofz.NecroDancer.Data;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class FrameTests
+    public class FrameTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange -> Act
                 var frame = new Frame();
 
                 // Assert
-                Assert.IsInstanceOfType(frame, typeof(Frame));
+                Assert.IsAssignableFrom<Frame>(frame);
             }
         }
 
-        [TestClass]
         public class InSheetProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -34,14 +32,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var inSheet2 = frame.InSheet;
 
                 // Assert
-                Assert.AreEqual(inSheet, inSheet2);
+                Assert.Equal(inSheet, inSheet2);
             }
         }
 
-        [TestClass]
         public class InAnimProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -53,14 +50,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var inAnim2 = frame.InAnim;
 
                 // Assert
-                Assert.AreEqual(inAnim, inAnim2);
+                Assert.Equal(inAnim, inAnim2);
             }
         }
 
-        [TestClass]
         public class AnimTypeProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -72,14 +68,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var animType2 = frame.AnimType;
 
                 // Assert
-                Assert.AreEqual(animType, animType2);
+                Assert.Equal(animType, animType2);
             }
         }
 
-        [TestClass]
         public class OnFractionProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -91,14 +86,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var onFraction2 = frame.OnFraction;
 
                 // Assert
-                Assert.AreEqual(onFraction, onFraction2);
+                Assert.Equal(onFraction, onFraction2);
             }
         }
 
-        [TestClass]
         public class OffFractioffProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -110,14 +104,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var offFraction2 = frame.OffFraction;
 
                 // Assert
-                Assert.AreEqual(offFraction, offFraction2);
+                Assert.Equal(offFraction, offFraction2);
             }
         }
 
-        [TestClass]
         public class SingleFrameProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -129,7 +122,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var singleFrame2 = frame.SingleFrame;
 
                 // Assert
-                Assert.AreEqual(singleFrame, singleFrame2);
+                Assert.Equal(singleFrame, singleFrame2);
             }
         }
     }

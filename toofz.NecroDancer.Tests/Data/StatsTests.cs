@@ -1,28 +1,26 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using toofz.NecroDancer.Data;
+﻿using toofz.NecroDancer.Data;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class StatsTests
+    public class StatsTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange -> Act
                 var stats = new Stats();
 
                 // Assert
-                Assert.IsInstanceOfType(stats, typeof(Stats));
+                Assert.IsAssignableFrom<Stats>(stats);
             }
         }
 
-        [TestClass]
         public class BeatsPerMoveProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -34,14 +32,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var beatsPerMove2 = stats.BeatsPerMove;
 
                 // Assert
-                Assert.AreEqual(beatsPerMove, beatsPerMove2);
+                Assert.Equal(beatsPerMove, beatsPerMove2);
             }
         }
 
-        [TestClass]
         public class CoinsToDropProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -53,14 +50,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var coinsToDrop2 = stats.CoinsToDrop;
 
                 // Assert
-                Assert.AreEqual(coinsToDrop, coinsToDrop2);
+                Assert.Equal(coinsToDrop, coinsToDrop2);
             }
         }
 
-        [TestClass]
         public class DamagePerHitProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -72,14 +68,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var damagePerHit2 = stats.DamagePerHit;
 
                 // Assert
-                Assert.AreEqual(damagePerHit, damagePerHit2);
+                Assert.Equal(damagePerHit, damagePerHit2);
             }
         }
 
-        [TestClass]
         public class HealthProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -91,14 +86,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var health2 = stats.Health;
 
                 // Assert
-                Assert.AreEqual(health, health2);
+                Assert.Equal(health, health2);
             }
         }
 
-        [TestClass]
         public class MovementProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -110,14 +104,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var movement2 = stats.Movement;
 
                 // Assert
-                Assert.AreEqual(movement, movement2);
+                Assert.Equal(movement, movement2);
             }
         }
 
-        [TestClass]
         public class PriorityProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -129,7 +122,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var priority2 = stats.Priority;
 
                 // Assert
-                Assert.AreEqual(priority, priority2);
+                Assert.Equal(priority, priority2);
             }
         }
     }

@@ -1,29 +1,27 @@
 ﻿using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Replays;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Replays
 {
-    class SongTests
+    public class SongTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange -> Song
                 var song = new Song();
 
                 // Assert
-                Assert.IsInstanceOfType(song, typeof(Song));
+                Assert.IsAssignableFrom<Song>(song);
             }
         }
 
-        [TestClass]
         public class SeedProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -35,14 +33,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var seed2 = song.Seed;
 
                 // Assert
-                Assert.AreEqual(seed, seed2);
+                Assert.Equal(seed, seed2);
             }
         }
 
-        [TestClass]
         public class Unknown0Property
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -54,14 +51,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var unknown02 = song.Unknown0;
 
                 // Assert
-                Assert.AreEqual(unknown0, unknown02);
+                Assert.Equal(unknown0, unknown02);
             }
         }
 
-        [TestClass]
         public class Unknown1Property
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -73,14 +69,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var unknown12 = song.Unknown1;
 
                 // Assert
-                Assert.AreEqual(unknown1, unknown12);
+                Assert.Equal(unknown1, unknown12);
             }
         }
 
-        [TestClass]
         public class BeatCountProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -92,14 +87,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var beatCount2 = song.BeatCount;
 
                 // Assert
-                Assert.AreEqual(beatCount, beatCount2);
+                Assert.Equal(beatCount, beatCount2);
             }
         }
 
-        [TestClass]
         public class PlayersProperty
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsPlayers()
             {
                 // Arrange
@@ -109,14 +103,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var players = song.Players;
 
                 // Assert
-                Assert.IsInstanceOfType(players, typeof(List<Player>));
+                Assert.IsAssignableFrom<List<Player>>(players);
             }
         }
 
-        [TestClass]
         public class RandomMovesProperty
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsRandomMoves()
             {
                 // Arrange
@@ -126,14 +119,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var randomMoves = song.RandomMoves;
 
                 // Assert
-                Assert.IsInstanceOfType(randomMoves, typeof(List<int>));
+                Assert.IsAssignableFrom<List<int>>(randomMoves);
             }
         }
 
-        [TestClass]
         public class ItemRollsProperty
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsItemRolls()
             {
                 // Arrange
@@ -143,7 +135,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 var itemRolls = song.ItemRolls;
 
                 // Assert
-                Assert.IsInstanceOfType(itemRolls, typeof(List<int>));
+                Assert.IsAssignableFrom<List<int>>(itemRolls);
             }
         }
     }

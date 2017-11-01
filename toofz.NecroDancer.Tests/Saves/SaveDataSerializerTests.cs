@@ -1,34 +1,31 @@
 ﻿using System;
 using System.IO;
 using System.Text;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using toofz.NecroDancer.Saves;
 using toofz.NecroDancer.Tests.Properties;
-using toofz.TestsShared;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Saves
 {
-    class SaveDataSerializerTests
+    public class SaveDataSerializerTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange -> Act
                 var serializer = new SaveDataSerializer();
 
                 // Assert
-                Assert.IsInstanceOfType(serializer, typeof(SaveDataSerializer));
+                Assert.IsAssignableFrom<SaveDataSerializer>(serializer);
             }
         }
 
-        [TestClass]
         public class DeserializeMethod
         {
-            [TestMethod]
+            [Fact]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -36,13 +33,13 @@ namespace toofz.NecroDancer.Tests.Saves
                 Stream stream = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     serializer.Deserialize(stream);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void StreamIsNotSeekable_ThrowsArgumentException()
             {
                 // Arrange
@@ -52,13 +49,13 @@ namespace toofz.NecroDancer.Tests.Saves
                 var stream = mockStream.Object;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentException>(() =>
+                Assert.Throws<ArgumentException>(() =>
                 {
                     serializer.Deserialize(stream);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void ReturnsSaveData()
             {
                 // Arrange
@@ -69,14 +66,13 @@ namespace toofz.NecroDancer.Tests.Saves
                 var saveData = serializer.Deserialize(stream);
 
                 // Assert
-                Assert.IsInstanceOfType(saveData, typeof(SaveData));
+                Assert.IsAssignableFrom<SaveData>(saveData);
             }
         }
 
-        [TestClass]
         public class SerializeMethod
         {
-            [TestMethod]
+            [Fact]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -85,13 +81,13 @@ namespace toofz.NecroDancer.Tests.Saves
                 var saveData = new SaveData();
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     serializer.Serialize(stream, saveData);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void SaveDataIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -100,13 +96,13 @@ namespace toofz.NecroDancer.Tests.Saves
                 SaveData saveData = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     serializer.Serialize(stream, saveData);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void SerializesSaveData()
             {
                 // Arrange
@@ -122,7 +118,7 @@ namespace toofz.NecroDancer.Tests.Saves
                 writeStream.Position = 0;
                 var sr = new StreamReader(writeStream);
                 var actual = sr.ReadToEnd();
-                Assert.That.NormalizedAreEqual(Resources.SaveData, actual);
+                Assert.Equal(Resources.SaveData, actual, ignoreLineEndingDifferences: true);
             }
         }
     }
