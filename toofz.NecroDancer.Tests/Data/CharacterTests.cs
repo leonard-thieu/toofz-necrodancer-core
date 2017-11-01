@@ -1,15 +1,14 @@
 ﻿using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Data;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class CharacterTests
+    public class CharacterTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange
@@ -19,10 +18,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var character = new Character(id);
 
                 // Assert
-                Assert.IsInstanceOfType(character, typeof(Character));
+                Assert.IsAssignableFrom<Character>(character);
             }
 
-            [TestMethod]
+            [Fact]
             public void SetsId()
             {
                 // Arrange
@@ -33,14 +32,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var id2 = character.Id;
 
                 // Assert
-                Assert.AreEqual(id, id2);
+                Assert.Equal(id, id2);
             }
         }
 
-        [TestClass]
         public class InitialEquipmentProperty
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInitialEquipment()
             {
                 // Arrange
@@ -51,14 +49,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var initialEquipment = character.InitialEquipment;
 
                 // Assert
-                Assert.IsInstanceOfType(initialEquipment, typeof(ICollection<Item>));
+                Assert.IsAssignableFrom<ICollection<Item>>(initialEquipment);
             }
         }
 
-        [TestClass]
         public class CursedSlotsProperty
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsCursedSlots()
             {
                 // Arrange
@@ -69,7 +66,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var cursedSlots = character.CursedSlots;
 
                 // Assert
-                Assert.IsInstanceOfType(cursedSlots, typeof(ICollection<CursedSlot>));
+                Assert.IsAssignableFrom<ICollection<CursedSlot>>(cursedSlots);
             }
         }
     }

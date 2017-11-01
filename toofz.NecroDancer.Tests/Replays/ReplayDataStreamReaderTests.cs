@@ -1,31 +1,30 @@
 ﻿using System;
 using System.IO;
 using System.Text;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Replays;
 using toofz.NecroDancer.Tests.Properties;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Replays
 {
-    class ReplayDataStreamReaderTests
+    public class ReplayDataStreamReaderTests
     {
-        [TestClass]
         public class Cosntructor
         {
-            [TestMethod]
+            [Fact]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
                 Stream stream = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     new ReplayDataStreamReader(stream);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange
@@ -35,14 +34,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var reader = new ReplayDataStreamReader(stream);
 
                 // Assert
-                Assert.IsInstanceOfType(reader, typeof(ReplayDataStreamReader));
+                Assert.IsAssignableFrom<ReplayDataStreamReader>(reader);
             }
         }
 
-        [TestClass]
         public class ReadReplayDataMethod
         {
-            [TestMethod]
+            [Fact]
             public void ClassicReplayData_ReturnsReplayData()
             {
                 // Arrange
@@ -57,10 +55,10 @@ namespace toofz.NecroDancer.Tests.Replays
                 var writer = new ReplayDataStreamWriter(expectedStream);
                 writer.Write(replayData);
                 var expected = expectedStream.ToArray();
-                CollectionAssert.AreEqual(expected, Encoding.UTF8.GetBytes(Resources.ClassicReplayData));
+                Assert.Equal(expected, Encoding.UTF8.GetBytes(Resources.ClassicReplayData));
             }
 
-            [TestMethod]
+            [Fact]
             public void AmplifiedReplayData_ReturnsReplayData()
             {
                 // Arrange
@@ -75,10 +73,10 @@ namespace toofz.NecroDancer.Tests.Replays
                 var writer = new ReplayDataStreamWriter(expectedStream);
                 writer.Write(replayData);
                 var expected = expectedStream.ToArray();
-                CollectionAssert.AreEqual(expected, Encoding.UTF8.GetBytes(Resources.AmplifiedReplayData));
+                Assert.Equal(expected, Encoding.UTF8.GetBytes(Resources.AmplifiedReplayData));
             }
 
-            [TestMethod]
+            [Fact]
             public void RemoteReplayData_ReturnsReplayData()
             {
                 // Arrange
@@ -93,11 +91,10 @@ namespace toofz.NecroDancer.Tests.Replays
                 var writer = new ReplayDataStreamWriter(expectedStream);
                 writer.Write(replayData);
                 var expected = expectedStream.ToArray();
-                CollectionAssert.AreEqual(expected, Encoding.UTF8.GetBytes(Resources.RemoteReplayData));
+                Assert.Equal(expected, Encoding.UTF8.GetBytes(Resources.RemoteReplayData));
             }
 
-            [TestMethod]
-            [Ignore]
+            [Fact(Skip = "Should empty replays be parsable?")]
             public void EmptyReplayData_ReturnsReplayData()
             {
                 // Arrange
@@ -112,14 +109,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var writer = new ReplayDataStreamWriter(expectedStream);
                 writer.Write(replayData);
                 var expected = expectedStream.ToArray();
-                CollectionAssert.AreEqual(expected, Encoding.UTF8.GetBytes(Resources.EmptyReplayData));
+                Assert.Equal(expected, Encoding.UTF8.GetBytes(Resources.EmptyReplayData));
             }
         }
 
-        [TestClass]
         public class ReadLineMethod
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsLine()
             {
                 // Arrange
@@ -131,10 +127,10 @@ namespace toofz.NecroDancer.Tests.Replays
                 var line = reader.ReadLine();
 
                 // Assert
-                Assert.AreEqual("a", line);
+                Assert.Equal("a", line);
             }
 
-            [TestMethod]
+            [Fact]
             public void NoMoreLines_ReturnsNull()
             {
                 // Arrange
@@ -148,7 +144,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 var line = reader.ReadLine();
 
                 // Assert
-                Assert.IsNull(line);
+                Assert.Null(line);
             }
         }
     }

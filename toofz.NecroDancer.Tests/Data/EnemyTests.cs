@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Data;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class EnemyTests
+    public class EnemyTests
     {
-        [TestClass]
         public class Constructor_String_Int32
         {
-            [TestMethod]
+            [Fact]
             public void NameIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -18,13 +17,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var type = 1;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     new Enemy(name, type);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void TypeIsLessThan1_ThrowsArgumentOutOfRangeException()
             {
                 // Arrange
@@ -32,13 +31,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var type = 0;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
+                Assert.Throws<ArgumentOutOfRangeException>(() =>
                 {
                     new Enemy(name, type);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange
@@ -49,10 +48,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var enemy = new Enemy(name, type);
 
                 // Assert
-                Assert.IsInstanceOfType(enemy, typeof(Enemy));
+                Assert.IsAssignableFrom<Enemy>(enemy);
             }
 
-            [TestMethod]
+            [Fact]
             public void SetsName()
             {
                 // Arrange
@@ -64,10 +63,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var name2 = enemy.Name;
 
                 // Assert
-                Assert.AreEqual(name, name2);
+                Assert.Equal(name, name2);
             }
 
-            [TestMethod]
+            [Fact]
             public void SetsType()
             {
                 // Arrange
@@ -79,14 +78,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var type2 = enemy.Type;
 
                 // Assert
-                Assert.AreEqual(type, type2);
+                Assert.Equal(type, type2);
             }
         }
 
-        [TestClass]
         public class LevelEditorProperty
         {
-            [TestMethod]
+            [Fact]
             public void Default_ReturnsTrue()
             {
                 // Arrange
@@ -98,10 +96,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var levelEditor = enemy.LevelEditor;
 
                 // Assert
-                Assert.IsTrue(levelEditor);
+                Assert.True(levelEditor);
             }
 
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -115,14 +113,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var levelEditor2 = enemy.LevelEditor;
 
                 // Assert
-                Assert.AreEqual(levelEditor, enemy.LevelEditor);
+                Assert.Equal(levelEditor, enemy.LevelEditor);
             }
         }
 
-        [TestClass]
         public class SpriteSheetProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -136,14 +133,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var spriteSheet2 = enemy.SpriteSheet;
 
                 // Assert
-                Assert.AreEqual(spriteSheet, spriteSheet2);
+                Assert.Equal(spriteSheet, spriteSheet2);
             }
         }
 
-        [TestClass]
         public class FramesProperty
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsFrames()
             {
                 // Arrange
@@ -155,14 +151,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var frames = enemy.Frames;
 
                 // Assert
-                Assert.IsInstanceOfType(frames, typeof(ICollection<Frame>));
+                Assert.IsAssignableFrom<ICollection<Frame>>(frames);
             }
         }
 
-        [TestClass]
         public class ShadowProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -176,14 +171,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var shadow2 = enemy.Shadow;
 
                 // Assert
-                Assert.AreEqual(shadow, shadow2);
+                Assert.Equal(shadow, shadow2);
             }
         }
 
-        [TestClass]
         public class StatsProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -197,14 +191,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var stats2 = enemy.Stats;
 
                 // Assert
-                Assert.AreEqual(stats, stats2);
+                Assert.Equal(stats, stats2);
             }
         }
 
-        [TestClass]
         public class OptionalStatsProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -218,14 +211,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var optionalStats2 = enemy.OptionalStats;
 
                 // Assert
-                Assert.AreEqual(optionalStats, optionalStats2);
+                Assert.Equal(optionalStats, optionalStats2);
             }
         }
 
-        [TestClass]
         public class BouncerProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -239,14 +231,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var bouncer2 = enemy.Bouncer;
 
                 // Assert
-                Assert.AreEqual(bouncer, bouncer2);
+                Assert.Equal(bouncer, bouncer2);
             }
         }
 
-        [TestClass]
         public class TweensProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -260,14 +251,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var tweens2 = enemy.Tweens;
 
                 // Assert
-                Assert.AreEqual(tweens, tweens2);
+                Assert.Equal(tweens, tweens2);
             }
         }
 
-        [TestClass]
         public class ParticleProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -281,14 +271,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var particle2 = enemy.Particle;
 
                 // Assert
-                Assert.AreEqual(particle, particle2);
+                Assert.Equal(particle, particle2);
             }
         }
 
-        [TestClass]
         public class DisplayNameProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -302,7 +291,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var displayName2 = enemy.DisplayName;
 
                 // Assert
-                Assert.AreEqual(displayName, displayName2);
+                Assert.Equal(displayName, displayName2);
             }
         }
     }

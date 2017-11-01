@@ -1,28 +1,27 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Data;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class SpriteSheetTests
+    public class SpriteSheetTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void PathIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
                 string path = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     new SpriteSheet(path);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange
@@ -32,10 +31,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var spriteSheet = new SpriteSheet(path);
 
                 // Assert
-                Assert.IsInstanceOfType(spriteSheet, typeof(SpriteSheet));
+                Assert.IsAssignableFrom<SpriteSheet>(spriteSheet);
             }
 
-            [TestMethod]
+            [Fact]
             public void SetsPath()
             {
                 // Arrange
@@ -46,7 +45,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var path2 = spriteSheet.Path;
 
                 // Assert
-                Assert.AreEqual(path, path2);
+                Assert.Equal(path, path2);
             }
         }
     }

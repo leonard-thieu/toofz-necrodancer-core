@@ -1,31 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Replays;
 using toofz.NecroDancer.Saves;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Replays
 {
-    class ReplayDataTests
+    public class ReplayDataTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange -> Act
                 var replayData = new ReplayData();
 
                 // Assert
-                Assert.IsInstanceOfType(replayData, typeof(ReplayData));
+                Assert.IsAssignableFrom<ReplayData>(replayData);
             }
         }
 
-        [TestClass]
         public class KilledByProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -37,14 +35,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var killedBy2 = replayData.KilledBy;
 
                 // Assert
-                Assert.AreEqual(killedBy, killedBy2);
+                Assert.Equal(killedBy, killedBy2);
             }
         }
 
-        [TestClass]
         public class IsRemoteProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -56,14 +53,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var isRemote2 = replayData.IsRemote;
 
                 // Assert
-                Assert.AreEqual(isRemote, isRemote2);
+                Assert.Equal(isRemote, isRemote2);
             }
         }
 
-        [TestClass]
         public class VersionProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -75,14 +71,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var version2 = replayData.Version;
 
                 // Assert
-                Assert.AreEqual(version, version2);
+                Assert.Equal(version, version2);
             }
         }
 
-        [TestClass]
         public class StartZoneProperty
         {
-            [TestMethod]
+            [Fact]
             public void Default_Returns1()
             {
                 // Arrange
@@ -92,10 +87,10 @@ namespace toofz.NecroDancer.Tests.Replays
                 var startZone = replayData.StartZone;
 
                 // Assert
-                Assert.AreEqual(1, startZone);
+                Assert.Equal(1, startZone);
             }
 
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -107,14 +102,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var startZone2 = replayData.StartZone;
 
                 // Assert
-                Assert.AreEqual(startZone, startZone2);
+                Assert.Equal(startZone, startZone2);
             }
         }
 
-        [TestClass]
         public class StartCoinsProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -126,14 +120,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var startCoins2 = replayData.StartCoins;
 
                 // Assert
-                Assert.AreEqual(startCoins, startCoins2);
+                Assert.Equal(startCoins, startCoins2);
             }
         }
 
-        [TestClass]
         public class HasBroadswordProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -145,14 +138,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var hasBroadsword2 = replayData.HasBroadsword;
 
                 // Assert
-                Assert.AreEqual(hasBroadsword, hasBroadsword2);
+                Assert.Equal(hasBroadsword, hasBroadsword2);
             }
         }
 
-        [TestClass]
         public class IsHardcoreProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -164,14 +156,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var isHardcore2 = replayData.IsHardcore;
 
                 // Assert
-                Assert.AreEqual(isHardcore, isHardcore2);
+                Assert.Equal(isHardcore, isHardcore2);
             }
         }
 
-        [TestClass]
         public class IsDailyProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -183,14 +174,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var isDaily2 = replayData.IsDaily;
 
                 // Assert
-                Assert.AreEqual(isDaily, isDaily2);
+                Assert.Equal(isDaily, isDaily2);
             }
         }
 
-        [TestClass]
         public class IsDancePadModeProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -202,14 +192,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var isDancePadMode2 = replayData.IsDancePadMode;
 
                 // Assert
-                Assert.AreEqual(isDancePadMode, isDancePadMode2);
+                Assert.Equal(isDancePadMode, isDancePadMode2);
             }
         }
 
-        [TestClass]
         public class IsSeededProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -221,14 +210,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var isSeeded2 = replayData.IsSeeded;
 
                 // Assert
-                Assert.AreEqual(isSeeded, isSeeded2);
+                Assert.Equal(isSeeded, isSeeded2);
             }
         }
 
-        [TestClass]
         public class RunProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -240,14 +228,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var run2 = replayData.Run;
 
                 // Assert
-                Assert.AreEqual(run, run2);
+                Assert.Equal(run, run2);
             }
         }
 
-        [TestClass]
         public class Unknown0
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -259,14 +246,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var unknown02 = replayData.Unknown0;
 
                 // Assert
-                Assert.AreEqual(unknown0, unknown02);
+                Assert.Equal(unknown0, unknown02);
             }
         }
 
-        [TestClass]
         public class Unknown2
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -278,14 +264,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var unknown22 = replayData.Unknown2;
 
                 // Assert
-                Assert.AreEqual(unknown2, unknown22);
+                Assert.Equal(unknown2, unknown22);
             }
         }
 
-        [TestClass]
         public class DurationProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -297,14 +282,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var duration2 = replayData.Duration;
 
                 // Assert
-                Assert.AreEqual(duration, duration2);
+                Assert.Equal(duration, duration2);
             }
         }
 
-        [TestClass]
         public class SongsProperty
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsSongs()
             {
                 // Arrange
@@ -314,14 +298,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var songs = replayData.Songs;
 
                 // Assert
-                Assert.IsInstanceOfType(songs, typeof(ICollection<Song>));
+                Assert.IsAssignableFrom<ICollection<Song>>(songs);
             }
         }
 
-        [TestClass]
         public class SaveDataProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -333,14 +316,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var saveData2 = replayData.SaveData;
 
                 // Assert
-                Assert.AreEqual(saveData, saveData2);
+                Assert.Equal(saveData, saveData2);
             }
         }
 
-        [TestClass]
         public class Seed
         {
-            [TestMethod]
+            [Fact]
             public void NoSongs_ReturnsNull()
             {
                 // Arrange
@@ -350,12 +332,12 @@ namespace toofz.NecroDancer.Tests.Replays
                 var seed = replayData.Seed;
 
                 // Assert
-                Assert.IsNull(seed);
+                Assert.Null(seed);
             }
 
-            [DataTestMethod]
-            [DataRow(1580050689, 603033)]
-            [DataRow(-2147483141, 89527)]
+            [Theory]
+            [InlineData(1580050689, 603033)]
+            [InlineData(-2147483141, 89527)]
             public void ClassicFormat_ReturnsSeed(int levelSeed, int seed)
             {
                 // Arrange
@@ -367,13 +349,13 @@ namespace toofz.NecroDancer.Tests.Replays
                 var seed2 = replayData.Seed;
 
                 // Assert
-                Assert.AreEqual(seed, seed2);
+                Assert.Equal(seed, seed2);
             }
 
-            [DataTestMethod]
-            [DataRow(1368956533, 25192)]
-            [DataRow(58192416, 65)]
-            [DataRow(1698929060, 68295)]
+            [Theory]
+            [InlineData(1368956533, 25192)]
+            [InlineData(58192416, 65)]
+            [InlineData(1698929060, 68295)]
             public void AmplifiedFormat_ReturnsCorrectSeed(int levelSeed, int seed)
             {
                 // Arrange
@@ -385,7 +367,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 var seed2 = replayData.Seed;
 
                 // Assert
-                Assert.AreEqual(seed, seed2);
+                Assert.Equal(seed, seed2);
             }
         }
     }

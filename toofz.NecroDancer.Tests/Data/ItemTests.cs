@@ -1,15 +1,14 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using toofz.NecroDancer.Data;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class ItemTests
+    public class ItemTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void NameIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -17,13 +16,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var imagePath = "myImagePath";
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     new Item(name, imagePath);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void ImagePathIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -31,13 +30,13 @@ namespace toofz.NecroDancer.Tests.Data
                 string imagePath = null;
 
                 // Act -> Assert
-                Assert.ThrowsException<ArgumentNullException>(() =>
+                Assert.Throws<ArgumentNullException>(() =>
                 {
                     new Item(name, imagePath);
                 });
             }
 
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange
@@ -48,10 +47,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var item = new Item(name, imagePath);
 
                 // Assert
-                Assert.IsInstanceOfType(item, typeof(Item));
+                Assert.IsAssignableFrom<Item>(item);
             }
 
-            [TestMethod]
+            [Fact]
             public void SetsName()
             {
                 // Arrange
@@ -63,10 +62,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var name2 = item.Name;
 
                 // Assert
-                Assert.AreEqual(name, name2);
+                Assert.Equal(name, name2);
             }
 
-            [TestMethod]
+            [Fact]
             public void SetsImagePath()
             {
                 // Arrange
@@ -78,14 +77,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var imagePath2 = item.ImagePath;
 
                 // Assert
-                Assert.AreEqual(imagePath, imagePath2);
+                Assert.Equal(imagePath, imagePath2);
             }
         }
 
-        [TestClass]
         public class BouncerProperty
         {
-            [TestMethod]
+            [Fact]
             public void Default_ReturnsTrue()
             {
                 // Arrange
@@ -97,10 +95,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var bouncer = item.Bouncer;
 
                 // Assert
-                Assert.IsTrue(bouncer);
+                Assert.True(bouncer);
             }
 
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -114,14 +112,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var bouncer2 = item.Bouncer;
 
                 // Assert
-                Assert.AreEqual(bouncer, bouncer2);
+                Assert.Equal(bouncer, bouncer2);
             }
         }
 
-        [TestClass]
         public class ImageHeightProperty
         {
-            [TestMethod]
+            [Fact]
             public void Default_Returns24()
             {
                 // Arrange
@@ -133,10 +130,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var imageHeight = item.ImageHeight;
 
                 // Assert
-                Assert.AreEqual(24, imageHeight);
+                Assert.Equal(24, imageHeight);
             }
 
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -150,14 +147,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var imageHeight2 = item.ImageHeight;
 
                 // Assert
-                Assert.AreEqual(imageHeight, imageHeight2);
+                Assert.Equal(imageHeight, imageHeight2);
             }
         }
 
-        [TestClass]
         public class ImageWidthProperty
         {
-            [TestMethod]
+            [Fact]
             public void Default_Returns24()
             {
                 // Arrange
@@ -169,10 +165,10 @@ namespace toofz.NecroDancer.Tests.Data
                 var imageWidth = item.ImageWidth;
 
                 // Assert
-                Assert.AreEqual(24, imageWidth);
+                Assert.Equal(24, imageWidth);
             }
 
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -186,14 +182,13 @@ namespace toofz.NecroDancer.Tests.Data
                 var imageWidth2 = item.ImageWidth;
 
                 // Assert
-                Assert.AreEqual(imageWidth, imageWidth2);
+                Assert.Equal(imageWidth, imageWidth2);
             }
         }
 
-        [TestClass]
         public class DisplayNameProperty
         {
-            [TestMethod]
+            [Fact]
             public void GetSetBehavior()
             {
                 // Arrange
@@ -207,7 +202,7 @@ namespace toofz.NecroDancer.Tests.Data
                 var displayName2 = item.DisplayName;
 
                 // Assert
-                Assert.AreEqual(displayName, displayName2);
+                Assert.Equal(displayName, displayName2);
             }
         }
     }

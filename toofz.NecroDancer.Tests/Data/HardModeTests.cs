@@ -1,21 +1,20 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using toofz.NecroDancer.Data;
+﻿using toofz.NecroDancer.Data;
+using Xunit;
 
 namespace toofz.NecroDancer.Tests.Data
 {
-    class HardModeTests
+    public class HardModeTests
     {
-        [TestClass]
         public class Constructor
         {
-            [TestMethod]
+            [Fact]
             public void ReturnsInstance()
             {
                 // Arrange -> Act
                 var hardMode = new HardMode();
 
                 // Assert
-                Assert.IsInstanceOfType(hardMode, typeof(HardMode));
+                Assert.IsAssignableFrom<HardMode>(hardMode);
             }
         }
     }
