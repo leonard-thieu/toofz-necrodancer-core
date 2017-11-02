@@ -7,12 +7,9 @@ branches:
 configuration:
   - Release
 environment:
-  APPVEYOR_CACHE_ENTRY_ZIP_ARGS: -t7z -m0=lzma -mx=9
   PROJECT: toofz.NecroDancer
   MYGET_API_KEY:
     secure: XZmbJDCK5oiqhbLt1y7UXM6aCYPpF2tm/bJMUJzBsCe1fd2TuwXyaz99RN+bDpHw
-cache:
-  - '%USERPROFILE%\.nuget\packages'
 notifications:
   - provider: Slack
     incoming_webhook:
