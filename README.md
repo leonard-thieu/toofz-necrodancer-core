@@ -4,12 +4,20 @@
 [![codecov](https://codecov.io/gh/leonard-thieu/toofz-necrodancer-core/branch/master/graph/badge.svg)](https://codecov.io/gh/leonard-thieu/toofz-necrodancer-core)
 [![MyGet](https://img.shields.io/myget/toofz/v/toofz.NecroDancer.svg)](https://www.myget.org/feed/toofz/package/nuget/toofz.NecroDancer)
 
+## Overview
+
 **toofz NecroDancer Core** is a .NET library designed for parsing and editing **Crypt of the NecroDancer** files. 
 The library supports `necrodancer.xml`, replays, and saves.
 
-**toofz NecroDancer Core** is a component of [toofz](http://crypt.toofz.com/).
+**toofz NecroDancer Core** is a component of [toofz](https://github.com/leonard-thieu/toofz-necrodancer).
 It powers the **Item** and **Enemy** sections of **toofz** through data mining. 
 It also provides richer leaderboard entry data by parsing replays associated with entries.
+
+### Dependents
+
+* [toofz NecroDancer Core (Data)](https://github.com/leonard-thieu/toofz-necrodancer-core-data)
+* [toofz Replays Service](https://github.com/leonard-thieu/replays-service)
+* [toofz API](https://github.com/leonard-thieu/api.toofz.com)
 
 ## Requirements
 
