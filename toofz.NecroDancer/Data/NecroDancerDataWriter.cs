@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace toofz.NecroDancer.Data
 {
-    sealed class NecroDancerDataWriter
+    internal sealed class NecroDancerDataWriter
     {
         internal static XAttribute CreateAttribute(string name, DisplayString value)
         {
@@ -21,7 +21,7 @@ namespace toofz.NecroDancer.Data
             this.stream = stream ?? throw new ArgumentNullException(nameof(stream));
         }
 
-        readonly Stream stream;
+        private readonly Stream stream;
 
         public void Write(NecroDancerData necroDancerData)
         {
@@ -64,7 +64,7 @@ namespace toofz.NecroDancer.Data
             }
         }
 
-        static XElement WriteItems(IEnumerable<Item> items)
+        private static XElement WriteItems(IEnumerable<Item> items)
         {
             var itemsEl = new XElement("items");
 
@@ -77,7 +77,7 @@ namespace toofz.NecroDancer.Data
             return itemsEl;
         }
 
-        static XElement WriteItem(Item item)
+        private static XElement WriteItem(Item item)
         {
             var itemEl = new XElement(item.Name, item.ImagePath);
 
@@ -167,7 +167,7 @@ namespace toofz.NecroDancer.Data
             return itemEl;
         }
 
-        static XElement WriteEnemies(IEnumerable<Enemy> enemies)
+        private static XElement WriteEnemies(IEnumerable<Enemy> enemies)
         {
             var enemiesEl = new XElement("enemies");
 
@@ -180,7 +180,7 @@ namespace toofz.NecroDancer.Data
             return enemiesEl;
         }
 
-        static XElement WriteEnemy(Enemy enemy)
+        private static XElement WriteEnemy(Enemy enemy)
         {
             var enemyEl = new XElement(enemy.Name);
 
@@ -240,7 +240,7 @@ namespace toofz.NecroDancer.Data
             return enemyEl;
         }
 
-        static XElement WriteSpriteSheet(SpriteSheet spriteSheet)
+        private static XElement WriteSpriteSheet(SpriteSheet spriteSheet)
         {
             var spritesheetEl = new XElement("spritesheet", spriteSheet.Path);
 
@@ -259,7 +259,7 @@ namespace toofz.NecroDancer.Data
             return spritesheetEl;
         }
 
-        static XElement WriteFrame(Frame frame)
+        private static XElement WriteFrame(Frame frame)
         {
             var frameEl = new XElement("frame");
 
@@ -273,7 +273,7 @@ namespace toofz.NecroDancer.Data
             return frameEl;
         }
 
-        static XElement WriteShadow(Shadow shadow)
+        private static XElement WriteShadow(Shadow shadow)
         {
             var shadowEl = new XElement("shadow", shadow.Path);
 
@@ -283,7 +283,7 @@ namespace toofz.NecroDancer.Data
             return shadowEl;
         }
 
-        static XElement WriteStats(Stats stats)
+        private static XElement WriteStats(Stats stats)
         {
             var statsEl = new XElement("stats");
 
@@ -297,7 +297,7 @@ namespace toofz.NecroDancer.Data
             return statsEl;
         }
 
-        static XElement WriteOptionalStats(OptionalStats optionalStats)
+        private static XElement WriteOptionalStats(OptionalStats optionalStats)
         {
             var optionalStatsEl = new XElement("optionalStats");
 
@@ -313,7 +313,7 @@ namespace toofz.NecroDancer.Data
             return optionalStatsEl;
         }
 
-        static XElement WriteBouncer(Bouncer bouncer)
+        private static XElement WriteBouncer(Bouncer bouncer)
         {
             var bouncerEl = new XElement("bouncer");
 
@@ -325,7 +325,7 @@ namespace toofz.NecroDancer.Data
             return bouncerEl;
         }
 
-        static XElement WriteTweens(Tweens tweens)
+        private static XElement WriteTweens(Tweens tweens)
         {
             var tweensEl = new XElement("tweens");
 
@@ -337,7 +337,7 @@ namespace toofz.NecroDancer.Data
             return tweensEl;
         }
 
-        static XElement WriteParticle(Particle particle)
+        private static XElement WriteParticle(Particle particle)
         {
             var particleEl = new XElement("particle");
 
@@ -346,7 +346,7 @@ namespace toofz.NecroDancer.Data
             return particleEl;
         }
 
-        static XElement WriteCharacters(List<Character> characters)
+        private static XElement WriteCharacters(List<Character> characters)
         {
             var charactersEl = new XElement("characters");
 
@@ -359,7 +359,7 @@ namespace toofz.NecroDancer.Data
             return charactersEl;
         }
 
-        static XElement WriteCharacter(Character character)
+        private static XElement WriteCharacter(Character character)
         {
             var characterEl = new XElement("character", new XAttribute("id", character.Id));
 
@@ -369,7 +369,7 @@ namespace toofz.NecroDancer.Data
             return characterEl;
         }
 
-        static XElement WriteInitialEquipment(Character character)
+        private static XElement WriteInitialEquipment(Character character)
         {
             var initialEquipmentEl = new XElement("initial_equipment");
 
@@ -386,7 +386,7 @@ namespace toofz.NecroDancer.Data
             return initialEquipmentEl;
         }
 
-        static XElement WriteModes(List<IMode> modes)
+        private static XElement WriteModes(List<IMode> modes)
         {
             var modesEl = new XElement("modes");
 
@@ -406,7 +406,7 @@ namespace toofz.NecroDancer.Data
             return modesEl;
         }
 
-        static XElement WriteHardMode(HardMode hardMode)
+        private static XElement WriteHardMode(HardMode hardMode)
         {
             var hardEl = new XElement("hard");
 

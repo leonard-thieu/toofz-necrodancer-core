@@ -8,11 +8,11 @@ using toofz.NecroDancer.Saves;
 
 namespace toofz.NecroDancer.Replays
 {
-    sealed class ReplayDataStreamReader : StreamReader
+    internal sealed class ReplayDataStreamReader : StreamReader
     {
-        const string RemoteHeaderSignature = "%*#%*";
+        private const string RemoteHeaderSignature = "%*#%*";
 
-        static IEnumerable<int> ParseArrayOfInt32(string line, int count)
+        private static IEnumerable<int> ParseArrayOfInt32(string line, int count)
         {
             var values = new List<int>();
 
@@ -83,7 +83,7 @@ namespace toofz.NecroDancer.Replays
             return replay;
         }
 
-        RemoteHeader ReadLineAsRemoteHeaderAndVersion()
+        private RemoteHeader ReadLineAsRemoteHeaderAndVersion()
         {
             var remoteHeader = new RemoteHeader();
 
@@ -110,7 +110,7 @@ namespace toofz.NecroDancer.Replays
             return remoteHeader;
         }
 
-        Song ReadSong()
+        private Song ReadSong()
         {
             var song = new Song();
 
@@ -139,7 +139,7 @@ namespace toofz.NecroDancer.Replays
             return song;
         }
 
-        Player ReadPlayer()
+        private Player ReadPlayer()
         {
             var player = new Player();
 
@@ -174,7 +174,7 @@ namespace toofz.NecroDancer.Replays
             return player;
         }
 
-        IEnumerable<int> ReadLineAsArrayOfInt32()
+        private IEnumerable<int> ReadLineAsArrayOfInt32()
         {
             var values = new List<int>();
 
@@ -191,7 +191,7 @@ namespace toofz.NecroDancer.Replays
             return values;
         }
 
-        int ReadLineAsInt32()
+        private int ReadLineAsInt32()
         {
             var line = ReadLine();
             if (line == null)
@@ -202,7 +202,7 @@ namespace toofz.NecroDancer.Replays
             return int.Parse(line);
         }
 
-        bool ReadLineAsBooleanLike()
+        private bool ReadLineAsBooleanLike()
         {
             var line = ReadLine();
             if (line == null)
@@ -218,7 +218,7 @@ namespace toofz.NecroDancer.Replays
             }
         }
 
-        TimeSpan ReadLineAsDuration()
+        private TimeSpan ReadLineAsDuration()
         {
             var ms = ReadLineAsInt32();
 
@@ -264,7 +264,7 @@ namespace toofz.NecroDancer.Replays
             return null;
         }
 
-        sealed class RemoteHeader
+        private sealed class RemoteHeader
         {
             public string KilledBy { get; set; }
             public bool IsRemote { get; set; }

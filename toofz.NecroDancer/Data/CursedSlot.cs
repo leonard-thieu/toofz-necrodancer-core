@@ -6,10 +6,7 @@ namespace toofz.NecroDancer.Data
     {
         public CursedSlot(string slot)
         {
-            if (slot == null)
-                throw new ArgumentNullException(nameof(slot));
-
-            Slot = slot;
+            Slot = slot ?? throw new ArgumentNullException(nameof(slot));
         }
 
         public string Slot { get; }

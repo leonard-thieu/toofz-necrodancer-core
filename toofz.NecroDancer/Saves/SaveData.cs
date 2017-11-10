@@ -14,7 +14,7 @@
                 CloudTimestampConfigured = true;
             }
         }
-        int cloudTimestamp;
+        private int cloudTimestamp;
         internal bool CloudTimestampConfigured { get; private set; }
 
         #endregion
@@ -30,7 +30,7 @@
             }
             set { player = value; }
         }
-        Player player;
+        private Player player;
 
         #endregion
 
@@ -45,7 +45,7 @@
             }
             set { game = value; }
         }
-        Game game;
+        private Game game;
 
         #endregion
 
@@ -60,7 +60,7 @@
             }
             set { npc = value; }
         }
-        Npc npc;
+        private Npc npc;
 
         #endregion
     }

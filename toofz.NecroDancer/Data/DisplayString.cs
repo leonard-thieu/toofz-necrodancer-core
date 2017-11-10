@@ -6,10 +6,7 @@ namespace toofz.NecroDancer.Data
     {
         public DisplayString(string text)
         {
-            if (text == null)
-                throw new ArgumentNullException(nameof(text));
-
-            Text = text;
+            Text = text ?? throw new ArgumentNullException(nameof(text));
         }
 
         public DisplayString(int id, string text) : this(text)

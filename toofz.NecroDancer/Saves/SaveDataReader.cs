@@ -7,13 +7,13 @@ using log4net;
 
 namespace toofz.NecroDancer.Saves
 {
-    sealed class SaveDataReader
+    internal sealed class SaveDataReader
     {
-        static readonly ILog Log = LogManager.GetLogger(typeof(SaveData));
+        private static readonly ILog Log = LogManager.GetLogger(typeof(SaveData));
 
-        const string InvalidXmlDeclaration = "<?xml?>";
+        private const string InvalidXmlDeclaration = "<?xml?>";
 
-        static bool ReadAsBooleanLike(string value)
+        private static bool ReadAsBooleanLike(string value)
         {
             switch (value)
             {
@@ -36,8 +36,8 @@ namespace toofz.NecroDancer.Saves
             this.log = log;
         }
 
-        readonly Stream stream;
-        readonly ILog log;
+        private readonly Stream stream;
+        private readonly ILog log;
 
         public SaveData Read()
         {
@@ -59,7 +59,7 @@ namespace toofz.NecroDancer.Saves
             return ReadSaveData(necrodancerEl);
         }
 
-        SaveData ReadSaveData(XElement necrodancerEl)
+        private SaveData ReadSaveData(XElement necrodancerEl)
         {
             var saveData = new SaveData();
 
@@ -88,7 +88,7 @@ namespace toofz.NecroDancer.Saves
             return saveData;
         }
 
-        Player ReadPlayer(XElement playerEl)
+        private Player ReadPlayer(XElement playerEl)
         {
             var player = new Player();
 
@@ -252,7 +252,7 @@ namespace toofz.NecroDancer.Saves
             return player;
         }
 
-        Game ReadGame(XElement gameEl)
+        private Game ReadGame(XElement gameEl)
         {
             var game = new Game();
 
@@ -619,7 +619,7 @@ namespace toofz.NecroDancer.Saves
             return game;
         }
 
-        Npc ReadNpc(XElement npcEl)
+        private Npc ReadNpc(XElement npcEl)
         {
             var npc = new Npc();
 

@@ -6,9 +6,9 @@ using toofz.NecroDancer.Saves;
 
 namespace toofz.NecroDancer.Replays
 {
-    sealed class ReplayDataStreamWriter : StreamWriter
+    internal sealed class ReplayDataStreamWriter : StreamWriter
     {
-        const string RemoteHeaderSignature = "%*#%*";
+        private const string RemoteHeaderSignature = "%*#%*";
 
         public ReplayDataStreamWriter(Stream stream) :
             base(stream, new UTF8Encoding(false, true), 1024, true)
@@ -62,7 +62,7 @@ namespace toofz.NecroDancer.Replays
             }
         }
 
-        void Write(IEnumerable<Song> levels)
+        private void Write(IEnumerable<Song> levels)
         {
             foreach (var level in levels)
             {
@@ -70,7 +70,7 @@ namespace toofz.NecroDancer.Replays
             }
         }
 
-        void Write(Song level)
+        private void Write(Song level)
         {
             WriteLine(level.Seed);
             WriteLine(level.Players.Count);
@@ -84,7 +84,7 @@ namespace toofz.NecroDancer.Replays
             WriteLine(level.ItemRolls);
         }
 
-        void Write(IEnumerable<Player> players)
+        private void Write(IEnumerable<Player> players)
         {
             foreach (var player in players)
             {
@@ -92,7 +92,7 @@ namespace toofz.NecroDancer.Replays
             }
         }
 
-        void Write(Player player)
+        private void Write(Player player)
         {
             WritePropertyStart(player.Character);
             WritePropertyStart(player.Moves.Count);
@@ -101,12 +101,12 @@ namespace toofz.NecroDancer.Replays
             WriteLine(player.MissedBeats);
         }
 
-        void Write(TimeSpan timeSpan)
+        private void Write(TimeSpan timeSpan)
         {
             Write(timeSpan.TotalMilliseconds);
         }
 
-        void Write(IEnumerable<Move> moves)
+        private void Write(IEnumerable<Move> moves)
         {
             foreach (var move in moves)
             {
@@ -114,7 +114,7 @@ namespace toofz.NecroDancer.Replays
             }
         }
 
-        void Write(IEnumerable<int> values)
+        private void Write(IEnumerable<int> values)
         {
             foreach (var value in values)
             {
@@ -122,25 +122,25 @@ namespace toofz.NecroDancer.Replays
             }
         }
 
-        void WriteLine(TimeSpan timeSpan)
+        private void WriteLine(TimeSpan timeSpan)
         {
             Write(timeSpan);
             WriteLine();
         }
 
-        void WriteLine(IEnumerable<Move> moves)
+        private void WriteLine(IEnumerable<Move> moves)
         {
             Write(moves);
             WriteLine();
         }
 
-        void WriteLine(IEnumerable<int> values)
+        private void WriteLine(IEnumerable<int> values)
         {
             Write(values);
             WriteLine();
         }
 
-        void WritePropertyStart(int value)
+        private void WritePropertyStart(int value)
         {
             Write(value);
             Write('|');

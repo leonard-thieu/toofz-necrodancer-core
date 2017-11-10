@@ -13,7 +13,7 @@
                 IsAddBlackChestUnlockedConfigured = true;
             }
         }
-        bool isAddBlackChestUnlocked;
+        private bool isAddBlackChestUnlocked;
         internal bool IsAddBlackChestUnlockedConfigured { get; private set; }
 
         #endregion
@@ -29,7 +29,7 @@
                 IsAddRedChestUnlockedConfigured = true;
             }
         }
-        bool isAddRedChestUnlocked;
+        private bool isAddRedChestUnlocked;
         internal bool IsAddRedChestUnlockedConfigured { get; private set; }
 
         #endregion
@@ -45,7 +45,7 @@
                 IsAddWhiteChestUnlockedConfigured = true;
             }
         }
-        bool isAddWhiteChestUnlocked;
+        private bool isAddWhiteChestUnlocked;
         internal bool IsAddWhiteChestUnlockedConfigured { get; private set; }
 
         #endregion
@@ -61,7 +61,7 @@
                 IsChainmailUnlockedConfigured = true;
             }
         }
-        bool isChainmailUnlocked;
+        private bool isChainmailUnlocked;
         internal bool IsChainmailUnlockedConfigured { get; private set; }
 
         #endregion
@@ -77,7 +77,7 @@
                 IsGiUnlockedConfigured = true;
             }
         }
-        bool isGiUnlocked;
+        private bool isGiUnlocked;
         internal bool IsGiUnlockedConfigured { get; private set; }
 
         #endregion
@@ -93,7 +93,7 @@
                 IsGlassArmorUnlockedConfigured = true;
             }
         }
-        bool isGlassArmorUnlocked;
+        private bool isGlassArmorUnlocked;
         internal bool IsGlassArmorUnlockedConfigured { get; private set; }
 
         #endregion
@@ -109,7 +109,7 @@
                 IsHeavyGlassArmorUnlockedConfigured = true;
             }
         }
-        bool isHeavyGlassArmorUnlocked;
+        private bool isHeavyGlassArmorUnlocked;
         internal bool IsHeavyGlassArmorUnlockedConfigured { get; private set; }
 
         #endregion
@@ -125,7 +125,7 @@
                 IsHeavyPlateUnlockedConfigured = true;
             }
         }
-        bool isHeavyPlateUnlocked;
+        private bool isHeavyPlateUnlocked;
         internal bool IsHeavyPlateUnlockedConfigured { get; private set; }
 
         #endregion
@@ -141,7 +141,7 @@
                 IsObsidianArmorCleanedConfigured = true;
             }
         }
-        bool isObsidianArmorCleaned;
+        private bool isObsidianArmorCleaned;
         internal bool IsObsidianArmorCleanedConfigured { get; private set; }
 
         #endregion
@@ -157,7 +157,7 @@
                 IsObsidianArmorUnlockedConfigured = true;
             }
         }
-        bool isObsidianArmorUnlocked;
+        private bool isObsidianArmorUnlocked;
         internal bool IsObsidianArmorUnlockedConfigured { get; private set; }
 
         #endregion
@@ -173,7 +173,7 @@
                 IsPlatemailUnlockedConfigured = true;
             }
         }
-        bool isPlatemailUnlocked;
+        private bool isPlatemailUnlocked;
         internal bool IsPlatemailUnlockedConfigured { get; private set; }
 
         #endregion
@@ -189,7 +189,7 @@
                 IsQuartzArmorUnlockedConfigured = true;
             }
         }
-        bool isQuartzArmorUnlocked;
+        private bool isQuartzArmorUnlocked;
         internal bool IsQuartzArmorUnlockedConfigured { get; private set; }
 
         #endregion
@@ -205,7 +205,7 @@
                 IsBagOfHoldingUnlockedConfigured = true;
             }
         }
-        bool isBagOfHoldingUnlocked;
+        private bool isBagOfHoldingUnlocked;
         internal bool IsBagOfHoldingUnlockedConfigured { get; private set; }
 
         #endregion
@@ -221,7 +221,7 @@
                 IsBloodDrumUnlockedConfigured = true;
             }
         }
-        bool isBloodDrumUnlocked;
+        private bool isBloodDrumUnlocked;
         internal bool IsBloodDrumUnlockedConfigured { get; private set; }
 
         #endregion
@@ -237,7 +237,7 @@
                 IsCoin15MultiplierUnlockedConfigured = true;
             }
         }
-        bool isCoin15MultiplierUnlocked;
+        private bool isCoin15MultiplierUnlocked;
         internal bool IsCoin15MultiplierUnlockedConfigured { get; private set; }
 
         #endregion
@@ -253,7 +253,7 @@
                 IsCoin20MultiplierUnlockedConfigured = true;
             }
         }
-        bool isCoin20MultiplierUnlocked;
+        private bool isCoin20MultiplierUnlocked;
         internal bool IsCoin20MultiplierUnlockedConfigured { get; private set; }
 
         #endregion
@@ -269,7 +269,7 @@
                 DiamondDealerItemsConfigured = true;
             }
         }
-        string diamondDealerItems;
+        private string diamondDealerItems;
         internal bool DiamondDealerItemsConfigured { get; private set; }
 
         #endregion
@@ -285,7 +285,7 @@
                 DiamondDealerItemsV2Configured = true;
             }
         }
-        string diamondDealerItemsV2;
+        private string diamondDealerItemsV2;
         internal bool DiamondDealerItemsV2Configured { get; private set; }
 
         #endregion
@@ -301,7 +301,7 @@
                 DiamondDealerItemsV2_1Configured = true;
             }
         }
-        string diamondDealerItemsV2_1;
+        private string diamondDealerItemsV2_1;
         internal bool DiamondDealerItemsV2_1Configured { get; private set; }
 
         #endregion
@@ -317,7 +317,7 @@
                 DiamondDealerItemsV2_2Configured = true;
             }
         }
-        string diamondDealerItemsV2_2;
+        private string diamondDealerItemsV2_2;
         internal bool DiamondDealerItemsV2_2Configured { get; private set; }
 
         #endregion
@@ -333,7 +333,7 @@
                 DiamondDealerItemsV2_3Configured = true;
             }
         }
-        string diamondDealerItemsV2_3;
+        private string diamondDealerItemsV2_3;
         internal bool DiamondDealerItemsV2_3Configured { get; private set; }
 
         #endregion
@@ -349,7 +349,7 @@
                 DiamondDealerSoldItem1Configured = true;
             }
         }
-        string diamondDealerSoldItem1;
+        private string diamondDealerSoldItem1;
         internal bool DiamondDealerSoldItem1Configured { get; private set; }
 
         #endregion
@@ -365,7 +365,7 @@
                 DiamondDealerSoldItem2Configured = true;
             }
         }
-        string diamondDealerSoldItem2;
+        private string diamondDealerSoldItem2;
         internal bool DiamondDealerSoldItem2Configured { get; private set; }
 
         #endregion
@@ -381,7 +381,7 @@
                 DiamondDealerSoldItem3Configured = true;
             }
         }
-        string diamondDealerSoldItem3;
+        private string diamondDealerSoldItem3;
         internal bool DiamondDealerSoldItem3Configured { get; private set; }
 
         #endregion
@@ -397,7 +397,7 @@
                 IsBootsOfPainUnlockedConfigured = true;
             }
         }
-        bool isBootsOfPainUnlocked;
+        private bool isBootsOfPainUnlocked;
         internal bool IsBootsOfPainUnlockedConfigured { get; private set; }
 
         #endregion
@@ -413,7 +413,7 @@
                 IsGreavesUnlockedConfigured = true;
             }
         }
-        bool isGreavesUnlocked;
+        private bool isGreavesUnlocked;
         internal bool IsGreavesUnlockedConfigured { get; private set; }
 
         #endregion
@@ -429,7 +429,7 @@
                 IsFood2UnlockedConfigured = true;
             }
         }
-        bool isFood2Unlocked;
+        private bool isFood2Unlocked;
         internal bool IsFood2UnlockedConfigured { get; private set; }
 
         #endregion
@@ -445,7 +445,7 @@
                 IsDrumstickCleanedConfigured = true;
             }
         }
-        bool isDrumstickCleaned;
+        private bool isDrumstickCleaned;
         internal bool IsDrumstickCleanedConfigured { get; private set; }
 
         #endregion
@@ -461,7 +461,7 @@
                 IsFood3UnlockedConfigured = true;
             }
         }
-        bool isFood3Unlocked;
+        private bool isFood3Unlocked;
         internal bool IsFood3UnlockedConfigured { get; private set; }
 
         #endregion
@@ -477,7 +477,7 @@
                 IsFood4UnlockedConfigured = true;
             }
         }
-        bool isFood4Unlocked;
+        private bool isFood4Unlocked;
         internal bool IsFood4UnlockedConfigured { get; private set; }
 
         #endregion
@@ -493,7 +493,7 @@
                 IsCarrotUnlockedConfigured = true;
             }
         }
-        bool isCarrotUnlocked;
+        private bool isCarrotUnlocked;
         internal bool IsCarrotUnlockedConfigured { get; private set; }
 
         #endregion
@@ -509,7 +509,7 @@
                 IsCookiesUnlockedConfigured = true;
             }
         }
-        bool isCookiesUnlocked;
+        private bool isCookiesUnlocked;
         internal bool IsCookiesUnlockedConfigured { get; private set; }
 
         #endregion
@@ -525,7 +525,7 @@
                 IsBlastHelmUnlockedConfigured = true;
             }
         }
-        bool isBlastHelmUnlocked;
+        private bool isBlastHelmUnlocked;
         internal bool IsBlastHelmUnlockedConfigured { get; private set; }
 
         #endregion
@@ -541,7 +541,7 @@
                 IsCrownOfThornsCleanedConfigured = true;
             }
         }
-        bool isCrownOfThornsCleaned;
+        private bool isCrownOfThornsCleaned;
         internal bool IsCrownOfThornsCleanedConfigured { get; private set; }
 
         #endregion
@@ -557,7 +557,7 @@
                 IsCrownOfThornsUnlockedConfigured = true;
             }
         }
-        bool isCrownOfThornsUnlocked;
+        private bool isCrownOfThornsUnlocked;
         internal bool IsCrownOfThornsUnlockedConfigured { get; private set; }
 
         #endregion
@@ -573,7 +573,7 @@
                 IsGlassJawUnlockedConfigured = true;
             }
         }
-        bool isGlassJawUnlocked;
+        private bool isGlassJawUnlocked;
         internal bool IsGlassJawUnlockedConfigured { get; private set; }
 
         #endregion
@@ -589,7 +589,7 @@
                 IsHelmUnlockedConfigured = true;
             }
         }
-        bool isHelmUnlocked;
+        private bool isHelmUnlocked;
         internal bool IsHelmUnlockedConfigured { get; private set; }
 
         #endregion
@@ -605,7 +605,7 @@
                 IsSpikedEarsUnlockedConfigured = true;
             }
         }
-        bool isSpikedEarsUnlocked;
+        private bool isSpikedEarsUnlocked;
         internal bool IsSpikedEarsUnlockedConfigured { get; private set; }
 
         #endregion
@@ -621,7 +621,7 @@
                 IsSunglassesUnlockedConfigured = true;
             }
         }
-        bool isSunglassesUnlocked;
+        private bool isSunglassesUnlocked;
         internal bool IsSunglassesUnlockedConfigured { get; private set; }
 
         #endregion
@@ -637,7 +637,7 @@
                 IsHeartTransplantUnlockedConfigured = true;
             }
         }
-        bool isHeartTransplantUnlocked;
+        private bool isHeartTransplantUnlocked;
         internal bool IsHeartTransplantUnlockedConfigured { get; private set; }
 
         #endregion
@@ -653,7 +653,7 @@
                 IsHolsterUnlockedConfigured = true;
             }
         }
-        bool isHolsterUnlocked;
+        private bool isHolsterUnlocked;
         internal bool IsHolsterUnlockedConfigured { get; private set; }
 
         #endregion
@@ -669,7 +669,7 @@
                 IsHolyWaterUnlockedConfigured = true;
             }
         }
-        bool isHolyWaterUnlocked;
+        private bool isHolyWaterUnlocked;
         internal bool IsHolyWaterUnlockedConfigured { get; private set; }
 
         #endregion
@@ -685,7 +685,7 @@
                 MaxHealthConfigured = true;
             }
         }
-        int maxHealth;
+        private int maxHealth;
         internal bool MaxHealthConfigured { get; private set; }
 
         #endregion
@@ -701,7 +701,7 @@
                 CoinCountConfigured = true;
             }
         }
-        int coinCount;
+        private int coinCount;
         internal bool CoinCountConfigured { get; private set; }
 
         #endregion
@@ -717,7 +717,7 @@
                 DiamondCountConfigured = true;
             }
         }
-        int diamondCount;
+        private int diamondCount;
         internal bool DiamondCountConfigured { get; private set; }
 
         #endregion
@@ -733,7 +733,7 @@
                 IsPickaxeCleanedConfigured = true;
             }
         }
-        bool isPickaxeCleaned;
+        private bool isPickaxeCleaned;
         internal bool IsPickaxeCleanedConfigured { get; private set; }
 
         #endregion
@@ -749,7 +749,7 @@
                 IsPickaxeUnlockedConfigured = true;
             }
         }
-        bool isPickaxeUnlocked;
+        private bool isPickaxeUnlocked;
         internal bool IsPickaxeUnlockedConfigured { get; private set; }
 
         #endregion
@@ -765,7 +765,7 @@
                 IsRingOfCourageUnlockedConfigured = true;
             }
         }
-        bool isRingOfCourageUnlocked;
+        private bool isRingOfCourageUnlocked;
         internal bool IsRingOfCourageUnlockedConfigured { get; private set; }
 
         #endregion
@@ -781,7 +781,7 @@
                 IsRingOfFrostUnlockedConfigured = true;
             }
         }
-        bool isRingOfFrostUnlocked;
+        private bool isRingOfFrostUnlocked;
         internal bool IsRingOfFrostUnlockedConfigured { get; private set; }
 
         #endregion
@@ -797,7 +797,7 @@
                 IsRingOfGoldUnlockedConfigured = true;
             }
         }
-        bool isRingOfGoldUnlocked;
+        private bool isRingOfGoldUnlocked;
         internal bool IsRingOfGoldUnlockedConfigured { get; private set; }
 
         #endregion
@@ -813,7 +813,7 @@
                 IsRingOfLuckUnlockedConfigured = true;
             }
         }
-        bool isRingOfLuckUnlocked;
+        private bool isRingOfLuckUnlocked;
         internal bool IsRingOfLuckUnlockedConfigured { get; private set; }
 
         #endregion
@@ -829,7 +829,7 @@
                 IsRingOfManaUnlockedConfigured = true;
             }
         }
-        bool isRingOfManaUnlocked;
+        private bool isRingOfManaUnlocked;
         internal bool IsRingOfManaUnlockedConfigured { get; private set; }
 
         #endregion
@@ -845,7 +845,7 @@
                 IsRingOfMightCleanedConfigured = true;
             }
         }
-        bool isRingOfMightCleaned;
+        private bool isRingOfMightCleaned;
         internal bool IsRingOfMightCleanedConfigured { get; private set; }
 
         #endregion
@@ -861,7 +861,7 @@
                 IsRingOfMightUnlockedConfigured = true;
             }
         }
-        bool isRingOfMightUnlocked;
+        private bool isRingOfMightUnlocked;
         internal bool IsRingOfMightUnlockedConfigured { get; private set; }
 
         #endregion
@@ -877,7 +877,7 @@
                 IsRingOfPainUnlockedConfigured = true;
             }
         }
-        bool isRingOfPainUnlocked;
+        private bool isRingOfPainUnlocked;
         internal bool IsRingOfPainUnlockedConfigured { get; private set; }
 
         #endregion
@@ -893,7 +893,7 @@
                 IsRingOfPeaceUnlockedConfigured = true;
             }
         }
-        bool isRingOfPeaceUnlocked;
+        private bool isRingOfPeaceUnlocked;
         internal bool IsRingOfPeaceUnlockedConfigured { get; private set; }
 
         #endregion
@@ -909,7 +909,7 @@
                 IsRingOfPhasingUnlockedConfigured = true;
             }
         }
-        bool isRingOfPhasingUnlocked;
+        private bool isRingOfPhasingUnlocked;
         internal bool IsRingOfPhasingUnlockedConfigured { get; private set; }
 
         #endregion
@@ -925,7 +925,7 @@
                 IsRingOfPiercingUnlockedConfigured = true;
             }
         }
-        bool isRingOfPiercingUnlocked;
+        private bool isRingOfPiercingUnlocked;
         internal bool IsRingOfPiercingUnlockedConfigured { get; private set; }
 
         #endregion
@@ -941,7 +941,7 @@
                 IsRingOfProtectionUnlockedConfigured = true;
             }
         }
-        bool isRingOfProtectionUnlocked;
+        private bool isRingOfProtectionUnlocked;
         internal bool IsRingOfProtectionUnlockedConfigured { get; private set; }
 
         #endregion
@@ -957,7 +957,7 @@
                 IsRingOfRegenerationUnlockedConfigured = true;
             }
         }
-        bool isRingOfRegenerationUnlocked;
+        private bool isRingOfRegenerationUnlocked;
         internal bool IsRingOfRegenerationUnlockedConfigured { get; private set; }
 
         #endregion
@@ -973,7 +973,7 @@
                 IsRingOfShadowsUnlockedConfigured = true;
             }
         }
-        bool isRingOfShadowsUnlocked;
+        private bool isRingOfShadowsUnlocked;
         internal bool IsRingOfShadowsUnlockedConfigured { get; private set; }
 
         #endregion
@@ -989,7 +989,7 @@
                 IsRingOfShieldingUnlockedConfigured = true;
             }
         }
-        bool isRingOfShieldingUnlocked;
+        private bool isRingOfShieldingUnlocked;
         internal bool IsRingOfShieldingUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1005,7 +1005,7 @@
                 IsRingOfWarCleanedConfigured = true;
             }
         }
-        bool isRingOfWarCleaned;
+        private bool isRingOfWarCleaned;
         internal bool IsRingOfWarCleanedConfigured { get; private set; }
 
         #endregion
@@ -1021,7 +1021,7 @@
                 IsRingOfWarUnlockedConfigured = true;
             }
         }
-        bool isRingOfWarUnlocked;
+        private bool isRingOfWarUnlocked;
         internal bool IsRingOfWarUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1037,7 +1037,7 @@
                 IsScrollOfDescendUnlockedConfigured = true;
             }
         }
-        bool isScrollOfDescendUnlocked;
+        private bool isScrollOfDescendUnlocked;
         internal bool IsScrollOfDescendUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1053,7 +1053,7 @@
                 IsScrollOfEarthquakeUnlockedConfigured = true;
             }
         }
-        bool isScrollOfEarthquakeUnlocked;
+        private bool isScrollOfEarthquakeUnlocked;
         internal bool IsScrollOfEarthquakeUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1069,7 +1069,7 @@
                 IsEnchantWeaponScrollCleanedConfigured = true;
             }
         }
-        bool isEnchantWeaponScrollCleaned;
+        private bool isEnchantWeaponScrollCleaned;
         internal bool IsEnchantWeaponScrollCleanedConfigured { get; private set; }
 
         #endregion
@@ -1085,7 +1085,7 @@
                 IsScrollOfEnchantWeaponUnlockedConfigured = true;
             }
         }
-        bool isScrollOfEnchantWeaponUnlocked;
+        private bool isScrollOfEnchantWeaponUnlocked;
         internal bool IsScrollOfEnchantWeaponUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1101,7 +1101,7 @@
                 IsScrollOfFearUnlockedConfigured = true;
             }
         }
-        bool isScrollOfFearUnlocked;
+        private bool isScrollOfFearUnlocked;
         internal bool IsScrollOfFearUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1117,7 +1117,7 @@
                 IsScrollOfNeedUnlockedConfigured = true;
             }
         }
-        bool isScrollOfNeedUnlocked;
+        private bool isScrollOfNeedUnlocked;
         internal bool IsScrollOfNeedUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1133,7 +1133,7 @@
                 IsScrollOfRichesUnlockedConfigured = true;
             }
         }
-        bool isScrollOfRichesUnlocked;
+        private bool isScrollOfRichesUnlocked;
         internal bool IsScrollOfRichesUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1149,7 +1149,7 @@
                 IsTransmuteScrollUnlockedConfigured = true;
             }
         }
-        bool isTransmuteScrollUnlocked;
+        private bool isTransmuteScrollUnlocked;
         internal bool IsTransmuteScrollUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1165,7 +1165,7 @@
                 IsBloodShovelUnlockedConfigured = true;
             }
         }
-        bool isBloodShovelUnlocked;
+        private bool isBloodShovelUnlocked;
         internal bool IsBloodShovelUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1181,7 +1181,7 @@
                 IsShoveOfCourageUnlockedConfigured = true;
             }
         }
-        bool isShoveOfCourageUnlocked;
+        private bool isShoveOfCourageUnlocked;
         internal bool IsShoveOfCourageUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1197,7 +1197,7 @@
                 IsGlassShovelCleanedConfigured = true;
             }
         }
-        bool isGlassShovelCleaned;
+        private bool isGlassShovelCleaned;
         internal bool IsGlassShovelCleanedConfigured { get; private set; }
 
         #endregion
@@ -1213,7 +1213,7 @@
                 IsGlassShovelUnlockedConfigured = true;
             }
         }
-        bool isGlassShovelUnlocked;
+        private bool isGlassShovelUnlocked;
         internal bool IsGlassShovelUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1229,7 +1229,7 @@
                 IsObsidianShovelUnlockedConfigured = true;
             }
         }
-        bool isObsidianShovelUnlocked;
+        private bool isObsidianShovelUnlocked;
         internal bool IsObsidianShovelUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1245,7 +1245,7 @@
                 IsShovelOfStrengthUnlockedConfigured = true;
             }
         }
-        bool isShovelOfStrengthUnlocked;
+        private bool isShovelOfStrengthUnlocked;
         internal bool IsShovelOfStrengthUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1261,7 +1261,7 @@
                 IsBombSpellUnlockedConfigured = true;
             }
         }
-        bool isBombSpellUnlocked;
+        private bool isBombSpellUnlocked;
         internal bool IsBombSpellUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1277,7 +1277,7 @@
                 IsFreezeSpellUnlockedConfigured = true;
             }
         }
-        bool isFreezeSpellUnlocked;
+        private bool isFreezeSpellUnlocked;
         internal bool IsFreezeSpellUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1293,7 +1293,7 @@
                 IsHealSpellUnlockedConfigured = true;
             }
         }
-        bool isHealSpellUnlocked;
+        private bool isHealSpellUnlocked;
         internal bool IsHealSpellUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1309,7 +1309,7 @@
                 IsShieldSpellCleanedConfigured = true;
             }
         }
-        bool isShieldSpellCleaned;
+        private bool isShieldSpellCleaned;
         internal bool IsShieldSpellCleanedConfigured { get; private set; }
 
         #endregion
@@ -1325,7 +1325,7 @@
                 IsShieldSpellUnlockedConfigured = true;
             }
         }
-        bool isShieldSpellUnlocked;
+        private bool isShieldSpellUnlocked;
         internal bool IsShieldSpellUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1341,7 +1341,7 @@
                 IsTransmuteSpellUnlockedConfigured = true;
             }
         }
-        bool isTransmuteSpellUnlocked;
+        private bool isTransmuteSpellUnlocked;
         internal bool IsTransmuteSpellUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1357,7 +1357,7 @@
                 IsTorch2UnlockedConfigured = true;
             }
         }
-        bool isTorch2Unlocked;
+        private bool isTorch2Unlocked;
         internal bool IsTorch2UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1373,7 +1373,7 @@
                 IsTorch3UnlockedConfigured = true;
             }
         }
-        bool isTorch3Unlocked;
+        private bool isTorch3Unlocked;
         internal bool IsTorch3UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1389,7 +1389,7 @@
                 IsTorchOfForesightUnlockedConfigured = true;
             }
         }
-        bool isTorchOfForesightUnlocked;
+        private bool isTorchOfForesightUnlocked;
         internal bool IsTorchOfForesightUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1405,7 +1405,7 @@
                 IsGlassTorchCleanedConfigured = true;
             }
         }
-        bool isGlassTorchCleaned;
+        private bool isGlassTorchCleaned;
         internal bool IsGlassTorchCleanedConfigured { get; private set; }
 
         #endregion
@@ -1421,7 +1421,7 @@
                 IsGlassTorchUnlockedConfigured = true;
             }
         }
-        bool isGlassTorchUnlocked;
+        private bool isGlassTorchUnlocked;
         internal bool IsGlassTorchUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1437,7 +1437,7 @@
                 IsInfernalTorchUnlockedConfigured = true;
             }
         }
-        bool isInfernalTorchUnlocked;
+        private bool isInfernalTorchUnlocked;
         internal bool IsInfernalTorchUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1453,7 +1453,7 @@
                 IsObsidianTorchUnlockedConfigured = true;
             }
         }
-        bool isObsidianTorchUnlocked;
+        private bool isObsidianTorchUnlocked;
         internal bool IsObsidianTorchUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1469,7 +1469,7 @@
                 IsTorchOfStrengthUnlockedConfigured = true;
             }
         }
-        bool isTorchOfStrengthUnlocked;
+        private bool isTorchOfStrengthUnlocked;
         internal bool IsTorchOfStrengthUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1485,7 +1485,7 @@
                 VConfigured = true;
             }
         }
-        int v;
+        private int v;
         internal bool VConfigured { get; private set; }
 
         #endregion
@@ -1501,7 +1501,7 @@
                 IsWarDrumUnlockedConfigured = true;
             }
         }
-        bool isWarDrumUnlocked;
+        private bool isWarDrumUnlocked;
         internal bool IsWarDrumUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1517,7 +1517,7 @@
                 IsAxeUnlockedConfigured = true;
             }
         }
-        bool isAxeUnlocked;
+        private bool isAxeUnlocked;
         internal bool IsAxeUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1533,7 +1533,7 @@
                 IsAxeUsedConfigured = true;
             }
         }
-        bool isAxeUsed;
+        private bool isAxeUsed;
         internal bool IsAxeUsedConfigured { get; private set; }
 
         #endregion
@@ -1549,7 +1549,7 @@
                 IsBloodLongswordUnlockedConfigured = true;
             }
         }
-        bool isBloodLongswordUnlocked;
+        private bool isBloodLongswordUnlocked;
         internal bool IsBloodLongswordUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1565,7 +1565,7 @@
                 IsBloodRapierUnlockedConfigured = true;
             }
         }
-        bool isBloodRapierUnlocked;
+        private bool isBloodRapierUnlocked;
         internal bool IsBloodRapierUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1581,7 +1581,7 @@
                 IsBloodSpearUnlockedConfigured = true;
             }
         }
-        bool isBloodSpearUnlocked;
+        private bool isBloodSpearUnlocked;
         internal bool IsBloodSpearUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1597,7 +1597,7 @@
                 IsBloodWhipUnlockedConfigured = true;
             }
         }
-        bool isBloodWhipUnlocked;
+        private bool isBloodWhipUnlocked;
         internal bool IsBloodWhipUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1613,7 +1613,7 @@
                 IsBlunderbussUnlockedConfigured = true;
             }
         }
-        bool isBlunderbussUnlocked;
+        private bool isBlunderbussUnlocked;
         internal bool IsBlunderbussUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1629,7 +1629,7 @@
                 IsBowUnlockedConfigured = true;
             }
         }
-        bool isBowUnlocked;
+        private bool isBowUnlocked;
         internal bool IsBowUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1645,7 +1645,7 @@
                 IsBroadswordUnlockedConfigured = true;
             }
         }
-        bool isBroadswordUnlocked;
+        private bool isBroadswordUnlocked;
         internal bool IsBroadswordUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1661,7 +1661,7 @@
                 IsCatUnlockedConfigured = true;
             }
         }
-        bool isCatUnlocked;
+        private bool isCatUnlocked;
         internal bool IsCatUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1677,7 +1677,7 @@
                 IsCatUsedConfigured = true;
             }
         }
-        bool isCatUsed;
+        private bool isCatUsed;
         internal bool IsCatUsedConfigured { get; private set; }
 
         #endregion
@@ -1693,7 +1693,7 @@
                 IsCrossbowUnlockedConfigured = true;
             }
         }
-        bool isCrossbowUnlocked;
+        private bool isCrossbowUnlocked;
         internal bool IsCrossbowUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1709,7 +1709,7 @@
                 IsCutlassUnlockedConfigured = true;
             }
         }
-        bool isCutlassUnlocked;
+        private bool isCutlassUnlocked;
         internal bool IsCutlassUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1725,7 +1725,7 @@
                 IsCutlassUsedConfigured = true;
             }
         }
-        bool isCutlassUsed;
+        private bool isCutlassUsed;
         internal bool IsCutlassUsedConfigured { get; private set; }
 
         #endregion
@@ -1741,7 +1741,7 @@
                 IsDaggerUnlockedConfigured = true;
             }
         }
-        bool isDaggerUnlocked;
+        private bool isDaggerUnlocked;
         internal bool IsDaggerUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1757,7 +1757,7 @@
                 IsElectricDaggerUsedConfigured = true;
             }
         }
-        bool isElectricDaggerUsed;
+        private bool isElectricDaggerUsed;
         internal bool IsElectricDaggerUsedConfigured { get; private set; }
 
         #endregion
@@ -1773,7 +1773,7 @@
                 IsDaggerOfFrostUnlockedConfigured = true;
             }
         }
-        bool isDaggerOfFrostUnlocked;
+        private bool isDaggerOfFrostUnlocked;
         internal bool IsDaggerOfFrostUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1789,7 +1789,7 @@
                 IsJeweledDaggerUsedConfigured = true;
             }
         }
-        bool isJeweledDaggerUsed;
+        private bool isJeweledDaggerUsed;
         internal bool IsJeweledDaggerUsedConfigured { get; private set; }
 
         #endregion
@@ -1805,7 +1805,7 @@
                 IsDaggerOfPhasingUnlockedConfigured = true;
             }
         }
-        bool isDaggerOfPhasingUnlocked;
+        private bool isDaggerOfPhasingUnlocked;
         internal bool IsDaggerOfPhasingUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1821,7 +1821,7 @@
                 IsFlailUnlockedConfigured = true;
             }
         }
-        bool isFlailUnlocked;
+        private bool isFlailUnlocked;
         internal bool IsFlailUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1837,7 +1837,7 @@
                 IsFlailUsedConfigured = true;
             }
         }
-        bool isFlailUsed;
+        private bool isFlailUsed;
         internal bool IsFlailUsedConfigured { get; private set; }
 
         #endregion
@@ -1853,7 +1853,7 @@
                 IsGlassLongswordUnlockedConfigured = true;
             }
         }
-        bool isGlassLongswordUnlocked;
+        private bool isGlassLongswordUnlocked;
         internal bool IsGlassLongswordUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1869,7 +1869,7 @@
                 IsGlassRapierUnlockedConfigured = true;
             }
         }
-        bool isGlassRapierUnlocked;
+        private bool isGlassRapierUnlocked;
         internal bool IsGlassRapierUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1885,7 +1885,7 @@
                 IsGlassSpearUnlockedConfigured = true;
             }
         }
-        bool isGlassSpearUnlocked;
+        private bool isGlassSpearUnlocked;
         internal bool IsGlassSpearUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1901,7 +1901,7 @@
                 IsGlassWhipUnlockedConfigured = true;
             }
         }
-        bool isGlassWhipUnlocked;
+        private bool isGlassWhipUnlocked;
         internal bool IsGlassWhipUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1917,7 +1917,7 @@
                 IsGoldenLongswordUnlockedConfigured = true;
             }
         }
-        bool isGoldenLongswordUnlocked;
+        private bool isGoldenLongswordUnlocked;
         internal bool IsGoldenLongswordUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1933,7 +1933,7 @@
                 IsGoldenRapierUnlockedConfigured = true;
             }
         }
-        bool isGoldenRapierUnlocked;
+        private bool isGoldenRapierUnlocked;
         internal bool IsGoldenRapierUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1949,7 +1949,7 @@
                 IsGoldenSpearUnlockedConfigured = true;
             }
         }
-        bool isGoldenSpearUnlocked;
+        private bool isGoldenSpearUnlocked;
         internal bool IsGoldenSpearUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1965,7 +1965,7 @@
                 IsGoldenWhipUnlockedConfigured = true;
             }
         }
-        bool isGoldenWhipUnlocked;
+        private bool isGoldenWhipUnlocked;
         internal bool IsGoldenWhipUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1981,7 +1981,7 @@
                 IsHarpUnlockedConfigured = true;
             }
         }
-        bool isHarpUnlocked;
+        private bool isHarpUnlocked;
         internal bool IsHarpUnlockedConfigured { get; private set; }
 
         #endregion
@@ -1997,7 +1997,7 @@
                 IsHarpUsedConfigured = true;
             }
         }
-        bool isHarpUsed;
+        private bool isHarpUsed;
         internal bool IsHarpUsedConfigured { get; private set; }
 
         #endregion
@@ -2013,7 +2013,7 @@
                 IsLongswordUnlockedConfigured = true;
             }
         }
-        bool isLongswordUnlocked;
+        private bool isLongswordUnlocked;
         internal bool IsLongswordUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2029,7 +2029,7 @@
                 IsLongswordUsedConfigured = true;
             }
         }
-        bool isLongswordUsed;
+        private bool isLongswordUsed;
         internal bool IsLongswordUsedConfigured { get; private set; }
 
         #endregion
@@ -2045,7 +2045,7 @@
                 IsObsidianLongswordUnlockedConfigured = true;
             }
         }
-        bool isObsidianLongswordUnlocked;
+        private bool isObsidianLongswordUnlocked;
         internal bool IsObsidianLongswordUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2061,7 +2061,7 @@
                 IsObsidianRapierUnlockedConfigured = true;
             }
         }
-        bool isObsidianRapierUnlocked;
+        private bool isObsidianRapierUnlocked;
         internal bool IsObsidianRapierUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2077,7 +2077,7 @@
                 IsObsidianSpearUnlockedConfigured = true;
             }
         }
-        bool isObsidianSpearUnlocked;
+        private bool isObsidianSpearUnlocked;
         internal bool IsObsidianSpearUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2093,7 +2093,7 @@
                 IsObsidianWhipUnlockedConfigured = true;
             }
         }
-        bool isObsidianWhipUnlocked;
+        private bool isObsidianWhipUnlocked;
         internal bool IsObsidianWhipUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2109,7 +2109,7 @@
                 IsRapierUnlockedConfigured = true;
             }
         }
-        bool isRapierUnlocked;
+        private bool isRapierUnlocked;
         internal bool IsRapierUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2125,7 +2125,7 @@
                 IsRapierUsedConfigured = true;
             }
         }
-        bool isRapierUsed;
+        private bool isRapierUsed;
         internal bool IsRapierUsedConfigured { get; private set; }
 
         #endregion
@@ -2141,7 +2141,7 @@
                 IsRifleUnlockedConfigured = true;
             }
         }
-        bool isRifleUnlocked;
+        private bool isRifleUnlocked;
         internal bool IsRifleUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2157,7 +2157,7 @@
                 IsRifleUsedConfigured = true;
             }
         }
-        bool isRifleUsed;
+        private bool isRifleUsed;
         internal bool IsRifleUsedConfigured { get; private set; }
 
         #endregion
@@ -2173,7 +2173,7 @@
                 IsSpearUnlockedConfigured = true;
             }
         }
-        bool isSpearUnlocked;
+        private bool isSpearUnlocked;
         internal bool IsSpearUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2189,7 +2189,7 @@
                 IsSpearUsedConfigured = true;
             }
         }
-        bool isSpearUsed;
+        private bool isSpearUsed;
         internal bool IsSpearUsedConfigured { get; private set; }
 
         #endregion
@@ -2205,7 +2205,7 @@
                 IsSatffUnlockedConfigured = true;
             }
         }
-        bool isSatffUnlocked;
+        private bool isSatffUnlocked;
         internal bool IsSatffUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2221,7 +2221,7 @@
                 IsStaffUsedConfigured = true;
             }
         }
-        bool isStaffUsed;
+        private bool isStaffUsed;
         internal bool IsStaffUsedConfigured { get; private set; }
 
         #endregion
@@ -2237,7 +2237,7 @@
                 IsTitaniumLongswordUnlockedConfigured = true;
             }
         }
-        bool isTitaniumLongswordUnlocked;
+        private bool isTitaniumLongswordUnlocked;
         internal bool IsTitaniumLongswordUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2253,7 +2253,7 @@
                 IsTitaniumRapierUnlockedConfigured = true;
             }
         }
-        bool isTitaniumRapierUnlocked;
+        private bool isTitaniumRapierUnlocked;
         internal bool IsTitaniumRapierUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2269,7 +2269,7 @@
                 IsTitaniumSpearUnlockedConfigured = true;
             }
         }
-        bool isTitaniumSpearUnlocked;
+        private bool isTitaniumSpearUnlocked;
         internal bool IsTitaniumSpearUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2285,7 +2285,7 @@
                 IsTitaniumWhipUnlockedConfigured = true;
             }
         }
-        bool isTitaniumWhipUnlocked;
+        private bool isTitaniumWhipUnlocked;
         internal bool IsTitaniumWhipUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2301,7 +2301,7 @@
                 IsWarhammerUnlockedConfigured = true;
             }
         }
-        bool isWarhammerUnlocked;
+        private bool isWarhammerUnlocked;
         internal bool IsWarhammerUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2317,7 +2317,7 @@
                 IsWarhammerUsedConfigured = true;
             }
         }
-        bool isWarhammerUsed;
+        private bool isWarhammerUsed;
         internal bool IsWarhammerUsedConfigured { get; private set; }
 
         #endregion
@@ -2333,7 +2333,7 @@
                 IsWhipCleanedConfigured = true;
             }
         }
-        bool isWhipCleaned;
+        private bool isWhipCleaned;
         internal bool IsWhipCleanedConfigured { get; private set; }
 
         #endregion
@@ -2349,7 +2349,7 @@
                 IsWhipUnlockedConfigured = true;
             }
         }
-        bool isWhipUnlocked;
+        private bool isWhipUnlocked;
         internal bool IsWhipUnlockedConfigured { get; private set; }
 
         #endregion
@@ -2365,7 +2365,7 @@
                 IsWhipUsedConfigured = true;
             }
         }
-        bool isWhipUsed;
+        private bool isWhipUsed;
         internal bool IsWhipUsedConfigured { get; private set; }
 
         #endregion

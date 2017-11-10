@@ -6,10 +6,7 @@ namespace toofz.NecroDancer.Data
     {
         public Shadow(string path)
         {
-            if (path == null)
-                throw new ArgumentNullException(nameof(path));
-
-            Path = path;
+            Path = path ?? throw new ArgumentNullException(nameof(path));
         }
 
         public string Path { get; }

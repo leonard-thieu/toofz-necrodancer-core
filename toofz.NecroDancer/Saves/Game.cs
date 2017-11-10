@@ -13,7 +13,7 @@
                 DlcPlayedConfigured = true;
             }
         }
-        bool dlcPlayed;
+        private bool dlcPlayed;
         internal bool DlcPlayedConfigured { get; private set; }
 
         #endregion
@@ -29,7 +29,7 @@
                 HoardForZone1CollectedConfigured = true;
             }
         }
-        bool hoardForZone1Collected;
+        private bool hoardForZone1Collected;
         internal bool HoardForZone1CollectedConfigured { get; private set; }
 
         #endregion
@@ -45,7 +45,7 @@
                 HoardForZone2CollectedConfigured = true;
             }
         }
-        bool hoardForZone2Collected;
+        private bool hoardForZone2Collected;
         internal bool HoardForZone2CollectedConfigured { get; private set; }
 
         #endregion
@@ -61,7 +61,7 @@
                 HoardForZone3CollectedConfigured = true;
             }
         }
-        bool hoardForZone3Collected;
+        private bool hoardForZone3Collected;
         internal bool HoardForZone3CollectedConfigured { get; private set; }
 
         #endregion
@@ -77,7 +77,7 @@
                 HoardCollectedForZone4Configured = true;
             }
         }
-        bool hoardCollectedForZone4;
+        private bool hoardCollectedForZone4;
         internal bool HoardCollectedForZone4Configured { get; private set; }
 
         #endregion
@@ -93,7 +93,7 @@
                 HoardCollectedForZone5Configured = true;
             }
         }
-        bool hoardCollectedForZone5;
+        private bool hoardCollectedForZone5;
         internal bool HoardCollectedForZone5Configured { get; private set; }
 
         #endregion
@@ -109,7 +109,7 @@
                 LastDailyRunNumberConfigured = true;
             }
         }
-        int lastDailyRunNumber;
+        private int lastDailyRunNumber;
         internal bool LastDailyRunNumberConfigured { get; private set; }
 
         #endregion
@@ -125,7 +125,7 @@
                 Zone2UnlockedConfigured = true;
             }
         }
-        bool zone2Unlocked;
+        private bool zone2Unlocked;
         internal bool Zone2UnlockedConfigured { get; private set; }
 
         #endregion
@@ -141,7 +141,7 @@
                 Zone2Unlocked1Configured = true;
             }
         }
-        bool zone2Unlocked1;
+        private bool zone2Unlocked1;
         internal bool Zone2Unlocked1Configured { get; private set; }
 
         #endregion
@@ -157,7 +157,7 @@
                 Zone2Unlocked2Configured = true;
             }
         }
-        bool zone2Unlocked2;
+        private bool zone2Unlocked2;
         internal bool Zone2Unlocked2Configured { get; private set; }
 
         #endregion
@@ -173,7 +173,7 @@
                 Zone2Unlocked3Configured = true;
             }
         }
-        bool zone2Unlocked3;
+        private bool zone2Unlocked3;
         internal bool Zone2Unlocked3Configured { get; private set; }
 
         #endregion
@@ -189,7 +189,7 @@
                 Zone2Unlocked4Configured = true;
             }
         }
-        bool zone2Unlocked4;
+        private bool zone2Unlocked4;
         internal bool Zone2Unlocked4Configured { get; private set; }
 
         #endregion
@@ -205,7 +205,7 @@
                 Zone2Unlocked5Configured = true;
             }
         }
-        bool zone2Unlocked5;
+        private bool zone2Unlocked5;
         internal bool Zone2Unlocked5Configured { get; private set; }
 
         #endregion
@@ -221,7 +221,7 @@
                 Zone2Unlocked6Configured = true;
             }
         }
-        bool zone2Unlocked6;
+        private bool zone2Unlocked6;
         internal bool Zone2Unlocked6Configured { get; private set; }
 
         #endregion
@@ -237,7 +237,7 @@
                 Zone2Unlocked7Configured = true;
             }
         }
-        bool zone2Unlocked7;
+        private bool zone2Unlocked7;
         internal bool Zone2Unlocked7Configured { get; private set; }
 
         #endregion
@@ -253,7 +253,7 @@
                 Zone2Unlocked8Configured = true;
             }
         }
-        bool zone2Unlocked8;
+        private bool zone2Unlocked8;
         internal bool Zone2Unlocked8Configured { get; private set; }
 
         #endregion
@@ -269,7 +269,7 @@
                 Zone2Unlocked9Configured = true;
             }
         }
-        bool zone2Unlocked9;
+        private bool zone2Unlocked9;
         internal bool Zone2Unlocked9Configured { get; private set; }
 
         #endregion
@@ -285,7 +285,7 @@
                 Zone2Unlocked10Configured = true;
             }
         }
-        bool zone2Unlocked10;
+        private bool zone2Unlocked10;
         internal bool Zone2Unlocked10Configured { get; private set; }
 
         #endregion
@@ -301,7 +301,7 @@
                 Zone2Unlocked11Configured = true;
             }
         }
-        bool zone2Unlocked11;
+        private bool zone2Unlocked11;
         internal bool Zone2Unlocked11Configured { get; private set; }
 
         #endregion
@@ -317,7 +317,7 @@
                 Zone2Unlocked12Configured = true;
             }
         }
-        bool zone2Unlocked12;
+        private bool zone2Unlocked12;
         internal bool Zone2Unlocked12Configured { get; private set; }
 
         #endregion
@@ -333,7 +333,7 @@
                 Zone3UnlockedConfigured = true;
             }
         }
-        bool zone3Unlocked;
+        private bool zone3Unlocked;
         internal bool Zone3UnlockedConfigured { get; private set; }
 
         #endregion
@@ -349,7 +349,7 @@
                 Zone3Unlocked1Configured = true;
             }
         }
-        bool zone3Unlocked1;
+        private bool zone3Unlocked1;
         internal bool Zone3Unlocked1Configured { get; private set; }
 
         #endregion
@@ -365,7 +365,7 @@
                 Zone3Unlocked2Configured = true;
             }
         }
-        bool zone3Unlocked2;
+        private bool zone3Unlocked2;
         internal bool Zone3Unlocked2Configured { get; private set; }
 
         #endregion
@@ -381,7 +381,7 @@
                 Zone3Unlocked3Configured = true;
             }
         }
-        bool zone3Unlocked3;
+        private bool zone3Unlocked3;
         internal bool Zone3Unlocked3Configured { get; private set; }
 
         #endregion
@@ -397,7 +397,7 @@
                 Zone3Unlocked4Configured = true;
             }
         }
-        bool zone3Unlocked4;
+        private bool zone3Unlocked4;
         internal bool Zone3Unlocked4Configured { get; private set; }
 
         #endregion
@@ -413,7 +413,7 @@
                 Zone3Unlocked5Configured = true;
             }
         }
-        bool zone3Unlocked5;
+        private bool zone3Unlocked5;
         internal bool Zone3Unlocked5Configured { get; private set; }
 
         #endregion
@@ -429,7 +429,7 @@
                 Zone3Unlocked6Configured = true;
             }
         }
-        bool zone3Unlocked6;
+        private bool zone3Unlocked6;
         internal bool Zone3Unlocked6Configured { get; private set; }
 
         #endregion
@@ -445,7 +445,7 @@
                 Zone3Unlocked7Configured = true;
             }
         }
-        bool zone3Unlocked7;
+        private bool zone3Unlocked7;
         internal bool Zone3Unlocked7Configured { get; private set; }
 
         #endregion
@@ -461,7 +461,7 @@
                 Zone3Unlocked8Configured = true;
             }
         }
-        bool zone3Unlocked8;
+        private bool zone3Unlocked8;
         internal bool Zone3Unlocked8Configured { get; private set; }
 
         #endregion
@@ -477,7 +477,7 @@
                 Zone3Unlocked9Configured = true;
             }
         }
-        bool zone3Unlocked9;
+        private bool zone3Unlocked9;
         internal bool Zone3Unlocked9Configured { get; private set; }
 
         #endregion
@@ -493,7 +493,7 @@
                 Zone3Unlocked11Configured = true;
             }
         }
-        bool zone3Unlocked11;
+        private bool zone3Unlocked11;
         internal bool Zone3Unlocked11Configured { get; private set; }
 
         #endregion
@@ -509,7 +509,7 @@
                 Zone3Unlocked12Configured = true;
             }
         }
-        bool zone3Unlocked12;
+        private bool zone3Unlocked12;
         internal bool Zone3Unlocked12Configured { get; private set; }
 
         #endregion
@@ -525,7 +525,7 @@
                 Zone4UnlockedConfigured = true;
             }
         }
-        bool zone4Unlocked;
+        private bool zone4Unlocked;
         internal bool Zone4UnlockedConfigured { get; private set; }
 
         #endregion
@@ -541,7 +541,7 @@
                 Zone4Unlocked1Configured = true;
             }
         }
-        bool zone4Unlocked1;
+        private bool zone4Unlocked1;
         internal bool Zone4Unlocked1Configured { get; private set; }
 
         #endregion
@@ -557,7 +557,7 @@
                 Zone4Unlocked2Configured = true;
             }
         }
-        bool zone4Unlocked2;
+        private bool zone4Unlocked2;
         internal bool Zone4Unlocked2Configured { get; private set; }
 
         #endregion
@@ -573,7 +573,7 @@
                 Zone4Unlocked3Configured = true;
             }
         }
-        bool zone4Unlocked3;
+        private bool zone4Unlocked3;
         internal bool Zone4Unlocked3Configured { get; private set; }
 
         #endregion
@@ -589,7 +589,7 @@
                 Zone4Unlocked4Configured = true;
             }
         }
-        bool zone4Unlocked4;
+        private bool zone4Unlocked4;
         internal bool Zone4Unlocked4Configured { get; private set; }
 
         #endregion
@@ -605,7 +605,7 @@
                 Zone4Unlocked5Configured = true;
             }
         }
-        bool zone4Unlocked5;
+        private bool zone4Unlocked5;
         internal bool Zone4Unlocked5Configured { get; private set; }
 
         #endregion
@@ -621,7 +621,7 @@
                 Zone4Unlocked6Configured = true;
             }
         }
-        bool zone4Unlocked6;
+        private bool zone4Unlocked6;
         internal bool Zone4Unlocked6Configured { get; private set; }
 
         #endregion
@@ -637,7 +637,7 @@
                 Zone4Unlocked7Configured = true;
             }
         }
-        bool zone4Unlocked7;
+        private bool zone4Unlocked7;
         internal bool Zone4Unlocked7Configured { get; private set; }
 
         #endregion
@@ -653,7 +653,7 @@
                 Zone4Unlocked8Configured = true;
             }
         }
-        bool zone4Unlocked8;
+        private bool zone4Unlocked8;
         internal bool Zone4Unlocked8Configured { get; private set; }
 
         #endregion
@@ -669,7 +669,7 @@
                 Zone4Unlocked9Configured = true;
             }
         }
-        bool zone4Unlocked9;
+        private bool zone4Unlocked9;
         internal bool Zone4Unlocked9Configured { get; private set; }
 
         #endregion
@@ -685,7 +685,7 @@
                 Zone4Unlocked11Configured = true;
             }
         }
-        bool zone4Unlocked11;
+        private bool zone4Unlocked11;
         internal bool Zone4Unlocked11Configured { get; private set; }
 
         #endregion
@@ -701,7 +701,7 @@
                 Zone5VisitedConfigured = true;
             }
         }
-        bool zone5Visited;
+        private bool zone5Visited;
         internal bool Zone5VisitedConfigured { get; private set; }
 
         #endregion
@@ -717,7 +717,7 @@
                 AskedLobbyMoveConfigured = true;
             }
         }
-        bool askedLobbyMove;
+        private bool askedLobbyMove;
         internal bool AskedLobbyMoveConfigured { get; private set; }
 
         #endregion
@@ -733,7 +733,7 @@
                 AudioLatencyConfigured = true;
             }
         }
-        int audioLatency;
+        private int audioLatency;
         internal bool AudioLatencyConfigured { get; private set; }
 
         #endregion
@@ -749,7 +749,7 @@
                 AutoCalibrationConfigured = true;
             }
         }
-        int autoCalibration;
+        private int autoCalibration;
         internal bool AutoCalibrationConfigured { get; private set; }
 
         #endregion
@@ -765,7 +765,7 @@
                 BansheeBossTrainingConfigured = true;
             }
         }
-        bool bansheeBossTraining;
+        private bool bansheeBossTraining;
         internal bool BansheeBossTrainingConfigured { get; private set; }
 
         #endregion
@@ -781,7 +781,7 @@
                 CongaBossTrainingConfigured = true;
             }
         }
-        bool congaBossTraining;
+        private bool congaBossTraining;
         internal bool CongaBossTrainingConfigured { get; private set; }
 
         #endregion
@@ -797,7 +797,7 @@
                 DeathMetalBossTrainingConfigured = true;
             }
         }
-        bool deathMetalBossTraining;
+        private bool deathMetalBossTraining;
         internal bool DeathMetalBossTrainingConfigured { get; private set; }
 
         #endregion
@@ -813,7 +813,7 @@
                 DeepBluesBossTrainingConfigured = true;
             }
         }
-        bool deepBluesBossTraining;
+        private bool deepBluesBossTraining;
         internal bool DeepBluesBossTrainingConfigured { get; private set; }
 
         #endregion
@@ -829,7 +829,7 @@
                 DireBatBossTrainingConfigured = true;
             }
         }
-        bool direBatBossTraining;
+        private bool direBatBossTraining;
         internal bool DireBatBossTrainingConfigured { get; private set; }
 
         #endregion
@@ -845,7 +845,7 @@
                 DragonBossTrainingConfigured = true;
             }
         }
-        bool dragonBossTraining;
+        private bool dragonBossTraining;
         internal bool DragonBossTrainingConfigured { get; private set; }
 
         #endregion
@@ -861,7 +861,7 @@
                 FortissimoleBossTrainingConfigured = true;
             }
         }
-        bool fortissimoleBossTraining;
+        private bool fortissimoleBossTraining;
         internal bool FortissimoleBossTrainingConfigured { get; private set; }
 
         #endregion
@@ -877,7 +877,7 @@
                 MetrognomeBossTrainingConfigured = true;
             }
         }
-        bool metrognomeBossTraining;
+        private bool metrognomeBossTraining;
         internal bool MetrognomeBossTrainingConfigured { get; private set; }
 
         #endregion
@@ -893,7 +893,7 @@
                 MinotaurBossTrainingConfigured = true;
             }
         }
-        bool minotaurBossTraining;
+        private bool minotaurBossTraining;
         internal bool MinotaurBossTrainingConfigured { get; private set; }
 
         #endregion
@@ -909,7 +909,7 @@
                 NightmareBossTrainingConfigured = true;
             }
         }
-        bool nightmareBossTraining;
+        private bool nightmareBossTraining;
         internal bool NightmareBossTrainingConfigured { get; private set; }
 
         #endregion
@@ -925,7 +925,7 @@
                 OctobossBossTrainingConfigured = true;
             }
         }
-        bool octobossBossTraining;
+        private bool octobossBossTraining;
         internal bool OctobossBossTrainingConfigured { get; private set; }
 
         #endregion
@@ -941,7 +941,7 @@
                 OgreBossTrainingConfigured = true;
             }
         }
-        bool ogreBossTraining;
+        private bool ogreBossTraining;
         internal bool OgreBossTrainingConfigured { get; private set; }
 
         #endregion
@@ -957,7 +957,7 @@
                 Char0UnlockedConfigured = true;
             }
         }
-        bool char0Unlocked;
+        private bool char0Unlocked;
         internal bool Char0UnlockedConfigured { get; private set; }
 
         #endregion
@@ -973,7 +973,7 @@
                 Char1UnlockedConfigured = true;
             }
         }
-        bool char1Unlocked;
+        private bool char1Unlocked;
         internal bool Char1UnlockedConfigured { get; private set; }
 
         #endregion
@@ -989,7 +989,7 @@
                 Char2UnlockedConfigured = true;
             }
         }
-        bool char2Unlocked;
+        private bool char2Unlocked;
         internal bool Char2UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1005,7 +1005,7 @@
                 Char3UnlockedConfigured = true;
             }
         }
-        bool char3Unlocked;
+        private bool char3Unlocked;
         internal bool Char3UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1021,7 +1021,7 @@
                 Char4UnlockedConfigured = true;
             }
         }
-        bool char4Unlocked;
+        private bool char4Unlocked;
         internal bool Char4UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1037,7 +1037,7 @@
                 Char5UnlockedConfigured = true;
             }
         }
-        bool char5Unlocked;
+        private bool char5Unlocked;
         internal bool Char5UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1053,7 +1053,7 @@
                 Char6UnlockedConfigured = true;
             }
         }
-        bool char6Unlocked;
+        private bool char6Unlocked;
         internal bool Char6UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1069,7 +1069,7 @@
                 Char7UnlockedConfigured = true;
             }
         }
-        bool char7Unlocked;
+        private bool char7Unlocked;
         internal bool Char7UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1085,7 +1085,7 @@
                 Char8UnlockedConfigured = true;
             }
         }
-        bool char8Unlocked;
+        private bool char8Unlocked;
         internal bool Char8UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1101,7 +1101,7 @@
                 Char9UnlockedConfigured = true;
             }
         }
-        bool char9Unlocked;
+        private bool char9Unlocked;
         internal bool Char9UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1117,7 +1117,7 @@
                 Char10UnlockedConfigured = true;
             }
         }
-        bool char10Unlocked;
+        private bool char10Unlocked;
         internal bool Char10UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1133,7 +1133,7 @@
                 Char11UnlockedConfigured = true;
             }
         }
-        bool char11Unlocked;
+        private bool char11Unlocked;
         internal bool Char11UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1149,7 +1149,7 @@
                 Char12UnlockedConfigured = true;
             }
         }
-        bool char12Unlocked;
+        private bool char12Unlocked;
         internal bool Char12UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1165,7 +1165,7 @@
                 Char13UnlockedConfigured = true;
             }
         }
-        bool char13Unlocked;
+        private bool char13Unlocked;
         internal bool Char13UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1181,7 +1181,7 @@
                 Char14UnlockedConfigured = true;
             }
         }
-        bool char14Unlocked;
+        private bool char14Unlocked;
         internal bool Char14UnlockedConfigured { get; private set; }
 
         #endregion
@@ -1197,7 +1197,7 @@
                 CurrentLanguageConfigured = true;
             }
         }
-        string currentLanguage;
+        private string currentLanguage;
         internal bool CurrentLanguageConfigured { get; private set; }
 
         #endregion
@@ -1213,7 +1213,7 @@
                 DaoustVocalsConfigured = true;
             }
         }
-        bool daoustVocals;
+        private bool daoustVocals;
         internal bool DaoustVocalsConfigured { get; private set; }
 
         #endregion
@@ -1229,7 +1229,7 @@
                 DebugLoggingOnConfigured = true;
             }
         }
-        bool debugLoggingOn;
+        private bool debugLoggingOn;
         internal bool DebugLoggingOnConfigured { get; private set; }
 
         #endregion
@@ -1245,7 +1245,7 @@
                 DefaultCharacterConfigured = true;
             }
         }
-        int defaultCharacter;
+        private int defaultCharacter;
         internal bool DefaultCharacterConfigured { get; private set; }
 
         #endregion
@@ -1261,7 +1261,7 @@
                 DefaultCharacterV2Configured = true;
             }
         }
-        int defaultCharacterV2;
+        private int defaultCharacterV2;
         internal bool DefaultCharacterV2Configured { get; private set; }
 
         #endregion
@@ -1277,7 +1277,7 @@
                 DefaultModConfigured = true;
             }
         }
-        string defaultMod;
+        private string defaultMod;
         internal bool DefaultModConfigured { get; private set; }
 
         #endregion
@@ -1293,7 +1293,7 @@
                 EnableBossIntrosConfigured = true;
             }
         }
-        bool enableBossIntros;
+        private bool enableBossIntros;
         internal bool EnableBossIntrosConfigured { get; private set; }
 
         #endregion
@@ -1309,7 +1309,7 @@
                 EnableCutscenesConfigured = true;
             }
         }
-        bool enableCutscenes;
+        private bool enableCutscenes;
         internal bool EnableCutscenesConfigured { get; private set; }
 
         #endregion
@@ -1325,7 +1325,7 @@
                 EnableVsyncConfigured = true;
             }
         }
-        bool enableVsync;
+        private bool enableVsync;
         internal bool EnableVsyncConfigured { get; private set; }
 
         #endregion
@@ -1341,7 +1341,7 @@
                 FoughtDeadRingerConfigured = true;
             }
         }
-        bool foughtDeadRinger;
+        private bool foughtDeadRinger;
         internal bool FoughtDeadRingerConfigured { get; private set; }
 
         #endregion
@@ -1357,7 +1357,7 @@
                 FoughtNecrodancerConfigured = true;
             }
         }
-        bool foughtNecrodancer;
+        private bool foughtNecrodancer;
         internal bool FoughtNecrodancerConfigured { get; private set; }
 
         #endregion
@@ -1373,7 +1373,7 @@
                 FoughtNecroDancer2Configured = true;
             }
         }
-        bool foughtNecroDancer2;
+        private bool foughtNecroDancer2;
         internal bool FoughtNecroDancer2Configured { get; private set; }
 
         #endregion
@@ -1389,7 +1389,7 @@
                 FullscreenConfigured = true;
             }
         }
-        bool fullscreen;
+        private bool fullscreen;
         internal bool FullscreenConfigured { get; private set; }
 
         #endregion
@@ -1405,7 +1405,7 @@
                 HavePlayedHardcoreConfigured = true;
             }
         }
-        bool havePlayedHardcore;
+        private bool havePlayedHardcore;
         internal bool HavePlayedHardcoreConfigured { get; private set; }
 
         #endregion
@@ -1421,7 +1421,7 @@
                 HaveShownChangelogForVersion370Configured = true;
             }
         }
-        bool haveShownChangelogForVersion370;
+        private bool haveShownChangelogForVersion370;
         internal bool HaveShownChangelogForVersion370Configured { get; private set; }
 
         #endregion
@@ -1437,7 +1437,7 @@
                 HaveShownChangelogForVersion371Configured = true;
             }
         }
-        bool haveShownChangelogForVersion371;
+        private bool haveShownChangelogForVersion371;
         internal bool HaveShownChangelogForVersion371Configured { get; private set; }
 
         #endregion
@@ -1453,7 +1453,7 @@
                 HaveShownChangelogForVersion373Configured = true;
             }
         }
-        bool haveShownChangelogForVersion373;
+        private bool haveShownChangelogForVersion373;
         internal bool HaveShownChangelogForVersion373Configured { get; private set; }
 
         #endregion
@@ -1469,7 +1469,7 @@
                 HaveShownChangelogForVersion374Configured = true;
             }
         }
-        bool haveShownChangelogForVersion374;
+        private bool haveShownChangelogForVersion374;
         internal bool HaveShownChangelogForVersion374Configured { get; private set; }
 
         #endregion
@@ -1485,7 +1485,7 @@
                 HaveShownChangelogForVersion375Configured = true;
             }
         }
-        bool haveShownChangelogForVersion375;
+        private bool haveShownChangelogForVersion375;
         internal bool HaveShownChangelogForVersion375Configured { get; private set; }
 
         #endregion
@@ -1501,7 +1501,7 @@
                 HaveShownChangelogForVersion376Configured = true;
             }
         }
-        bool haveShownChangelogForVersion376;
+        private bool haveShownChangelogForVersion376;
         internal bool HaveShownChangelogForVersion376Configured { get; private set; }
 
         #endregion
@@ -1517,7 +1517,7 @@
                 HaveShownChangelogForVersion377Configured = true;
             }
         }
-        bool haveShownChangelogForVersion377;
+        private bool haveShownChangelogForVersion377;
         internal bool HaveShownChangelogForVersion377Configured { get; private set; }
 
         #endregion
@@ -1533,7 +1533,7 @@
                 HaveShownChangelogForVersion378Configured = true;
             }
         }
-        bool haveShownChangelogForVersion378;
+        private bool haveShownChangelogForVersion378;
         internal bool HaveShownChangelogForVersion378Configured { get; private set; }
 
         #endregion
@@ -1549,7 +1549,7 @@
                 HaveShownChangelogForVersion379Configured = true;
             }
         }
-        bool haveShownChangelogForVersion379;
+        private bool haveShownChangelogForVersion379;
         internal bool HaveShownChangelogForVersion379Configured { get; private set; }
 
         #endregion
@@ -1565,7 +1565,7 @@
                 HaveShownChangelogForVersion380Configured = true;
             }
         }
-        bool haveShownChangelogForVersion380;
+        private bool haveShownChangelogForVersion380;
         internal bool HaveShownChangelogForVersion380Configured { get; private set; }
 
         #endregion
@@ -1581,7 +1581,7 @@
                 HaveShownChangelogForVersion381Configured = true;
             }
         }
-        bool haveShownChangelogForVersion381;
+        private bool haveShownChangelogForVersion381;
         internal bool HaveShownChangelogForVersion381Configured { get; private set; }
 
         #endregion
@@ -1597,7 +1597,7 @@
                 HaveShownChangelogForVersion383Configured = true;
             }
         }
-        bool haveShownChangelogForVersion383;
+        private bool haveShownChangelogForVersion383;
         internal bool HaveShownChangelogForVersion383Configured { get; private set; }
 
         #endregion
@@ -1613,7 +1613,7 @@
                 HaveShownChangelogForVersion384Configured = true;
             }
         }
-        bool haveShownChangelogForVersion384;
+        private bool haveShownChangelogForVersion384;
         internal bool HaveShownChangelogForVersion384Configured { get; private set; }
 
         #endregion
@@ -1629,7 +1629,7 @@
                 HaveShownChangelogForVersion385Configured = true;
             }
         }
-        bool haveShownChangelogForVersion385;
+        private bool haveShownChangelogForVersion385;
         internal bool HaveShownChangelogForVersion385Configured { get; private set; }
 
         #endregion
@@ -1645,7 +1645,7 @@
                 HaveShownChangelogForVersion386Configured = true;
             }
         }
-        bool haveShownChangelogForVersion386;
+        private bool haveShownChangelogForVersion386;
         internal bool HaveShownChangelogForVersion386Configured { get; private set; }
 
         #endregion
@@ -1661,7 +1661,7 @@
                 HaveShownChangelogForVersion387Configured = true;
             }
         }
-        bool haveShownChangelogForVersion387;
+        private bool haveShownChangelogForVersion387;
         internal bool HaveShownChangelogForVersion387Configured { get; private set; }
 
         #endregion
@@ -1677,7 +1677,7 @@
                 HaveShownChangelogForVersion388Configured = true;
             }
         }
-        bool haveShownChangelogForVersion388;
+        private bool haveShownChangelogForVersion388;
         internal bool HaveShownChangelogForVersion388Configured { get; private set; }
 
         #endregion
@@ -1693,7 +1693,7 @@
                 HaveShownChangelogForVersion389Configured = true;
             }
         }
-        bool haveShownChangelogForVersion389;
+        private bool haveShownChangelogForVersion389;
         internal bool HaveShownChangelogForVersion389Configured { get; private set; }
 
         #endregion
@@ -1709,7 +1709,7 @@
                 HaveShownChangelogForVersion390Configured = true;
             }
         }
-        bool haveShownChangelogForVersion390;
+        private bool haveShownChangelogForVersion390;
         internal bool HaveShownChangelogForVersion390Configured { get; private set; }
 
         #endregion
@@ -1725,7 +1725,7 @@
                 HaveShownChangelogForVersion391Configured = true;
             }
         }
-        bool haveShownChangelogForVersion391;
+        private bool haveShownChangelogForVersion391;
         internal bool HaveShownChangelogForVersion391Configured { get; private set; }
 
         #endregion
@@ -1741,7 +1741,7 @@
                 HaveShownChangelogForVersion392Configured = true;
             }
         }
-        bool haveShownChangelogForVersion392;
+        private bool haveShownChangelogForVersion392;
         internal bool HaveShownChangelogForVersion392Configured { get; private set; }
 
         #endregion
@@ -1757,7 +1757,7 @@
                 HaveShownChangelogForVersion394Configured = true;
             }
         }
-        bool haveShownChangelogForVersion394;
+        private bool haveShownChangelogForVersion394;
         internal bool HaveShownChangelogForVersion394Configured { get; private set; }
 
         #endregion
@@ -1773,7 +1773,7 @@
                 HaveShownChangelogForVersion399Configured = true;
             }
         }
-        bool haveShownChangelogForVersion399;
+        private bool haveShownChangelogForVersion399;
         internal bool HaveShownChangelogForVersion399Configured { get; private set; }
 
         #endregion
@@ -1789,7 +1789,7 @@
                 HaveShownChangelogForVersion400Configured = true;
             }
         }
-        bool haveShownChangelogForVersion400;
+        private bool haveShownChangelogForVersion400;
         internal bool HaveShownChangelogForVersion400Configured { get; private set; }
 
         #endregion
@@ -1805,7 +1805,7 @@
                 HaveShownChangelogForVersion403Configured = true;
             }
         }
-        bool haveShownChangelogForVersion403;
+        private bool haveShownChangelogForVersion403;
         internal bool HaveShownChangelogForVersion403Configured { get; private set; }
 
         #endregion
@@ -1821,7 +1821,7 @@
                 HaveShownChangelogForVersion1003Configured = true;
             }
         }
-        bool haveShownChangelogForVersion1003;
+        private bool haveShownChangelogForVersion1003;
         internal bool HaveShownChangelogForVersion1003Configured { get; private set; }
 
         #endregion
@@ -1837,7 +1837,7 @@
                 HaveShownChangelogForVersion1004Configured = true;
             }
         }
-        bool haveShownChangelogForVersion1004;
+        private bool haveShownChangelogForVersion1004;
         internal bool HaveShownChangelogForVersion1004Configured { get; private set; }
 
         #endregion
@@ -1853,7 +1853,7 @@
                 HaveShownChangelogForVersion1005Configured = true;
             }
         }
-        bool haveShownChangelogForVersion1005;
+        private bool haveShownChangelogForVersion1005;
         internal bool HaveShownChangelogForVersion1005Configured { get; private set; }
 
         #endregion
@@ -1869,7 +1869,7 @@
                 HaveShownChangelogForVersion1008Configured = true;
             }
         }
-        bool haveShownChangelogForVersion1008;
+        private bool haveShownChangelogForVersion1008;
         internal bool HaveShownChangelogForVersion1008Configured { get; private set; }
 
         #endregion
@@ -1885,7 +1885,7 @@
                 HaveShownChangelogForVersion1009Configured = true;
             }
         }
-        bool haveShownChangelogForVersion1009;
+        private bool haveShownChangelogForVersion1009;
         internal bool HaveShownChangelogForVersion1009Configured { get; private set; }
 
         #endregion
@@ -1901,7 +1901,7 @@
                 HaveShownChangelogForVersion1019Configured = true;
             }
         }
-        bool haveShownChangelogForVersion1019;
+        private bool haveShownChangelogForVersion1019;
         internal bool HaveShownChangelogForVersion1019Configured { get; private set; }
 
         #endregion
@@ -1917,7 +1917,7 @@
                 HaveShownChangelogForVersion1020Configured = true;
             }
         }
-        bool haveShownChangelogForVersion1020;
+        private bool haveShownChangelogForVersion1020;
         internal bool HaveShownChangelogForVersion1020Configured { get; private set; }
 
         #endregion
@@ -1933,7 +1933,7 @@
                 HaveShownChangelogForVersion1021Configured = true;
             }
         }
-        bool haveShownChangelogForVersion1021;
+        private bool haveShownChangelogForVersion1021;
         internal bool HaveShownChangelogForVersion1021Configured { get; private set; }
 
         #endregion
@@ -1949,7 +1949,7 @@
                 HaveShownChangelogForVersion1024Configured = true;
             }
         }
-        bool haveShownChangelogForVersion1024;
+        private bool haveShownChangelogForVersion1024;
         internal bool HaveShownChangelogForVersion1024Configured { get; private set; }
 
         #endregion
@@ -1965,7 +1965,7 @@
                 HaveShownChangelogForVersion2034Configured = true;
             }
         }
-        bool haveShownChangelogForVersion2034;
+        private bool haveShownChangelogForVersion2034;
         internal bool HaveShownChangelogForVersion2034Configured { get; private set; }
 
         #endregion
@@ -1981,7 +1981,7 @@
                 HaveShownChangelogForVersion2039Configured = true;
             }
         }
-        bool haveShownChangelogForVersion2039;
+        private bool haveShownChangelogForVersion2039;
         internal bool HaveShownChangelogForVersion2039Configured { get; private set; }
 
         #endregion
@@ -1997,7 +1997,7 @@
                 HaveShownChangelogForVersion2040Configured = true;
             }
         }
-        bool haveShownChangelogForVersion2040;
+        private bool haveShownChangelogForVersion2040;
         internal bool HaveShownChangelogForVersion2040Configured { get; private set; }
 
         #endregion
@@ -2013,7 +2013,7 @@
                 HaveShownChangelogForVersion2041Configured = true;
             }
         }
-        bool haveShownChangelogForVersion2041;
+        private bool haveShownChangelogForVersion2041;
         internal bool HaveShownChangelogForVersion2041Configured { get; private set; }
 
         #endregion
@@ -2029,7 +2029,7 @@
                 HaveShownChangelogForVersion2042Configured = true;
             }
         }
-        bool haveShownChangelogForVersion2042;
+        private bool haveShownChangelogForVersion2042;
         internal bool HaveShownChangelogForVersion2042Configured { get; private set; }
 
         #endregion
@@ -2045,7 +2045,7 @@
                 HaveShownChangelogForVersion2043Configured = true;
             }
         }
-        bool haveShownChangelogForVersion2043;
+        private bool haveShownChangelogForVersion2043;
         internal bool HaveShownChangelogForVersion2043Configured { get; private set; }
 
         #endregion
@@ -2061,7 +2061,7 @@
                 HaveShownChangelogForVersion2044Configured = true;
             }
         }
-        bool haveShownChangelogForVersion2044;
+        private bool haveShownChangelogForVersion2044;
         internal bool HaveShownChangelogForVersion2044Configured { get; private set; }
 
         #endregion
@@ -2077,7 +2077,7 @@
                 HaveShownChangelogForVersion2045Configured = true;
             }
         }
-        bool haveShownChangelogForVersion2045;
+        private bool haveShownChangelogForVersion2045;
         internal bool HaveShownChangelogForVersion2045Configured { get; private set; }
 
         #endregion
@@ -2093,7 +2093,7 @@
                 HaveShownChangelogForVersion2054Configured = true;
             }
         }
-        bool haveShownChangelogForVersion2054;
+        private bool haveShownChangelogForVersion2054;
         internal bool HaveShownChangelogForVersion2054Configured { get; private set; }
 
         #endregion
@@ -2109,7 +2109,7 @@
                 HaveShownChangelogForVersion2055Configured = true;
             }
         }
-        bool haveShownChangelogForVersion2055;
+        private bool haveShownChangelogForVersion2055;
         internal bool HaveShownChangelogForVersion2055Configured { get; private set; }
 
         #endregion
@@ -2125,7 +2125,7 @@
                 KeyBindingA0Configured = true;
             }
         }
-        int keyBindingA0;
+        private int keyBindingA0;
         internal bool KeyBindingA0Configured { get; private set; }
 
         #endregion
@@ -2141,7 +2141,7 @@
                 KeyBindingA1Configured = true;
             }
         }
-        int keyBindingA1;
+        private int keyBindingA1;
         internal bool KeyBindingA1Configured { get; private set; }
 
         #endregion
@@ -2157,7 +2157,7 @@
                 KeyBindingA2Configured = true;
             }
         }
-        int keyBindingA2;
+        private int keyBindingA2;
         internal bool KeyBindingA2Configured { get; private set; }
 
         #endregion
@@ -2173,7 +2173,7 @@
                 KeyBindingA3Configured = true;
             }
         }
-        int keyBindingA3;
+        private int keyBindingA3;
         internal bool KeyBindingA3Configured { get; private set; }
 
         #endregion
@@ -2189,7 +2189,7 @@
                 KeyBindingA4Configured = true;
             }
         }
-        int keyBindingA4;
+        private int keyBindingA4;
         internal bool KeyBindingA4Configured { get; private set; }
 
         #endregion
@@ -2205,7 +2205,7 @@
                 KeyBindingA5Configured = true;
             }
         }
-        int keyBindingA5;
+        private int keyBindingA5;
         internal bool KeyBindingA5Configured { get; private set; }
 
         #endregion
@@ -2221,7 +2221,7 @@
                 KeyBindingA6Configured = true;
             }
         }
-        int keyBindingA6;
+        private int keyBindingA6;
         internal bool KeyBindingA6Configured { get; private set; }
 
         #endregion
@@ -2237,7 +2237,7 @@
                 KeyBindingA7Configured = true;
             }
         }
-        int keyBindingA7;
+        private int keyBindingA7;
         internal bool KeyBindingA7Configured { get; private set; }
 
         #endregion
@@ -2253,7 +2253,7 @@
                 KeyBindingA8Configured = true;
             }
         }
-        int keyBindingA8;
+        private int keyBindingA8;
         internal bool KeyBindingA8Configured { get; private set; }
 
         #endregion
@@ -2269,7 +2269,7 @@
                 KeyBindingA9Configured = true;
             }
         }
-        int keyBindingA9;
+        private int keyBindingA9;
         internal bool KeyBindingA9Configured { get; private set; }
 
         #endregion
@@ -2285,7 +2285,7 @@
                 KeyBindingA10Configured = true;
             }
         }
-        int keyBindingA10;
+        private int keyBindingA10;
         internal bool KeyBindingA10Configured { get; private set; }
 
         #endregion
@@ -2301,7 +2301,7 @@
                 KeyBindingA12Configured = true;
             }
         }
-        int keyBindingA12;
+        private int keyBindingA12;
         internal bool KeyBindingA12Configured { get; private set; }
 
         #endregion
@@ -2317,7 +2317,7 @@
                 KeyBindingA13Configured = true;
             }
         }
-        int keyBindingA13;
+        private int keyBindingA13;
         internal bool KeyBindingA13Configured { get; private set; }
 
         #endregion
@@ -2333,7 +2333,7 @@
                 KeyBindingA14Configured = true;
             }
         }
-        int keyBindingA14;
+        private int keyBindingA14;
         internal bool KeyBindingA14Configured { get; private set; }
 
         #endregion
@@ -2349,7 +2349,7 @@
                 KeyBindingA15Configured = true;
             }
         }
-        int keyBindingA15;
+        private int keyBindingA15;
         internal bool KeyBindingA15Configured { get; private set; }
 
         #endregion
@@ -2365,7 +2365,7 @@
                 KeyBindingB0Configured = true;
             }
         }
-        int keyBindingB0;
+        private int keyBindingB0;
         internal bool KeyBindingB0Configured { get; private set; }
 
         #endregion
@@ -2381,7 +2381,7 @@
                 KeyBindingB1Configured = true;
             }
         }
-        int keyBindingB1;
+        private int keyBindingB1;
         internal bool KeyBindingB1Configured { get; private set; }
 
         #endregion
@@ -2397,7 +2397,7 @@
                 KeyBindingB2Configured = true;
             }
         }
-        int keyBindingB2;
+        private int keyBindingB2;
         internal bool KeyBindingB2Configured { get; private set; }
 
         #endregion
@@ -2413,7 +2413,7 @@
                 KeyBindingB3Configured = true;
             }
         }
-        int keyBindingB3;
+        private int keyBindingB3;
         internal bool KeyBindingB3Configured { get; private set; }
 
         #endregion
@@ -2429,7 +2429,7 @@
                 KilledArmadillo1Configured = true;
             }
         }
-        bool killedArmadillo1;
+        private bool killedArmadillo1;
         internal bool KilledArmadillo1Configured { get; private set; }
 
         #endregion
@@ -2445,7 +2445,7 @@
                 KilledArmadillo2Configured = true;
             }
         }
-        bool killedArmadillo2;
+        private bool killedArmadillo2;
         internal bool KilledArmadillo2Configured { get; private set; }
 
         #endregion
@@ -2461,7 +2461,7 @@
                 KilledArmadillo3Configured = true;
             }
         }
-        bool killedArmadillo3;
+        private bool killedArmadillo3;
         internal bool KilledArmadillo3Configured { get; private set; }
 
         #endregion
@@ -2477,7 +2477,7 @@
                 KilledArmoredSkeleton1Configured = true;
             }
         }
-        bool killedArmoredSkeleton1;
+        private bool killedArmoredSkeleton1;
         internal bool KilledArmoredSkeleton1Configured { get; private set; }
 
         #endregion
@@ -2493,7 +2493,7 @@
                 KilledArmoredSkeleton2Configured = true;
             }
         }
-        bool killedArmoredSkeleton2;
+        private bool killedArmoredSkeleton2;
         internal bool KilledArmoredSkeleton2Configured { get; private set; }
 
         #endregion
@@ -2509,7 +2509,7 @@
                 KilledArmoredSkeleton3Configured = true;
             }
         }
-        bool killedArmoredSkeleton3;
+        private bool killedArmoredSkeleton3;
         internal bool KilledArmoredSkeleton3Configured { get; private set; }
 
         #endregion
@@ -2525,7 +2525,7 @@
                 KilledBanshee1Configured = true;
             }
         }
-        bool killedBanshee1;
+        private bool killedBanshee1;
         internal bool KilledBanshee1Configured { get; private set; }
 
         #endregion
@@ -2541,7 +2541,7 @@
                 KilledBanshee2Configured = true;
             }
         }
-        bool killedBanshee2;
+        private bool killedBanshee2;
         internal bool KilledBanshee2Configured { get; private set; }
 
         #endregion
@@ -2557,7 +2557,7 @@
                 KilledBat1Configured = true;
             }
         }
-        bool killedBat1;
+        private bool killedBat1;
         internal bool KilledBat1Configured { get; private set; }
 
         #endregion
@@ -2573,7 +2573,7 @@
                 KilledBat2Configured = true;
             }
         }
-        bool killedBat2;
+        private bool killedBat2;
         internal bool KilledBat2Configured { get; private set; }
 
         #endregion
@@ -2589,7 +2589,7 @@
                 KilledBat3Configured = true;
             }
         }
-        bool killedBat3;
+        private bool killedBat3;
         internal bool KilledBat3Configured { get; private set; }
 
         #endregion
@@ -2605,7 +2605,7 @@
                 KilledBat4Configured = true;
             }
         }
-        bool killedBat4;
+        private bool killedBat4;
         internal bool KilledBat4Configured { get; private set; }
 
         #endregion
@@ -2621,7 +2621,7 @@
                 KilledBatMiniboss1Configured = true;
             }
         }
-        bool killedBatMiniboss1;
+        private bool killedBatMiniboss1;
         internal bool KilledBatMiniboss1Configured { get; private set; }
 
         #endregion
@@ -2637,7 +2637,7 @@
                 KilledBatMiniboss2Configured = true;
             }
         }
-        bool killedBatMiniboss2;
+        private bool killedBatMiniboss2;
         internal bool KilledBatMiniboss2Configured { get; private set; }
 
         #endregion
@@ -2653,7 +2653,7 @@
                 KilledBeetle1Configured = true;
             }
         }
-        bool killedBeetle1;
+        private bool killedBeetle1;
         internal bool KilledBeetle1Configured { get; private set; }
 
         #endregion
@@ -2669,7 +2669,7 @@
                 KilledBeetle2Configured = true;
             }
         }
-        bool killedBeetle2;
+        private bool killedBeetle2;
         internal bool KilledBeetle2Configured { get; private set; }
 
         #endregion
@@ -2685,7 +2685,7 @@
                 KilledBishop1Configured = true;
             }
         }
-        bool killedBishop1;
+        private bool killedBishop1;
         internal bool KilledBishop1Configured { get; private set; }
 
         #endregion
@@ -2701,7 +2701,7 @@
                 KilledBishop2Configured = true;
             }
         }
-        bool killedBishop2;
+        private bool killedBishop2;
         internal bool KilledBishop2Configured { get; private set; }
 
         #endregion
@@ -2717,7 +2717,7 @@
                 KilledBlademaster1Configured = true;
             }
         }
-        bool killedBlademaster1;
+        private bool killedBlademaster1;
         internal bool KilledBlademaster1Configured { get; private set; }
 
         #endregion
@@ -2733,7 +2733,7 @@
                 KilledBlademaster2Configured = true;
             }
         }
-        bool killedBlademaster2;
+        private bool killedBlademaster2;
         internal bool KilledBlademaster2Configured { get; private set; }
 
         #endregion
@@ -2749,7 +2749,7 @@
                 KilledBossmaster1Configured = true;
             }
         }
-        bool killedBossmaster1;
+        private bool killedBossmaster1;
         internal bool KilledBossmaster1Configured { get; private set; }
 
         #endregion
@@ -2765,7 +2765,7 @@
                 KilledCauldron1Configured = true;
             }
         }
-        bool killedCauldron1;
+        private bool killedCauldron1;
         internal bool KilledCauldron1Configured { get; private set; }
 
         #endregion
@@ -2781,7 +2781,7 @@
                 KilledClone1Configured = true;
             }
         }
-        bool killedClone1;
+        private bool killedClone1;
         internal bool KilledClone1Configured { get; private set; }
 
         #endregion
@@ -2797,7 +2797,7 @@
                 KilledConjurer1Configured = true;
             }
         }
-        bool killedConjurer1;
+        private bool killedConjurer1;
         internal bool KilledConjurer1Configured { get; private set; }
 
         #endregion
@@ -2813,7 +2813,7 @@
                 KilledCoralRiff1Configured = true;
             }
         }
-        bool killedCoralRiff1;
+        private bool killedCoralRiff1;
         internal bool KilledCoralRiff1Configured { get; private set; }
 
         #endregion
@@ -2829,7 +2829,7 @@
                 KilledCrate1Configured = true;
             }
         }
-        bool killedCrate1;
+        private bool killedCrate1;
         internal bool KilledCrate1Configured { get; private set; }
 
         #endregion
@@ -2845,7 +2845,7 @@
                 KilledCrate3Configured = true;
             }
         }
-        bool killedCrate3;
+        private bool killedCrate3;
         internal bool KilledCrate3Configured { get; private set; }
 
         #endregion
@@ -2861,7 +2861,7 @@
                 KilledDeathMetal1Configured = true;
             }
         }
-        bool killedDeathMetal1;
+        private bool killedDeathMetal1;
         internal bool KilledDeathMetal1Configured { get; private set; }
 
         #endregion
@@ -2877,7 +2877,7 @@
                 KilledDevil1Configured = true;
             }
         }
-        bool killedDevil1;
+        private bool killedDevil1;
         internal bool KilledDevil1Configured { get; private set; }
 
         #endregion
@@ -2893,7 +2893,7 @@
                 KilledDevil2Configured = true;
             }
         }
-        bool killedDevil2;
+        private bool killedDevil2;
         internal bool KilledDevil2Configured { get; private set; }
 
         #endregion
@@ -2909,7 +2909,7 @@
                 KilledDragon1Configured = true;
             }
         }
-        bool killedDragon1;
+        private bool killedDragon1;
         internal bool KilledDragon1Configured { get; private set; }
 
         #endregion
@@ -2925,7 +2925,7 @@
                 KilledDragon2Configured = true;
             }
         }
-        bool killedDragon2;
+        private bool killedDragon2;
         internal bool KilledDragon2Configured { get; private set; }
 
         #endregion
@@ -2941,7 +2941,7 @@
                 KilledDragon3Configured = true;
             }
         }
-        bool killedDragon3;
+        private bool killedDragon3;
         internal bool KilledDragon3Configured { get; private set; }
 
         #endregion
@@ -2957,7 +2957,7 @@
                 KilledDragon4Configured = true;
             }
         }
-        bool killedDragon4;
+        private bool killedDragon4;
         internal bool KilledDragon4Configured { get; private set; }
 
         #endregion
@@ -2973,7 +2973,7 @@
                 KilledElectricMage1Configured = true;
             }
         }
-        bool killedElectricMage1;
+        private bool killedElectricMage1;
         internal bool KilledElectricMage1Configured { get; private set; }
 
         #endregion
@@ -2989,7 +2989,7 @@
                 KilledElectricMage2Configured = true;
             }
         }
-        bool killedElectricMage2;
+        private bool killedElectricMage2;
         internal bool KilledElectricMage2Configured { get; private set; }
 
         #endregion
@@ -3005,7 +3005,7 @@
                 KilledElectricMage3Configured = true;
             }
         }
-        bool killedElectricMage3;
+        private bool killedElectricMage3;
         internal bool KilledElectricMage3Configured { get; private set; }
 
         #endregion
@@ -3021,7 +3021,7 @@
                 KilledElectricOrb1Configured = true;
             }
         }
-        bool killedElectricOrb1;
+        private bool killedElectricOrb1;
         internal bool KilledElectricOrb1Configured { get; private set; }
 
         #endregion
@@ -3037,7 +3037,7 @@
                 KilledEvilEye1Configured = true;
             }
         }
-        bool killedEvilEye1;
+        private bool killedEvilEye1;
         internal bool KilledEvilEye1Configured { get; private set; }
 
         #endregion
@@ -3053,7 +3053,7 @@
                 KilledEvilEye2Configured = true;
             }
         }
-        bool killedEvilEye2;
+        private bool killedEvilEye2;
         internal bool KilledEvilEye2Configured { get; private set; }
 
         #endregion
@@ -3069,7 +3069,7 @@
                 KilledFakeWall1Configured = true;
             }
         }
-        bool killedFakeWall1;
+        private bool killedFakeWall1;
         internal bool KilledFakeWall1Configured { get; private set; }
 
         #endregion
@@ -3085,7 +3085,7 @@
                 KilledFakeWall2Configured = true;
             }
         }
-        bool killedFakeWall2;
+        private bool killedFakeWall2;
         internal bool KilledFakeWall2Configured { get; private set; }
 
         #endregion
@@ -3101,7 +3101,7 @@
                 KilledFireElemental1Configured = true;
             }
         }
-        bool killedFireElemental1;
+        private bool killedFireElemental1;
         internal bool KilledFireElemental1Configured { get; private set; }
 
         #endregion
@@ -3117,7 +3117,7 @@
                 KilledFortissimole1Configured = true;
             }
         }
-        bool killedFortissimole1;
+        private bool killedFortissimole1;
         internal bool KilledFortissimole1Configured { get; private set; }
 
         #endregion
@@ -3133,7 +3133,7 @@
                 KilledGargoyle2Configured = true;
             }
         }
-        bool killedGargoyle2;
+        private bool killedGargoyle2;
         internal bool KilledGargoyle2Configured { get; private set; }
 
         #endregion
@@ -3149,7 +3149,7 @@
                 KilledGhast1Configured = true;
             }
         }
-        bool killedGhast1;
+        private bool killedGhast1;
         internal bool KilledGhast1Configured { get; private set; }
 
         #endregion
@@ -3165,7 +3165,7 @@
                 KilledGhost1Configured = true;
             }
         }
-        bool killedGhost1;
+        private bool killedGhost1;
         internal bool KilledGhost1Configured { get; private set; }
 
         #endregion
@@ -3181,7 +3181,7 @@
                 KilledGhoul1Configured = true;
             }
         }
-        bool killedGhoul1;
+        private bool killedGhoul1;
         internal bool KilledGhoul1Configured { get; private set; }
 
         #endregion
@@ -3197,7 +3197,7 @@
                 KilledGoblin1Configured = true;
             }
         }
-        bool killedGoblin1;
+        private bool killedGoblin1;
         internal bool KilledGoblin1Configured { get; private set; }
 
         #endregion
@@ -3213,7 +3213,7 @@
                 KilledGoblin2Configured = true;
             }
         }
-        bool killedGoblin2;
+        private bool killedGoblin2;
         internal bool KilledGoblin2Configured { get; private set; }
 
         #endregion
@@ -3229,7 +3229,7 @@
                 KilledGoblinBomber1Configured = true;
             }
         }
-        bool killedGoblinBomber1;
+        private bool killedGoblinBomber1;
         internal bool KilledGoblinBomber1Configured { get; private set; }
 
         #endregion
@@ -3245,7 +3245,7 @@
                 KilledGolem1Configured = true;
             }
         }
-        bool killedGolem1;
+        private bool killedGolem1;
         internal bool KilledGolem1Configured { get; private set; }
 
         #endregion
@@ -3261,7 +3261,7 @@
                 KilledGolem2Configured = true;
             }
         }
-        bool killedGolem2;
+        private bool killedGolem2;
         internal bool KilledGolem2Configured { get; private set; }
 
         #endregion
@@ -3277,7 +3277,7 @@
                 KilledGolem3Configured = true;
             }
         }
-        bool killedGolem3;
+        private bool killedGolem3;
         internal bool KilledGolem3Configured { get; private set; }
 
         #endregion
@@ -3293,7 +3293,7 @@
                 KilledGorgon1Configured = true;
             }
         }
-        bool killedGorgon1;
+        private bool killedGorgon1;
         internal bool KilledGorgon1Configured { get; private set; }
 
         #endregion
@@ -3309,7 +3309,7 @@
                 KilledGorgon2Configured = true;
             }
         }
-        bool killedGorgon2;
+        private bool killedGorgon2;
         internal bool KilledGorgon2Configured { get; private set; }
 
         #endregion
@@ -3325,7 +3325,7 @@
                 KilledHarpy1Configured = true;
             }
         }
-        bool killedHarpy1;
+        private bool killedHarpy1;
         internal bool KilledHarpy1Configured { get; private set; }
 
         #endregion
@@ -3341,7 +3341,7 @@
                 KilledHellhound1Configured = true;
             }
         }
-        bool killedHellhound1;
+        private bool killedHellhound1;
         internal bool KilledHellhound1Configured { get; private set; }
 
         #endregion
@@ -3357,7 +3357,7 @@
                 KilledIceElemental1Configured = true;
             }
         }
-        bool killedIceElemental1;
+        private bool killedIceElemental1;
         internal bool KilledIceElemental1Configured { get; private set; }
 
         #endregion
@@ -3373,7 +3373,7 @@
                 KilledKing1Configured = true;
             }
         }
-        bool killedKing1;
+        private bool killedKing1;
         internal bool KilledKing1Configured { get; private set; }
 
         #endregion
@@ -3389,7 +3389,7 @@
                 KilledKing2Configured = true;
             }
         }
-        bool killedKing2;
+        private bool killedKing2;
         internal bool KilledKing2Configured { get; private set; }
 
         #endregion
@@ -3405,7 +3405,7 @@
                 KilledKingConga1Configured = true;
             }
         }
-        bool killedKingConga1;
+        private bool killedKingConga1;
         internal bool KilledKingConga1Configured { get; private set; }
 
         #endregion
@@ -3421,7 +3421,7 @@
                 KilledKnight1Configured = true;
             }
         }
-        bool killedKnight1;
+        private bool killedKnight1;
         internal bool KilledKnight1Configured { get; private set; }
 
         #endregion
@@ -3437,7 +3437,7 @@
                 KilledKnight2Configured = true;
             }
         }
-        bool killedKnight2;
+        private bool killedKnight2;
         internal bool KilledKnight2Configured { get; private set; }
 
         #endregion
@@ -3453,7 +3453,7 @@
                 KilledLeprechaun1Configured = true;
             }
         }
-        bool killedLeprechaun1;
+        private bool killedLeprechaun1;
         internal bool KilledLeprechaun1Configured { get; private set; }
 
         #endregion
@@ -3469,7 +3469,7 @@
                 KilledLich1Configured = true;
             }
         }
-        bool killedLich1;
+        private bool killedLich1;
         internal bool KilledLich1Configured { get; private set; }
 
         #endregion
@@ -3485,7 +3485,7 @@
                 KilledLich2Configured = true;
             }
         }
-        bool killedLich2;
+        private bool killedLich2;
         internal bool KilledLich2Configured { get; private set; }
 
         #endregion
@@ -3501,7 +3501,7 @@
                 KilledLich3Configured = true;
             }
         }
-        bool killedLich3;
+        private bool killedLich3;
         internal bool KilledLich3Configured { get; private set; }
 
         #endregion
@@ -3517,7 +3517,7 @@
                 KilledMetrognome1Configured = true;
             }
         }
-        bool killedMetrognome1;
+        private bool killedMetrognome1;
         internal bool KilledMetrognome1Configured { get; private set; }
 
         #endregion
@@ -3533,7 +3533,7 @@
                 KilledMetrognome2Configured = true;
             }
         }
-        bool killedMetrognome2;
+        private bool killedMetrognome2;
         internal bool KilledMetrognome2Configured { get; private set; }
 
         #endregion
@@ -3549,7 +3549,7 @@
                 KilledMinotaur1Configured = true;
             }
         }
-        bool killedMinotaur1;
+        private bool killedMinotaur1;
         internal bool KilledMinotaur1Configured { get; private set; }
 
         #endregion
@@ -3565,7 +3565,7 @@
                 KilledMinotaur2Configured = true;
             }
         }
-        bool killedMinotaur2;
+        private bool killedMinotaur2;
         internal bool KilledMinotaur2Configured { get; private set; }
 
         #endregion
@@ -3581,7 +3581,7 @@
                 KilledMole1Configured = true;
             }
         }
-        bool killedMole1;
+        private bool killedMole1;
         internal bool KilledMole1Configured { get; private set; }
 
         #endregion
@@ -3597,7 +3597,7 @@
                 KilledMommy1Configured = true;
             }
         }
-        bool killedMommy1;
+        private bool killedMommy1;
         internal bool KilledMommy1Configured { get; private set; }
 
         #endregion
@@ -3613,7 +3613,7 @@
                 KilledMonkey1Configured = true;
             }
         }
-        bool killedMonkey1;
+        private bool killedMonkey1;
         internal bool KilledMonkey1Configured { get; private set; }
 
         #endregion
@@ -3629,7 +3629,7 @@
                 KilledMonkey2Configured = true;
             }
         }
-        bool killedMonkey2;
+        private bool killedMonkey2;
         internal bool KilledMonkey2Configured { get; private set; }
 
         #endregion
@@ -3645,7 +3645,7 @@
                 KilledMonkey3Configured = true;
             }
         }
-        bool killedMonkey3;
+        private bool killedMonkey3;
         internal bool KilledMonkey3Configured { get; private set; }
 
         #endregion
@@ -3661,7 +3661,7 @@
                 KilledMonkey4Configured = true;
             }
         }
-        bool killedMonkey4;
+        private bool killedMonkey4;
         internal bool KilledMonkey4Configured { get; private set; }
 
         #endregion
@@ -3677,7 +3677,7 @@
                 KilledMummy1Configured = true;
             }
         }
-        bool killedMummy1;
+        private bool killedMummy1;
         internal bool KilledMummy1Configured { get; private set; }
 
         #endregion
@@ -3693,7 +3693,7 @@
                 KilledMushroom1Configured = true;
             }
         }
-        bool killedMushroom1;
+        private bool killedMushroom1;
         internal bool KilledMushroom1Configured { get; private set; }
 
         #endregion
@@ -3709,7 +3709,7 @@
                 KilledMushroom2Configured = true;
             }
         }
-        bool killedMushroom2;
+        private bool killedMushroom2;
         internal bool KilledMushroom2Configured { get; private set; }
 
         #endregion
@@ -3725,7 +3725,7 @@
                 KilledMushroomLight1Configured = true;
             }
         }
-        bool killedMushroomLight1;
+        private bool killedMushroomLight1;
         internal bool KilledMushroomLight1Configured { get; private set; }
 
         #endregion
@@ -3741,7 +3741,7 @@
                 KilledNecrodancer1Configured = true;
             }
         }
-        bool killedNecrodancer1;
+        private bool killedNecrodancer1;
         internal bool KilledNecrodancer1Configured { get; private set; }
 
         #endregion
@@ -3757,7 +3757,7 @@
                 KilledNightmare1Configured = true;
             }
         }
-        bool killedNightmare1;
+        private bool killedNightmare1;
         internal bool KilledNightmare1Configured { get; private set; }
 
         #endregion
@@ -3773,7 +3773,7 @@
                 KilledNightmare2Configured = true;
             }
         }
-        bool killedNightmare2;
+        private bool killedNightmare2;
         internal bool KilledNightmare2Configured { get; private set; }
 
         #endregion
@@ -3789,7 +3789,7 @@
                 KilledOgre1Configured = true;
             }
         }
-        bool killedOgre1;
+        private bool killedOgre1;
         internal bool KilledOgre1Configured { get; private set; }
 
         #endregion
@@ -3805,7 +3805,7 @@
                 KilledOrc1Configured = true;
             }
         }
-        bool killedOrc1;
+        private bool killedOrc1;
         internal bool KilledOrc1Configured { get; private set; }
 
         #endregion
@@ -3821,7 +3821,7 @@
                 KilledOrc2Configured = true;
             }
         }
-        bool killedOrc2;
+        private bool killedOrc2;
         internal bool KilledOrc2Configured { get; private set; }
 
         #endregion
@@ -3837,7 +3837,7 @@
                 KilledOrc3Configured = true;
             }
         }
-        bool killedOrc3;
+        private bool killedOrc3;
         internal bool KilledOrc3Configured { get; private set; }
 
         #endregion
@@ -3853,7 +3853,7 @@
                 KilledPawn1Configured = true;
             }
         }
-        bool killedPawn1;
+        private bool killedPawn1;
         internal bool KilledPawn1Configured { get; private set; }
 
         #endregion
@@ -3869,7 +3869,7 @@
                 KilledPawn2Configured = true;
             }
         }
-        bool killedPawn2;
+        private bool killedPawn2;
         internal bool KilledPawn2Configured { get; private set; }
 
         #endregion
@@ -3885,7 +3885,7 @@
                 KilledPixie1Configured = true;
             }
         }
-        bool killedPixie1;
+        private bool killedPixie1;
         internal bool KilledPixie1Configured { get; private set; }
 
         #endregion
@@ -3901,7 +3901,7 @@
                 KilledQueen1Configured = true;
             }
         }
-        bool killedQueen1;
+        private bool killedQueen1;
         internal bool KilledQueen1Configured { get; private set; }
 
         #endregion
@@ -3917,7 +3917,7 @@
                 KilledQueen2Configured = true;
             }
         }
-        bool killedQueen2;
+        private bool killedQueen2;
         internal bool KilledQueen2Configured { get; private set; }
 
         #endregion
@@ -3933,7 +3933,7 @@
                 KilledRook1Configured = true;
             }
         }
-        bool killedRook1;
+        private bool killedRook1;
         internal bool KilledRook1Configured { get; private set; }
 
         #endregion
@@ -3949,7 +3949,7 @@
                 KilledRook2Configured = true;
             }
         }
-        bool killedRook2;
+        private bool killedRook2;
         internal bool KilledRook2Configured { get; private set; }
 
         #endregion
@@ -3965,7 +3965,7 @@
                 KilledSarcophagus1Configured = true;
             }
         }
-        bool killedSarcophagus1;
+        private bool killedSarcophagus1;
         internal bool KilledSarcophagus1Configured { get; private set; }
 
         #endregion
@@ -3981,7 +3981,7 @@
                 KilledSarcophagus2Configured = true;
             }
         }
-        bool killedSarcophagus2;
+        private bool killedSarcophagus2;
         internal bool KilledSarcophagus2Configured { get; private set; }
 
         #endregion
@@ -3997,7 +3997,7 @@
                 KilledSarcophagus3Configured = true;
             }
         }
-        bool killedSarcophagus3;
+        private bool killedSarcophagus3;
         internal bool KilledSarcophagus3Configured { get; private set; }
 
         #endregion
@@ -4013,7 +4013,7 @@
                 KilledShopkeeper1Configured = true;
             }
         }
-        bool killedShopkeeper1;
+        private bool killedShopkeeper1;
         internal bool KilledShopkeeper1Configured { get; private set; }
 
         #endregion
@@ -4029,7 +4029,7 @@
                 KilledShopkeeper2Configured = true;
             }
         }
-        bool killedShopkeeper2;
+        private bool killedShopkeeper2;
         internal bool KilledShopkeeper2Configured { get; private set; }
 
         #endregion
@@ -4045,7 +4045,7 @@
                 KilledShopkeeper3Configured = true;
             }
         }
-        bool killedShopkeeper3;
+        private bool killedShopkeeper3;
         internal bool KilledShopkeeper3Configured { get; private set; }
 
         #endregion
@@ -4061,7 +4061,7 @@
                 KilledShopkeeper4Configured = true;
             }
         }
-        bool killedShopkeeper4;
+        private bool killedShopkeeper4;
         internal bool KilledShopkeeper4Configured { get; private set; }
 
         #endregion
@@ -4077,7 +4077,7 @@
                 KilledShopkeeper5Configured = true;
             }
         }
-        bool killedShopkeeper5;
+        private bool killedShopkeeper5;
         internal bool KilledShopkeeper5Configured { get; private set; }
 
         #endregion
@@ -4093,7 +4093,7 @@
                 KilledShopkeeperGhost1Configured = true;
             }
         }
-        bool killedShopkeeperGhost1;
+        private bool killedShopkeeperGhost1;
         internal bool KilledShopkeeperGhost1Configured { get; private set; }
 
         #endregion
@@ -4109,7 +4109,7 @@
                 KilledShovemonster1Configured = true;
             }
         }
-        bool killedShovemonster1;
+        private bool killedShovemonster1;
         internal bool KilledShovemonster1Configured { get; private set; }
 
         #endregion
@@ -4125,7 +4125,7 @@
                 KilledShovemonster2Configured = true;
             }
         }
-        bool killedShovemonster2;
+        private bool killedShovemonster2;
         internal bool KilledShovemonster2Configured { get; private set; }
 
         #endregion
@@ -4141,7 +4141,7 @@
                 KilledShriner1Configured = true;
             }
         }
-        bool killedShriner1;
+        private bool killedShriner1;
         internal bool KilledShriner1Configured { get; private set; }
 
         #endregion
@@ -4157,7 +4157,7 @@
                 KilledSkeleton1Configured = true;
             }
         }
-        bool killedSkeleton1;
+        private bool killedSkeleton1;
         internal bool KilledSkeleton1Configured { get; private set; }
 
         #endregion
@@ -4173,7 +4173,7 @@
                 KilledSkeleton2Configured = true;
             }
         }
-        bool killedSkeleton2;
+        private bool killedSkeleton2;
         internal bool KilledSkeleton2Configured { get; private set; }
 
         #endregion
@@ -4189,7 +4189,7 @@
                 KilledSkeleton3Configured = true;
             }
         }
-        bool killedSkeleton3;
+        private bool killedSkeleton3;
         internal bool KilledSkeleton3Configured { get; private set; }
 
         #endregion
@@ -4205,7 +4205,7 @@
                 KilledSkeletonKnight1Configured = true;
             }
         }
-        bool killedSkeletonKnight1;
+        private bool killedSkeletonKnight1;
         internal bool KilledSkeletonKnight1Configured { get; private set; }
 
         #endregion
@@ -4221,7 +4221,7 @@
                 KilledSkeletonKnight2Configured = true;
             }
         }
-        bool killedSkeletonKnight2;
+        private bool killedSkeletonKnight2;
         internal bool KilledSkeletonKnight2Configured { get; private set; }
 
         #endregion
@@ -4237,7 +4237,7 @@
                 KilledSkeletonKnight3Configured = true;
             }
         }
-        bool killedSkeletonKnight3;
+        private bool killedSkeletonKnight3;
         internal bool KilledSkeletonKnight3Configured { get; private set; }
 
         #endregion
@@ -4253,7 +4253,7 @@
                 KilledSkeletonMage1Configured = true;
             }
         }
-        bool killedSkeletonMage1;
+        private bool killedSkeletonMage1;
         internal bool KilledSkeletonMage1Configured { get; private set; }
 
         #endregion
@@ -4269,7 +4269,7 @@
                 KilledSkeletonMage2Configured = true;
             }
         }
-        bool killedSkeletonMage2;
+        private bool killedSkeletonMage2;
         internal bool KilledSkeletonMage2Configured { get; private set; }
 
         #endregion
@@ -4285,7 +4285,7 @@
                 KilledSkeletonMage3Configured = true;
             }
         }
-        bool killedSkeletonMage3;
+        private bool killedSkeletonMage3;
         internal bool KilledSkeletonMage3Configured { get; private set; }
 
         #endregion
@@ -4301,7 +4301,7 @@
                 KilledSkull1Configured = true;
             }
         }
-        bool killedSkull1;
+        private bool killedSkull1;
         internal bool KilledSkull1Configured { get; private set; }
 
         #endregion
@@ -4317,7 +4317,7 @@
                 KilledSkull2Configured = true;
             }
         }
-        bool killedSkull2;
+        private bool killedSkull2;
         internal bool KilledSkull2Configured { get; private set; }
 
         #endregion
@@ -4333,7 +4333,7 @@
                 KilledSkull3Configured = true;
             }
         }
-        bool killedSkull3;
+        private bool killedSkull3;
         internal bool KilledSkull3Configured { get; private set; }
 
         #endregion
@@ -4349,7 +4349,7 @@
                 KilledSleepingGoblin1Configured = true;
             }
         }
-        bool killedSleepingGoblin1;
+        private bool killedSleepingGoblin1;
         internal bool KilledSleepingGoblin1Configured { get; private set; }
 
         #endregion
@@ -4365,7 +4365,7 @@
                 KilledSlime1Configured = true;
             }
         }
-        bool killedSlime1;
+        private bool killedSlime1;
         internal bool KilledSlime1Configured { get; private set; }
 
         #endregion
@@ -4381,7 +4381,7 @@
                 KilledSlime2Configured = true;
             }
         }
-        bool killedSlime2;
+        private bool killedSlime2;
         internal bool KilledSlime2Configured { get; private set; }
 
         #endregion
@@ -4397,7 +4397,7 @@
                 KilledSlime3Configured = true;
             }
         }
-        bool killedSlime3;
+        private bool killedSlime3;
         internal bool KilledSlime3Configured { get; private set; }
 
         #endregion
@@ -4413,7 +4413,7 @@
                 KilledSlime4Configured = true;
             }
         }
-        bool killedSlime4;
+        private bool killedSlime4;
         internal bool KilledSlime4Configured { get; private set; }
 
         #endregion
@@ -4429,7 +4429,7 @@
                 KilledSlime5Configured = true;
             }
         }
-        bool killedSlime5;
+        private bool killedSlime5;
         internal bool KilledSlime5Configured { get; private set; }
 
         #endregion
@@ -4445,7 +4445,7 @@
                 KilledSlime6Configured = true;
             }
         }
-        bool killedSlime6;
+        private bool killedSlime6;
         internal bool KilledSlime6Configured { get; private set; }
 
         #endregion
@@ -4461,7 +4461,7 @@
                 KilledSpider1Configured = true;
             }
         }
-        bool killedSpider1;
+        private bool killedSpider1;
         internal bool KilledSpider1Configured { get; private set; }
 
         #endregion
@@ -4477,7 +4477,7 @@
                 KilledTarMonster1Configured = true;
             }
         }
-        bool killedTarMonster1;
+        private bool killedTarMonster1;
         internal bool KilledTarMonster1Configured { get; private set; }
 
         #endregion
@@ -4493,7 +4493,7 @@
                 KilledTentacle2Configured = true;
             }
         }
-        bool killedTentacle2;
+        private bool killedTentacle2;
         internal bool KilledTentacle2Configured { get; private set; }
 
         #endregion
@@ -4509,7 +4509,7 @@
                 KilledTentacle3Configured = true;
             }
         }
-        bool killedTentacle3;
+        private bool killedTentacle3;
         internal bool KilledTentacle3Configured { get; private set; }
 
         #endregion
@@ -4525,7 +4525,7 @@
                 KilledTentacle4Configured = true;
             }
         }
-        bool killedTentacle4;
+        private bool killedTentacle4;
         internal bool KilledTentacle4Configured { get; private set; }
 
         #endregion
@@ -4541,7 +4541,7 @@
                 KilledTentacle5Configured = true;
             }
         }
-        bool killedTentacle5;
+        private bool killedTentacle5;
         internal bool KilledTentacle5Configured { get; private set; }
 
         #endregion
@@ -4557,7 +4557,7 @@
                 KilledTentacle6Configured = true;
             }
         }
-        bool killedTentacle6;
+        private bool killedTentacle6;
         internal bool KilledTentacle6Configured { get; private set; }
 
         #endregion
@@ -4573,7 +4573,7 @@
                 KilledTentacle7Configured = true;
             }
         }
-        bool killedTentacle7;
+        private bool killedTentacle7;
         internal bool KilledTentacle7Configured { get; private set; }
 
         #endregion
@@ -4589,7 +4589,7 @@
                 KilledTentacle8Configured = true;
             }
         }
-        bool killedTentacle8;
+        private bool killedTentacle8;
         internal bool KilledTentacle8Configured { get; private set; }
 
         #endregion
@@ -4605,7 +4605,7 @@
                 KilledToughSarcophagus1Configured = true;
             }
         }
-        bool killedToughSarcophagus1;
+        private bool killedToughSarcophagus1;
         internal bool KilledToughSarcophagus1Configured { get; private set; }
 
         #endregion
@@ -4621,7 +4621,7 @@
                 KilledTransmogrifier1Configured = true;
             }
         }
-        bool killedTransmogrifier1;
+        private bool killedTransmogrifier1;
         internal bool KilledTransmogrifier1Configured { get; private set; }
 
         #endregion
@@ -4637,7 +4637,7 @@
                 KilledTrapCauldron1Configured = true;
             }
         }
-        bool killedTrapCauldron1;
+        private bool killedTrapCauldron1;
         internal bool KilledTrapCauldron1Configured { get; private set; }
 
         #endregion
@@ -4653,7 +4653,7 @@
                 KilledTrapCauldron2Configured = true;
             }
         }
-        bool killedTrapCauldron2;
+        private bool killedTrapCauldron2;
         internal bool KilledTrapCauldron2Configured { get; private set; }
 
         #endregion
@@ -4669,7 +4669,7 @@
                 KilledTrapChest1Configured = true;
             }
         }
-        bool killedTrapChest1;
+        private bool killedTrapChest1;
         internal bool KilledTrapChest1Configured { get; private set; }
 
         #endregion
@@ -4685,7 +4685,7 @@
                 KilledTrapChest2Configured = true;
             }
         }
-        bool killedTrapChest2;
+        private bool killedTrapChest2;
         internal bool KilledTrapChest2Configured { get; private set; }
 
         #endregion
@@ -4701,7 +4701,7 @@
                 KilledTrapChest3Configured = true;
             }
         }
-        bool killedTrapChest3;
+        private bool killedTrapChest3;
         internal bool KilledTrapChest3Configured { get; private set; }
 
         #endregion
@@ -4717,7 +4717,7 @@
                 KilledTrapChest4Configured = true;
             }
         }
-        bool killedTrapChest4;
+        private bool killedTrapChest4;
         internal bool KilledTrapChest4Configured { get; private set; }
 
         #endregion
@@ -4733,7 +4733,7 @@
                 KilledTrapChest5Configured = true;
             }
         }
-        bool killedTrapChest5;
+        private bool killedTrapChest5;
         internal bool KilledTrapChest5Configured { get; private set; }
 
         #endregion
@@ -4749,7 +4749,7 @@
                 KilledTrapChest6Configured = true;
             }
         }
-        bool killedTrapChest6;
+        private bool killedTrapChest6;
         internal bool KilledTrapChest6Configured { get; private set; }
 
         #endregion
@@ -4765,7 +4765,7 @@
                 KilledWarlock1Configured = true;
             }
         }
-        bool killedWarlock1;
+        private bool killedWarlock1;
         internal bool KilledWarlock1Configured { get; private set; }
 
         #endregion
@@ -4781,7 +4781,7 @@
                 KilledWarlock2Configured = true;
             }
         }
-        bool killedWarlock2;
+        private bool killedWarlock2;
         internal bool KilledWarlock2Configured { get; private set; }
 
         #endregion
@@ -4797,7 +4797,7 @@
                 KilledWaterBall1Configured = true;
             }
         }
-        bool killedWaterBall1;
+        private bool killedWaterBall1;
         internal bool KilledWaterBall1Configured { get; private set; }
 
         #endregion
@@ -4813,7 +4813,7 @@
                 KilledWight1Configured = true;
             }
         }
-        bool killedWight1;
+        private bool killedWight1;
         internal bool KilledWight1Configured { get; private set; }
 
         #endregion
@@ -4829,7 +4829,7 @@
                 KilledWraith1Configured = true;
             }
         }
-        bool killedWraith1;
+        private bool killedWraith1;
         internal bool KilledWraith1Configured { get; private set; }
 
         #endregion
@@ -4845,7 +4845,7 @@
                 KilledWraith2Configured = true;
             }
         }
-        bool killedWraith2;
+        private bool killedWraith2;
         internal bool KilledWraith2Configured { get; private set; }
 
         #endregion
@@ -4861,7 +4861,7 @@
                 KilledYeti1Configured = true;
             }
         }
-        bool killedYeti1;
+        private bool killedYeti1;
         internal bool KilledYeti1Configured { get; private set; }
 
         #endregion
@@ -4877,7 +4877,7 @@
                 KilledZombie1Configured = true;
             }
         }
-        bool killedZombie1;
+        private bool killedZombie1;
         internal bool KilledZombie1Configured { get; private set; }
 
         #endregion
@@ -4893,7 +4893,7 @@
                 KilledZombieElectric1Configured = true;
             }
         }
-        bool killedZombieElectric1;
+        private bool killedZombieElectric1;
         internal bool KilledZombieElectric1Configured { get; private set; }
 
         #endregion
@@ -4909,7 +4909,7 @@
                 KilledZombieSnake1Configured = true;
             }
         }
-        bool killedZombieSnake1;
+        private bool killedZombieSnake1;
         internal bool KilledZombieSnake1Configured { get; private set; }
 
         #endregion
@@ -4925,7 +4925,7 @@
                 LatencyCalibratedConfigured = true;
             }
         }
-        bool latencyCalibrated;
+        private bool latencyCalibrated;
         internal bool LatencyCalibratedConfigured { get; private set; }
 
         #endregion
@@ -4941,7 +4941,7 @@
                 LobbyMoveConfigured = true;
             }
         }
-        bool lobbyMove;
+        private bool lobbyMove;
         internal bool LobbyMoveConfigured { get; private set; }
 
         #endregion
@@ -4957,7 +4957,7 @@
                 MentorLevelClear0Configured = true;
             }
         }
-        bool mentorLevelClear0;
+        private bool mentorLevelClear0;
         internal bool MentorLevelClear0Configured { get; private set; }
 
         #endregion
@@ -4973,7 +4973,7 @@
                 MentorLevelClear1Configured = true;
             }
         }
-        bool mentorLevelClear1;
+        private bool mentorLevelClear1;
         internal bool MentorLevelClear1Configured { get; private set; }
 
         #endregion
@@ -4989,7 +4989,7 @@
                 MentorLevelClear2Configured = true;
             }
         }
-        bool mentorLevelClear2;
+        private bool mentorLevelClear2;
         internal bool MentorLevelClear2Configured { get; private set; }
 
         #endregion
@@ -5005,7 +5005,7 @@
                 MentorLevelClear3Configured = true;
             }
         }
-        bool mentorLevelClear3;
+        private bool mentorLevelClear3;
         internal bool MentorLevelClear3Configured { get; private set; }
 
         #endregion
@@ -5021,7 +5021,7 @@
                 MusicVolumeConfigured = true;
             }
         }
-        decimal musicVolume;
+        private decimal musicVolume;
         internal bool MusicVolumeConfigured { get; private set; }
 
         #endregion
@@ -5037,7 +5037,7 @@
                 NumPendingSpawnItemsV2Configured = true;
             }
         }
-        int numPendingSpawnItemsV2;
+        private int numPendingSpawnItemsV2;
         internal bool NumPendingSpawnItemsV2Configured { get; private set; }
 
         #endregion
@@ -5053,7 +5053,7 @@
                 PendingSpawnItemV2_0Configured = true;
             }
         }
-        string pendingSpawnItemV2_0;
+        private string pendingSpawnItemV2_0;
         internal bool PendingSpawnItemV2_0Configured { get; private set; }
 
         #endregion
@@ -5069,7 +5069,7 @@
                 PendingSpawnItemV2_1Configured = true;
             }
         }
-        string pendingSpawnItemV2_1;
+        private string pendingSpawnItemV2_1;
         internal bool PendingSpawnItemV2_1Configured { get; private set; }
 
         #endregion
@@ -5085,7 +5085,7 @@
                 PendingSpawnItemV2_2Configured = true;
             }
         }
-        string pendingSpawnItemV2_2;
+        private string pendingSpawnItemV2_2;
         internal bool PendingSpawnItemV2_2Configured { get; private set; }
 
         #endregion
@@ -5101,7 +5101,7 @@
                 PendingSpawnItemV2_3Configured = true;
             }
         }
-        string pendingSpawnItemV2_3;
+        private string pendingSpawnItemV2_3;
         internal bool PendingSpawnItemV2_3Configured { get; private set; }
 
         #endregion
@@ -5117,7 +5117,7 @@
                 PendingSpawnItemV2_4Configured = true;
             }
         }
-        string pendingSpawnItemV2_4;
+        private string pendingSpawnItemV2_4;
         internal bool PendingSpawnItemV2_4Configured { get; private set; }
 
         #endregion
@@ -5133,7 +5133,7 @@
                 PendingSpawnItemV2_5Configured = true;
             }
         }
-        string pendingSpawnItemV2_5;
+        private string pendingSpawnItemV2_5;
         internal bool PendingSpawnItemV2_5Configured { get; private set; }
 
         #endregion
@@ -5149,7 +5149,7 @@
                 PendingSpawnItemV2_6Configured = true;
             }
         }
-        string pendingSpawnItemV2_6;
+        private string pendingSpawnItemV2_6;
         internal bool PendingSpawnItemV2_6Configured { get; private set; }
 
         #endregion
@@ -5165,7 +5165,7 @@
                 PendingSpawnItemV2_7Configured = true;
             }
         }
-        string pendingSpawnItemV2_7;
+        private string pendingSpawnItemV2_7;
         internal bool PendingSpawnItemV2_7Configured { get; private set; }
 
         #endregion
@@ -5181,7 +5181,7 @@
                 PreBossEffectConfigured = true;
             }
         }
-        bool preBossEffect;
+        private bool preBossEffect;
         internal bool PreBossEffectConfigured { get; private set; }
 
         #endregion
@@ -5197,7 +5197,7 @@
                 ResolutionHeightConfigured = true;
             }
         }
-        int resolutionHeight;
+        private int resolutionHeight;
         internal bool ResolutionHeightConfigured { get; private set; }
 
         #endregion
@@ -5213,7 +5213,7 @@
                 ResolutionWidthConfigured = true;
             }
         }
-        int resolutionWidth;
+        private int resolutionWidth;
         internal bool ResolutionWidthConfigured { get; private set; }
 
 
@@ -5230,7 +5230,7 @@
                 ScreenShakeConfigured = true;
             }
         }
-        bool screenShake;
+        private bool screenShake;
         internal bool ScreenShakeConfigured { get; private set; }
 
         #endregion
@@ -5246,7 +5246,7 @@
                 ShowDiscoFloorConfigured = true;
             }
         }
-        bool showDiscoFloor;
+        private bool showDiscoFloor;
         internal bool ShowDiscoFloorConfigured { get; private set; }
 
         #endregion
@@ -5262,7 +5262,7 @@
                 ShowHudBeatBarsConfigured = true;
             }
         }
-        bool showHudBeatBars;
+        private bool showHudBeatBars;
         internal bool ShowHudBeatBarsConfigured { get; private set; }
 
         #endregion
@@ -5278,7 +5278,7 @@
                 ShowHudHeartConfigured = true;
             }
         }
-        bool showHudHeart;
+        private bool showHudHeart;
         internal bool ShowHudHeartConfigured { get; private set; }
 
         #endregion
@@ -5294,7 +5294,7 @@
                 ShowHintsConfigured = true;
             }
         }
-        bool showHints;
+        private bool showHints;
         internal bool ShowHintsConfigured { get; private set; }
 
         #endregion
@@ -5310,7 +5310,7 @@
                 ShowSpeedRunTimerConfigured = true;
             }
         }
-        bool showSpeedRunTimer;
+        private bool showSpeedRunTimer;
         internal bool ShowSpeedRunTimerConfigured { get; private set; }
 
         #endregion
@@ -5326,7 +5326,7 @@
                 ShownNocturnaIntroConfigured = true;
             }
         }
-        bool shownNocturnaIntro;
+        private bool shownNocturnaIntro;
         internal bool ShownNocturnaIntroConfigured { get; private set; }
 
         #endregion
@@ -5342,7 +5342,7 @@
                 ShownSeizureWarningConfigured = true;
             }
         }
-        bool shownSeizureWarning;
+        private bool shownSeizureWarning;
         internal bool ShownSeizureWarningConfigured { get; private set; }
 
         #endregion
@@ -5358,7 +5358,7 @@
                 SoundVolumeConfigured = true;
             }
         }
-        decimal soundVolume;
+        private decimal soundVolume;
         internal bool SoundVolumeConfigured { get; private set; }
 
         #endregion
@@ -5374,7 +5374,7 @@
                 SoundtrackName0Configured = true;
             }
         }
-        string soundtrackName0;
+        private string soundtrackName0;
         internal bool SoundtrackName0Configured { get; private set; }
 
         #endregion
@@ -5390,7 +5390,7 @@
                 SoundtrackName1Configured = true;
             }
         }
-        string soundtrackName1;
+        private string soundtrackName1;
         internal bool SoundtrackName1Configured { get; private set; }
 
         #endregion
@@ -5406,7 +5406,7 @@
                 SoundtrackName2Configured = true;
             }
         }
-        string soundtrackName2;
+        private string soundtrackName2;
         internal bool SoundtrackName2Configured { get; private set; }
 
         #endregion
@@ -5422,7 +5422,7 @@
                 SoundtrackName3Configured = true;
             }
         }
-        string soundtrackName3;
+        private string soundtrackName3;
         internal bool SoundtrackName3Configured { get; private set; }
 
         #endregion
@@ -5438,7 +5438,7 @@
                 SoundtrackName4Configured = true;
             }
         }
-        string soundtrackName4;
+        private string soundtrackName4;
         internal bool SoundtrackName4Configured { get; private set; }
 
         #endregion
@@ -5454,7 +5454,7 @@
                 SoundtrackName5Configured = true;
             }
         }
-        string soundtrackName5;
+        private string soundtrackName5;
         internal bool SoundtrackName5Configured { get; private set; }
 
         #endregion
@@ -5470,7 +5470,7 @@
                 SoundtrackName6Configured = true;
             }
         }
-        string soundtrackName6;
+        private string soundtrackName6;
         internal bool SoundtrackName6Configured { get; private set; }
 
         #endregion
@@ -5486,7 +5486,7 @@
                 SoundtrackName7Configured = true;
             }
         }
-        string soundtrackName7;
+        private string soundtrackName7;
         internal bool SoundtrackName7Configured { get; private set; }
 
         #endregion
@@ -5502,7 +5502,7 @@
                 SoundtrackName8Configured = true;
             }
         }
-        string soundtrackName8;
+        private string soundtrackName8;
         internal bool SoundtrackName8Configured { get; private set; }
 
         #endregion
@@ -5518,7 +5518,7 @@
                 SoundtrackName9Configured = true;
             }
         }
-        string soundtrackName9;
+        private string soundtrackName9;
         internal bool SoundtrackName9Configured { get; private set; }
 
         #endregion
@@ -5534,7 +5534,7 @@
                 SoundtrackName10Configured = true;
             }
         }
-        string soundtrackName10;
+        private string soundtrackName10;
         internal bool SoundtrackName10Configured { get; private set; }
 
         #endregion
@@ -5550,7 +5550,7 @@
                 SoundtrackName11Configured = true;
             }
         }
-        string soundtrackName11;
+        private string soundtrackName11;
         internal bool SoundtrackName11Configured { get; private set; }
 
         #endregion
@@ -5566,7 +5566,7 @@
                 TutorialCompleteConfigured = true;
             }
         }
-        bool tutorialComplete;
+        private bool tutorialComplete;
         internal bool TutorialCompleteConfigured { get; private set; }
 
         #endregion
@@ -5582,7 +5582,7 @@
                 UseChoralConfigured = true;
             }
         }
-        bool useChoral;
+        private bool useChoral;
         internal bool UseChoralConfigured { get; private set; }
 
         #endregion
@@ -5598,7 +5598,7 @@
                 VideoLatencyConfigured = true;
             }
         }
-        int videoLatency;
+        private int videoLatency;
         internal bool VideoLatencyConfigured { get; private set; }
 
         #endregion
@@ -5614,7 +5614,7 @@
                 ViewMultiplierConfigured = true;
             }
         }
-        int viewMultiplier;
+        private int viewMultiplier;
         internal bool ViewMultiplierConfigured { get; private set; }
 
         #endregion

@@ -13,7 +13,7 @@
                 BeastmasterConfigured = true;
             }
         }
-        bool beastmaster;
+        private bool beastmaster;
         internal bool BeastmasterConfigured { get; private set; }
 
         #endregion
@@ -29,7 +29,7 @@
                 BeastmasterVisitedConfigured = true;
             }
         }
-        bool beastmasterVisited;
+        private bool beastmasterVisited;
         internal bool BeastmasterVisitedConfigured { get; private set; }
 
         #endregion
@@ -45,7 +45,7 @@
                 BossmasterConfigured = true;
             }
         }
-        bool bossmaster;
+        private bool bossmaster;
         internal bool BossmasterConfigured { get; private set; }
 
         #endregion
@@ -61,7 +61,7 @@
                 BossmasterVisitedConfigured = true;
             }
         }
-        bool bossmasterVisited;
+        private bool bossmasterVisited;
         internal bool BossmasterVisitedConfigured { get; private set; }
 
         #endregion
@@ -77,7 +77,7 @@
                 DiamondDealerConfigured = true;
             }
         }
-        bool diamondDealer;
+        private bool diamondDealer;
         internal bool DiamondDealerConfigured { get; private set; }
 
         #endregion
@@ -93,7 +93,7 @@
                 DiamondDealerVisitedConfigured = true;
             }
         }
-        bool diamondDealerVisited;
+        private bool diamondDealerVisited;
         internal bool DiamondDealerVisitedConfigured { get; private set; }
 
         #endregion
@@ -109,7 +109,7 @@
                 HephaestusVisitedConfigured = true;
             }
         }
-        bool hephaestusVisited;
+        private bool hephaestusVisited;
         internal bool HephaestusVisitedConfigured { get; private set; }
 
         #endregion
@@ -125,7 +125,7 @@
                 JanitorVisitedConfigured = true;
             }
         }
-        bool janitorVisited;
+        private bool janitorVisited;
         internal bool JanitorVisitedConfigured { get; private set; }
 
         #endregion
@@ -141,7 +141,7 @@
                 MedicVisitedConfigured = true;
             }
         }
-        bool medicVisited;
+        private bool medicVisited;
         internal bool MedicVisitedConfigured { get; private set; }
 
         #endregion
@@ -157,7 +157,7 @@
                 MerlinConfigured = true;
             }
         }
-        bool merlin;
+        private bool merlin;
         internal bool MerlinConfigured { get; private set; }
 
         #endregion
@@ -173,7 +173,7 @@
                 MerlinVisitedConfigured = true;
             }
         }
-        bool merlinVisited;
+        private bool merlinVisited;
         internal bool MerlinVisitedConfigured { get; private set; }
 
         #endregion
@@ -189,7 +189,7 @@
                 TrainerVisitedConfigured = true;
             }
         }
-        bool trainerVisited;
+        private bool trainerVisited;
         internal bool TrainerVisitedConfigured { get; private set; }
 
         #endregion
@@ -205,7 +205,7 @@
                 WeaponmasterConfigured = true;
             }
         }
-        bool weaponmaster;
+        private bool weaponmaster;
         internal bool WeaponmasterConfigured { get; private set; }
 
         #endregion
@@ -221,7 +221,7 @@
                 WeaponmasterVisitedConfigured = true;
             }
         }
-        bool weaponmasterVisited;
+        private bool weaponmasterVisited;
         internal bool WeaponmasterVisitedConfigured { get; private set; }
 
         #endregion

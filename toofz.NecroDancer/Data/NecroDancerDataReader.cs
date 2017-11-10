@@ -9,11 +9,11 @@ using log4net;
 
 namespace toofz.NecroDancer.Data
 {
-    sealed class NecroDancerDataReader
+    internal sealed class NecroDancerDataReader
     {
         #region Static Members
 
-        static readonly ILog Log = LogManager.GetLogger(typeof(NecroDancerDataReader));
+        private static readonly ILog Log = LogManager.GetLogger(typeof(NecroDancerDataReader));
 
         internal static bool ReadBooleanLike(string content)
         {
@@ -54,8 +54,8 @@ namespace toofz.NecroDancer.Data
             this.log = log;
         }
 
-        readonly Stream stream;
-        readonly ILog log;
+        private readonly Stream stream;
+        private readonly ILog log;
 
         public NecroDancerData Read()
         {
@@ -65,7 +65,7 @@ namespace toofz.NecroDancer.Data
             return ReadNecroDancerData(necrodancerEl);
         }
 
-        NecroDancerData ReadNecroDancerData(XElement necrodancerEl)
+        private NecroDancerData ReadNecroDancerData(XElement necrodancerEl)
         {
             var necroDancerData = new NecroDancerData();
 
@@ -97,7 +97,7 @@ namespace toofz.NecroDancer.Data
             return necroDancerData;
         }
 
-        IEnumerable<Item> ReadItems(XElement itemsEl)
+        private IEnumerable<Item> ReadItems(XElement itemsEl)
         {
             var items = new List<Item>();
 
@@ -110,7 +110,7 @@ namespace toofz.NecroDancer.Data
             return items;
         }
 
-        Item ReadItem(XElement itemEl)
+        private Item ReadItem(XElement itemEl)
         {
             var item = new Item(
                 name: itemEl.Name.ToString(),
@@ -231,7 +231,7 @@ namespace toofz.NecroDancer.Data
             }
         }
 
-        IEnumerable<Enemy> ReadEnemies(XElement enemiesEl)
+        private IEnumerable<Enemy> ReadEnemies(XElement enemiesEl)
         {
             var enemies = new List<Enemy>();
 
@@ -244,7 +244,7 @@ namespace toofz.NecroDancer.Data
             return enemies;
         }
 
-        Enemy ReadEnemy(XElement enemyEl)
+        private Enemy ReadEnemy(XElement enemyEl)
         {
             var enemy = new Enemy(
                 name: enemyEl.Name.ToString(),
@@ -321,7 +321,7 @@ namespace toofz.NecroDancer.Data
             }
         }
 
-        SpriteSheet ReadSpriteSheet(XElement spritesheetEl)
+        private SpriteSheet ReadSpriteSheet(XElement spritesheetEl)
         {
             var spriteSheet = new SpriteSheet(spritesheetEl.Value);
 
@@ -348,7 +348,7 @@ namespace toofz.NecroDancer.Data
             return spriteSheet;
         }
 
-        Frame ReadFrame(XElement frameEl)
+        private Frame ReadFrame(XElement frameEl)
         {
             var frame = new Frame();
 
@@ -370,7 +370,7 @@ namespace toofz.NecroDancer.Data
             return frame;
         }
 
-        Shadow ReadShadow(XElement shadowEl)
+        private Shadow ReadShadow(XElement shadowEl)
         {
             var shadow = new Shadow(shadowEl.Value);
 
@@ -388,7 +388,7 @@ namespace toofz.NecroDancer.Data
             return shadow;
         }
 
-        Stats ReadStats(XElement statsEl)
+        private Stats ReadStats(XElement statsEl)
         {
             var stats = new Stats();
 
@@ -410,7 +410,7 @@ namespace toofz.NecroDancer.Data
             return stats;
         }
 
-        Particle ReadParticle(XElement particleEl)
+        private Particle ReadParticle(XElement particleEl)
         {
             var particle = new Particle();
 
@@ -427,7 +427,7 @@ namespace toofz.NecroDancer.Data
             return particle;
         }
 
-        OptionalStats ReadOptionalStats(XElement optionalStatsEl)
+        private OptionalStats ReadOptionalStats(XElement optionalStatsEl)
         {
             var optionalStats = new OptionalStats();
 
@@ -451,7 +451,7 @@ namespace toofz.NecroDancer.Data
             return optionalStats;
         }
 
-        Bouncer ReadBouncer(XElement bouncerEl)
+        private Bouncer ReadBouncer(XElement bouncerEl)
         {
             var bouncer = new Bouncer();
 
@@ -471,7 +471,7 @@ namespace toofz.NecroDancer.Data
             return bouncer;
         }
 
-        Tweens ReadTweens(XElement tweensEl)
+        private Tweens ReadTweens(XElement tweensEl)
         {
             var tweens = new Tweens();
 
@@ -491,7 +491,7 @@ namespace toofz.NecroDancer.Data
             return tweens;
         }
 
-        IEnumerable<Character> ReadCharacters(XElement charactersEl, IEnumerable<Item> items)
+        private IEnumerable<Character> ReadCharacters(XElement charactersEl, IEnumerable<Item> items)
         {
             var characters = new List<Character>();
 
@@ -504,7 +504,7 @@ namespace toofz.NecroDancer.Data
             return characters;
         }
 
-        Character ReadCharacter(XElement characterEl, IEnumerable<Item> items)
+        private Character ReadCharacter(XElement characterEl, IEnumerable<Item> items)
         {
             var character = new Character(int.Parse(characterEl.Attribute("id").Value));
 
@@ -549,7 +549,7 @@ namespace toofz.NecroDancer.Data
             return character;
         }
 
-        Item ReadInitialEquipmentItem(XElement itemEl, IEnumerable<Item> items)
+        private Item ReadInitialEquipmentItem(XElement itemEl, IEnumerable<Item> items)
         {
             // Items must be parsed already.
             var type = itemEl.Attribute("type").Value;
@@ -568,7 +568,7 @@ namespace toofz.NecroDancer.Data
             return item;
         }
 
-        CursedSlot ReadCursedSlot(XElement cursedEl)
+        private CursedSlot ReadCursedSlot(XElement cursedEl)
         {
             var cursedSlot = new CursedSlot(cursedEl.Attribute("slot").Value);
 
@@ -585,7 +585,7 @@ namespace toofz.NecroDancer.Data
             return cursedSlot;
         }
 
-        IEnumerable<IMode> ReadModes(XElement modesEl)
+        private IEnumerable<IMode> ReadModes(XElement modesEl)
         {
             var modes = new List<IMode>();
 
@@ -605,7 +605,7 @@ namespace toofz.NecroDancer.Data
             return modes;
         }
 
-        HardMode ReadHardMode(XElement hardEl)
+        private HardMode ReadHardMode(XElement hardEl)
         {
             var hardMode = new HardMode();
 

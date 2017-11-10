@@ -8,16 +8,14 @@ namespace toofz.NecroDancer.Data
     public sealed class Enemy
     {
         // Required for Entity Framework
-        Enemy() { }
+        private Enemy() { }
 
         public Enemy(string name, int type) : this()
         {
-            if (name == null)
-                throw new ArgumentNullException(nameof(name));
             if (type < 1)
                 throw new ArgumentOutOfRangeException(nameof(type));
 
-            Name = name;
+            Name = name ?? throw new ArgumentNullException(nameof(name));
             Type = type;
         }
 

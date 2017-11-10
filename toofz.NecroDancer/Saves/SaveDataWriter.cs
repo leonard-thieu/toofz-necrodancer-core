@@ -5,14 +5,14 @@ using System.Xml.Linq;
 
 namespace toofz.NecroDancer.Saves
 {
-    sealed class SaveDataWriter
+    internal sealed class SaveDataWriter
     {
-        static XAttribute CreateAttributeForDecimal(string name, decimal value)
+        private static XAttribute CreateAttributeForDecimal(string name, decimal value)
         {
             return new XAttribute(name, value.ToString("0.0#################"));
         }
 
-        static XAttribute CreateAttributeForBooleanLike(string name, bool value)
+        private static XAttribute CreateAttributeForBooleanLike(string name, bool value)
         {
             return new XAttribute(name, value ? 1 : 0);
         }
@@ -22,7 +22,7 @@ namespace toofz.NecroDancer.Saves
             this.stream = stream ?? throw new ArgumentNullException(nameof(stream));
         }
 
-        readonly Stream stream;
+        private readonly Stream stream;
 
         public void Write(SaveData saveData)
         {
@@ -44,7 +44,7 @@ namespace toofz.NecroDancer.Saves
             }
         }
 
-        static XElement WriteSaveData(SaveData saveData)
+        private static XElement WriteSaveData(SaveData saveData)
         {
             var necrodancerEl = new XElement("necrodancer");
 
@@ -62,7 +62,7 @@ namespace toofz.NecroDancer.Saves
             return necrodancerEl;
         }
 
-        static XElement WritePlayer(Player player)
+        private static XElement WritePlayer(Player player)
         {
             var playerEl = new XElement("player");
 
@@ -218,7 +218,7 @@ namespace toofz.NecroDancer.Saves
             return playerEl;
         }
 
-        static XElement WriteGame(Game game)
+        private static XElement WriteGame(Game game)
         {
             var gameEl = new XElement("game");
 
@@ -577,7 +577,7 @@ namespace toofz.NecroDancer.Saves
             return gameEl;
         }
 
-        static XElement WriteNpc(Npc npc)
+        private static XElement WriteNpc(Npc npc)
         {
             var npcEl = new XElement("npc");
 
@@ -599,63 +599,40 @@ namespace toofz.NecroDancer.Saves
             return npcEl;
         }
 
-        sealed class SaveDataXmlWriter : XmlWriter
+        private sealed class SaveDataXmlWriter : XmlWriter
         {
-            const string InvalidXmlDeclaration = "<?xml?>";
+            private const string InvalidXmlDeclaration = "<?xml?>";
 
             public SaveDataXmlWriter(XmlWriter writer)
             {
                 this.writer = writer;
             }
 
-            readonly XmlWriter writer;
+            private readonly XmlWriter writer;
 
             public override WriteState WriteState => writer.WriteState;
-
             public override void WriteStartDocument() => writer.WriteRaw(InvalidXmlDeclaration);
-
             public override void WriteStartDocument(bool standalone) => writer.WriteStartDocument(standalone);
-
             public override void WriteEndDocument() => writer.WriteEndDocument();
-
             public override void WriteDocType(string name, string pubid, string sysid, string subset) => writer.WriteDocType(name, pubid, sysid, subset);
-
             public override void WriteStartElement(string prefix, string localName, string ns) => writer.WriteStartElement(prefix, localName, ns);
-
             public override void WriteEndElement() => writer.WriteFullEndElement();
-
             public override void WriteFullEndElement() => writer.WriteFullEndElement();
-
             public override void WriteStartAttribute(string prefix, string localName, string ns) => writer.WriteStartAttribute(prefix, localName, ns);
-
             public override void WriteEndAttribute() => writer.WriteEndAttribute();
-
             public override void WriteCData(string text) => writer.WriteCData(text);
-
             public override void WriteComment(string text) => writer.WriteComment(text);
-
             public override void WriteProcessingInstruction(string name, string text) => writer.WriteProcessingInstruction(name, text);
-
             public override void WriteEntityRef(string name) => writer.WriteEntityRef(name);
-
             public override void WriteCharEntity(char ch) => writer.WriteCharEntity(ch);
-
             public override void WriteWhitespace(string ws) => writer.WriteWhitespace(ws);
-
             public override void WriteString(string text) => writer.WriteString(text);
-
             public override void WriteSurrogateCharEntity(char lowChar, char highChar) => writer.WriteSurrogateCharEntity(lowChar, highChar);
-
             public override void WriteChars(char[] buffer, int index, int count) => writer.WriteChars(buffer, index, count);
-
             public override void WriteRaw(char[] buffer, int index, int count) => writer.WriteRaw(buffer, index, count);
-
             public override void WriteRaw(string data) => writer.WriteRaw(data);
-
             public override void WriteBase64(byte[] buffer, int index, int count) => writer.WriteBase64(buffer, index, count);
-
             public override void Flush() => writer.Flush();
-
             public override string LookupPrefix(string ns) => writer.LookupPrefix(ns);
         }
     }

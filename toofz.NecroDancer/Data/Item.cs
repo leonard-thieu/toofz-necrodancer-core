@@ -8,17 +8,12 @@ namespace toofz.NecroDancer.Data
     public sealed class Item
     {
         // Required for Entity Framework
-        Item() { }
+        private Item() { }
 
         public Item(string name, string imagePath) : this()
         {
-            if (name == null)
-                throw new ArgumentNullException(nameof(name));
-            if (imagePath == null)
-                throw new ArgumentNullException(nameof(imagePath));
-
-            Name = name;
-            ImagePath = imagePath;
+            Name = name ?? throw new ArgumentNullException(nameof(name));
+            ImagePath = imagePath ?? throw new ArgumentNullException(nameof(imagePath));
         }
 
         public string Name { get; private set; }
