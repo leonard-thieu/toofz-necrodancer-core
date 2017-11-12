@@ -5,7 +5,7 @@ using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
 using Humanizer;
-using log4net;
+using toofz.NecroDancer.Logging;
 
 namespace toofz.NecroDancer.Data
 {
@@ -13,7 +13,7 @@ namespace toofz.NecroDancer.Data
     {
         #region Static Members
 
-        private static readonly ILog Log = LogManager.GetLogger(typeof(NecroDancerDataReader));
+        private static readonly ILog Log = LogProvider.GetLogger(typeof(NecroDancerDataReader));
 
         internal static bool ReadBooleanLike(string content)
         {
