@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.1</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <PackageVersion>5.1.0</PackageVersion>
+    <PackageVersion>5.0.2</PackageVersion>
     <Authors>Leonard Thieu</Authors>
     <Title>toofz NecroDancer Core</Title>
     <Description>Provides types for working with Crypt of the NecroDancer game data.</Description>
