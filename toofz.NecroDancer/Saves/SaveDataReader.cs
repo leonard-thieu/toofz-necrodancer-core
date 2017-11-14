@@ -3,13 +3,13 @@ using System.IO;
 using System.Text;
 using System.Xml;
 using System.Xml.Linq;
-using toofz.NecroDancer.Logging;
+using log4net;
 
 namespace toofz.NecroDancer.Saves
 {
     internal sealed class SaveDataReader
     {
-        private static readonly ILog Log = LogProvider.GetLogger(typeof(SaveData));
+        private static readonly ILog Log = LogManager.GetLogger(typeof(SaveData));
 
         private const string InvalidXmlDeclaration = "<?xml?>";
 
