@@ -3,6 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <PackageVersion>5.0.2</PackageVersion>
     <Authors>Leonard Thieu</Authors>
     <Title>toofz NecroDancer Core</Title>
@@ -16,14 +20,9 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <LangVersion>latest</LangVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
     <DocumentationFile>bin\Release\netstandard1.3\toofz.NecroDancer.xml</DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
