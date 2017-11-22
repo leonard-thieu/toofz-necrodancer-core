@@ -65,6 +65,8 @@ using (var fs = File.OpenRead(replayPath))
 
 ### [Saves API](toofz.NecroDancer/Saves)
 
+Reading a save:
+
 ```csharp
 using (var fs = File.OpenRead(saveDataPath))
 {
