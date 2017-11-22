@@ -8,10 +8,13 @@
 
 **toofz NecroDancer Core** is a .NET library designed for parsing and editing **Crypt of the NecroDancer** files. 
 The library supports `necrodancer.xml`, replays, and saves.
-
-**toofz NecroDancer Core** is a component of [toofz](https://github.com/leonard-thieu/toofz-necrodancer).
 It powers the **Item** and **Enemy** sections of **toofz** through data mining. 
 It also provides richer leaderboard entry data by parsing replays associated with entries.
+
+---
+
+**toofz NecroDancer Core** is a component of **toofz**. 
+Information about other projects that support **toofz** can be found in the [meta-repository](https://github.com/leonard-thieu/toofz-necrodancer).
 
 ### Dependents
 
@@ -25,6 +28,10 @@ It also provides richer leaderboard entry data by parsing replays associated wit
   * .NET Core 1.0
   * .NET Framework 4.6
   * Mono 4.6
+
+## Building and testing
+
+Visual Studio 2017 (version 15.3 or later) can be used to build and run tests.
 
 ## Usage
 
