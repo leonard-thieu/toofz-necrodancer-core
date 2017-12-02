@@ -5,6 +5,7 @@ branches:
   only:
     - master
 configuration:
+  - Coverage
   - Release
 environment:
   PROJECT: toofz.NecroDancer
@@ -19,6 +20,8 @@ assembly_info:
   file: AssemblyInfo.cs
   assembly_version: $(appveyor_build_version)
 
+init:
+  - git config --global core.autocrlf input
 install:
   - nuget update -Self
   - git clone https://github.com/leonard-thieu/toofz-build.git Scripts
@@ -28,11 +31,20 @@ before_build:
 build:
   project: $(PROJECT).sln
   verbosity: minimal
-
+  
 test_script:
-  - ps: .\Scripts\Test-Project.ps1
+  - ps: |
+      if ($env:CONFIGURATION -eq 'Coverage') {
+        .\Scripts\Test-Project.ps1
+      }
 after_test:
-  - ps: .\Scripts\Submit-CodeCoverageResults.ps1
+  - ps: |
+      if ($env:CONFIGURATION -eq 'Coverage') {
+        .\Scripts\Submit-CodeCoverageResults.ps1
+      }
 
 deploy_script:
-  - ps: .\Scripts\Deploy-NuGetPackage.ps1
+  - ps: |
+      if ($env:CONFIGURATION -eq 'Release') {
+        .\Scripts\Deploy-NuGetPackage.ps1
+      }
