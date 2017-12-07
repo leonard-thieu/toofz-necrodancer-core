@@ -4,7 +4,6 @@
     <TargetFramework>netstandard1.3</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <LangVersion>latest</LangVersion>
-    <Configurations>Debug;Release;Coverage</Configurations>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -22,18 +21,17 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard1.3\toofz.NecroDancer.xml</DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Coverage|AnyCPU'">
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
+    <DocumentationFile>bin\Release\netstandard1.3\toofz.NecroDancer.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Humanizer.Core" Version="2.2.0" />
     <PackageReference Include="log4net" Version="2.0.8" />
-    <PackageReference Include="SourceLink.Create.CommandLine" Version="2.6.0" PrivateAssets="All" Condition="'$(Configuration)'!='Coverage'" />
+    <PackageReference Include="SourceLink.Create.CommandLine" Version="2.6.0">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

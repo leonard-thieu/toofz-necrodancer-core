@@ -5,7 +5,6 @@ branches:
   only:
     - master
 configuration:
-  - Coverage
   - Release
 environment:
   PROJECT: toofz.NecroDancer
@@ -33,18 +32,9 @@ build:
   verbosity: minimal
   
 test_script:
-  - ps: |
-      if ($env:CONFIGURATION -eq 'Coverage') {
-        .\Scripts\Test-Project.ps1
-      }
+  - ps: .\Scripts\Test-Project.ps1
 after_test:
-  - ps: |
-      if ($env:CONFIGURATION -eq 'Coverage') {
-        .\Scripts\Submit-CodeCoverageResults.ps1
-      }
+  - ps: .\Scripts\Submit-CodeCoverageResults.ps1
 
 deploy_script:
-  - ps: |
-      if ($env:CONFIGURATION -eq 'Release') {
-        .\Scripts\Deploy-NuGetPackage.ps1
-      }
+  - ps: .\Scripts\Deploy-NuGetPackage.ps1
