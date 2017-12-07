@@ -18,7 +18,7 @@ Information about other projects that support **toofz** can be found in the [met
 
 ### Dependents
 
-* [toofz NecroDancer Core (Data)](https://github.com/leonard-thieu/toofz-necrodancer-core-data)
+* [toofz Data](https://github.com/leonard-thieu/toofz-data)
 * [toofz Replays Service](https://github.com/leonard-thieu/replays-service)
 * [toofz API](https://github.com/leonard-thieu/api.toofz.com)
 
