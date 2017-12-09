@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>
+      $(AllowedOutputExtensionsInPackageBuildOutputFolder);
+      .pdb;
+      .xml
+    </AllowedOutputExtensionsInPackageBuildOutputFolder>
     <PackageVersion>5.0.4</PackageVersion>
     <Authors>Leonard Thieu</Authors>
     <Title>toofz NecroDancer Core</Title>
