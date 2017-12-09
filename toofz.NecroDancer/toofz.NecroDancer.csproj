@@ -12,7 +12,7 @@
       .pdb;
       .xml
     </AllowedOutputExtensionsInPackageBuildOutputFolder>
-    <PackageVersion>5.0.4</PackageVersion>
+    <PackageVersion>5.0.5</PackageVersion>
     <Authors>Leonard Thieu</Authors>
     <Title>toofz NecroDancer Core</Title>
     <Description>Provides types for working with Crypt of the NecroDancer game data.</Description>
