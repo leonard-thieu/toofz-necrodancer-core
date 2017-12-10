@@ -7,8 +7,8 @@ namespace toofz.NecroDancer.Tests.Replays
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(Move))]
+            public void ReturnsMove()
             {
                 // Arrange -> Act
                 var move = new Move();
@@ -20,8 +20,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class BeatProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Move.Beat))]
+            public void GetsAndSetsBeat()
             {
                 // Arrange
                 var move = new Move();
@@ -38,8 +38,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class IdProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Move.Id))]
+            public void GetsAndSetsId()
             {
                 // Arrange
                 var move = new Move();

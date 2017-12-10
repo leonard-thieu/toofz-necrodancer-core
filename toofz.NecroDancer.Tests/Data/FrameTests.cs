@@ -7,8 +7,8 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(Frame))]
+            public void ReturnsFrame()
             {
                 // Arrange -> Act
                 var frame = new Frame();
@@ -20,8 +20,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class InSheetProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Frame.InSheet))]
+            public void GetsAndSetsInSheet()
             {
                 // Arrange
                 var frame = new Frame();
@@ -38,8 +38,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class InAnimProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Frame.InAnim))]
+            public void GetsAndSetsInAnim()
             {
                 // Arrange
                 var frame = new Frame();
@@ -56,8 +56,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class AnimTypeProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Frame.AnimType))]
+            public void GetsAndSetsAnimType()
             {
                 // Arrange
                 var frame = new Frame();
@@ -74,8 +74,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class OnFractionProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Frame.OnFraction))]
+            public void GetsAndSetsOnFraction()
             {
                 // Arrange
                 var frame = new Frame();
@@ -90,10 +90,10 @@ namespace toofz.NecroDancer.Tests.Data
             }
         }
 
-        public class OffFractioffProperty
+        public class OffFractionProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Frame.OffFraction))]
+            public void GetsAndSetsOffFraction()
             {
                 // Arrange
                 var frame = new Frame();
@@ -110,8 +110,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class SingleFrameProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Frame.SingleFrame))]
+            public void GetsAndSetsSingleFrame()
             {
                 // Arrange
                 var frame = new Frame();

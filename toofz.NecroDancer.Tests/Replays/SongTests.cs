@@ -8,8 +8,8 @@ namespace toofz.NecroDancer.Tests.Replays
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(Song))]
+            public void ReturnsSong()
             {
                 // Arrange -> Song
                 var song = new Song();
@@ -21,8 +21,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class SeedProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Song.Seed))]
+            public void GetsAndSetsSeed()
             {
                 // Arrange
                 var song = new Song();
@@ -39,8 +39,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class Unknown0Property
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Song.Unknown0))]
+            public void GetsAndSetsUnknown0()
             {
                 // Arrange
                 var song = new Song();
@@ -57,8 +57,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class Unknown1Property
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Song.Unknown1))]
+            public void GetsAndSetsUnknown1()
             {
                 // Arrange
                 var song = new Song();
@@ -75,8 +75,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class BeatCountProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Song.BeatCount))]
+            public void GetsAndSetsBeatCount()
             {
                 // Arrange
                 var song = new Song();
@@ -93,8 +93,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class PlayersProperty
         {
-            [Fact]
-            public void ReturnsPlayers()
+            [DisplayFact(nameof(Song.Players))]
+            public void GetsPlayers()
             {
                 // Arrange
                 var song = new Song();
@@ -109,8 +109,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class RandomMovesProperty
         {
-            [Fact]
-            public void ReturnsRandomMoves()
+            [DisplayFact(nameof(Song.RandomMoves))]
+            public void GetsRandomMoves()
             {
                 // Arrange
                 var song = new Song();
@@ -125,8 +125,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class ItemRollsProperty
         {
-            [Fact]
-            public void ReturnsItemRolls()
+            [DisplayFact(nameof(Song.ItemRolls))]
+            public void GetsItemRolls()
             {
                 // Arrange
                 var song = new Song();

@@ -8,7 +8,7 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class Constructor
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void PathIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -21,8 +21,8 @@ namespace toofz.NecroDancer.Tests.Data
                 });
             }
 
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(Shadow))]
+            public void ReturnsShadow()
             {
                 // Arrange
                 var path = "myPath";
@@ -34,7 +34,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.IsAssignableFrom<Shadow>(shadow);
             }
 
-            [Fact]
+            [DisplayFact(nameof(Shadow.Path))]
             public void SetsPath()
             {
                 // Arrange
@@ -51,8 +51,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class OffsetXProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Shadow.OffsetX))]
+            public void GetsAndSetsOffsetX()
             {
                 // Arrange
                 var path = "myPath";
@@ -70,8 +70,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class OffsetYProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Shadow.OffsetY))]
+            public void GetsAndSetsOffsetY()
             {
                 // Arrange
                 var path = "myPath";

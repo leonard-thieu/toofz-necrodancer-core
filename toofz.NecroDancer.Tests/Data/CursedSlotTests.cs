@@ -8,7 +8,7 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class Constructor
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void SlotIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -21,8 +21,8 @@ namespace toofz.NecroDancer.Tests.Data
                 });
             }
 
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(CursedSlot))]
+            public void ReturnsCursedSlot()
             {
                 // Arrange
                 var slot = "mySlot";
@@ -34,7 +34,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.IsAssignableFrom<CursedSlot>(cursedSlot);
             }
 
-            [Fact]
+            [DisplayFact(nameof(CursedSlot.Slot))]
             public void SetsSlot()
             {
                 // Arrange

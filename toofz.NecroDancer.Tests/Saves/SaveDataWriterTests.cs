@@ -11,7 +11,7 @@ namespace toofz.NecroDancer.Tests.Saves
     {
         public class Constructor
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -24,8 +24,8 @@ namespace toofz.NecroDancer.Tests.Saves
                 });
             }
 
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(SaveDataWriter))]
+            public void ReturnsSaveDataWriter()
             {
                 // Arrange
                 var stream = Stream.Null;
@@ -40,7 +40,7 @@ namespace toofz.NecroDancer.Tests.Saves
 
         public class WriteMethod
         {
-            [Fact]
+            [DisplayFact(nameof(SaveData), nameof(ArgumentNullException))]
             public void SaveDataIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -55,7 +55,7 @@ namespace toofz.NecroDancer.Tests.Saves
                 });
             }
 
-            [Fact]
+            [DisplayFact(nameof(SaveData))]
             public void WritesSaveData()
             {
                 // Arrange

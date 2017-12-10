@@ -8,8 +8,8 @@ namespace toofz.NecroDancer.Tests.Replays
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(Player))]
+            public void ReturnsPlayer()
             {
                 // Arrange -> Act
                 var player = new Player();
@@ -21,8 +21,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class CharacterProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Player.Character))]
+            public void GetsAndSetsCharacter()
             {
                 // Arrange
                 var player = new Player();
@@ -39,8 +39,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class MovesProperty
         {
-            [Fact]
-            public void ReturnsMoves()
+            [DisplayFact(nameof(Player.Moves))]
+            public void GetsMoves()
             {
                 // Arrange
                 var player = new Player();
@@ -55,8 +55,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class MissedBeatsProperty
         {
-            [Fact]
-            public void ReturnsMissedBeats()
+            [DisplayFact(nameof(Player.MissedBeats))]
+            public void GetsMissedBeats()
             {
                 // Arrange
                 var player = new Player();

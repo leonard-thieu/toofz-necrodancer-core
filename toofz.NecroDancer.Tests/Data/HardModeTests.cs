@@ -7,8 +7,8 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(HardMode))]
+            public void ReturnsHardMode()
             {
                 // Arrange -> Act
                 var hardMode = new HardMode();

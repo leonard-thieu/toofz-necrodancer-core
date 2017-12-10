@@ -11,8 +11,8 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(NecroDancerDataSerializer))]
+            public void ReturnsNecroDancerDataSerializer()
             {
                 // Arrange -> Act
                 var serializer = new NecroDancerDataSerializer();
@@ -24,7 +24,7 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class DeserializeMethod
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -38,7 +38,7 @@ namespace toofz.NecroDancer.Tests.Data
                 });
             }
 
-            [Fact]
+            [DisplayFact(nameof(NecroDancerData))]
             public void ReturnsNecroDancerData()
             {
                 // Arrange
@@ -55,7 +55,7 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class SerializeMethod
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -70,7 +70,7 @@ namespace toofz.NecroDancer.Tests.Data
                 });
             }
 
-            [Fact]
+            [DisplayFact("NecroDancerData", nameof(ArgumentNullException))]
             public void NecroDancerDataIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -85,7 +85,7 @@ namespace toofz.NecroDancer.Tests.Data
                 });
             }
 
-            [Fact]
+            [DisplayFact("NecroDancerData")]
             public void SerializesNecroDancerData()
             {
                 // Arrange

@@ -8,7 +8,7 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class Constructor_String
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void TextIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -21,8 +21,8 @@ namespace toofz.NecroDancer.Tests.Data
                 });
             }
 
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(DisplayString))]
+            public void ReturnsDisplayString()
             {
                 // Arrange
                 var text = "myText";
@@ -34,7 +34,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.IsAssignableFrom<DisplayString>(displayString);
             }
 
-            [Fact]
+            [DisplayFact(nameof(DisplayString.Text))]
             public void SetsText()
             {
                 // Arrange
@@ -51,8 +51,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class Constructor_Int_String
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(DisplayString))]
+            public void ReturnsDisplayString()
             {
                 // Arrange
                 var id = 10;
@@ -65,7 +65,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.IsAssignableFrom<DisplayString>(displayString);
             }
 
-            [Fact]
+            [DisplayFact(nameof(DisplayString.Id))]
             public void SetsId()
             {
                 // Arrange

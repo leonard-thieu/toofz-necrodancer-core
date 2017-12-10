@@ -12,7 +12,7 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class CreateAttributeMethod
         {
-            [Fact]
+            [DisplayFact(nameof(XAttribute), nameof(XAttribute.Value))]
             public void IdIsNull_ReturnsXAttributeWithValueSetToText()
             {
                 // Arrange
@@ -29,7 +29,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.Equal(text, attr.Value);
             }
 
-            [Fact]
+            [DisplayFact(nameof(XAttribute), nameof(XAttribute.Value))]
             public void IdIsNotNull_ReturnsXAttributeWithValueSetToText()
             {
                 // Arrange
@@ -49,7 +49,7 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class Constructor
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -62,8 +62,8 @@ namespace toofz.NecroDancer.Tests.Data
                 });
             }
 
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(NecroDancerDataWriter))]
+            public void ReturnsNecroDancerDataWriter()
             {
                 // Arrange
                 var stream = Stream.Null;
@@ -78,7 +78,7 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class WriteMethod
         {
-            [Fact]
+            [DisplayFact(nameof(NecroDancerData), nameof(ArgumentNullException))]
             public void NecroDancerDataIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -93,9 +93,8 @@ namespace toofz.NecroDancer.Tests.Data
                 });
             }
 
-            [Fact]
-            [Trait("Category", "Compares against baseline")]
-            public void MatchesBaseline()
+            [DisplayFact(nameof(NecroDancerData))]
+            public void MatchesNecroDancerDataBaseline()
             {
                 // Arrange
                 var writeStream = new MemoryStream();

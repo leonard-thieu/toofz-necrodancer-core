@@ -7,8 +7,8 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(Stats))]
+            public void ReturnsStats()
             {
                 // Arrange -> Act
                 var stats = new Stats();
@@ -20,8 +20,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class BeatsPerMoveProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Stats.BeatsPerMove))]
+            public void GetsAndSetsBeatsPerMove()
             {
                 // Arrange
                 var stats = new Stats();
@@ -38,8 +38,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class CoinsToDropProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Stats.CoinsToDrop))]
+            public void GetsAndSetsCoinsToDrop()
             {
                 // Arrange
                 var stats = new Stats();
@@ -56,8 +56,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class DamagePerHitProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Stats.DamagePerHit))]
+            public void GetsAndSetsDamagePerHit()
             {
                 // Arrange
                 var stats = new Stats();
@@ -74,8 +74,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class HealthProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Stats.Health))]
+            public void GetsAndSetsHealth()
             {
                 // Arrange
                 var stats = new Stats();
@@ -92,8 +92,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class MovementProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Stats.Movement))]
+            public void GetsAndSetsMovement()
             {
                 // Arrange
                 var stats = new Stats();
@@ -110,8 +110,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class PriorityProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Stats.Priority))]
+            public void GetsAndSetsPriority()
             {
                 // Arrange
                 var stats = new Stats();

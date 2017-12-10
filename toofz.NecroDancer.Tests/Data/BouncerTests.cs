@@ -7,8 +7,8 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(Bouncer))]
+            public void ReturnsBouncer()
             {
                 // Arrange -> Act
                 var bouncer = new Bouncer();
@@ -20,8 +20,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class MinProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Bouncer.Min))]
+            public void GetsAndSetsMin()
             {
                 // Arrange
                 var bouncer = new Bouncer();
@@ -38,8 +38,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class MaxProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Bouncer.Max))]
+            public void GetsAndSetsMax()
             {
                 // Arrange
                 var bouncer = new Bouncer();
@@ -56,8 +56,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class PowerProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Bouncer.Power))]
+            public void GetsAndSetsPower()
             {
                 // Arrange
                 var bouncer = new Bouncer();
@@ -74,8 +74,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class StepsProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Bouncer.Steps))]
+            public void GetsAndSetsSteps()
             {
                 // Arrange
                 var bouncer = new Bouncer();

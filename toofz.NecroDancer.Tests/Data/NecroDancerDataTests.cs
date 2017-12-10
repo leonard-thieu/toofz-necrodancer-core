@@ -8,8 +8,8 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(NecroDancerData))]
+            public void ReturnsNecroDancerData()
             {
                 // Arrange -> Act
                 var necroDancerData = new NecroDancerData();
@@ -21,8 +21,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class ItemsProperty
         {
-            [Fact]
-            public void ReturnsItems()
+            [DisplayFact(nameof(NecroDancerData.Items))]
+            public void GetsItems()
             {
                 // Arrange
                 var necroDancerData = new NecroDancerData();
@@ -37,8 +37,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class EnemiesProperty
         {
-            [Fact]
-            public void ReturnsEnemies()
+            [DisplayFact(nameof(NecroDancerData.Enemies))]
+            public void GetsEnemies()
             {
                 // Arrange
                 var necroDancerData = new NecroDancerData();
@@ -53,8 +53,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class CharactersProperty
         {
-            [Fact]
-            public void ReturnsCharacters()
+            [DisplayFact(nameof(NecroDancerData.Characters))]
+            public void GetsCharacters()
             {
                 // Arrange
                 var necroDancerData = new NecroDancerData();
@@ -69,8 +69,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class ModesProperty
         {
-            [Fact]
-            public void ReturnsModes()
+            [DisplayFact(nameof(NecroDancerData.Modes))]
+            public void GetsModes()
             {
                 // Arrange
                 var necroDancerData = new NecroDancerData();

@@ -11,7 +11,7 @@ namespace toofz.NecroDancer.Tests.Replays
     {
         public class Cosntructor
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -24,8 +24,8 @@ namespace toofz.NecroDancer.Tests.Replays
                 });
             }
 
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(ReplayDataStreamReader))]
+            public void ReturnsReplayDataStreamReader()
             {
                 // Arrange
                 var stream = Stream.Null;
@@ -40,7 +40,7 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class ReadReplayDataMethod
         {
-            [Fact]
+            [DisplayFact(nameof(ReplayData))]
             public void ClassicReplayData_ReturnsReplayData()
             {
                 // Arrange
@@ -58,7 +58,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 Assert.Equal(expected, Encoding.UTF8.GetBytes(Resources.ClassicReplayData));
             }
 
-            [Fact]
+            [DisplayFact(nameof(ReplayData))]
             public void AmplifiedReplayData_ReturnsReplayData()
             {
                 // Arrange
@@ -76,7 +76,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 Assert.Equal(expected, Encoding.UTF8.GetBytes(Resources.AmplifiedReplayData));
             }
 
-            [Fact]
+            [DisplayFact(nameof(ReplayData))]
             public void RemoteReplayData_ReturnsReplayData()
             {
                 // Arrange
@@ -94,7 +94,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 Assert.Equal(expected, Encoding.UTF8.GetBytes(Resources.RemoteReplayData));
             }
 
-            [Fact(Skip = "Should empty replays be parsable?")]
+            [DisplayFact(nameof(ReplayData), Skip = "Should empty replays be parsable?")]
             public void EmptyReplayData_ReturnsReplayData()
             {
                 // Arrange
@@ -115,7 +115,7 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class ReadLineMethod
         {
-            [Fact]
+            [DisplayFact]
             public void ReturnsLine()
             {
                 // Arrange
@@ -130,7 +130,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 Assert.Equal("a", line);
             }
 
-            [Fact]
+            [DisplayFact]
             public void NoMoreLines_ReturnsNull()
             {
                 // Arrange

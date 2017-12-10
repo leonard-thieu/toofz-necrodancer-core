@@ -7,8 +7,8 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(Particle))]
+            public void ReturnsParticle()
             {
                 // Arrange -> Act
                 var particle = new Particle();
@@ -20,8 +20,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class HitPathProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Particle.HitPath))]
+            public void GetsAndSetsHitPath()
             {
                 // Arrange
                 var particle = new Particle();

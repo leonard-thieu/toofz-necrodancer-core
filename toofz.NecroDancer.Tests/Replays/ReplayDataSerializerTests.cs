@@ -10,8 +10,8 @@ namespace toofz.NecroDancer.Tests.Replays
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(ReplayDataSerializer))]
+            public void ReturnsReplayDataSerializer()
             {
                 // Arrange -> Act
                 var serializer = new ReplayDataSerializer();
@@ -23,7 +23,7 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class DeserializeMethod
         {
-            [Fact]
+            [DisplayFact(nameof(ReplayData))]
             public void ReturnsReplayData()
             {
                 // Arrange
@@ -40,7 +40,7 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class SerializeMethod
         {
-            [Fact]
+            [DisplayFact(nameof(ReplayData))]
             public void WritesReplayData()
             {
                 // Arrange

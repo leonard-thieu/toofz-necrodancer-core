@@ -8,7 +8,7 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class Constructor
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void NameIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -22,7 +22,7 @@ namespace toofz.NecroDancer.Tests.Data
                 });
             }
 
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void ImagePathIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -36,8 +36,8 @@ namespace toofz.NecroDancer.Tests.Data
                 });
             }
 
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(Item))]
+            public void ReturnsItem()
             {
                 // Arrange
                 var name = "myName";
@@ -50,7 +50,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.IsAssignableFrom<Item>(item);
             }
 
-            [Fact]
+            [DisplayFact(nameof(Item.Name))]
             public void SetsName()
             {
                 // Arrange
@@ -65,7 +65,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.Equal(name, name2);
             }
 
-            [Fact]
+            [DisplayFact(nameof(Item.ImagePath))]
             public void SetsImagePath()
             {
                 // Arrange
@@ -83,8 +83,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class BouncerProperty
         {
-            [Fact]
-            public void Default_ReturnsTrue()
+            [DisplayFact]
+            public void NotSet_ReturnsDefault()
             {
                 // Arrange
                 var name = "myName";
@@ -98,8 +98,8 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.True(bouncer);
             }
 
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Item.Bouncer))]
+            public void GetsAndSetsBouncer()
             {
                 // Arrange
                 var name = "myName";
@@ -118,8 +118,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class ImageHeightProperty
         {
-            [Fact]
-            public void Default_Returns24()
+            [DisplayFact]
+            public void NotSet_ReturnsDefault()
             {
                 // Arrange
                 var name = "myName";
@@ -133,8 +133,8 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.Equal(24, imageHeight);
             }
 
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Item.ImageHeight))]
+            public void GetsAndSetsImageHeight()
             {
                 // Arrange
                 var name = "myName";
@@ -153,8 +153,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class ImageWidthProperty
         {
-            [Fact]
-            public void Default_Returns24()
+            [DisplayFact]
+            public void NotSet_ReturnsDefault()
             {
                 // Arrange
                 var name = "myName";
@@ -168,8 +168,8 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.Equal(24, imageWidth);
             }
 
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Item.ImageWidth))]
+            public void GetsAndSetsImageWidth()
             {
                 // Arrange
                 var name = "myName";
@@ -188,8 +188,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class DisplayNameProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Item.DisplayName))]
+            public void GetsAndSetsDisplayName()
             {
                 // Arrange
                 var name = "myName";

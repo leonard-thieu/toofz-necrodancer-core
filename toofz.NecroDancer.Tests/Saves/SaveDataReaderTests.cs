@@ -12,7 +12,7 @@ namespace toofz.NecroDancer.Tests.Saves
     {
         public class Constructor
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -25,7 +25,7 @@ namespace toofz.NecroDancer.Tests.Saves
                 });
             }
 
-            [Fact]
+            [DisplayFact(nameof(ArgumentException))]
             public void StreamIsNotSeekable_ThrowsArgumentException()
             {
                 // Arrange
@@ -40,8 +40,8 @@ namespace toofz.NecroDancer.Tests.Saves
                 });
             }
 
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(SaveDataReader))]
+            public void ReturnsSaveDataReader()
             {
                 // Arrange
                 var stream = Stream.Null;
@@ -56,8 +56,8 @@ namespace toofz.NecroDancer.Tests.Saves
 
         public class ReadMethod
         {
-            [Fact]
-            public void ReadsSaveData()
+            [DisplayFact(nameof(SaveData))]
+            public void ReturnsSaveData()
             {
                 // Arrange
                 var saveDataFiles = new[]

@@ -11,7 +11,7 @@ namespace toofz.NecroDancer.Tests.Replays
     {
         public class Constructor
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -24,8 +24,8 @@ namespace toofz.NecroDancer.Tests.Replays
                 });
             }
 
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(ReplayDataStreamWriter))]
+            public void ReturnsReplayDataStreamWriter()
             {
                 // Arrange
                 var stream = Stream.Null;
@@ -40,7 +40,7 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class WriteMethod_ReplayData
         {
-            [Fact]
+            [DisplayFact(nameof(ReplayData), nameof(ArgumentNullException))]
             public void ReplayDataIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -55,7 +55,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 });
             }
 
-            [Fact]
+            [DisplayFact(nameof(ReplayData))]
             public void ClassicReplayData_WritesReplayData()
             {
                 // Arrange
@@ -73,7 +73,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 Assert.Equal(Encoding.UTF8.GetBytes(Resources.ClassicReplayData), actual);
             }
 
-            [Fact]
+            [DisplayFact(nameof(ReplayData))]
             public void AmplifiedReplayData_WritesReplayData()
             {
                 // Arrange
@@ -91,7 +91,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 Assert.Equal(Encoding.UTF8.GetBytes(Resources.AmplifiedReplayData), actual);
             }
 
-            [Fact]
+            [DisplayFact(nameof(ReplayData))]
             public void RemoteReplayData_WritesReplayData()
             {
                 // Arrange
@@ -112,7 +112,7 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class WriteMethod_Boolean
         {
-            [Fact]
+            [DisplayFact]
             public void ValueIsFalse_Writes0()
             {
                 // Arrange
@@ -129,7 +129,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 Assert.Equal("0", sr.ReadToEnd());
             }
 
-            [Fact]
+            [DisplayFact]
             public void ValueIsTrue_Writes1()
             {
                 // Arrange

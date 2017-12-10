@@ -10,8 +10,8 @@ namespace toofz.NecroDancer.Tests.Replays
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(ReplayData))]
+            public void ReturnsReplayData()
             {
                 // Arrange -> Act
                 var replayData = new ReplayData();
@@ -23,8 +23,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class KilledByProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.KilledBy))]
+            public void GetsAndSetsKilledBy()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -41,8 +41,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class IsRemoteProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.IsRemote))]
+            public void GetsAndSetsIsRemote()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -59,8 +59,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class VersionProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.Version))]
+            public void GetsAndSetsVersion()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -77,8 +77,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class StartZoneProperty
         {
-            [Fact]
-            public void Default_Returns1()
+            [DisplayFact]
+            public void NotSet_ReturnsDefault()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -90,8 +90,8 @@ namespace toofz.NecroDancer.Tests.Replays
                 Assert.Equal(1, startZone);
             }
 
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.StartZone))]
+            public void GetsAndSetsStartZone()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -108,8 +108,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class StartCoinsProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.StartCoins))]
+            public void GetsAndSetsStartCoins()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -126,8 +126,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class HasBroadswordProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.HasBroadsword))]
+            public void GetsAndSetsHasBroadsword()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -144,8 +144,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class IsHardcoreProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.IsHardcore))]
+            public void GetsAndSetsIsHardcore()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -162,8 +162,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class IsDailyProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.IsDaily))]
+            public void GetsAndSetsIsDaily()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -180,8 +180,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class IsDancePadModeProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.IsDancePadMode))]
+            public void GetsAndSetsIsDancePadMode()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -198,8 +198,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class IsSeededProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.IsSeeded))]
+            public void GetsAndSetsIsSeeded()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -216,8 +216,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class RunProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.Run))]
+            public void GetsAndSetsRun()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -232,10 +232,10 @@ namespace toofz.NecroDancer.Tests.Replays
             }
         }
 
-        public class Unknown0
+        public class Unknown0Property
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.Unknown0))]
+            public void GetsAndSetsUnknown0()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -250,10 +250,10 @@ namespace toofz.NecroDancer.Tests.Replays
             }
         }
 
-        public class Unknown2
+        public class Unknown2Property
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.Unknown2))]
+            public void GetsAndSetsUnknown2()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -270,8 +270,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class DurationProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.Duration))]
+            public void GetsAndSetsDuration()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -288,8 +288,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class SongsProperty
         {
-            [Fact]
-            public void ReturnsSongs()
+            [DisplayFact(nameof(ReplayData.Songs))]
+            public void GetsSongs()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -304,8 +304,8 @@ namespace toofz.NecroDancer.Tests.Replays
 
         public class SaveDataProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(ReplayData.SaveData))]
+            public void GetsAndSetsSaveData()
             {
                 // Arrange
                 var replayData = new ReplayData();
@@ -320,9 +320,9 @@ namespace toofz.NecroDancer.Tests.Replays
             }
         }
 
-        public class Seed
+        public class SeedProperty
         {
-            [Fact]
+            [DisplayFact]
             public void NoSongs_ReturnsNull()
             {
                 // Arrange
@@ -335,7 +335,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 Assert.Null(seed);
             }
 
-            [Theory]
+            [DisplayTheory]
             [InlineData(1580050689, 603033)]
             [InlineData(-2147483141, 89527)]
             public void ClassicFormat_ReturnsSeed(int levelSeed, int seed)
@@ -352,7 +352,7 @@ namespace toofz.NecroDancer.Tests.Replays
                 Assert.Equal(seed, seed2);
             }
 
-            [Theory]
+            [DisplayTheory]
             [InlineData(1368956533, 25192)]
             [InlineData(58192416, 65)]
             [InlineData(1698929060, 68295)]

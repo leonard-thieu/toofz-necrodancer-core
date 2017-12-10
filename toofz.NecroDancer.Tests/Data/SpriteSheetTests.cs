@@ -8,7 +8,7 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class Constructor
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void PathIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -21,8 +21,8 @@ namespace toofz.NecroDancer.Tests.Data
                 });
             }
 
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(SpriteSheet))]
+            public void ReturnsSpriteSheet()
             {
                 // Arrange
                 var path = "myPath";
@@ -34,7 +34,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.IsAssignableFrom<SpriteSheet>(spriteSheet);
             }
 
-            [Fact]
+            [DisplayFact(nameof(SpriteSheet.Path))]
             public void SetsPath()
             {
                 // Arrange

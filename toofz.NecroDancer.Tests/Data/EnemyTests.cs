@@ -7,9 +7,9 @@ namespace toofz.NecroDancer.Tests.Data
 {
     public class EnemyTests
     {
-        public class Constructor_String_Int32
+        public class Constructor
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void NameIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -23,7 +23,7 @@ namespace toofz.NecroDancer.Tests.Data
                 });
             }
 
-            [Fact]
+            [DisplayFact(nameof(ArgumentOutOfRangeException))]
             public void TypeIsLessThan1_ThrowsArgumentOutOfRangeException()
             {
                 // Arrange
@@ -37,8 +37,8 @@ namespace toofz.NecroDancer.Tests.Data
                 });
             }
 
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(Enemy))]
+            public void ReturnsEnemy()
             {
                 // Arrange
                 var name = "myName";
@@ -51,7 +51,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.IsAssignableFrom<Enemy>(enemy);
             }
 
-            [Fact]
+            [DisplayFact(nameof(Enemy.Name))]
             public void SetsName()
             {
                 // Arrange
@@ -66,7 +66,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.Equal(name, name2);
             }
 
-            [Fact]
+            [DisplayFact(nameof(Enemy.Type))]
             public void SetsType()
             {
                 // Arrange
@@ -84,8 +84,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class LevelEditorProperty
         {
-            [Fact]
-            public void Default_ReturnsTrue()
+            [DisplayFact]
+            public void NotSet_ReturnsDefault()
             {
                 // Arrange
                 var name = "myName";
@@ -99,8 +99,8 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.True(levelEditor);
             }
 
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Enemy.LevelEditor))]
+            public void GetsAndSetsLevelEditor()
             {
                 // Arrange
                 var name = "myName";
@@ -119,8 +119,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class SpriteSheetProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Enemy.SpriteSheet))]
+            public void GetsAndSetsSpriteSheet()
             {
                 // Arrange
                 var name = "myName";
@@ -139,8 +139,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class FramesProperty
         {
-            [Fact]
-            public void ReturnsFrames()
+            [DisplayFact(nameof(Enemy.Frames))]
+            public void GetsFrames()
             {
                 // Arrange
                 var name = "myName";
@@ -157,8 +157,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class ShadowProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Enemy.Shadow))]
+            public void GetsAndSetsShadow()
             {
                 // Arrange
                 var name = "myName";
@@ -177,8 +177,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class StatsProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Enemy.Stats))]
+            public void GetsAndSetsStats()
             {
                 // Arrange
                 var name = "myName";
@@ -197,8 +197,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class OptionalStatsProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Enemy.OptionalStats))]
+            public void GetsAndSetsOptionalStats()
             {
                 // Arrange
                 var name = "myName";
@@ -217,8 +217,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class BouncerProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Enemy.Bouncer))]
+            public void GetsAndSetsBouncer()
             {
                 // Arrange
                 var name = "myName";
@@ -237,8 +237,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class TweensProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Enemy.Tweens))]
+            public void GetsAndSetsTweens()
             {
                 // Arrange
                 var name = "myName";
@@ -257,8 +257,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class ParticleProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Enemy.Particle))]
+            public void GetsAndSetsParticle()
             {
                 // Arrange
                 var name = "myName";
@@ -277,8 +277,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class DisplayNameProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Enemy.DisplayName))]
+            public void GetsAndSetsDisplayName()
             {
                 // Arrange
                 var name = "myName";

@@ -8,8 +8,8 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(Character))]
+            public void ReturnsCharacter()
             {
                 // Arrange
                 var id = 2;
@@ -21,7 +21,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.IsAssignableFrom<Character>(character);
             }
 
-            [Fact]
+            [DisplayFact(nameof(Character.Id))]
             public void SetsId()
             {
                 // Arrange
@@ -38,8 +38,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class InitialEquipmentProperty
         {
-            [Fact]
-            public void ReturnsInitialEquipment()
+            [DisplayFact(nameof(Character.InitialEquipment))]
+            public void GetsInitialEquipment()
             {
                 // Arrange
                 var id = 2;
@@ -55,8 +55,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class CursedSlotsProperty
         {
-            [Fact]
-            public void ReturnsCursedSlots()
+            [DisplayFact(nameof(Character.CursedSlots))]
+            public void GetsCursedSlots()
             {
                 // Arrange
                 var id = 2;

@@ -12,7 +12,7 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class ReadBooleanLikeMethod
         {
-            [Fact]
+            [DisplayFact]
             public void ContentIsTrue_ReturnsTrue()
             {
                 // Arrange
@@ -25,7 +25,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.True(booleanLike);
             }
 
-            [Fact]
+            [DisplayFact]
             public void ContentIsFalse_ReturnsFalse()
             {
                 // Arrange
@@ -38,7 +38,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.False(booleanLike);
             }
 
-            [Fact]
+            [DisplayFact(nameof(InvalidCastException))]
             public void ContentIsNotBooleanLike_ThrowsInvalidCastException()
             {
                 // Arrange
@@ -54,7 +54,7 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class ReadListOfInt32Method
         {
-            [Fact]
+            [DisplayFact(nameof(Int32))]
             public void ContentHasMultipleValues_ReturnsListOfInt32()
             {
                 // Arrange
@@ -67,7 +67,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.Equal(new[] { 0, 30, 40 }, listOfInt32.ToList());
             }
 
-            [Fact]
+            [DisplayFact(nameof(Int32))]
             public void ContentHasSingleValue_ReturnsListOfInt32()
             {
                 // Arrange
@@ -83,7 +83,7 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class ReadDisplayString
         {
-            [Fact]
+            [DisplayFact(nameof(DisplayString), nameof(DisplayString.Text))]
             public void ContentIsEmptyString_ReturnsDisplayStringWithTextSetToContent()
             {
                 // Arrange
@@ -98,7 +98,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.Equal("", displayString.Text);
             }
 
-            [Fact]
+            [DisplayFact(nameof(DisplayString), nameof(DisplayString.Text))]
             public void ContentIsText_ReturnsDisplayStringWithTextSetToContent()
             {
                 // Arrange
@@ -113,7 +113,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.Equal("ELI", displayString.Text);
             }
 
-            [Fact]
+            [DisplayFact(nameof(DisplayString), nameof(DisplayString.Id), nameof(DisplayString.Text))]
             public void ContentIsIdAndText_ReturnsDisplayStringWithIdAndTextSet()
             {
                 // Arrange
@@ -131,7 +131,7 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class Constructor
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -144,8 +144,8 @@ namespace toofz.NecroDancer.Tests.Data
                 });
             }
 
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(NecroDancerDataReader))]
+            public void ReturnsNecroDancerDataReader()
             {
                 // Arrange 
                 var stream = Stream.Null;
@@ -160,8 +160,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class ReadMethod
         {
-            [Fact]
-            public void ReadsNecroDancerData()
+            [DisplayFact(nameof(NecroDancerData))]
+            public void ReturnsNecroDancerData()
             {
                 // Arrange
                 var stream = new MemoryStream(Encoding.UTF8.GetBytes(Resources.NecroDancerData));
@@ -175,9 +175,7 @@ namespace toofz.NecroDancer.Tests.Data
                 Assert.Equal(291, necroDancerData.Items.Count);
                 Assert.Equal(216, necroDancerData.Enemies.Count);
                 Assert.Equal(15, necroDancerData.Characters.Count);
-#pragma warning disable xUnit2013
                 Assert.Equal(1, necroDancerData.Modes.Count);
-#pragma warning restore xUnit2013
             }
         }
     }

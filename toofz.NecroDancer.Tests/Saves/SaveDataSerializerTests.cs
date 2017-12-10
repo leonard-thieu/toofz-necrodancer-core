@@ -12,8 +12,8 @@ namespace toofz.NecroDancer.Tests.Saves
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(SaveDataSerializer))]
+            public void ReturnsSaveDataSerializer()
             {
                 // Arrange -> Act
                 var serializer = new SaveDataSerializer();
@@ -25,7 +25,7 @@ namespace toofz.NecroDancer.Tests.Saves
 
         public class DeserializeMethod
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -39,7 +39,7 @@ namespace toofz.NecroDancer.Tests.Saves
                 });
             }
 
-            [Fact]
+            [DisplayFact(nameof(ArgumentException))]
             public void StreamIsNotSeekable_ThrowsArgumentException()
             {
                 // Arrange
@@ -55,7 +55,7 @@ namespace toofz.NecroDancer.Tests.Saves
                 });
             }
 
-            [Fact]
+            [DisplayFact(nameof(SaveData))]
             public void ReturnsSaveData()
             {
                 // Arrange
@@ -72,7 +72,7 @@ namespace toofz.NecroDancer.Tests.Saves
 
         public class SerializeMethod
         {
-            [Fact]
+            [DisplayFact(nameof(ArgumentNullException))]
             public void StreamIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -87,7 +87,7 @@ namespace toofz.NecroDancer.Tests.Saves
                 });
             }
 
-            [Fact]
+            [DisplayFact(nameof(SaveData), nameof(ArgumentNullException))]
             public void SaveDataIsNull_ThrowsArgumentNullException()
             {
                 // Arrange
@@ -102,7 +102,7 @@ namespace toofz.NecroDancer.Tests.Saves
                 });
             }
 
-            [Fact]
+            [DisplayFact(nameof(SaveData))]
             public void SerializesSaveData()
             {
                 // Arrange

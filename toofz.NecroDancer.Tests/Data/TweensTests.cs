@@ -7,8 +7,8 @@ namespace toofz.NecroDancer.Tests.Data
     {
         public class Constructor
         {
-            [Fact]
-            public void ReturnsInstance()
+            [DisplayFact(nameof(Tweens))]
+            public void ReturnsTweens()
             {
                 // Arrange -> Act
                 var tweens = new Tweens();
@@ -20,8 +20,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class MoveProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Tweens.Move))]
+            public void GetsAndSetsMove()
             {
                 // Arrange
                 var tweens = new Tweens();
@@ -38,8 +38,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class MoveShadowProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Tweens.MoveShadow))]
+            public void GetsAndSetsMoveShadow()
             {
                 // Arrange
                 var tweens = new Tweens();
@@ -56,8 +56,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class HitProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Tweens.Hit))]
+            public void GetsAndSetsHit()
             {
                 // Arrange
                 var tweens = new Tweens();
@@ -74,8 +74,8 @@ namespace toofz.NecroDancer.Tests.Data
 
         public class HitShadowProperty
         {
-            [Fact]
-            public void GetSetBehavior()
+            [DisplayFact(nameof(Tweens.HitShadow))]
+            public void GetsAndSetsHitShadow()
             {
                 // Arrange
                 var tweens = new Tweens();
