@@ -16,7 +16,7 @@ environment:
     secure: XZmbJDCK5oiqhbLt1y7UXM6aCYPpF2tm/bJMUJzBsCe1fd2TuwXyaz99RN+bDpHw
   
 before_build:
-  - appveyor-retry nuget restore -Verbosity quiet
+  - nuget restore -Verbosity quiet
 build:
   project: toofz.NecroDancer.sln
   verbosity: minimal
