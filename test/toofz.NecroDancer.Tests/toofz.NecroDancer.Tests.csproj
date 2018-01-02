@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\toofz.NecroDancer\toofz.NecroDancer.csproj" />
+    <ProjectReference Include="..\..\src\toofz.NecroDancer\toofz.NecroDancer.csproj" />
   </ItemGroup>
 
   <ItemGroup>
