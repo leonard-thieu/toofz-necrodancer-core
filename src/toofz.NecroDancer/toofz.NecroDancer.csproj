@@ -20,6 +20,7 @@
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
     <DocumentationFile>bin\Release\netstandard1.3\toofz.NecroDancer.xml</DocumentationFile>
+    <NoWarn Condition="'$(APPVEYOR)' == 'true'">$(NoWarn);CS1591</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
