@@ -1,18 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup>
-    <AllowedOutputExtensionsInPackageBuildOutputFolder>
-      $(AllowedOutputExtensionsInPackageBuildOutputFolder);
-      .pdb;
-      .xml
-    </AllowedOutputExtensionsInPackageBuildOutputFolder>
-    <PackageVersion>5.0.5</PackageVersion>
     <Authors>Leonard Thieu</Authors>
     <Title>toofz NecroDancer Core</Title>
     <Description>Provides types for working with Crypt of the NecroDancer game data.</Description>
@@ -33,9 +25,8 @@
   <ItemGroup>
     <PackageReference Include="Humanizer.Core" Version="2.2.0" />
     <PackageReference Include="log4net" Version="2.0.8" />
-    <PackageReference Include="SourceLink.Create.CommandLine" Version="2.6.0">
-      <PrivateAssets>all</PrivateAssets>
+    <PackageReference Include="toofz.Build" Version="2.1.1">
+      <PrivateAssets>All</PrivateAssets>
     </PackageReference>
   </ItemGroup>
-
 </Project>
