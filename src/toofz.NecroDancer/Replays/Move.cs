@@ -1,7 +1,13 @@
 ﻿namespace toofz.NecroDancer.Replays
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public sealed class Move
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public int Beat { get; set; }
         //  0 - up
         //  1 - right
@@ -20,6 +26,9 @@
         // 25 - unknown
         // 27 - unknown
         // 28 - unknown
+        /// <summary>
+        /// 
+        /// </summary>
         public int Id { get; set; }
     }
 }

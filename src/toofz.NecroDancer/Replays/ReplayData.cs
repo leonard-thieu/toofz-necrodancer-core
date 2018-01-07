@@ -61,8 +61,17 @@ namespace toofz.NecroDancer.Replays
 
         #region Version 85+
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int Run { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public int Unknown0 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public int Unknown2 { get; set; }
 
         #endregion
@@ -85,6 +94,9 @@ namespace toofz.NecroDancer.Replays
 
         // http://braceyourselfgames.com/forums/viewtopic.php?f=5&t=3240
         // https://github.com/necrommunity/replay-parser/blob/69b1dd501a9e2e5d3e8659b51d3abe79ae2a3d02/js/main.js
+        /// <summary>
+        /// 
+        /// </summary>
         public int? Seed
         {
             get

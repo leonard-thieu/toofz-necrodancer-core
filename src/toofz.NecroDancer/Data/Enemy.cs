@@ -4,12 +4,20 @@ using System.Diagnostics;
 
 namespace toofz.NecroDancer.Data
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [DebuggerDisplay("{DisplayName}")]
     public sealed class Enemy
     {
         // Required for Entity Framework
         private Enemy() { }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="type"></param>
         public Enemy(string name, int type) : this()
         {
             if (type < 1)
@@ -19,18 +27,45 @@ namespace toofz.NecroDancer.Data
             Type = type;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string Name { get; private set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public int Type { get; private set; }
 
         // Nonnegative
+        /// <summary>
+        /// 
+        /// </summary>
         public int? Id { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public string FriendlyName { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public bool LevelEditor { get; set; } = true;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public SpriteSheet SpriteSheet { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ICollection<Frame> Frames { get; } = new List<Frame>();
+        /// <summary>
+        /// 
+        /// </summary>
         public Shadow Shadow { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Stats Stats
         {
             get
@@ -42,6 +77,9 @@ namespace toofz.NecroDancer.Data
         }
         internal Stats _Stats;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public OptionalStats OptionalStats
         {
             get
@@ -53,10 +91,22 @@ namespace toofz.NecroDancer.Data
         }
         internal OptionalStats _OptionalStats;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Bouncer Bouncer { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public Tweens Tweens { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public Particle Particle { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string DisplayName { get; set; }
     }
 }

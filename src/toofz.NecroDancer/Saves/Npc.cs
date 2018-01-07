@@ -1,9 +1,15 @@
 ﻿namespace toofz.NecroDancer.Saves
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public sealed class Npc
     {
         #region Beastmaster
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Beastmaster
         {
             get { return beastmaster; }
@@ -20,6 +26,9 @@
 
         #region BeastmasterVisited
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool BeastmasterVisited
         {
             get { return beastmasterVisited; }
@@ -36,6 +45,9 @@
 
         #region Bossmaster
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Bossmaster
         {
             get { return bossmaster; }
@@ -52,6 +64,9 @@
 
         #region BossmasterVisited
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool BossmasterVisited
         {
             get { return bossmasterVisited; }
@@ -68,6 +83,9 @@
 
         #region DiamondDealer
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool DiamondDealer
         {
             get { return diamondDealer; }
@@ -84,6 +102,9 @@
 
         #region DiamondDealerVisited
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool DiamondDealerVisited
         {
             get { return diamondDealerVisited; }
@@ -100,6 +121,9 @@
 
         #region HephaestusVisited
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HephaestusVisited
         {
             get { return hephaestusVisited; }
@@ -116,6 +140,9 @@
 
         #region JanitorVisited
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool JanitorVisited
         {
             get { return janitorVisited; }
@@ -132,6 +159,9 @@
 
         #region MedicVisited
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool MedicVisited
         {
             get { return medicVisited; }
@@ -148,6 +178,9 @@
 
         #region Merlin
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Merlin
         {
             get { return merlin; }
@@ -164,6 +197,9 @@
 
         #region MerlinVisited
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool MerlinVisited
         {
             get { return merlinVisited; }
@@ -180,6 +216,9 @@
 
         #region TrainerVisited
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool TrainerVisited
         {
             get { return trainerVisited; }
@@ -196,6 +235,9 @@
 
         #region Weaponmaster
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Weaponmaster
         {
             get { return weaponmaster; }
@@ -212,6 +254,9 @@
 
         #region WeaponmasterVisited
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool WeaponmasterVisited
         {
             get { return weaponmasterVisited; }

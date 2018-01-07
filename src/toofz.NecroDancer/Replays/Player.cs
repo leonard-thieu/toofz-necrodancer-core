@@ -2,6 +2,9 @@
 
 namespace toofz.NecroDancer.Replays
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public sealed class Player
     {
         //  0 - Cadence
@@ -18,8 +21,17 @@ namespace toofz.NecroDancer.Replays
         // 11 - Diamond
         // 12 - Mary
         // 13 - Tempo
+        /// <summary>
+        /// 
+        /// </summary>
         public int Character { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public List<Move> Moves { get; } = new List<Move>();
+        /// <summary>
+        /// 
+        /// </summary>
         public List<int> MissedBeats { get; } = new List<int>();
     }
 }

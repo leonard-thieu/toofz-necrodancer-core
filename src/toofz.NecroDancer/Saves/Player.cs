@@ -1,9 +1,15 @@
 ﻿namespace toofz.NecroDancer.Saves
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public sealed class Player
     {
         #region IsAddBlackChestUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsAddBlackChestUnlocked
         {
             get { return isAddBlackChestUnlocked; }
@@ -20,6 +26,9 @@
 
         #region IsAddRedChestUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsAddRedChestUnlocked
         {
             get { return isAddRedChestUnlocked; }
@@ -36,6 +45,9 @@
 
         #region IsAddWhiteChestUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsAddWhiteChestUnlocked
         {
             get { return isAddWhiteChestUnlocked; }
@@ -52,6 +64,9 @@
 
         #region IsChainmailUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsChainmailUnlocked
         {
             get { return isChainmailUnlocked; }
@@ -68,6 +83,9 @@
 
         #region IsGiUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGiUnlocked
         {
             get { return isGiUnlocked; }
@@ -84,6 +102,9 @@
 
         #region IsGlassArmorUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGlassArmorUnlocked
         {
             get { return isGlassArmorUnlocked; }
@@ -100,6 +121,9 @@
 
         #region IsHeavyGlassArmorUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsHeavyGlassArmorUnlocked
         {
             get { return isHeavyGlassArmorUnlocked; }
@@ -116,6 +140,9 @@
 
         #region IsHeavyPlateUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsHeavyPlateUnlocked
         {
             get { return isHeavyPlateUnlocked; }
@@ -132,6 +159,9 @@
 
         #region IsObsidianArmorCleaned
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsObsidianArmorCleaned
         {
             get { return isObsidianArmorCleaned; }
@@ -148,6 +178,9 @@
 
         #region IsObsidianArmorUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsObsidianArmorUnlocked
         {
             get { return isObsidianArmorUnlocked; }
@@ -164,6 +197,9 @@
 
         #region IsPlatemailUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsPlatemailUnlocked
         {
             get { return isPlatemailUnlocked; }
@@ -180,6 +216,9 @@
 
         #region IsQuartzArmorUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsQuartzArmorUnlocked
         {
             get { return isQuartzArmorUnlocked; }
@@ -196,6 +235,9 @@
 
         #region IsBagOfHoldingUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsBagOfHoldingUnlocked
         {
             get { return isBagOfHoldingUnlocked; }
@@ -212,6 +254,9 @@
 
         #region IsBloodDrumUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsBloodDrumUnlocked
         {
             get { return isBloodDrumUnlocked; }
@@ -228,6 +273,9 @@
 
         #region IsCoin15MultiplierUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsCoin15MultiplierUnlocked
         {
             get { return isCoin15MultiplierUnlocked; }
@@ -244,6 +292,9 @@
 
         #region IsCoin20MultiplierUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsCoin20MultiplierUnlocked
         {
             get { return isCoin20MultiplierUnlocked; }
@@ -260,6 +311,9 @@
 
         #region DiamondDealerItems
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string DiamondDealerItems
         {
             get { return diamondDealerItems; }
@@ -276,6 +330,9 @@
 
         #region DiamondDealerItemsV2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string DiamondDealerItemsV2
         {
             get { return diamondDealerItemsV2; }
@@ -292,6 +349,9 @@
 
         #region DiamondDealerItemsV2_1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string DiamondDealerItemsV2_1
         {
             get { return diamondDealerItemsV2_1; }
@@ -308,6 +368,9 @@
 
         #region DiamondDealerItemsV2_2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string DiamondDealerItemsV2_2
         {
             get { return diamondDealerItemsV2_2; }
@@ -324,6 +387,9 @@
 
         #region DiamondDealerItemsV2_3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string DiamondDealerItemsV2_3
         {
             get { return diamondDealerItemsV2_3; }
@@ -340,6 +406,9 @@
 
         #region DiamondDealerSoldItem1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string DiamondDealerSoldItem1
         {
             get { return diamondDealerSoldItem1; }
@@ -356,6 +425,9 @@
 
         #region DiamondDealerSoldItem2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string DiamondDealerSoldItem2
         {
             get { return diamondDealerSoldItem2; }
@@ -372,6 +444,9 @@
 
         #region DiamondDealerSoldItem3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string DiamondDealerSoldItem3
         {
             get { return diamondDealerSoldItem3; }
@@ -388,6 +463,9 @@
 
         #region IsBootsOfPainUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsBootsOfPainUnlocked
         {
             get { return isBootsOfPainUnlocked; }
@@ -404,6 +482,9 @@
 
         #region IsGreavesUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGreavesUnlocked
         {
             get { return isGreavesUnlocked; }
@@ -420,6 +501,9 @@
 
         #region IsFood2Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsFood2Unlocked
         {
             get { return isFood2Unlocked; }
@@ -436,6 +520,9 @@
 
         #region IsDrumstickCleaned
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsDrumstickCleaned
         {
             get { return isDrumstickCleaned; }
@@ -452,6 +539,9 @@
 
         #region IsFood3Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsFood3Unlocked
         {
             get { return isFood3Unlocked; }
@@ -468,6 +558,9 @@
 
         #region IsFood4Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsFood4Unlocked
         {
             get { return isFood4Unlocked; }
@@ -484,6 +577,9 @@
 
         #region IsCarrotUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsCarrotUnlocked
         {
             get { return isCarrotUnlocked; }
@@ -500,6 +596,9 @@
 
         #region IsCookiesUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsCookiesUnlocked
         {
             get { return isCookiesUnlocked; }
@@ -516,6 +615,9 @@
 
         #region IsBlastHelmUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsBlastHelmUnlocked
         {
             get { return isBlastHelmUnlocked; }
@@ -532,6 +634,9 @@
 
         #region IsCrownOfThornsCleaned
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsCrownOfThornsCleaned
         {
             get { return isCrownOfThornsCleaned; }
@@ -548,6 +653,9 @@
 
         #region IsCrownOfThornsUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsCrownOfThornsUnlocked
         {
             get { return isCrownOfThornsUnlocked; }
@@ -564,6 +672,9 @@
 
         #region IsGlassJawUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGlassJawUnlocked
         {
             get { return isGlassJawUnlocked; }
@@ -580,6 +691,9 @@
 
         #region IsHelmUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsHelmUnlocked
         {
             get { return isHelmUnlocked; }
@@ -596,6 +710,9 @@
 
         #region IsSpikedEarsUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsSpikedEarsUnlocked
         {
             get { return isSpikedEarsUnlocked; }
@@ -612,6 +729,9 @@
 
         #region IsSunglassesUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsSunglassesUnlocked
         {
             get { return isSunglassesUnlocked; }
@@ -628,6 +748,9 @@
 
         #region IsHeartTransplantUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsHeartTransplantUnlocked
         {
             get { return isHeartTransplantUnlocked; }
@@ -644,6 +767,9 @@
 
         #region IsHolsterUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsHolsterUnlocked
         {
             get { return isHolsterUnlocked; }
@@ -660,6 +786,9 @@
 
         #region IsHolyWaterUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsHolyWaterUnlocked
         {
             get { return isHolyWaterUnlocked; }
@@ -676,6 +805,9 @@
 
         #region MaxHealth
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int MaxHealth
         {
             get { return maxHealth; }
@@ -692,6 +824,9 @@
 
         #region CoinCount
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int CoinCount
         {
             get { return coinCount; }
@@ -708,6 +843,9 @@
 
         #region DiamondCount
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int DiamondCount
         {
             get { return diamondCount; }
@@ -724,6 +862,9 @@
 
         #region IsPickaxeCleaned
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsPickaxeCleaned
         {
             get { return isPickaxeCleaned; }
@@ -740,6 +881,9 @@
 
         #region IsPickaxeUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsPickaxeUnlocked
         {
             get { return isPickaxeUnlocked; }
@@ -756,6 +900,9 @@
 
         #region IsRingOfCourageUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfCourageUnlocked
         {
             get { return isRingOfCourageUnlocked; }
@@ -772,6 +919,9 @@
 
         #region IsRingOfFrostUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfFrostUnlocked
         {
             get { return isRingOfFrostUnlocked; }
@@ -788,6 +938,9 @@
 
         #region IsRingOfGoldUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfGoldUnlocked
         {
             get { return isRingOfGoldUnlocked; }
@@ -804,6 +957,9 @@
 
         #region IsRingOfLuckUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfLuckUnlocked
         {
             get { return isRingOfLuckUnlocked; }
@@ -820,6 +976,9 @@
 
         #region IsRingOfManaUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfManaUnlocked
         {
             get { return isRingOfManaUnlocked; }
@@ -836,6 +995,9 @@
 
         #region IsRingOfMightCleaned
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfMightCleaned
         {
             get { return isRingOfMightCleaned; }
@@ -852,6 +1014,9 @@
 
         #region IsRingOfMightUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfMightUnlocked
         {
             get { return isRingOfMightUnlocked; }
@@ -868,6 +1033,9 @@
 
         #region IsRingOfPainUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfPainUnlocked
         {
             get { return isRingOfPainUnlocked; }
@@ -884,6 +1052,9 @@
 
         #region IsRingOfPeaceUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfPeaceUnlocked
         {
             get { return isRingOfPeaceUnlocked; }
@@ -900,6 +1071,9 @@
 
         #region IsRingOfPhasingUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfPhasingUnlocked
         {
             get { return isRingOfPhasingUnlocked; }
@@ -916,6 +1090,9 @@
 
         #region IsRingOfPiercingUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfPiercingUnlocked
         {
             get { return isRingOfPiercingUnlocked; }
@@ -932,6 +1109,9 @@
 
         #region IsRingOfProtectionUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfProtectionUnlocked
         {
             get { return isRingOfProtectionUnlocked; }
@@ -948,6 +1128,9 @@
 
         #region IsRingOfRegenerationUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfRegenerationUnlocked
         {
             get { return isRingOfRegenerationUnlocked; }
@@ -964,6 +1147,9 @@
 
         #region IsRingOfShadowsUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfShadowsUnlocked
         {
             get { return isRingOfShadowsUnlocked; }
@@ -980,6 +1166,9 @@
 
         #region IsRingOfShieldingUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfShieldingUnlocked
         {
             get { return isRingOfShieldingUnlocked; }
@@ -996,6 +1185,9 @@
 
         #region IsRingOfWarCleaned
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfWarCleaned
         {
             get { return isRingOfWarCleaned; }
@@ -1012,6 +1204,9 @@
 
         #region IsRingOfWarUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRingOfWarUnlocked
         {
             get { return isRingOfWarUnlocked; }
@@ -1028,6 +1223,9 @@
 
         #region IsScrollOfDescendUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsScrollOfDescendUnlocked
         {
             get { return isScrollOfDescendUnlocked; }
@@ -1044,6 +1242,9 @@
 
         #region IsScrollOfEarthquakeUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsScrollOfEarthquakeUnlocked
         {
             get { return isScrollOfEarthquakeUnlocked; }
@@ -1060,6 +1261,9 @@
 
         #region IsEnchantWeaponScrollCleaned
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsEnchantWeaponScrollCleaned
         {
             get { return isEnchantWeaponScrollCleaned; }
@@ -1076,6 +1280,9 @@
 
         #region IsScrollOfEnchantWeaponUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsScrollOfEnchantWeaponUnlocked
         {
             get { return isScrollOfEnchantWeaponUnlocked; }
@@ -1092,6 +1299,9 @@
 
         #region IsScrollOfFearUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsScrollOfFearUnlocked
         {
             get { return isScrollOfFearUnlocked; }
@@ -1108,6 +1318,9 @@
 
         #region IsScrollOfNeedUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsScrollOfNeedUnlocked
         {
             get { return isScrollOfNeedUnlocked; }
@@ -1124,6 +1337,9 @@
 
         #region IsScrollOfRichesUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsScrollOfRichesUnlocked
         {
             get { return isScrollOfRichesUnlocked; }
@@ -1140,6 +1356,9 @@
 
         #region IsTransmuteScrollUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsTransmuteScrollUnlocked
         {
             get { return isTransmuteScrollUnlocked; }
@@ -1156,6 +1375,9 @@
 
         #region IsBloodShovelUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsBloodShovelUnlocked
         {
             get { return isBloodShovelUnlocked; }
@@ -1172,6 +1394,9 @@
 
         #region IsShoveOfCourageUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsShoveOfCourageUnlocked
         {
             get { return isShoveOfCourageUnlocked; }
@@ -1188,6 +1413,9 @@
 
         #region IsGlassShovelCleaned
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGlassShovelCleaned
         {
             get { return isGlassShovelCleaned; }
@@ -1204,6 +1432,9 @@
 
         #region IsGlassShovelUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGlassShovelUnlocked
         {
             get { return isGlassShovelUnlocked; }
@@ -1220,6 +1451,9 @@
 
         #region IsObsidianShovelUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsObsidianShovelUnlocked
         {
             get { return isObsidianShovelUnlocked; }
@@ -1236,6 +1470,9 @@
 
         #region IsShovelOfStrengthUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsShovelOfStrengthUnlocked
         {
             get { return isShovelOfStrengthUnlocked; }
@@ -1252,6 +1489,9 @@
 
         #region IsBombSpellUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsBombSpellUnlocked
         {
             get { return isBombSpellUnlocked; }
@@ -1268,6 +1508,9 @@
 
         #region IsFreezeSpellUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsFreezeSpellUnlocked
         {
             get { return isFreezeSpellUnlocked; }
@@ -1284,6 +1527,9 @@
 
         #region IsHealSpellUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsHealSpellUnlocked
         {
             get { return isHealSpellUnlocked; }
@@ -1300,6 +1546,9 @@
 
         #region IsShieldSpellCleaned
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsShieldSpellCleaned
         {
             get { return isShieldSpellCleaned; }
@@ -1316,6 +1565,9 @@
 
         #region IsShieldSpellUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsShieldSpellUnlocked
         {
             get { return isShieldSpellUnlocked; }
@@ -1332,6 +1584,9 @@
 
         #region IsTransmuteSpellUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsTransmuteSpellUnlocked
         {
             get { return isTransmuteSpellUnlocked; }
@@ -1348,6 +1603,9 @@
 
         #region IsTorch2Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsTorch2Unlocked
         {
             get { return isTorch2Unlocked; }
@@ -1364,6 +1622,9 @@
 
         #region IsTorch3Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsTorch3Unlocked
         {
             get { return isTorch3Unlocked; }
@@ -1380,6 +1641,9 @@
 
         #region IsTorchOfForesightUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsTorchOfForesightUnlocked
         {
             get { return isTorchOfForesightUnlocked; }
@@ -1396,6 +1660,9 @@
 
         #region IsGlassTorchCleaned
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGlassTorchCleaned
         {
             get { return isGlassTorchCleaned; }
@@ -1412,6 +1679,9 @@
 
         #region IsGlassTorchUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGlassTorchUnlocked
         {
             get { return isGlassTorchUnlocked; }
@@ -1428,6 +1698,9 @@
 
         #region IsInfernalTorchUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsInfernalTorchUnlocked
         {
             get { return isInfernalTorchUnlocked; }
@@ -1444,6 +1717,9 @@
 
         #region IsObsidianTorchUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsObsidianTorchUnlocked
         {
             get { return isObsidianTorchUnlocked; }
@@ -1460,6 +1736,9 @@
 
         #region IsTorchOfStrengthUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsTorchOfStrengthUnlocked
         {
             get { return isTorchOfStrengthUnlocked; }
@@ -1476,6 +1755,9 @@
 
         #region V
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int V
         {
             get { return v; }
@@ -1492,6 +1774,9 @@
 
         #region IsWarDrumUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsWarDrumUnlocked
         {
             get { return isWarDrumUnlocked; }
@@ -1508,6 +1793,9 @@
 
         #region IsAxeUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsAxeUnlocked
         {
             get { return isAxeUnlocked; }
@@ -1524,6 +1812,9 @@
 
         #region IsAxeUsed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsAxeUsed
         {
             get { return isAxeUsed; }
@@ -1540,6 +1831,9 @@
 
         #region IsBloodLongswordUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsBloodLongswordUnlocked
         {
             get { return isBloodLongswordUnlocked; }
@@ -1556,6 +1850,9 @@
 
         #region IsBloodRapierUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsBloodRapierUnlocked
         {
             get { return isBloodRapierUnlocked; }
@@ -1572,6 +1869,9 @@
 
         #region IsBloodSpearUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsBloodSpearUnlocked
         {
             get { return isBloodSpearUnlocked; }
@@ -1588,6 +1888,9 @@
 
         #region IsBloodWhipUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsBloodWhipUnlocked
         {
             get { return isBloodWhipUnlocked; }
@@ -1604,6 +1907,9 @@
 
         #region IsBlunderbussUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsBlunderbussUnlocked
         {
             get { return isBlunderbussUnlocked; }
@@ -1620,6 +1926,9 @@
 
         #region IsBowUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsBowUnlocked
         {
             get { return isBowUnlocked; }
@@ -1636,6 +1945,9 @@
 
         #region IsBroadswordUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsBroadswordUnlocked
         {
             get { return isBroadswordUnlocked; }
@@ -1652,6 +1964,9 @@
 
         #region IsCatUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsCatUnlocked
         {
             get { return isCatUnlocked; }
@@ -1668,6 +1983,9 @@
 
         #region IsCatUsed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsCatUsed
         {
             get { return isCatUsed; }
@@ -1684,6 +2002,9 @@
 
         #region IsCrossbowUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsCrossbowUnlocked
         {
             get { return isCrossbowUnlocked; }
@@ -1700,6 +2021,9 @@
 
         #region IsCutlassUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsCutlassUnlocked
         {
             get { return isCutlassUnlocked; }
@@ -1716,6 +2040,9 @@
 
         #region IsCutlassUsed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsCutlassUsed
         {
             get { return isCutlassUsed; }
@@ -1732,6 +2059,9 @@
 
         #region IsDaggerUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsDaggerUnlocked
         {
             get { return isDaggerUnlocked; }
@@ -1748,6 +2078,9 @@
 
         #region IsElectricDaggerUsed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsElectricDaggerUsed
         {
             get { return isElectricDaggerUsed; }
@@ -1764,6 +2097,9 @@
 
         #region IsDaggerOfFrostUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsDaggerOfFrostUnlocked
         {
             get { return isDaggerOfFrostUnlocked; }
@@ -1780,6 +2116,9 @@
 
         #region IsJeweledDaggerUsed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsJeweledDaggerUsed
         {
             get { return isJeweledDaggerUsed; }
@@ -1796,6 +2135,9 @@
 
         #region IsDaggerOfPhasingUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsDaggerOfPhasingUnlocked
         {
             get { return isDaggerOfPhasingUnlocked; }
@@ -1812,6 +2154,9 @@
 
         #region IsFlailUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsFlailUnlocked
         {
             get { return isFlailUnlocked; }
@@ -1828,6 +2173,9 @@
 
         #region IsFlailUsed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsFlailUsed
         {
             get { return isFlailUsed; }
@@ -1844,6 +2192,9 @@
 
         #region IsGlassLongswordUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGlassLongswordUnlocked
         {
             get { return isGlassLongswordUnlocked; }
@@ -1860,6 +2211,9 @@
 
         #region IsGlassRapierUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGlassRapierUnlocked
         {
             get { return isGlassRapierUnlocked; }
@@ -1876,6 +2230,9 @@
 
         #region IsGlassSpearUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGlassSpearUnlocked
         {
             get { return isGlassSpearUnlocked; }
@@ -1892,6 +2249,9 @@
 
         #region IsGlassWhipUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGlassWhipUnlocked
         {
             get { return isGlassWhipUnlocked; }
@@ -1908,6 +2268,9 @@
 
         #region IsGoldenLongswordUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGoldenLongswordUnlocked
         {
             get { return isGoldenLongswordUnlocked; }
@@ -1924,6 +2287,9 @@
 
         #region IsGoldenRapierUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGoldenRapierUnlocked
         {
             get { return isGoldenRapierUnlocked; }
@@ -1940,6 +2306,9 @@
 
         #region IsGoldenSpearUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGoldenSpearUnlocked
         {
             get { return isGoldenSpearUnlocked; }
@@ -1956,6 +2325,9 @@
 
         #region IsGoldenWhipUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsGoldenWhipUnlocked
         {
             get { return isGoldenWhipUnlocked; }
@@ -1972,6 +2344,9 @@
 
         #region IsHarpUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsHarpUnlocked
         {
             get { return isHarpUnlocked; }
@@ -1988,6 +2363,9 @@
 
         #region IsHarpUsed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsHarpUsed
         {
             get { return isHarpUsed; }
@@ -2004,6 +2382,9 @@
 
         #region IsLongswordUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsLongswordUnlocked
         {
             get { return isLongswordUnlocked; }
@@ -2020,6 +2401,9 @@
 
         #region IsLongswordUsed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsLongswordUsed
         {
             get { return isLongswordUsed; }
@@ -2036,6 +2420,9 @@
 
         #region IsObsidianLongswordUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsObsidianLongswordUnlocked
         {
             get { return isObsidianLongswordUnlocked; }
@@ -2052,6 +2439,9 @@
 
         #region IsObsidianRapierUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsObsidianRapierUnlocked
         {
             get { return isObsidianRapierUnlocked; }
@@ -2068,6 +2458,9 @@
 
         #region IsObsidianSpearUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsObsidianSpearUnlocked
         {
             get { return isObsidianSpearUnlocked; }
@@ -2084,6 +2477,9 @@
 
         #region IsObsidianWhipUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsObsidianWhipUnlocked
         {
             get { return isObsidianWhipUnlocked; }
@@ -2100,6 +2496,9 @@
 
         #region IsRapierUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRapierUnlocked
         {
             get { return isRapierUnlocked; }
@@ -2116,6 +2515,9 @@
 
         #region IsRapierUsed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRapierUsed
         {
             get { return isRapierUsed; }
@@ -2132,6 +2534,9 @@
 
         #region IsRifleUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRifleUnlocked
         {
             get { return isRifleUnlocked; }
@@ -2148,6 +2553,9 @@
 
         #region IsRifleUsed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsRifleUsed
         {
             get { return isRifleUsed; }
@@ -2164,6 +2572,9 @@
 
         #region IsSpearUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsSpearUnlocked
         {
             get { return isSpearUnlocked; }
@@ -2180,6 +2591,9 @@
 
         #region IsSpearUsed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsSpearUsed
         {
             get { return isSpearUsed; }
@@ -2196,6 +2610,9 @@
 
         #region IsSatffUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsSatffUnlocked
         {
             get { return isSatffUnlocked; }
@@ -2212,6 +2629,9 @@
 
         #region IsStaffUsed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsStaffUsed
         {
             get { return isStaffUsed; }
@@ -2228,6 +2648,9 @@
 
         #region IsTitaniumLongswordUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsTitaniumLongswordUnlocked
         {
             get { return isTitaniumLongswordUnlocked; }
@@ -2244,6 +2667,9 @@
 
         #region IsTitaniumRapierUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsTitaniumRapierUnlocked
         {
             get { return isTitaniumRapierUnlocked; }
@@ -2260,6 +2686,9 @@
 
         #region IsTitaniumSpearUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsTitaniumSpearUnlocked
         {
             get { return isTitaniumSpearUnlocked; }
@@ -2276,6 +2705,9 @@
 
         #region IsTitaniumWhipUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsTitaniumWhipUnlocked
         {
             get { return isTitaniumWhipUnlocked; }
@@ -2292,6 +2724,9 @@
 
         #region IsWarhammerUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsWarhammerUnlocked
         {
             get { return isWarhammerUnlocked; }
@@ -2308,6 +2743,9 @@
 
         #region IsWarhammerUsed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsWarhammerUsed
         {
             get { return isWarhammerUsed; }
@@ -2324,6 +2762,9 @@
 
         #region IsWhipCleaned
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsWhipCleaned
         {
             get { return isWhipCleaned; }
@@ -2340,6 +2781,9 @@
 
         #region IsWhipUnlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsWhipUnlocked
         {
             get { return isWhipUnlocked; }
@@ -2356,6 +2800,9 @@
 
         #region IsWhipUsed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsWhipUsed
         {
             get { return isWhipUsed; }

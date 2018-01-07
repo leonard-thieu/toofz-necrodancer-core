@@ -1,10 +1,16 @@
 ﻿namespace toofz.NecroDancer.Saves
 {
     // Game version: 2.55
+    /// <summary>
+    /// 
+    /// </summary>
     public sealed class SaveData
     {
         #region CloudTimestamp
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int CloudTimestamp
         {
             get { return cloudTimestamp; }
@@ -21,6 +27,9 @@
 
         #region Player
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Player Player
         {
             get
@@ -36,6 +45,9 @@
 
         #region Game
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Game Game
         {
             get
@@ -51,6 +63,9 @@
 
         #region Npc
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Npc Npc
         {
             get

@@ -1,9 +1,15 @@
 ﻿namespace toofz.NecroDancer.Saves
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public sealed class Game
     {
         #region DlcPlayed
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool DlcPlayed
         {
             get { return dlcPlayed; }
@@ -20,6 +26,9 @@
 
         #region HoardForZone1Collected
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HoardForZone1Collected
         {
             get { return hoardForZone1Collected; }
@@ -36,6 +45,9 @@
 
         #region HoardForZone2Collected
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HoardForZone2Collected
         {
             get { return hoardForZone2Collected; }
@@ -52,6 +64,9 @@
 
         #region HoardForZone3Collected
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HoardForZone3Collected
         {
             get { return hoardForZone3Collected; }
@@ -68,6 +83,9 @@
 
         #region HoardCollectedForZone4
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HoardCollectedForZone4
         {
             get { return hoardCollectedForZone4; }
@@ -84,6 +102,9 @@
 
         #region HoardCollectedForZone5
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HoardCollectedForZone5
         {
             get { return hoardCollectedForZone5; }
@@ -100,6 +121,9 @@
 
         #region LastDailyRunNumber
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int LastDailyRunNumber
         {
             get { return lastDailyRunNumber; }
@@ -116,6 +140,9 @@
 
         #region Zone2Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone2Unlocked
         {
             get { return zone2Unlocked; }
@@ -132,6 +159,9 @@
 
         #region Zone2Unlocked1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone2Unlocked1
         {
             get { return zone2Unlocked1; }
@@ -148,6 +178,9 @@
 
         #region Zone2Unlocked2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone2Unlocked2
         {
             get { return zone2Unlocked2; }
@@ -164,6 +197,9 @@
 
         #region Zone2Unlocked3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone2Unlocked3
         {
             get { return zone2Unlocked3; }
@@ -180,6 +216,9 @@
 
         #region Zone2Unlocked4
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone2Unlocked4
         {
             get { return zone2Unlocked4; }
@@ -196,6 +235,9 @@
 
         #region Zone2Unlocked5
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone2Unlocked5
         {
             get { return zone2Unlocked5; }
@@ -212,6 +254,9 @@
 
         #region Zone2Unlocked6
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone2Unlocked6
         {
             get { return zone2Unlocked6; }
@@ -228,6 +273,9 @@
 
         #region Zone2Unlocked7
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone2Unlocked7
         {
             get { return zone2Unlocked7; }
@@ -244,6 +292,9 @@
 
         #region Zone2Unlocked8
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone2Unlocked8
         {
             get { return zone2Unlocked8; }
@@ -260,6 +311,9 @@
 
         #region Zone2Unlocked9
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone2Unlocked9
         {
             get { return zone2Unlocked9; }
@@ -276,6 +330,9 @@
 
         #region Zone2Unlocked10
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone2Unlocked10
         {
             get { return zone2Unlocked10; }
@@ -292,6 +349,9 @@
 
         #region Zone2Unlocked11
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone2Unlocked11
         {
             get { return zone2Unlocked11; }
@@ -308,6 +368,9 @@
 
         #region Zone2Unlocked12
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone2Unlocked12
         {
             get { return zone2Unlocked12; }
@@ -324,6 +387,9 @@
 
         #region Zone3Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone3Unlocked
         {
             get { return zone3Unlocked; }
@@ -340,6 +406,9 @@
 
         #region Zone3Unlocked1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone3Unlocked1
         {
             get { return zone3Unlocked1; }
@@ -356,6 +425,9 @@
 
         #region Zone3Unlocked2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone3Unlocked2
         {
             get { return zone3Unlocked2; }
@@ -372,6 +444,9 @@
 
         #region Zone3Unlocked3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone3Unlocked3
         {
             get { return zone3Unlocked3; }
@@ -388,6 +463,9 @@
 
         #region Zone3Unlocked4
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone3Unlocked4
         {
             get { return zone3Unlocked4; }
@@ -404,6 +482,9 @@
 
         #region Zone3Unlocked5
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone3Unlocked5
         {
             get { return zone3Unlocked5; }
@@ -420,6 +501,9 @@
 
         #region Zone3Unlocked6
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone3Unlocked6
         {
             get { return zone3Unlocked6; }
@@ -436,6 +520,9 @@
 
         #region Zone3Unlocked7
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone3Unlocked7
         {
             get { return zone3Unlocked7; }
@@ -452,6 +539,9 @@
 
         #region Zone3Unlocked8
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone3Unlocked8
         {
             get { return zone3Unlocked8; }
@@ -468,6 +558,9 @@
 
         #region Zone3Unlocked9
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone3Unlocked9
         {
             get { return zone3Unlocked9; }
@@ -484,6 +577,9 @@
 
         #region Zone3Unlocked11
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone3Unlocked11
         {
             get { return zone3Unlocked11; }
@@ -500,6 +596,9 @@
 
         #region Zone3Unlocked12
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone3Unlocked12
         {
             get { return zone3Unlocked12; }
@@ -516,6 +615,9 @@
 
         #region Zone4Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone4Unlocked
         {
             get { return zone4Unlocked; }
@@ -532,6 +634,9 @@
 
         #region Zone4Unlocked1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone4Unlocked1
         {
             get { return zone4Unlocked1; }
@@ -548,6 +653,9 @@
 
         #region Zone4Unlocked2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone4Unlocked2
         {
             get { return zone4Unlocked2; }
@@ -564,6 +672,9 @@
 
         #region Zone4Unlocked3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone4Unlocked3
         {
             get { return zone4Unlocked3; }
@@ -580,6 +691,9 @@
 
         #region Zone4Unlocked4
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone4Unlocked4
         {
             get { return zone4Unlocked4; }
@@ -596,6 +710,9 @@
 
         #region Zone4Unlocked5
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone4Unlocked5
         {
             get { return zone4Unlocked5; }
@@ -612,6 +729,9 @@
 
         #region Zone4Unlocked6
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone4Unlocked6
         {
             get { return zone4Unlocked6; }
@@ -628,6 +748,9 @@
 
         #region Zone4Unlocked7
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone4Unlocked7
         {
             get { return zone4Unlocked7; }
@@ -644,6 +767,9 @@
 
         #region Zone4Unlocked8
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone4Unlocked8
         {
             get { return zone4Unlocked8; }
@@ -660,6 +786,9 @@
 
         #region Zone4Unlocked9
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone4Unlocked9
         {
             get { return zone4Unlocked9; }
@@ -676,6 +805,9 @@
 
         #region Zone4Unlocked11
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone4Unlocked11
         {
             get { return zone4Unlocked11; }
@@ -692,6 +824,9 @@
 
         #region Zone5Visited
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Zone5Visited
         {
             get { return zone5Visited; }
@@ -708,6 +843,9 @@
 
         #region AskedLobbyMove
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool AskedLobbyMove
         {
             get { return askedLobbyMove; }
@@ -724,6 +862,9 @@
 
         #region AudioLatency
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int AudioLatency
         {
             get { return audioLatency; }
@@ -740,6 +881,9 @@
 
         #region AutoCalibration
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int AutoCalibration
         {
             get { return autoCalibration; }
@@ -756,6 +900,9 @@
 
         #region BansheeBossTraining
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool BansheeBossTraining
         {
             get { return bansheeBossTraining; }
@@ -772,6 +919,9 @@
 
         #region CongaBossTraining
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool CongaBossTraining
         {
             get { return congaBossTraining; }
@@ -788,6 +938,9 @@
 
         #region DeathMetalBossTraining
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool DeathMetalBossTraining
         {
             get { return deathMetalBossTraining; }
@@ -804,6 +957,9 @@
 
         #region DeepBluesBossTraining
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool DeepBluesBossTraining
         {
             get { return deepBluesBossTraining; }
@@ -820,6 +976,9 @@
 
         #region DireBatBossTraining
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool DireBatBossTraining
         {
             get { return direBatBossTraining; }
@@ -836,6 +995,9 @@
 
         #region DragonBossTraining
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool DragonBossTraining
         {
             get { return dragonBossTraining; }
@@ -852,6 +1014,9 @@
 
         #region FortissimoleBossTraining
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool FortissimoleBossTraining
         {
             get { return fortissimoleBossTraining; }
@@ -868,6 +1033,9 @@
 
         #region MetrognomeBossTraining
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool MetrognomeBossTraining
         {
             get { return metrognomeBossTraining; }
@@ -884,6 +1052,9 @@
 
         #region MinotaurBossTraining
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool MinotaurBossTraining
         {
             get { return minotaurBossTraining; }
@@ -900,6 +1071,9 @@
 
         #region NightmareBossTraining
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool NightmareBossTraining
         {
             get { return nightmareBossTraining; }
@@ -916,6 +1090,9 @@
 
         #region OctobossBossTraining
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool OctobossBossTraining
         {
             get { return octobossBossTraining; }
@@ -932,6 +1109,9 @@
 
         #region OgreBossTraining
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool OgreBossTraining
         {
             get { return ogreBossTraining; }
@@ -948,6 +1128,9 @@
 
         #region Char0Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char0Unlocked
         {
             get { return char0Unlocked; }
@@ -964,6 +1147,9 @@
 
         #region Char1Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char1Unlocked
         {
             get { return char1Unlocked; }
@@ -980,6 +1166,9 @@
 
         #region Char2Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char2Unlocked
         {
             get { return char2Unlocked; }
@@ -996,6 +1185,9 @@
 
         #region Char3Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char3Unlocked
         {
             get { return char3Unlocked; }
@@ -1012,6 +1204,9 @@
 
         #region Char4Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char4Unlocked
         {
             get { return char4Unlocked; }
@@ -1028,6 +1223,9 @@
 
         #region Char5Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char5Unlocked
         {
             get { return char5Unlocked; }
@@ -1044,6 +1242,9 @@
 
         #region Char6Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char6Unlocked
         {
             get { return char6Unlocked; }
@@ -1060,6 +1261,9 @@
 
         #region Char7Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char7Unlocked
         {
             get { return char7Unlocked; }
@@ -1076,6 +1280,9 @@
 
         #region Char8Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char8Unlocked
         {
             get { return char8Unlocked; }
@@ -1092,6 +1299,9 @@
 
         #region Char9Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char9Unlocked
         {
             get { return char9Unlocked; }
@@ -1108,6 +1318,9 @@
 
         #region Char10Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char10Unlocked
         {
             get { return char10Unlocked; }
@@ -1124,6 +1337,9 @@
 
         #region Char11Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char11Unlocked
         {
             get { return char11Unlocked; }
@@ -1140,6 +1356,9 @@
 
         #region Char12Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char12Unlocked
         {
             get { return char12Unlocked; }
@@ -1156,6 +1375,9 @@
 
         #region Char13Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char13Unlocked
         {
             get { return char13Unlocked; }
@@ -1172,6 +1394,9 @@
 
         #region Char14Unlocked
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Char14Unlocked
         {
             get { return char14Unlocked; }
@@ -1188,6 +1413,9 @@
 
         #region CurrentLanguage
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string CurrentLanguage
         {
             get { return currentLanguage; }
@@ -1204,6 +1432,9 @@
 
         #region DaoustVocals
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool DaoustVocals
         {
             get { return daoustVocals; }
@@ -1220,6 +1451,9 @@
 
         #region DebugLoggingOn
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool DebugLoggingOn
         {
             get { return debugLoggingOn; }
@@ -1236,6 +1470,9 @@
 
         #region DefaultCharacter
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int DefaultCharacter
         {
             get { return defaultCharacter; }
@@ -1252,6 +1489,9 @@
 
         #region DefaultCharacterV2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int DefaultCharacterV2
         {
             get { return defaultCharacterV2; }
@@ -1268,6 +1508,9 @@
 
         #region DefaultMod
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string DefaultMod
         {
             get { return defaultMod; }
@@ -1284,6 +1527,9 @@
 
         #region EnableBossIntros
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool EnableBossIntros
         {
             get { return enableBossIntros; }
@@ -1300,6 +1546,9 @@
 
         #region EnableCutscenes
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool EnableCutscenes
         {
             get { return enableCutscenes; }
@@ -1316,6 +1565,9 @@
 
         #region EnableVsync
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool EnableVsync
         {
             get { return enableVsync; }
@@ -1332,6 +1584,9 @@
 
         #region FoughtDeadRinger
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool FoughtDeadRinger
         {
             get { return foughtDeadRinger; }
@@ -1348,6 +1603,9 @@
 
         #region FoughtNecrodancer
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool FoughtNecrodancer
         {
             get { return foughtNecrodancer; }
@@ -1364,6 +1622,9 @@
 
         #region FoughtNecroDancer2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool FoughtNecroDancer2
         {
             get { return foughtNecroDancer2; }
@@ -1380,6 +1641,9 @@
 
         #region Fullscreen
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Fullscreen
         {
             get { return fullscreen; }
@@ -1396,6 +1660,9 @@
 
         #region HavePlayedHardcore
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HavePlayedHardcore
         {
             get { return havePlayedHardcore; }
@@ -1412,6 +1679,9 @@
 
         #region HaveShownChangelogForVersion370
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion370
         {
             get { return haveShownChangelogForVersion370; }
@@ -1428,6 +1698,9 @@
 
         #region HaveShownChangelogForVersion371
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion371
         {
             get { return haveShownChangelogForVersion371; }
@@ -1444,6 +1717,9 @@
 
         #region HaveShownChangelogForVersion373
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion373
         {
             get { return haveShownChangelogForVersion373; }
@@ -1460,6 +1736,9 @@
 
         #region HaveShownChangelogForVersion374
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion374
         {
             get { return haveShownChangelogForVersion374; }
@@ -1476,6 +1755,9 @@
 
         #region HaveShownChangelogForVersion375
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion375
         {
             get { return haveShownChangelogForVersion375; }
@@ -1492,6 +1774,9 @@
 
         #region HaveShownChangelogForVersion376
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion376
         {
             get { return haveShownChangelogForVersion376; }
@@ -1508,6 +1793,9 @@
 
         #region HaveShownChangelogForVersion377
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion377
         {
             get { return haveShownChangelogForVersion377; }
@@ -1524,6 +1812,9 @@
 
         #region HaveShownChangelogForVersion378
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion378
         {
             get { return haveShownChangelogForVersion378; }
@@ -1540,6 +1831,9 @@
 
         #region HaveShownChangelogForVersion379
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion379
         {
             get { return haveShownChangelogForVersion379; }
@@ -1556,6 +1850,9 @@
 
         #region HaveShownChangelogForVersion380
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion380
         {
             get { return haveShownChangelogForVersion380; }
@@ -1572,6 +1869,9 @@
 
         #region HaveShownChangelogForVersion381
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion381
         {
             get { return haveShownChangelogForVersion381; }
@@ -1588,6 +1888,9 @@
 
         #region HaveShownChangelogForVersion383
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion383
         {
             get { return haveShownChangelogForVersion383; }
@@ -1604,6 +1907,9 @@
 
         #region HaveShownChangelogForVersion384
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion384
         {
             get { return haveShownChangelogForVersion384; }
@@ -1620,6 +1926,9 @@
 
         #region HaveShownChangelogForVersion385
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion385
         {
             get { return haveShownChangelogForVersion385; }
@@ -1636,6 +1945,9 @@
 
         #region HaveShownChangelogForVersion386
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion386
         {
             get { return haveShownChangelogForVersion386; }
@@ -1652,6 +1964,9 @@
 
         #region HaveShownChangelogForVersion387
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion387
         {
             get { return haveShownChangelogForVersion387; }
@@ -1668,6 +1983,9 @@
 
         #region HaveShownChangelogForVersion388
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion388
         {
             get { return haveShownChangelogForVersion388; }
@@ -1684,6 +2002,9 @@
 
         #region HaveShownChangelogForVersion389
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion389
         {
             get { return haveShownChangelogForVersion389; }
@@ -1700,6 +2021,9 @@
 
         #region HaveShownChangelogForVersion390
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion390
         {
             get { return haveShownChangelogForVersion390; }
@@ -1716,6 +2040,9 @@
 
         #region HaveShownChangelogForVersion391
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion391
         {
             get { return haveShownChangelogForVersion391; }
@@ -1732,6 +2059,9 @@
 
         #region HaveShownChangelogForVersion392
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion392
         {
             get { return haveShownChangelogForVersion392; }
@@ -1748,6 +2078,9 @@
 
         #region HaveShownChangelogForVersion394
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion394
         {
             get { return haveShownChangelogForVersion394; }
@@ -1764,6 +2097,9 @@
 
         #region HaveShownChangelogForVersion399
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion399
         {
             get { return haveShownChangelogForVersion399; }
@@ -1780,6 +2116,9 @@
 
         #region HaveShownChangelogForVersion400
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion400
         {
             get { return haveShownChangelogForVersion400; }
@@ -1796,6 +2135,9 @@
 
         #region HaveShownChangelogForVersion403
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion403
         {
             get { return haveShownChangelogForVersion403; }
@@ -1812,6 +2154,9 @@
 
         #region HaveShownChangelogForVersion1003
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion1003
         {
             get { return haveShownChangelogForVersion1003; }
@@ -1828,6 +2173,9 @@
 
         #region HaveShownChangelogForVersion1004
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion1004
         {
             get { return haveShownChangelogForVersion1004; }
@@ -1844,6 +2192,9 @@
 
         #region HaveShownChangelogForVersion1005
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion1005
         {
             get { return haveShownChangelogForVersion1005; }
@@ -1860,6 +2211,9 @@
 
         #region HaveShownChangelogForVersion1008
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion1008
         {
             get { return haveShownChangelogForVersion1008; }
@@ -1876,6 +2230,9 @@
 
         #region HaveShownChangelogForVersion1009
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion1009
         {
             get { return haveShownChangelogForVersion1009; }
@@ -1892,6 +2249,9 @@
 
         #region HaveShownChangelogForVersion1019
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion1019
         {
             get { return haveShownChangelogForVersion1019; }
@@ -1908,6 +2268,9 @@
 
         #region HaveShownChangelogForVersion1020
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion1020
         {
             get { return haveShownChangelogForVersion1020; }
@@ -1924,6 +2287,9 @@
 
         #region HaveShownChangelogForVersion1021
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion1021
         {
             get { return haveShownChangelogForVersion1021; }
@@ -1940,6 +2306,9 @@
 
         #region HaveShownChangelogForVersion1024
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion1024
         {
             get { return haveShownChangelogForVersion1024; }
@@ -1956,6 +2325,9 @@
 
         #region HaveShownChangelogForVersion2034
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion2034
         {
             get { return haveShownChangelogForVersion2034; }
@@ -1972,6 +2344,9 @@
 
         #region HaveShownChangelogForVersion2039
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion2039
         {
             get { return haveShownChangelogForVersion2039; }
@@ -1988,6 +2363,9 @@
 
         #region HaveShownChangelogForVersion2040
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion2040
         {
             get { return haveShownChangelogForVersion2040; }
@@ -2004,6 +2382,9 @@
 
         #region HaveShownChangelogForVersion2041
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion2041
         {
             get { return haveShownChangelogForVersion2041; }
@@ -2020,6 +2401,9 @@
 
         #region HaveShownChangelogForVersion2042
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion2042
         {
             get { return haveShownChangelogForVersion2042; }
@@ -2036,6 +2420,9 @@
 
         #region HaveShownChangelogForVersion2043
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion2043
         {
             get { return haveShownChangelogForVersion2043; }
@@ -2052,6 +2439,9 @@
 
         #region HaveShownChangelogForVersion2044
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion2044
         {
             get { return haveShownChangelogForVersion2044; }
@@ -2068,6 +2458,9 @@
 
         #region HaveShownChangelogForVersion2045
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion2045
         {
             get { return haveShownChangelogForVersion2045; }
@@ -2084,6 +2477,9 @@
 
         #region HaveShownChangelogForVersion2054
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion2054
         {
             get { return haveShownChangelogForVersion2054; }
@@ -2100,6 +2496,9 @@
 
         #region HaveShownChangelogForVersion2055
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HaveShownChangelogForVersion2055
         {
             get { return haveShownChangelogForVersion2055; }
@@ -2116,6 +2515,9 @@
 
         #region KeyBindingA0
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA0
         {
             get { return keyBindingA0; }
@@ -2132,6 +2534,9 @@
 
         #region KeyBindingA1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA1
         {
             get { return keyBindingA1; }
@@ -2148,6 +2553,9 @@
 
         #region KeyBindingA2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA2
         {
             get { return keyBindingA2; }
@@ -2164,6 +2572,9 @@
 
         #region KeyBindingA3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA3
         {
             get { return keyBindingA3; }
@@ -2180,6 +2591,9 @@
 
         #region KeyBindingA4
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA4
         {
             get { return keyBindingA4; }
@@ -2196,6 +2610,9 @@
 
         #region KeyBindingA5
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA5
         {
             get { return keyBindingA5; }
@@ -2212,6 +2629,9 @@
 
         #region KeyBindingA6
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA6
         {
             get { return keyBindingA6; }
@@ -2228,6 +2648,9 @@
 
         #region KeyBindingA7
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA7
         {
             get { return keyBindingA7; }
@@ -2244,6 +2667,9 @@
 
         #region KeyBindingA8
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA8
         {
             get { return keyBindingA8; }
@@ -2260,6 +2686,9 @@
 
         #region KeyBindingA9
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA9
         {
             get { return keyBindingA9; }
@@ -2276,6 +2705,9 @@
 
         #region KeyBindingA10
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA10
         {
             get { return keyBindingA10; }
@@ -2292,6 +2724,9 @@
 
         #region KeyBindingA12
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA12
         {
             get { return keyBindingA12; }
@@ -2308,6 +2743,9 @@
 
         #region KeyBindingA13
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA13
         {
             get { return keyBindingA13; }
@@ -2324,6 +2762,9 @@
 
         #region KeyBindingA14
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA14
         {
             get { return keyBindingA14; }
@@ -2340,6 +2781,9 @@
 
         #region KeyBindingA15
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingA15
         {
             get { return keyBindingA15; }
@@ -2356,6 +2800,9 @@
 
         #region KeyBindingB0
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingB0
         {
             get { return keyBindingB0; }
@@ -2372,6 +2819,9 @@
 
         #region KeyBindingB1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingB1
         {
             get { return keyBindingB1; }
@@ -2388,6 +2838,9 @@
 
         #region KeyBindingB2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingB2
         {
             get { return keyBindingB2; }
@@ -2404,6 +2857,9 @@
 
         #region KeyBindingB3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int KeyBindingB3
         {
             get { return keyBindingB3; }
@@ -2420,6 +2876,9 @@
 
         #region KilledArmadillo1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledArmadillo1
         {
             get { return killedArmadillo1; }
@@ -2436,6 +2895,9 @@
 
         #region KilledArmadillo2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledArmadillo2
         {
             get { return killedArmadillo2; }
@@ -2452,6 +2914,9 @@
 
         #region KilledArmadillo3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledArmadillo3
         {
             get { return killedArmadillo3; }
@@ -2468,6 +2933,9 @@
 
         #region KilledArmoredSkeleton1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledArmoredSkeleton1
         {
             get { return killedArmoredSkeleton1; }
@@ -2484,6 +2952,9 @@
 
         #region KilledArmoredSkeleton2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledArmoredSkeleton2
         {
             get { return killedArmoredSkeleton2; }
@@ -2500,6 +2971,9 @@
 
         #region KilledArmoredSkeleton3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledArmoredSkeleton3
         {
             get { return killedArmoredSkeleton3; }
@@ -2516,6 +2990,9 @@
 
         #region KilledBanshee1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBanshee1
         {
             get { return killedBanshee1; }
@@ -2532,6 +3009,9 @@
 
         #region KilledBanshee2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBanshee2
         {
             get { return killedBanshee2; }
@@ -2548,6 +3028,9 @@
 
         #region KilledBat1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBat1
         {
             get { return killedBat1; }
@@ -2564,6 +3047,9 @@
 
         #region KilledBat2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBat2
         {
             get { return killedBat2; }
@@ -2580,6 +3066,9 @@
 
         #region KilledBat3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBat3
         {
             get { return killedBat3; }
@@ -2596,6 +3085,9 @@
 
         #region KilledBat4
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBat4
         {
             get { return killedBat4; }
@@ -2612,6 +3104,9 @@
 
         #region KilledBatMiniboss1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBatMiniboss1
         {
             get { return killedBatMiniboss1; }
@@ -2628,6 +3123,9 @@
 
         #region KilledBatMiniboss2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBatMiniboss2
         {
             get { return killedBatMiniboss2; }
@@ -2644,6 +3142,9 @@
 
         #region KilledBeetle1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBeetle1
         {
             get { return killedBeetle1; }
@@ -2660,6 +3161,9 @@
 
         #region KilledBeetle2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBeetle2
         {
             get { return killedBeetle2; }
@@ -2676,6 +3180,9 @@
 
         #region KilledBishop1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBishop1
         {
             get { return killedBishop1; }
@@ -2692,6 +3199,9 @@
 
         #region KilledBishop2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBishop2
         {
             get { return killedBishop2; }
@@ -2708,6 +3218,9 @@
 
         #region KilledBlademaster1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBlademaster1
         {
             get { return killedBlademaster1; }
@@ -2724,6 +3237,9 @@
 
         #region KilledBlademaster2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBlademaster2
         {
             get { return killedBlademaster2; }
@@ -2740,6 +3256,9 @@
 
         #region KilledBossmaster1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledBossmaster1
         {
             get { return killedBossmaster1; }
@@ -2756,6 +3275,9 @@
 
         #region KilledCauldron1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledCauldron1
         {
             get { return killedCauldron1; }
@@ -2772,6 +3294,9 @@
 
         #region KilledClone1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledClone1
         {
             get { return killedClone1; }
@@ -2788,6 +3313,9 @@
 
         #region KilledConjurer1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledConjurer1
         {
             get { return killedConjurer1; }
@@ -2804,6 +3332,9 @@
 
         #region KilledCoralRiff1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledCoralRiff1
         {
             get { return killedCoralRiff1; }
@@ -2820,6 +3351,9 @@
 
         #region KilledCrate1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledCrate1
         {
             get { return killedCrate1; }
@@ -2836,6 +3370,9 @@
 
         #region KilledCrate3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledCrate3
         {
             get { return killedCrate3; }
@@ -2852,6 +3389,9 @@
 
         #region KilledDeathMetal1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledDeathMetal1
         {
             get { return killedDeathMetal1; }
@@ -2868,6 +3408,9 @@
 
         #region KilledDevil1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledDevil1
         {
             get { return killedDevil1; }
@@ -2884,6 +3427,9 @@
 
         #region KilledDevil2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledDevil2
         {
             get { return killedDevil2; }
@@ -2900,6 +3446,9 @@
 
         #region KilledDragon1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledDragon1
         {
             get { return killedDragon1; }
@@ -2916,6 +3465,9 @@
 
         #region KilledDragon2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledDragon2
         {
             get { return killedDragon2; }
@@ -2932,6 +3484,9 @@
 
         #region KilledDragon3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledDragon3
         {
             get { return killedDragon3; }
@@ -2948,6 +3503,9 @@
 
         #region KilledDragon4
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledDragon4
         {
             get { return killedDragon4; }
@@ -2964,6 +3522,9 @@
 
         #region KilledElectricMage1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledElectricMage1
         {
             get { return killedElectricMage1; }
@@ -2980,6 +3541,9 @@
 
         #region KilledElectricMage2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledElectricMage2
         {
             get { return killedElectricMage2; }
@@ -2996,6 +3560,9 @@
 
         #region KilledElectricMage3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledElectricMage3
         {
             get { return killedElectricMage3; }
@@ -3012,6 +3579,9 @@
 
         #region KilledElectricOrb1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledElectricOrb1
         {
             get { return killedElectricOrb1; }
@@ -3028,6 +3598,9 @@
 
         #region KilledEvilEye1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledEvilEye1
         {
             get { return killedEvilEye1; }
@@ -3044,6 +3617,9 @@
 
         #region KilledEvilEye2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledEvilEye2
         {
             get { return killedEvilEye2; }
@@ -3060,6 +3636,9 @@
 
         #region KilledFakeWall1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledFakeWall1
         {
             get { return killedFakeWall1; }
@@ -3076,6 +3655,9 @@
 
         #region KilledFakeWall2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledFakeWall2
         {
             get { return killedFakeWall2; }
@@ -3092,6 +3674,9 @@
 
         #region KilledFireElemental1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledFireElemental1
         {
             get { return killedFireElemental1; }
@@ -3108,6 +3693,9 @@
 
         #region KilledFortissimole1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledFortissimole1
         {
             get { return killedFortissimole1; }
@@ -3124,6 +3712,9 @@
 
         #region KilledGargoyle2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledGargoyle2
         {
             get { return killedGargoyle2; }
@@ -3140,6 +3731,9 @@
 
         #region KilledGhast1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledGhast1
         {
             get { return killedGhast1; }
@@ -3156,6 +3750,9 @@
 
         #region KilledGhost1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledGhost1
         {
             get { return killedGhost1; }
@@ -3172,6 +3769,9 @@
 
         #region KilledGhoul1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledGhoul1
         {
             get { return killedGhoul1; }
@@ -3188,6 +3788,9 @@
 
         #region KilledGoblin1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledGoblin1
         {
             get { return killedGoblin1; }
@@ -3204,6 +3807,9 @@
 
         #region KilledGoblin2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledGoblin2
         {
             get { return killedGoblin2; }
@@ -3220,6 +3826,9 @@
 
         #region KilledGoblinBomber1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledGoblinBomber1
         {
             get { return killedGoblinBomber1; }
@@ -3236,6 +3845,9 @@
 
         #region KilledGolem1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledGolem1
         {
             get { return killedGolem1; }
@@ -3252,6 +3864,9 @@
 
         #region KilledGolem2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledGolem2
         {
             get { return killedGolem2; }
@@ -3268,6 +3883,9 @@
 
         #region KilledGolem3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledGolem3
         {
             get { return killedGolem3; }
@@ -3284,6 +3902,9 @@
 
         #region KilledGorgon1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledGorgon1
         {
             get { return killedGorgon1; }
@@ -3300,6 +3921,9 @@
 
         #region KilledGorgon2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledGorgon2
         {
             get { return killedGorgon2; }
@@ -3316,6 +3940,9 @@
 
         #region KilledHarpy1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledHarpy1
         {
             get { return killedHarpy1; }
@@ -3332,6 +3959,9 @@
 
         #region KilledHellhound1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledHellhound1
         {
             get { return killedHellhound1; }
@@ -3348,6 +3978,9 @@
 
         #region KilledIceElemental1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledIceElemental1
         {
             get { return killedIceElemental1; }
@@ -3364,6 +3997,9 @@
 
         #region KilledKing1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledKing1
         {
             get { return killedKing1; }
@@ -3380,6 +4016,9 @@
 
         #region KilledKing2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledKing2
         {
             get { return killedKing2; }
@@ -3396,6 +4035,9 @@
 
         #region KilledKingConga1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledKingConga1
         {
             get { return killedKingConga1; }
@@ -3412,6 +4054,9 @@
 
         #region KilledKnight1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledKnight1
         {
             get { return killedKnight1; }
@@ -3428,6 +4073,9 @@
 
         #region KilledKnight2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledKnight2
         {
             get { return killedKnight2; }
@@ -3444,6 +4092,9 @@
 
         #region KilledLeprechaun1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledLeprechaun1
         {
             get { return killedLeprechaun1; }
@@ -3460,6 +4111,9 @@
 
         #region KilledLich1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledLich1
         {
             get { return killedLich1; }
@@ -3476,6 +4130,9 @@
 
         #region KilledLich2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledLich2
         {
             get { return killedLich2; }
@@ -3492,6 +4149,9 @@
 
         #region KilledLich3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledLich3
         {
             get { return killedLich3; }
@@ -3508,6 +4168,9 @@
 
         #region KilledMetrognome1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledMetrognome1
         {
             get { return killedMetrognome1; }
@@ -3524,6 +4187,9 @@
 
         #region KilledMetrognome2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledMetrognome2
         {
             get { return killedMetrognome2; }
@@ -3540,6 +4206,9 @@
 
         #region KilledMinotaur1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledMinotaur1
         {
             get { return killedMinotaur1; }
@@ -3556,6 +4225,9 @@
 
         #region KilledMinotaur2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledMinotaur2
         {
             get { return killedMinotaur2; }
@@ -3572,6 +4244,9 @@
 
         #region KilledMole1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledMole1
         {
             get { return killedMole1; }
@@ -3588,6 +4263,9 @@
 
         #region KilledMommy1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledMommy1
         {
             get { return killedMommy1; }
@@ -3604,6 +4282,9 @@
 
         #region KilledMonkey1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledMonkey1
         {
             get { return killedMonkey1; }
@@ -3620,6 +4301,9 @@
 
         #region KilledMonkey2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledMonkey2
         {
             get { return killedMonkey2; }
@@ -3636,6 +4320,9 @@
 
         #region KilledMonkey3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledMonkey3
         {
             get { return killedMonkey3; }
@@ -3652,6 +4339,9 @@
 
         #region KilledMonkey4
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledMonkey4
         {
             get { return killedMonkey4; }
@@ -3668,6 +4358,9 @@
 
         #region KilledMummy1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledMummy1
         {
             get { return killedMummy1; }
@@ -3684,6 +4377,9 @@
 
         #region KilledMushroom1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledMushroom1
         {
             get { return killedMushroom1; }
@@ -3700,6 +4396,9 @@
 
         #region KilledMushroom2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledMushroom2
         {
             get { return killedMushroom2; }
@@ -3716,6 +4415,9 @@
 
         #region KilledMushroomLight1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledMushroomLight1
         {
             get { return killedMushroomLight1; }
@@ -3732,6 +4434,9 @@
 
         #region KilledNecrodancer1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledNecrodancer1
         {
             get { return killedNecrodancer1; }
@@ -3748,6 +4453,9 @@
 
         #region KilledNightmare1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledNightmare1
         {
             get { return killedNightmare1; }
@@ -3764,6 +4472,9 @@
 
         #region KilledNightmare2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledNightmare2
         {
             get { return killedNightmare2; }
@@ -3780,6 +4491,9 @@
 
         #region KilledOgre1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledOgre1
         {
             get { return killedOgre1; }
@@ -3796,6 +4510,9 @@
 
         #region KilledOrc1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledOrc1
         {
             get { return killedOrc1; }
@@ -3812,6 +4529,9 @@
 
         #region KilledOrc2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledOrc2
         {
             get { return killedOrc2; }
@@ -3828,6 +4548,9 @@
 
         #region KilledOrc3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledOrc3
         {
             get { return killedOrc3; }
@@ -3844,6 +4567,9 @@
 
         #region KilledPawn1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledPawn1
         {
             get { return killedPawn1; }
@@ -3860,6 +4586,9 @@
 
         #region KilledPawn2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledPawn2
         {
             get { return killedPawn2; }
@@ -3876,6 +4605,9 @@
 
         #region KilledPixie1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledPixie1
         {
             get { return killedPixie1; }
@@ -3892,6 +4624,9 @@
 
         #region KilledQueen1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledQueen1
         {
             get { return killedQueen1; }
@@ -3908,6 +4643,9 @@
 
         #region KilledQueen2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledQueen2
         {
             get { return killedQueen2; }
@@ -3924,6 +4662,9 @@
 
         #region KilledRook1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledRook1
         {
             get { return killedRook1; }
@@ -3940,6 +4681,9 @@
 
         #region KilledRook2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledRook2
         {
             get { return killedRook2; }
@@ -3956,6 +4700,9 @@
 
         #region KilledSarcophagus1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSarcophagus1
         {
             get { return killedSarcophagus1; }
@@ -3972,6 +4719,9 @@
 
         #region KilledSarcophagus2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSarcophagus2
         {
             get { return killedSarcophagus2; }
@@ -3988,6 +4738,9 @@
 
         #region KilledSarcophagus3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSarcophagus3
         {
             get { return killedSarcophagus3; }
@@ -4004,6 +4757,9 @@
 
         #region KilledShopkeeper1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledShopkeeper1
         {
             get { return killedShopkeeper1; }
@@ -4020,6 +4776,9 @@
 
         #region KilledShopkeeper2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledShopkeeper2
         {
             get { return killedShopkeeper2; }
@@ -4036,6 +4795,9 @@
 
         #region KilledShopkeeper3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledShopkeeper3
         {
             get { return killedShopkeeper3; }
@@ -4052,6 +4814,9 @@
 
         #region KilledShopkeeper4
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledShopkeeper4
         {
             get { return killedShopkeeper4; }
@@ -4068,6 +4833,9 @@
 
         #region KilledShopkeeper5
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledShopkeeper5
         {
             get { return killedShopkeeper5; }
@@ -4084,6 +4852,9 @@
 
         #region KilledShopkeeperGhost1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledShopkeeperGhost1
         {
             get { return killedShopkeeperGhost1; }
@@ -4100,6 +4871,9 @@
 
         #region KilledShovemonster1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledShovemonster1
         {
             get { return killedShovemonster1; }
@@ -4116,6 +4890,9 @@
 
         #region KilledShovemonster2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledShovemonster2
         {
             get { return killedShovemonster2; }
@@ -4132,6 +4909,9 @@
 
         #region KilledShriner1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledShriner1
         {
             get { return killedShriner1; }
@@ -4148,6 +4928,9 @@
 
         #region KilledSkeleton1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSkeleton1
         {
             get { return killedSkeleton1; }
@@ -4164,6 +4947,9 @@
 
         #region KilledSkeleton2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSkeleton2
         {
             get { return killedSkeleton2; }
@@ -4180,6 +4966,9 @@
 
         #region KilledSkeleton3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSkeleton3
         {
             get { return killedSkeleton3; }
@@ -4196,6 +4985,9 @@
 
         #region KilledSkeletonKnight1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSkeletonKnight1
         {
             get { return killedSkeletonKnight1; }
@@ -4212,6 +5004,9 @@
 
         #region KilledSkeletonKnight2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSkeletonKnight2
         {
             get { return killedSkeletonKnight2; }
@@ -4228,6 +5023,9 @@
 
         #region KilledSkeletonKnight3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSkeletonKnight3
         {
             get { return killedSkeletonKnight3; }
@@ -4244,6 +5042,9 @@
 
         #region KilledSkeletonMage1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSkeletonMage1
         {
             get { return killedSkeletonMage1; }
@@ -4260,6 +5061,9 @@
 
         #region KilledSkeletonMage2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSkeletonMage2
         {
             get { return killedSkeletonMage2; }
@@ -4276,6 +5080,9 @@
 
         #region KilledSkeletonMage3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSkeletonMage3
         {
             get { return killedSkeletonMage3; }
@@ -4292,6 +5099,9 @@
 
         #region KilledSkull1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSkull1
         {
             get { return killedSkull1; }
@@ -4308,6 +5118,9 @@
 
         #region KilledSkull2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSkull2
         {
             get { return killedSkull2; }
@@ -4324,6 +5137,9 @@
 
         #region KilledSkull3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSkull3
         {
             get { return killedSkull3; }
@@ -4340,6 +5156,9 @@
 
         #region KilledSleepingGoblin1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSleepingGoblin1
         {
             get { return killedSleepingGoblin1; }
@@ -4356,6 +5175,9 @@
 
         #region KilledSlime1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSlime1
         {
             get { return killedSlime1; }
@@ -4372,6 +5194,9 @@
 
         #region KilledSlime2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSlime2
         {
             get { return killedSlime2; }
@@ -4388,6 +5213,9 @@
 
         #region KilledSlime3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSlime3
         {
             get { return killedSlime3; }
@@ -4404,6 +5232,9 @@
 
         #region KilledSlime4
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSlime4
         {
             get { return killedSlime4; }
@@ -4420,6 +5251,9 @@
 
         #region KilledSlime5
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSlime5
         {
             get { return killedSlime5; }
@@ -4436,6 +5270,9 @@
 
         #region KilledSlime6
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSlime6
         {
             get { return killedSlime6; }
@@ -4452,6 +5289,9 @@
 
         #region KilledSpider1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledSpider1
         {
             get { return killedSpider1; }
@@ -4468,6 +5308,9 @@
 
         #region KilledTarMonster1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTarMonster1
         {
             get { return killedTarMonster1; }
@@ -4484,6 +5327,9 @@
 
         #region KilledTentacle2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTentacle2
         {
             get { return killedTentacle2; }
@@ -4500,6 +5346,9 @@
 
         #region KilledTentacle3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTentacle3
         {
             get { return killedTentacle3; }
@@ -4516,6 +5365,9 @@
 
         #region KilledTentacle4
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTentacle4
         {
             get { return killedTentacle4; }
@@ -4532,6 +5384,9 @@
 
         #region KilledTentacle5
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTentacle5
         {
             get { return killedTentacle5; }
@@ -4548,6 +5403,9 @@
 
         #region KilledTentacle6
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTentacle6
         {
             get { return killedTentacle6; }
@@ -4564,6 +5422,9 @@
 
         #region KilledTentacle7
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTentacle7
         {
             get { return killedTentacle7; }
@@ -4580,6 +5441,9 @@
 
         #region KilledTentacle8
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTentacle8
         {
             get { return killedTentacle8; }
@@ -4596,6 +5460,9 @@
 
         #region KilledToughSarcophagus1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledToughSarcophagus1
         {
             get { return killedToughSarcophagus1; }
@@ -4612,6 +5479,9 @@
 
         #region KilledTransmogrifier1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTransmogrifier1
         {
             get { return killedTransmogrifier1; }
@@ -4628,6 +5498,9 @@
 
         #region KilledTrapCauldron1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTrapCauldron1
         {
             get { return killedTrapCauldron1; }
@@ -4644,6 +5517,9 @@
 
         #region KilledTrapCauldron2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTrapCauldron2
         {
             get { return killedTrapCauldron2; }
@@ -4660,6 +5536,9 @@
 
         #region KilledTrapChest1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTrapChest1
         {
             get { return killedTrapChest1; }
@@ -4676,6 +5555,9 @@
 
         #region KilledTrapChest2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTrapChest2
         {
             get { return killedTrapChest2; }
@@ -4692,6 +5574,9 @@
 
         #region KilledTrapChest3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTrapChest3
         {
             get { return killedTrapChest3; }
@@ -4708,6 +5593,9 @@
 
         #region KilledTrapChest4
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTrapChest4
         {
             get { return killedTrapChest4; }
@@ -4724,6 +5612,9 @@
 
         #region KilledTrapChest5
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTrapChest5
         {
             get { return killedTrapChest5; }
@@ -4740,6 +5631,9 @@
 
         #region KilledTrapChest6
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledTrapChest6
         {
             get { return killedTrapChest6; }
@@ -4756,6 +5650,9 @@
 
         #region KilledWarlock1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledWarlock1
         {
             get { return killedWarlock1; }
@@ -4772,6 +5669,9 @@
 
         #region KilledWarlock2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledWarlock2
         {
             get { return killedWarlock2; }
@@ -4788,6 +5688,9 @@
 
         #region KilledWaterBall1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledWaterBall1
         {
             get { return killedWaterBall1; }
@@ -4804,6 +5707,9 @@
 
         #region KilledWight1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledWight1
         {
             get { return killedWight1; }
@@ -4820,6 +5726,9 @@
 
         #region KilledWraith1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledWraith1
         {
             get { return killedWraith1; }
@@ -4836,6 +5745,9 @@
 
         #region KilledWraith2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledWraith2
         {
             get { return killedWraith2; }
@@ -4852,6 +5764,9 @@
 
         #region KilledYeti1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledYeti1
         {
             get { return killedYeti1; }
@@ -4868,6 +5783,9 @@
 
         #region KilledZombie1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledZombie1
         {
             get { return killedZombie1; }
@@ -4884,6 +5802,9 @@
 
         #region KilledZombieElectric1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledZombieElectric1
         {
             get { return killedZombieElectric1; }
@@ -4900,6 +5821,9 @@
 
         #region KilledZombieSnake1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool KilledZombieSnake1
         {
             get { return killedZombieSnake1; }
@@ -4916,6 +5840,9 @@
 
         #region LatencyCalibrated
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool LatencyCalibrated
         {
             get { return latencyCalibrated; }
@@ -4932,6 +5859,9 @@
 
         #region LobbyMove
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool LobbyMove
         {
             get { return lobbyMove; }
@@ -4948,6 +5878,9 @@
 
         #region MentorLevelClear0
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool MentorLevelClear0
         {
             get { return mentorLevelClear0; }
@@ -4964,6 +5897,9 @@
 
         #region MentorLevelClear1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool MentorLevelClear1
         {
             get { return mentorLevelClear1; }
@@ -4980,6 +5916,9 @@
 
         #region MentorLevelClear2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool MentorLevelClear2
         {
             get { return mentorLevelClear2; }
@@ -4996,6 +5935,9 @@
 
         #region MentorLevelClear3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool MentorLevelClear3
         {
             get { return mentorLevelClear3; }
@@ -5012,6 +5954,9 @@
 
         #region MusicVolume
 
+        /// <summary>
+        /// 
+        /// </summary>
         public decimal MusicVolume
         {
             get { return musicVolume; }
@@ -5028,6 +5973,9 @@
 
         #region NumPendingSpawnItemsV2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int NumPendingSpawnItemsV2
         {
             get { return numPendingSpawnItemsV2; }
@@ -5044,6 +5992,9 @@
 
         #region PendingSpawnItemV2_0
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string PendingSpawnItemV2_0
         {
             get { return pendingSpawnItemV2_0; }
@@ -5060,6 +6011,9 @@
 
         #region PendingSpawnItemV2_1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string PendingSpawnItemV2_1
         {
             get { return pendingSpawnItemV2_1; }
@@ -5076,6 +6030,9 @@
 
         #region PendingSpawnItemV2_2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string PendingSpawnItemV2_2
         {
             get { return pendingSpawnItemV2_2; }
@@ -5092,6 +6049,9 @@
 
         #region PendingSpawnItemV2_3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string PendingSpawnItemV2_3
         {
             get { return pendingSpawnItemV2_3; }
@@ -5108,6 +6068,9 @@
 
         #region PendingSpawnItemV2_4
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string PendingSpawnItemV2_4
         {
             get { return pendingSpawnItemV2_4; }
@@ -5124,6 +6087,9 @@
 
         #region PendingSpawnItemV2_5
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string PendingSpawnItemV2_5
         {
             get { return pendingSpawnItemV2_5; }
@@ -5140,6 +6106,9 @@
 
         #region PendingSpawnItemV2_6
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string PendingSpawnItemV2_6
         {
             get { return pendingSpawnItemV2_6; }
@@ -5156,6 +6125,9 @@
 
         #region PendingSpawnItemV2_7
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string PendingSpawnItemV2_7
         {
             get { return pendingSpawnItemV2_7; }
@@ -5172,6 +6144,9 @@
 
         #region PreBossEffect
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool PreBossEffect
         {
             get { return preBossEffect; }
@@ -5188,6 +6163,9 @@
 
         #region ResolutionHeight
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int ResolutionHeight
         {
             get { return resolutionHeight; }
@@ -5204,6 +6182,9 @@
 
         #region ResolutionWidth
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int ResolutionWidth
         {
             get { return resolutionWidth; }
@@ -5221,6 +6202,9 @@
 
         #region ScreenShake
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool ScreenShake
         {
             get { return screenShake; }
@@ -5237,6 +6221,9 @@
 
         #region ShowDiscoFloor
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool ShowDiscoFloor
         {
             get { return showDiscoFloor; }
@@ -5253,6 +6240,9 @@
 
         #region ShowHudBeatBars
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool ShowHudBeatBars
         {
             get { return showHudBeatBars; }
@@ -5269,6 +6259,9 @@
 
         #region ShowHudHeart
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool ShowHudHeart
         {
             get { return showHudHeart; }
@@ -5285,6 +6278,9 @@
 
         #region ShowHints
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool ShowHints
         {
             get { return showHints; }
@@ -5301,6 +6297,9 @@
 
         #region ShowSpeedRunTimer
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool ShowSpeedRunTimer
         {
             get { return showSpeedRunTimer; }
@@ -5317,6 +6316,9 @@
 
         #region ShownNocturnaIntro
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool ShownNocturnaIntro
         {
             get { return shownNocturnaIntro; }
@@ -5333,6 +6335,9 @@
 
         #region ShownSeizureWarning
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool ShownSeizureWarning
         {
             get { return shownSeizureWarning; }
@@ -5349,6 +6354,9 @@
 
         #region SoundVolume
 
+        /// <summary>
+        /// 
+        /// </summary>
         public decimal SoundVolume
         {
             get { return soundVolume; }
@@ -5365,6 +6373,9 @@
 
         #region SoundtrackName0
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string SoundtrackName0
         {
             get { return soundtrackName0; }
@@ -5381,6 +6392,9 @@
 
         #region SoundtrackName1
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string SoundtrackName1
         {
             get { return soundtrackName1; }
@@ -5397,6 +6411,9 @@
 
         #region SoundtrackName2
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string SoundtrackName2
         {
             get { return soundtrackName2; }
@@ -5413,6 +6430,9 @@
 
         #region SoundtrackName3
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string SoundtrackName3
         {
             get { return soundtrackName3; }
@@ -5429,6 +6449,9 @@
 
         #region SoundtrackName4
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string SoundtrackName4
         {
             get { return soundtrackName4; }
@@ -5445,6 +6468,9 @@
 
         #region SoundtrackName5
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string SoundtrackName5
         {
             get { return soundtrackName5; }
@@ -5461,6 +6487,9 @@
 
         #region SoundtrackName6
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string SoundtrackName6
         {
             get { return soundtrackName6; }
@@ -5477,6 +6506,9 @@
 
         #region SoundtrackName7
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string SoundtrackName7
         {
             get { return soundtrackName7; }
@@ -5493,6 +6525,9 @@
 
         #region SoundtrackName8
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string SoundtrackName8
         {
             get { return soundtrackName8; }
@@ -5509,6 +6544,9 @@
 
         #region SoundtrackName9
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string SoundtrackName9
         {
             get { return soundtrackName9; }
@@ -5525,6 +6563,9 @@
 
         #region SoundtrackName10
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string SoundtrackName10
         {
             get { return soundtrackName10; }
@@ -5541,6 +6582,9 @@
 
         #region SoundtrackName11
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string SoundtrackName11
         {
             get { return soundtrackName11; }
@@ -5557,6 +6601,9 @@
 
         #region TutorialComplete
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool TutorialComplete
         {
             get { return tutorialComplete; }
@@ -5573,6 +6620,9 @@
 
         #region UseChoral
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool UseChoral
         {
             get { return useChoral; }
@@ -5589,6 +6639,9 @@
 
         #region VideoLatency
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int VideoLatency
         {
             get { return videoLatency; }
@@ -5605,6 +6658,9 @@
 
         #region ViewMultiplier
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int ViewMultiplier
         {
             get { return viewMultiplier; }
