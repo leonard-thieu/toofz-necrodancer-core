@@ -8,19 +8,44 @@
 
 **toofz NecroDancer Core** is a .NET library designed for parsing and editing **Crypt of the NecroDancer** files. 
 The library supports `necrodancer.xml`, replays, and saves.
-It powers the **Item** and **Enemy** sections of **toofz** through data mining. 
-It also provides richer leaderboard entry data by parsing replays associated with entries.
 
 ---
 
 **toofz NecroDancer Core** is a component of **toofz**. 
 Information about other projects that support **toofz** can be found in the [meta-repository](https://github.com/leonard-thieu/toofz-necrodancer).
 
+## Description
+
+toofz NecroDancer Core supports reading and modifying `necrodancer.xml`, replays, and saves.
+It powers the **Item** and **Enemy** sections of **toofz** through data mining. 
+It also provides richer leaderboard entry data by parsing replays associated with entries.
+
+## Installing via NuGet
+
+Add a NuGet.Config to your solution directory with the following content:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <packageSources>
+    <add key="toofz" value="https://www.myget.org/F/toofz/api/v3/index.json" />
+  </packageSources>
+</configuration>
+```
+
+```powershell
+Install-Package 'toofz.NecroDancer'
+```
+
 ### Dependents
 
 * [toofz Data](https://github.com/leonard-thieu/toofz-data)
 * [toofz Replays Service](https://github.com/leonard-thieu/replays-service)
 * [toofz API](https://github.com/leonard-thieu/api.toofz.com)
+
+### Dependencies
+
+* [toofz Build](https://github.com/leonard-thieu/toofz-build)
 
 ## Requirements
 
@@ -29,13 +54,9 @@ Information about other projects that support **toofz** can be found in the [met
   * .NET Framework 4.6
   * Mono 4.6
 
-## Building and testing
-
-Visual Studio 2017 (version 15.3 or later) can be used to build and run tests.
-
 ## Usage
 
-### [Data API](toofz.NecroDancer/Data) (`necrodancer.xml`)
+### [Data API](src/toofz.NecroDancer/Data) (`necrodancer.xml`)
 
 Reading `necrodancer.xml`:
 
@@ -49,7 +70,7 @@ using (var fs = File.OpenRead(necrodancerXmlPath))
 }
 ```
 
-### [Replays API](toofz.NecroDancer/Replays)
+### [Replays API](src/toofz.NecroDancer/Replays)
 
 Reading a replay:
 
@@ -63,7 +84,7 @@ using (var fs = File.OpenRead(replayPath))
 
 ```
 
-### [Saves API](toofz.NecroDancer/Saves)
+### [Saves API](src/toofz.NecroDancer/Saves)
 
 Reading a save:
 
@@ -71,10 +92,35 @@ Reading a save:
 using (var fs = File.OpenRead(saveDataPath))
 {
     var serializer = new SaveDataSerializer();
-    var saveData = serializer.Deserialize(fs);
+    SaveData saveData = serializer.Deserialize(fs);
     // ...
 }
 ```
+
+## Contributing
+
+Contributions are welcome for toofz NecroDancer Core.
+
+* Want to report a bug or request a feature? [File a new issue](https://github.com/leonard-thieu/toofz-necrodancer-core/issues).
+* Join in design conversations.
+* Fix an issue or add a new feature.
+  * Aside from trivial issues, please raise a discussion before submitting a pull request.
+
+### Development
+
+#### Requirements
+
+* Visual Studio 2017
+
+#### Getting started
+
+Open the solution file and build. Use Test Explorer to run tests.
+
+#### Repository layout
+
+* [Data](src/toofz.NecroDancer/Data) - read and modify `necrodancer.xml`
+* [Replays](src/toofz.NecroDancer/Replays) - read and modify replays
+* [Saves](src/toofz.NecroDancer/Saves) - read and modify save data
 
 ## License
 
