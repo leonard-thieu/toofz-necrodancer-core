@@ -17,7 +17,7 @@ Information about other projects that support **toofz** can be found in the [met
 ## Description
 
 toofz NecroDancer Core supports reading and modifying `necrodancer.xml`, replays, and saves.
-It powers the **Item** and **Enemy** sections of **toofz** through data mining. 
+It powers the [Items](https://crypt.toofz.com/items) and [Enemies](https://crypt.toofz.com/enemies) sections of **toofz** through data mining. 
 It also provides richer leaderboard entry data by parsing replays associated with entries.
 
 ## Installing via NuGet
