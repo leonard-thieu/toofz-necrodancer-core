@@ -39,9 +39,9 @@ Install-Package 'toofz.NecroDancer'
 
 ### Dependents
 
-* [toofz Data](https://github.com/leonard-thieu/toofz-data)
-* [toofz Replays Service](https://github.com/leonard-thieu/replays-service)
 * [toofz API](https://github.com/leonard-thieu/api.toofz.com)
+* [toofz Replays Service](https://github.com/leonard-thieu/replays-service)
+* [toofz Data](https://github.com/leonard-thieu/toofz-data)
 
 ### Dependencies
 
