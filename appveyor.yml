@@ -28,12 +28,7 @@ build:
 test_script:
   - ps: |
       $projectPath = Resolve-Path .\test\toofz.NecroDancer.Tests\toofz.NecroDancer.Tests.csproj
-      msbuild $projectPath /nologo /verbosity:minimal `
-          /target:Rebuild `
-          /target:Test `
-          /property:Configuration=Coverage `
-          /property:DebugType=full `
-          /property:DebugSymbols=true
+      dotnet build /nologo /verbosity:minimal /target:Test /property:Configuration=Coverage /property:DebugType=full $projectPath
 
 deploy_script:
   - ps: |
